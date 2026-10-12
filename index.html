@@ -21,6 +21,7 @@
     @media(max-width:580px){.announcement{font-size:9px}.shell{width:calc(100% - 34px)}.hero-main{padding:78px 0}.hero h1{font-size:clamp(41px,10vw,56px);letter-spacing:-.055em}.hero-copy{font-size:15px}.buttons{display:flex;flex-direction:column;align-items:stretch}.button{width:100%}.hero-meta{gap:15px;font-size:9px}.section-head{display:block}.section h2,.cta h2{font-size:37px}.services,.products,.projects,.stat-grid{grid-template-columns:1fr}.service{min-height:250px}.service h3{margin-top:28px}.cta-layout{display:block}.cta .button{margin-top:25px}.wordmark strong{font-size:16px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   </style>
+<link rel="stylesheet" href="assets/shop.css">
 </head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
@@ -67,5 +68,7 @@
     mobile.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMobile));
     window.addEventListener('resize',()=>{if(window.innerWidth>800)closeMobile()});
   </script>
+<script src="assets/shop-data.js"></script>
+<script src="assets/shop.js"></script>
 </body>
 </html>

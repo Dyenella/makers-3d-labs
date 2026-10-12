@@ -5,7 +5,8 @@
 
 /* Extra mobiele afwerking */
 html{scroll-padding-top:92px}body{overflow-x:hidden}img{max-width:100%;height:auto}button,input,select,textarea{max-width:100%}@media(max-width:700px){.logo{font-size:19px}.container{padding-left:19px;padding-right:19px}h1,h2,h3,p{overflow-wrap:break-word}.hero h1{font-size:clamp(39px,10vw,58px)}.hero p{font-size:16px;line-height:1.7}.btn,.action{max-width:100%;white-space:normal;text-align:center}nav{max-height:calc(100vh - 75px);overflow-y:auto;z-index:100}.footer,.footer-inner,.foot{gap:14px}}@media(max-width:380px){.logo{font-size:17px}.container{padding-left:16px;padding-right:16px}}
-</style></head><body>
+</style><link rel="stylesheet" href="assets/shop.css">
+</head><body>
 <header><div class="container nav"><a class="logo" href="index.html">MAKERS <span>3D</span> LABS</a><button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navigation">☰</button><nav id="navigation"><a href="index.html">Home</a><a href="diensten.html" class="active">Diensten</a><a href="producten.html">Producten</a><a href="portfolio.html">Portfolio</a><a href="over-ons.html">Over ons</a><a class="navbtn" href="contact.html">Offerte aanvragen</a></nav></div></header>
 <main><section class="hero"><div class="container"><div class="tag">Makers 3D Labs · Onze expertise</div><h1>Jouw ideeën.<br><span>Onze technieken.</span></h1><p>Van een persoonlijk cadeau tot zakelijke producten op maat. Ontdek wat 3D-printen, resin en lasergraveren voor jouw project kunnen betekenen.</p></div></section>
 <section class="section"><div class="container"><div class="eyebrow">Wat we voor je kunnen betekenen</div><h2>Alles begint met een goed idee.</h2><p class="intro">Wij kijken samen naar de toepassing, uitstraling en gewenste aantallen. Zo kiezen we de techniek die bij het product past. Of je nu één exemplaar zoekt of een serie voor jouw onderneming.</p><div class="services">
@@ -18,4 +19,6 @@ html{scroll-padding-top:92px}body{overflow-x:hidden}img{max-width:100%;height:au
 <section class="band"><div class="container"><div><div class="tag">Maatwerk begint hier</div><h2>Klaar om iets te maken?</h2><p>Van een idee op papier tot een product in je handen. We horen graag wat je voor ogen hebt.</p></div><a class="btn" href="contact.html">Offerte aanvragen →</a></div></section></main>
 <footer><div class="container footer"><span><strong>MAKERS 3D LABS</strong> · Your idea. Made possible.</span><span>© <span id="year">2026</span> Makers 3D Labs · Ridderkerk</span></div></footer>
 <script>document.getElementById("year").textContent=new Date().getFullYear();const b=document.querySelector(".menu-btn"),n=document.getElementById("navigation");b.addEventListener("click",()=>{const open=n.classList.toggle("open");b.setAttribute("aria-expanded",String(open));b.setAttribute("aria-label",open?"Sluit menu":"Open menu");b.textContent=open?"×":"☰"});n.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{n.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰"}));</script>
+<script src="assets/shop-data.js"></script>
+<script src="assets/shop.js"></script>
 </body></html>
