@@ -4,531 +4,946 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Ontdek de productcatalogus van Makers 3D Labs. Gepersonaliseerde 3D-producten, zakelijke displays, sleutelhangers en maatwerk.">
-<title>Productcatalogus | Makers 3D Labs</title>
+<meta name="description" content="Makers 3D Labs in Ridderkerk. Premium 3D-printen, resin, lasergraveren en gepersonaliseerd maatwerk.">
+<meta name="theme-color" content="#0c151a">
+<title>Makers 3D Labs | Your idea. Made possible.</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --dark:#0c151a;
-  --dark2:#14272d;
-  --teal:#75dacf;
-  --mint:#e1f8f3;
-  --cream:#f6f7f5;
-  --muted:#718186;
+  --dark: #0c151a;
+  --dark2: #14272d;
+  --teal: #75dacf;
+  --mint: #c1eee7;
+  --cream: #f6f7f5;
+  --muted: #718186;
+  --white: #ffffff;
 }
-* {box-sizing:border-box}
-html {scroll-behavior:smooth}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
 body {
-  margin:0;
-  font-family:"DM Sans",sans-serif;
-  background:var(--cream);
-  color:#182b30;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  background: var(--cream);
+  color: #182b30;
 }
-a {color:inherit;text-decoration:none}
-button,input {font:inherit}
-button {cursor:pointer}
-.container {max-width:1280px;margin:auto;padding:0 36px}
+
+a { color: inherit; text-decoration: none; }
+
+button { cursor: pointer; font: inherit; }
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 36px;
+}
 
 /* NAVIGATIE */
+
 header {
-  height:88px;
-  background:#fff;
-  border-bottom:1px solid #e7eeee;
-  position:sticky;
-  top:0;
-  z-index:100;
+  height: 88px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e8eeee;
 }
+
 .nav {
-  height:100%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
+
 .logo {
-  font:800 22px Manrope,sans-serif;
-  letter-spacing:-1px;
-  white-space:nowrap;
+  font-family: Manrope, sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  white-space: nowrap;
 }
-.logo span {color:#269e96}
-nav {display:flex;align-items:center;gap:32px}
-nav a {font-size:14px;font-weight:700}
-nav a:hover,.active {color:#13998f}
+
+.logo span { color: #269e96; }
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+nav a {
+  font-size: 14px;
+  font-weight: 700;
+  transition: color .2s;
+}
+
+nav a:hover { color: #159e94; }
+
 .navbtn {
-  background:#172e33;
-  color:white!important;
-  padding:13px 24px;
-  border-radius:30px;
+  padding: 13px 25px;
+  background: #172e33;
+  border-radius: 30px;
+  color: white !important;
 }
+
+.navbtn:hover { background: #296763; }
+
 .menu-btn {
-  display:none;
-  border:0;
-  background:none;
-  font-size:28px;
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 29px;
 }
 
 /* HERO */
+
 .hero {
-  padding:106px 0 110px;
-  color:white;
+  min-height: 780px;
+  color: white;
   background:
-   radial-gradient(ellipse at 85% 30%,#205450,transparent 45%),
-   linear-gradient(120deg,#0b1419,#142c30);
+    radial-gradient(
+      ellipse at 77% 39%,
+      rgba(46,157,146,.35),
+      transparent 45%
+    ),
+    linear-gradient(125deg, #0b1419, #132b30);
+  overflow: hidden;
 }
-.tag {
-  color:var(--teal);
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:12px;
-  font-weight:800;
+
+.hero-inner {
+  min-height: 780px;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  align-items: center;
+  gap: 65px;
 }
+
+.eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 800;
+  color: var(--teal);
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
 .hero h1 {
-  font:800 clamp(43px,6vw,75px)/1.13 Manrope,sans-serif;
-  letter-spacing:-3px;
-  margin:22px 0;
+  font-family: Manrope, sans-serif;
+  font-weight: 800;
+  font-size: clamp(49px, 5.4vw, 77px);
+  line-height: 1.12;
+  letter-spacing: -3.5px;
+  margin: 0 0 26px;
 }
-.hero h1 span {color:var(--teal)}
+
+.hero h1 span { color: var(--teal); }
+
 .hero p {
-  max-width:680px;
-  color:#b9d0d0;
-  font-size:18px;
-  line-height:1.9;
+  color: #bed0d1;
+  font-size: 18px;
+  line-height: 1.9;
+  max-width: 570px;
 }
 
-/* CATALOGUS */
-.catalog {
-  padding:75px 0 110px;
-}
-.catalog-intro h2 {
-  font:800 clamp(30px,4vw,44px) Manrope,sans-serif;
-  letter-spacing:-1.6px;
-  margin:10px 0;
-}
-.catalog-intro p {
-  color:var(--muted);
-  line-height:1.8;
-  max-width:750px;
-}
-.catalog-layout {
-  display:grid;
-  grid-template-columns:255px 1fr;
-  gap:32px;
-  margin-top:45px;
-  align-items:start;
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
 }
 
-/* ZIJMENU */
-.sidebar {
-  background:white;
-  padding:24px;
-  border-radius:20px;
-  border:1px solid #e4eeeb;
-  position:sticky;
-  top:110px;
-}
-.sidebar h3 {
-  font:800 16px Manrope,sans-serif;
-  margin:0 0 17px;
-}
-.category {
-  width:100%;
-  border:0;
-  background:transparent;
-  padding:13px 12px;
-  margin:3px 0;
-  border-radius:10px;
-  text-align:left;
-  display:flex;
-  justify-content:space-between;
-  gap:10px;
-  color:#475b60;
-  font-weight:700;
-  font-size:14px;
-}
-.category:hover {background:#eef8f6}
-.category.selected {
-  background:#dff5f0;
-  color:#087b70;
-}
-.category span {color:#829999}
-
-/* UITKLAPBARE CATEGORIEËN */
-.category-group {
-  border-top:1px solid #eff3f2;
-  padding-top:8px;
-  margin-top:8px;
-}
-.subcategories {
-  display:none;
-  padding:4px 0 8px 18px;
-}
-.subcategories.open {display:block}
-.subcategories button {
-  display:block;
-  width:100%;
-  text-align:left;
-  border:0;
-  background:transparent;
-  color:#718186;
-  padding:9px 6px;
-  font-size:13px;
-}
-.subcategories button:hover {color:#078b80}
-
-/* ZOEKFUNCTIE */
-.catalog-toolbar {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  margin-bottom:25px;
-  flex-wrap:wrap;
-}
-.search {
-  width:min(100%,420px);
-  padding:15px 20px;
-  background:white;
-  border:1px solid #dce9e6;
-  border-radius:30px;
-  outline:none;
-}
-.search:focus {border-color:#21a99d}
-.count {color:#77888b;font-size:14px}
-
-/* PRODUCTKAARTEN */
-.grid {
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:20px;
-}
-.product {
-  background:white;
-  border:1px solid #e2ebea;
-  border-radius:21px;
-  overflow:hidden;
-  transition:.25s;
-}
-.product:hover {
-  transform:translateY(-5px);
-  box-shadow:0 20px 48px #102d3012;
-}
-.product-top {
-  min-height:155px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
-  gap:12px;
-  background:linear-gradient(140deg,#d6eae6,#edf4f1);
-}
-.product-symbol {
-  font-size:47px;
-  font-weight:800;
-  color:#258f85;
-  line-height:1;
-}
-.product-top small {
-  font-size:10px;
-  font-weight:800;
-  letter-spacing:1.7px;
-  text-transform:uppercase;
-  color:#5f8d86;
-}
-.product-content {padding:23px}
-.product-content h3 {
-  font:800 17px Manrope,sans-serif;
-  line-height:1.4;
-  margin:0 0 10px;
-}
-.product-content p {
-  color:#75868a;
-  font-size:13px;
-  line-height:1.75;
-  min-height:69px;
-}
-.quote {
-  display:inline-flex;
-  align-items:center;
-  color:#078d82;
-  font-size:13px;
-  font-weight:800;
-  margin-top:6px;
-}
-.quote:hover {text-decoration:underline}
-.empty {
-  display:none;
-  background:white;
-  padding:50px 25px;
-  border-radius:16px;
-  text-align:center;
-  color:#718186;
-}
-.empty.visible {display:block}
-
-/* MAATWERK */
-.custom {
-  background:#10242a;
-  color:white;
-  padding:85px 0;
-}
-.custom-inner {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:40px;
-}
-.custom h2 {
-  font:800 clamp(29px,4vw,45px) Manrope,sans-serif;
-  letter-spacing:-1.5px;
-  margin:15px 0;
-}
-.custom p {
-  color:#bdd1d0;
-  line-height:1.8;
-  max-width:640px;
-}
 .btn {
-  display:inline-block;
-  border-radius:40px;
-  padding:17px 27px;
-  background:var(--teal);
-  color:#102b2d;
-  font-weight:800;
-  font-size:14px;
-  white-space:nowrap;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 29px;
+  border-radius: 40px;
+  font-weight: 800;
+  font-size: 14px;
+  transition: .25s;
 }
-.btn:hover {background:#a4eee4}
+
+.primary {
+  background: var(--teal);
+  color: #092528;
+}
+
+.secondary {
+  border: 1px solid #719293;
+  color: white;
+}
+
+.btn:hover { transform: translateY(-3px); }
+
+.primary:hover { background: #a5f3e7; }
+
+.secondary:hover { background: #ffffff16; }
+
+/* DECORATIEF ELEMENT */
+
+.hero-visual {
+  position: relative;
+  height: 460px;
+  display: grid;
+  place-items: center;
+}
+
+.orbit {
+  position: absolute;
+  width: 365px;
+  height: 365px;
+  border: 1px solid #77d7cb32;
+  border-radius: 50%;
+}
+
+.orbit.two {
+  width: 465px;
+  height: 465px;
+  border-color: #77d7cb15;
+}
+
+.artcube {
+  width: 230px;
+  height: 230px;
+  transform: rotate(-25deg);
+  border: 30px solid #77dace;
+  border-radius: 38px;
+  box-shadow:
+    24px 25px 0 #135955,
+    0 20px 110px #37c5b02e;
+  display: grid;
+  place-items: center;
+}
+
+.artcube span {
+  transform: rotate(25deg);
+  color: white;
+  font: 800 134px Manrope, sans-serif;
+  letter-spacing: -13px;
+  padding-right: 15px;
+}
+
+/* SPECIALISATIES */
+
+.strip {
+  background: #102229;
+  color: #9bbabe;
+  padding: 24px 0;
+}
+
+.strip-inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.strip span {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* ALGEMENE SECTIES */
+
+.section { padding: 115px 0; }
+
+.section-tag {
+  color: #168d83;
+  letter-spacing: 2.5px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section h2 {
+  margin: 16px 0 20px;
+  font: 800 clamp(35px, 4vw, 53px)/1.18 Manrope, sans-serif;
+  letter-spacing: -2px;
+}
+
+.description {
+  color: #687a7e;
+  max-width: 660px;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+/* DIENSTEN */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5edeb;
+  border-radius: 23px;
+  padding: 42px 34px;
+  transition: .25s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px #102d3015;
+}
+
+.card .icon {
+  width: 64px;
+  height: 64px;
+  background: #e3f7f3;
+  color: #087c73;
+  border-radius: 17px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+}
+
+.card h3 {
+  font: 800 23px Manrope, sans-serif;
+  margin: 25px 0 10px;
+}
+
+.card p {
+  color: #718186;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* PRODUCTEN */
+
+.products-section { background: #eaf0ee; }
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 48px;
+}
+
+.product {
+  overflow: hidden;
+  border-radius: 22px;
+  background: white;
+  transition: .25s;
+}
+
+.product:hover { transform: translateY(-7px); }
+
+.product-image {
+  height: 245px;
+  background:
+    radial-gradient(
+      circle at 65% 30%,
+      #d2f3ed,
+      transparent 60%
+    ),
+    linear-gradient(140deg, #cfdfdc, #edf3f1);
+  display: grid;
+  place-items: center;
+}
+
+.product-image span {
+  font-size: 75px;
+  font-weight: 800;
+  color: #228d83;
+}
+
+.product-content { padding: 27px; }
+
+.product-content h3 {
+  margin: 0 0 10px;
+  font: 800 20px Manrope, sans-serif;
+}
+
+.product-content p {
+  color: #6e7c80;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.product-content a {
+  color: #078d82;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 45px;
+}
+
+.work {
+  height: 330px;
+  border-radius: 23px;
+  background: linear-gradient(140deg, #1b4047, #176e66);
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  transition: .25s;
+}
+
+.work:hover { transform: translateY(-5px); }
+
+.work:nth-child(2) {
+  background: linear-gradient(140deg, #544125, #a88b58);
+}
+
+.work:nth-child(3) {
+  background: linear-gradient(140deg, #293b43, #7f9b9e);
+}
+
+.work h3 {
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+
+.work p {
+  margin: 0;
+  color: #e1f0ee;
+  font-size: 14px;
+}
+
+/* OVER ONS */
+
+.about {
+  background: #10242a;
+  color: white;
+}
+
+.about h2 { color: white; }
+
+.about .description { color: #b8d0d0; }
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-decoration {
+  background: linear-gradient(135deg, #1d484b, #0d1d24);
+  border: 1px solid #376260;
+  min-height: 370px;
+  border-radius: 25px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 35px;
+}
+
+.about-decoration strong {
+  color: #91e6da;
+  font: 800 38px/1.3 Manrope, sans-serif;
+}
+
+/* CONTACT */
+
+.contact { background: #f8faf9; }
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+}
+
+.contact-box {
+  background: white;
+  padding: 38px;
+  border: 1px solid #e0eae8;
+  border-radius: 24px;
+}
+
+.contact-box h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.contact-box p {
+  color: #687b7f;
+  line-height: 1.8;
+}
+
+.notice {
+  padding: 18px;
+  background: #eff7f5;
+  border-radius: 12px;
+  color: #4b6e6e;
+  font-size: 14px;
+}
 
 /* FOOTER */
-footer {
-  background:#09171c;
-  padding:36px 0;
-  color:#a8bec0;
-  font-size:14px;
-}
-.footer {
-  display:flex;
-  justify-content:space-between;
-  flex-wrap:wrap;
-  gap:20px;
-}
-footer strong {color:white}
-:focus-visible {outline:3px solid #14b8a6;outline-offset:3px}
 
-@media(max-width:1100px) {
-  .grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+footer {
+  background: #09171c;
+  color: #a8bec0;
+  padding: 36px 0;
+  font-size: 14px;
 }
-@media(max-width:800px) {
-  .catalog-layout {grid-template-columns:1fr}
-  .sidebar {position:static}
-  .custom-inner {flex-direction:column;align-items:flex-start}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-@media(max-width:700px) {
-  header {height:75px}
-  .container {padding:0 22px}
-  .menu-btn {display:block}
-  nav {
-    display:none;
-    position:absolute;
-    top:75px;
-    left:0;
-    right:0;
-    padding:25px;
-    background:white;
-    flex-direction:column;
-    align-items:stretch;
-    box-shadow:0 20px 35px #0002;
+
+footer strong { color: white; }
+
+:focus-visible {
+  outline: 3px solid #14b8a6;
+  outline-offset: 3px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px) {
+  .hero-inner,
+  .about-layout,
+  .contact-layout {
+    grid-template-columns: 1fr;
   }
-  nav.open {display:flex}
-  .hero {padding:75px 0}
-  .hero h1 {letter-spacing:-2px}
-  .catalog {padding:65px 0}
-  .grid {grid-template-columns:1fr}
-  .product-content p {min-height:auto}
+
+  .hero-visual { display: none; }
+
+  .cards,
+  .products,
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero,
+  .hero-inner { min-height: 650px; }
 }
+
+@media(max-width:700px) {
+  header { height: 75px; }
+
+  .container { padding: 0 22px; }
+
+  .menu-btn { display: block; }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 26px;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: 0 15px 30px #0002;
+  }
+
+  nav.open { display: flex; }
+
+  .hero h1 { letter-spacing: -2px; }
+
+  .hero,
+  .hero-inner { min-height: 610px; }
+
+  .section { padding: 75px 0; }
+
+  .cards,
+  .products,
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  .about-decoration { min-height: 220px; }
+}
+
 @media(prefers-reduced-motion:reduce) {
-  html {scroll-behavior:auto}
-  * {transition:none!important}
+  html { scroll-behavior: auto; }
+
+  *, *::before, *::after {
+    transition: none !important;
+  }
 }
 </style>
 </head>
+
 <body>
 
 <header>
 <div class="container nav">
-<a href="index.html" class="logo">MAKERS <span>3D</span> LABS</a>
-<button class="menu-btn" type="button"
- aria-label="Open menu" aria-expanded="false"
- aria-controls="navigation">☰</button>
+
+<a href="index.html" class="logo">
+MAKERS <span>3D</span> LABS
+</a>
+
+<button
+  class="menu-btn"
+  type="button"
+  aria-label="Open menu"
+  aria-expanded="false"
+  aria-controls="navigation"
+>☰</button>
+
 <nav id="navigation">
 <a href="index.html">Home</a>
-<a href="index.html#diensten">Diensten</a>
-<a href="producten.html" class="active">Producten</a>
-<a href="index.html#portfolio">Portfolio</a>
-<a href="index.html#over">Over ons</a>
-<a href="index.html#contact" class="navbtn">Offerte aanvragen</a>
+<a href="#diensten">Diensten</a>
+<a href="producten.html">Producten</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#over">Over ons</a>
+<a href="#contact" class="navbtn">Offerte aanvragen</a>
 </nav>
+
 </div>
 </header>
 
 <main>
-<section class="hero">
-<div class="container">
-<div class="tag">Makers 3D Labs · Collectie</div>
-<h1>Ontdek wat we<br><span>kunnen maken.</span></h1>
-<p>Van kleine gepersonaliseerde producten tot complete bedrijfsdisplays. Bekijk de mogelijkheden en ontdek hoe wij jouw idee kunnen omzetten in een uniek ontwerp.</p>
-</div>
-</section>
 
-<section class="catalog">
-<div class="container">
+<!-- HERO -->
 
-<div class="catalog-intro">
-<div class="tag" style="color:#168d83">Onze productcatalogus</div>
-<h2>Creativiteit in elke categorie.</h2>
-<p>Ontdek onze producten voor bedrijven, evenementen, decoratie en dagelijks gebruik. Alle producten zijn aanpasbaar. We werken met offertes op basis van jouw wensen en aantallen.</p>
-</div>
+<section class="hero" id="home">
+<div class="container hero-inner">
 
-<div class="catalog-layout">
-
-<aside class="sidebar" aria-label="Productcategorieën">
-<h3>Categorieën</h3>
-<button class="category selected" data-filter="all">Alle producten <span>↗</span></button>
-
-<div class="category-group">
-<button class="category" data-filter="zakelijk">Zakelijk <span>⌄</span></button>
-<div class="subcategories" id="sub-zakelijk">
-<button data-search="review">Reviewstandaards</button>
-<button data-search="logo">Logo's en promotie</button>
-<button data-search="display">Displays</button>
-</div>
-</div>
-
-<div class="category-group">
-<button class="category" data-filter="horeca">Horeca <span>⌄</span></button>
-<div class="subcategories" id="sub-horeca">
-<button data-search="tafel">Tafelproducten</button>
-<button data-search="wifi">Wifi en QR</button>
-</div>
-</div>
-
-<div class="category-group">
-<button class="category" data-filter="persoonlijk">Persoonlijk <span>⌄</span></button>
-<div class="subcategories" id="sub-persoonlijk">
-<button data-search="sleutelhanger">Sleutelhangers</button>
-<button data-search="decoratie">Decoratie</button>
-</div>
-</div>
-
-<div class="category-group">
-<button class="category" data-filter="maatwerk">Maatwerk <span>⌄</span></button>
-<div class="subcategories" id="sub-maatwerk">
-<button data-search="organizer">Organizers</button>
-<button data-search="miniatuur">Miniaturen</button>
-</div>
-</div>
-</aside>
-
-<div class="results">
-<div class="catalog-toolbar">
-<input id="search" class="search" type="search"
- placeholder="Zoek een product..." aria-label="Zoek producten">
-<span class="count" id="count"></span>
-</div>
-
-<div class="grid" id="productGrid">
-
-<article class="product" data-category="zakelijk">
-<div class="product-top"><div class="product-symbol">▣</div><small>Zakelijk</small></div>
-<div class="product-content"><h3>Google-reviewstandaard</h3><p>Gepersonaliseerde standaard met QR-code voor reviews van jouw klanten.</p><a class="quote" href="index.html#contact">Offerte aanvragen →</a></div>
-</article>
-
-<article class="product" data-category="persoonlijk zakelijk">
-<div class="product-top"><div class="product-symbol">◇</div><small>Personalisatie</small></div>
-<div class="product-content"><h3>Logo-sleutelhangers</h3><p>Unieke sleutelhangers met bedrijfslogo, naam of eigen ontwerp.</p><a class="quote" href="index.html#contact">Offerte aanvragen →</a></div>
-</article>
-
-<article class="product" data-category="zakelijk">
-<div class="product-top"><div class="product-symbol">⬡</div><small>Branding</small></div>
-<div class="product-content"><h3>3D-bedrijfslogo</h3><p>Een opvallend logo voor op jouw balie, kantoorwand of receptie.</p><a class="quote" href="index.html#contact">Offerte aanvragen →</a></div>
-</article>
-
-<article class="product" data-category="zakelijk horeca">
-<div class="product-top"><div class="product-symbol">▤</div><small>Horeca & zakelijk</small></div>
-<div class="product-content"><h3>QR-tafelstandaard</h3><p>Een stijlvolle QR-standaard voor menu's, wifi of afspraken.</p><a class="quote" href="index.html#contact">Offerte aanvragen →</a></div>
-</article>
-
-<article class="product" data-category="zakelijk">
-<div class="product-top"><div class="product-symbol">▥</div><small>Retail</small></div>
-<div class="product-content"><h3>Productdisplay</h3><p>Een maatwerkdisplay voor het presenteren van verkoopproducten.</p><a class="quote" href="index.html#contact">Offerte aanvragen →</a></div>
-</article>
-
-<article class="product" data-category="zakelijk">
-<div class="product-top"><div class="product-symbol">✦</div><small>Promotie</small></div>
-<div class="product-content"><h3>Promotiegeschenken</h3><p>Originele, gepersonaliseerde producten voor klanten en evenementen.</p><a class="quote" href="index.html#contact">Offerte aanvragen →</a></div>
-</article>
-
-<article class="product" data-category="horeca">
-<div class="product-top"><div class="product-symbol">Ⅱ</div><small>Horeca</small></div>
-<div class="product-content"><h3>Tafelnummers</h3><p>Stijlvolle en herkenbare tafelnummers passend bij jouw interieur.</p><a class="quote" href="index.html#contact">Offerte aanvragen →</a></div>
-</article>
-
-<article class="product" data-category="horeca">
-<div class="product-top"><div class="product-symbol">◉</div><small>Horeca</small></div>
-<div class="product-content"><h3>Onderzetters met logo</h3><p>Gepersonaliseerde onderzetters voor een herkenbare uitstraling.</p><a class="quote" href="index.html#contact">Offerte aanvragen →</a></div>
-</article>
-
-<article class="product" data-category="zakelijk horeca">
-<div class="product-top"><div class="product-symbol">⌁</div><small>Communicatie</small></div>
-<div class="product-content"><h3>Wifi-bordje</h3><p>Een nette manier om jouw wifi-informatie toegankelijk te maken.</p><a class="quote" href="index.html#contact">Offerte aanvragen →</a></div>
-</article>
-
-<article class="product" data-category="persoonlijk">
-<div class="product-top"><div class="product-symbol">✧</div><small>Decoratie</small></div>
-<div class="product-content"><h3>Decoratieve bustes</h3><p>Gedetailleerde objecten met hoogwaardige resin-afwerking.</p><a class="quote" href="index.html#contact">Offerte aanvragen →</a></div>
-</article>
-
-<article class="product" data-category="maatwerk">
-<div class="product-top"><div class="product-symbol">▦</div><small>Functioneel</small></div>
-<div class="product-content"><h3>Organizers en houders</h3><p>Praktische 3D-ontwerpen die passen bij jouw werkplek.</p><a class="quote" href="index.html#contact">Offerte aanvragen →</a></div>
-</article>
-
-<article class="product" data-category="maatwerk persoonlijk">
-<div class="product-top"><div class="product-symbol">△</div><small>Creatief maatwerk</small></div>
-<div class="product-content"><h3>Miniaturen en maquettes</h3><p>Gedetailleerde modellen, decoratieve projecten en unieke ontwerpen.</p><a class="quote" href="index.html#contact">Offerte aanvragen →</a></div>
-</article>
-
-</div>
-
-<div class="empty" id="empty">
-<h3>Geen producten gevonden</h3>
-<p>Probeer een andere zoekterm of kies een andere categorie.</p>
-</div>
-
-</div>
-</div>
-</div>
-</section>
-
-<section class="custom">
-<div class="container custom-inner">
 <div>
-<div class="tag">Custom manufacturing</div>
-<h2>Staat jouw idee er niet tussen?</h2>
-<p>Dat betekent niet dat we het niet kunnen maken. Vertel ons wat je in gedachten hebt en we bekijken samen de mogelijkheden.</p>
+<div class="eyebrow">
+Creative manufacturing studio · Ridderkerk
 </div>
-<a href="index.html#contact" class="btn">Bespreek jouw idee →</a>
+
+<h1>
+Van idee naar<br>
+<span>iets bijzonders.</span>
+</h1>
+
+<p>
+Premium 3D-printen, lasergraveren en creatief maatwerk.
+Wij creëren unieke producten die niet alleen functioneel
+zijn, maar ook indruk maken.
+</p>
+
+<div class="hero-buttons">
+<a class="btn primary" href="producten.html">
+Ontdek onze collectie →
+</a>
+
+<a class="btn secondary" href="#contact">
+Bespreek jouw idee
+</a>
+</div>
+</div>
+
+<div class="hero-visual" aria-hidden="true">
+<div class="orbit"></div>
+<div class="orbit two"></div>
+<div class="artcube"><span>M</span></div>
+</div>
+
 </div>
 </section>
+
+<!-- SPECIALISATIES -->
+
+<div class="strip">
+<div class="container strip-inner">
+<span>3D-PRINTEN</span>
+<span>RESIN & DETAILWERK</span>
+<span>LASERGRAVEREN</span>
+<span>MAATWERK</span>
+</div>
+</div>
+
+<!-- DIENSTEN -->
+
+<section class="section" id="diensten">
+<div class="container">
+
+<div class="section-tag">Onze specialisaties</div>
+
+<h2>Creativiteit zonder grenzen.</h2>
+
+<p class="description">
+Van het eerste ontwerp tot het eindresultaat.
+Met moderne technologie en oog voor detail
+brengen we unieke ideeën tot leven.
+</p>
+
+<div class="cards">
+
+<article class="card">
+<div class="icon">⬡</div>
+<h3>3D-printen</h3>
+<p>
+Precisieprints, bedrijfsproducten, functionele
+ontwerpen en volledig gepersonaliseerde creaties.
+</p>
+</article>
+
+<article class="card">
+<div class="icon">✧</div>
+<h3>Resin printing</h3>
+<p>
+Hoogwaardige miniaturen, decoratieve bustes
+en gedetailleerde modellen met een verfijnde afwerking.
+</p>
+</article>
+
+<article class="card">
+<div class="icon">⌁</div>
+<h3>Lasergraveren</h3>
+<p>
+Professionele gravures en gepersonaliseerde producten
+die jouw merk of idee laten spreken.
+</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- PRODUCTEN -->
+
+<section class="section products-section" id="producten">
+<div class="container">
+
+<div class="section-tag">Onze collectie</div>
+
+<h2>Design met een doel.</h2>
+
+<p class="description">
+Producten die jouw bedrijf, merk of persoonlijke
+idee tot leven brengen. Elk ontwerp kan
+op maat worden aangepast.
+</p>
+
+<div class="products">
+
+<article class="product">
+<div class="product-image"><span>▣</span></div>
+<div class="product-content">
+<h3>Google-reviewstandaards</h3>
+<p>
+Stijlvolle QR-standaards waarmee jouw klanten
+eenvoudig een review kunnen achterlaten.
+</p>
+<a href="producten.html">Bekijk producten →</a>
+</div>
+</article>
+
+<article class="product">
+<div class="product-image"><span>◇</span></div>
+<div class="product-content">
+<h3>Gepersonaliseerde sleutelhangers</h3>
+<p>
+Met eigen logo, bedrijfsnaam of exclusief ontwerp.
+Ook voor grotere aantallen.
+</p>
+<a href="producten.html">Bekijk producten →</a>
+</div>
+</article>
+
+<article class="product">
+<div class="product-image"><span>⬡</span></div>
+<div class="product-content">
+<h3>3D-bedrijfslogo's</h3>
+<p>
+Een opvallend logo voor jouw balie,
+kantoor, winkel of bedrijfsruimte.
+</p>
+<a href="producten.html">Bekijk producten →</a>
+</div>
+</article>
+
+<article class="product">
+<div class="product-image"><span>▤</span></div>
+<div class="product-content">
+<h3>QR-tafelstandaards</h3>
+<p>
+Op maat gemaakte standaards voor menukaarten,
+wifi of afspraken.
+</p>
+<a href="producten.html">Bekijk producten →</a>
+</div>
+</article>
+
+<article class="product">
+<div class="product-image"><span>▥</span></div>
+<div class="product-content">
+<h3>Productdisplays</h3>
+<p>
+Unieke displays die jouw producten
+professioneel presenteren.
+</p>
+<a href="producten.html">Bekijk producten →</a>
+</div>
+</article>
+
+<article class="product">
+<div class="product-image"><span>✧</span></div>
+<div class="product-content">
+<h3>Exclusief maatwerk</h3>
+<p>
+Van bijzondere decoratie tot technische onderdelen
+en originele cadeaus.
+</p>
+<a href="producten.html">Ontdek meer →</a>
+</div>
+</article>
+
+</div>
+
+<div style="text-align:center;margin-top:45px">
+<a class="btn primary" href="producten.html">
+Bekijk de volledige productcatalogus →
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+
+<section class="section" id="portfolio">
+<div class="container">
+
+<div class="section-tag">Made by Makers 3D Labs</div>
+
+<h2>Ons werk. Onze passie.</h2>
+
+<p class="description">
+Een selectie van onze projecten.
+Hier voegen we later onze eigen productfoto's toe.
+</p>
+
+<div class="portfolio">
+
+<div class="work">
+<h3>Ozzo the Barber</h3>
+<p>Gepersonaliseerde sleutelhanger</p>
+</div>
+
+<div class="work">
+<h3>Anubis Collection</h3>
+<p>Gedetailleerde resin buste</p>
+</div>
+
+<div class="work">
+<h3>Custom Laptopstandaard</h3>
+<p>Functioneel 3D-design</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- OVER ONS -->
+
+<section class="section about" id="over">
+<div class="container about-layout">
+
+<div>
+<div class="section-tag">Over ons</div>
+
+<h2>Waar ideeën werkelijkheid worden.</h2>
+
+<p class="description">
+Makers 3D Labs is een creatieve 3D-studio in Ridderkerk.
+Wij combineren technologie, design en persoonlijk
+vakmanschap om unieke producten te realiseren.
+</p>
+
+<p class="description">
+Van gepersonaliseerde zakelijke artikelen tot
+gedetailleerd maatwerk. Wij geloven dat ieder
+goed idee het verdient om tot leven te komen.
+</p>
+
+<a href="#contact" class="btn primary">
+Werk met ons samen →
+</a>
+</div>
+
+<div class="about-decoration">
+<strong>
+Your idea.<br>
+Made possible.
+</strong>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="section contact" id="contact">
+<div class="container contact-layout">
+
+<div>
+<div class="section-tag">Contact & offertes</div>
+
+<h2>Laat jouw idee<br>werkelijkheid worden.</h2>
+
+<p class="description">
+Heb je een idee, een project of wil je
+gepersonaliseerde producten voor jouw bedrijf?
+Wij denken graag met je mee.
+</p>
+
+<p>
+<strong>Locatie</strong><br>
+Ridderkerk, Nederland
+</p>
+</div>
+
+<div class="contact-box">
+<h3>Vertel ons jouw idee.</h3>
+
+<p>
+Vraag vrijblijvend naar de mogelijkheden voor
+jouw project, product of zakelijke bestelling.
+</p>
+
+<div class="notice">
+Binnenkort beschikbaar: ons offerteformulier,
+zakelijke e-mail en WhatsApp-contact.
+</div>
+</div>
+
+</div>
+</section>
+
 </main>
 
+<!-- FOOTER -->
+
 <footer>
-<div class="container footer">
-<div><strong>MAKERS 3D LABS</strong> · Your idea. Made possible.</div>
-<div>© <span id="year">2026</span> Makers 3D Labs · Ridderkerk</div>
+<div class="container footer-inner">
+
+<div>
+<strong>MAKERS 3D LABS</strong>
+· Your idea. Made possible.
+</div>
+
+<div>
+© <span id="year">2026</span>
+Makers 3D Labs · Ridderkerk
+</div>
+
 </div>
 </footer>
 
@@ -537,85 +952,33 @@ document.getElementById("year").textContent =
   new Date().getFullYear();
 
 const menu = document.querySelector(".menu-btn");
-const nav = document.getElementById("navigation");
+const navigation = document.getElementById("navigation");
 
 menu.addEventListener("click", () => {
-  const open = nav.classList.toggle("open");
-  menu.setAttribute("aria-expanded", String(open));
-  menu.setAttribute("aria-label", open ? "Sluit menu" : "Open menu");
-  menu.textContent = open ? "×" : "☰";
+  const isOpen = navigation.classList.toggle("open");
+
+  menu.setAttribute(
+    "aria-expanded",
+    String(isOpen)
+  );
+
+  menu.setAttribute(
+    "aria-label",
+    isOpen ? "Sluit menu" : "Open menu"
+  );
+
+  menu.textContent = isOpen ? "×" : "☰";
 });
 
-nav.querySelectorAll("a").forEach(a => {
-  a.addEventListener("click", () => {
-    nav.classList.remove("open");
+navigation.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navigation.classList.remove("open");
     menu.setAttribute("aria-expanded", "false");
+    menu.setAttribute("aria-label", "Open menu");
     menu.textContent = "☰";
   });
 });
-
-const products = [...document.querySelectorAll(".product")];
-const search = document.getElementById("search");
-const count = document.getElementById("count");
-const empty = document.getElementById("empty");
-const categories = document.querySelectorAll(".category");
-
-let activeCategory = "all";
-
-function updateProducts() {
-  const query = search.value.toLocaleLowerCase("nl").trim();
-  let visible = 0;
-
-  products.forEach(product => {
-    const categories = product.dataset.category.split(" ");
-    const matchesCategory =
-      activeCategory === "all" ||
-      categories.includes(activeCategory);
-
-    const text = product.textContent.toLocaleLowerCase("nl");
-    const matchesSearch = text.includes(query);
-
-    const show = matchesCategory && matchesSearch;
-    product.hidden = !show;
-    product.style.display = show ? "" : "none";
-
-    if (show) visible++;
-  });
-
-  count.textContent = visible + " producten";
-  empty.classList.toggle("visible", visible === 0);
-}
-
-categories.forEach(button => {
-  button.addEventListener("click", () => {
-    categories.forEach(b => b.classList.remove("selected"));
-    button.classList.add("selected");
-
-    activeCategory = button.dataset.filter;
-    search.value = "";
-
-    document.querySelectorAll(".subcategories").forEach(sub => {
-      sub.classList.remove("open");
-    });
-
-    const submenu = document.getElementById(
-      "sub-" + activeCategory
-    );
-    if (submenu) submenu.classList.add("open");
-
-    updateProducts();
-  });
-});
-
-document.querySelectorAll("[data-search]").forEach(button => {
-  button.addEventListener("click", () => {
-    search.value = button.dataset.search;
-    updateProducts();
-  });
-});
-
-search.addEventListener("input", updateProducts);
-updateProducts();
 </script>
+
 </body>
 </html>
