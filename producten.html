@@ -614,7 +614,7 @@ document.querySelectorAll("[data-search]").forEach(button => {
   });
 });
 
-search.addEventListener("input", updateProducts);
+document.querySelectorAll(".product").forEach(card=>{const button=card.querySelector("a.quote");const title=card.querySelector("h3");if(button&&title){button.href="contact.html?product="+encodeURIComponent(title.textContent.trim());}});search.addEventListener("input", updateProducts);
 updateProducts();
 </script>
 </body>
