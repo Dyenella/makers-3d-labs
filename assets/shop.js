@@ -4,12 +4,24 @@
  const iconUser='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 22v-2a8 8 0 0 1 16 0v2"/></svg>';
  const items=()=>{try{const v=JSON.parse(localStorage.getItem('makers3d_cart')||'[]');return Array.isArray(v)?v:[]}catch{return []}};
  const count=()=>items().reduce((n,p)=>n+(Number(p.quantity)||0),0);
- const actions=()=>`<nav class="ms-utilities" aria-label="Webshop snelkoppelingen"><a class="ms-utility" href="winkel.html" aria-label="Winkel">Winkel</a><a class="ms-utility" href="account.html" aria-label="Mijn account">${iconUser}<span class="ms-utility-label">Mijn account</span></a><a class="ms-utility" href="winkelwagen.html" aria-label="Winkelwagen">${iconCart}<span class="ms-utility-label">Winkelwagen</span><span class="ms-badge" data-ms-cart-count>${count()}</span></a></nav>`;
+ const actions=()=>`<nav class="ms-utilities" aria-label="Account en winkelwagen"><a class="ms-utility" href="account.html" aria-label="Mijn account" title="Mijn account">${iconUser}</a><a class="ms-utility" href="winkelwagen.html" aria-label="Winkelwagen" title="Winkelwagen">${iconCart}<span class="ms-badge" data-ms-cart-count>${count()}</span></a></nav>`;
+ function placeShopInProductsMenu(){
+  const dropdown=document.getElementById('drop-producten');
+  if(dropdown && !dropdown.querySelector('a[href="winkel.html"]')){
+    const link=document.createElement('a');link.href='winkel.html';
+    link.innerHTML='<strong>Webshop</strong><small>Bekijk de winkel</small>';
+    dropdown.prepend(link);
+  }
+  const mobile=document.querySelector('#mobile-nav details:nth-of-type(2)');
+  if(mobile && !mobile.querySelector('a[href="winkel.html"]')){
+    const link=document.createElement('a');link.href='winkel.html';link.textContent='Webshop';mobile.prepend(link);
+  }
+}
  function addNavigation(){
   if(document.querySelector('.ms-utilities'))return;
   const homepage=document.querySelector('.head-inner');
   if(homepage){const div=document.createElement('div');div.innerHTML=actions();const el=div.firstElementChild;const desktop=homepage.querySelector('.desktop');desktop?desktop.after(el):homepage.append(el);
-    const mobile=document.getElementById('mobile-nav')||document.querySelector('.mobile-panel');if(mobile){const links=document.createElement('div');links.innerHTML='<a class="ms-extra-mobile" href="winkel.html">Winkel</a><a class="ms-extra-mobile" href="account.html">Mijn account</a><a class="ms-extra-mobile" href="bestellingen.html">Mijn bestellingen</a><a class="ms-extra-mobile" href="winkelwagen.html">Winkelwagen</a>';mobile.append(links)}
+    const mobile=document.getElementById('mobile-nav')||document.querySelector('.mobile-panel');if(mobile){const links=document.createElement('div');links.innerHTML='<a class="ms-extra-mobile" href="account.html">Mijn account</a><a class="ms-extra-mobile" href="bestellingen.html">Mijn bestellingen</a><a class="ms-extra-mobile" href="winkelwagen.html">Winkelwagen</a>';mobile.append(links)}
   } else {const bar=document.createElement('div');bar.className='ms-top-strip';bar.innerHTML=actions();const header=document.querySelector('header');header?header.after(bar):document.body.prepend(bar)}
  }
  function addFooter(){
@@ -20,6 +32,6 @@
  }
  function showShop(){const el=document.getElementById('ms-shop-grid');if(!el)return;const products=window.MAKERS_SHOP_PRODUCTS||[];el.innerHTML=products.length?products.map(p=>`<article class="ms-card"><div class="ms-card-body"><h2>${String(p.name||'Product').replace(/[&<>"']/g,'')}</h2><p>Productinformatie volgt.</p><a class="ms-btn" href="contact.html">Offerte aanvragen</a></div></article>`).join(''):`<article class="ms-card"><div class="ms-card-body"><h2>Standaardproducten</h2><p>We voegen vaste producten en gecontroleerde prijzen toe voordat bestellen wordt ingeschakeld.</p><a class="ms-btn" href="producten.html">Bekijk de catalogus</a></div></article><article class="ms-card"><div class="ms-card-body"><h2>Gepersonaliseerd maatwerk</h2><p>Vertel ons jouw wensen en ontvang een offerte.</p><a class="ms-btn" href="contact.html">Vraag een offerte aan</a></div></article>`}
  function showCart(){const el=document.getElementById('ms-cart');if(!el)return;el.innerHTML='<div class="ms-empty"><h2>Je winkelwagen is momenteel leeg</h2><p>Er zijn nog geen vaste producten met goedgekeurde prijzen beschikbaar. Het afrekenen is nog niet actief.</p><a class="ms-btn" href="winkel.html">Naar de winkel</a></div>'}
- function init(){addNavigation();addFooter();showShop();showCart();window.addEventListener('storage',()=>document.querySelectorAll('[data-ms-cart-count]').forEach(e=>e.textContent=count()))}
+ function init(){addNavigation();placeShopInProductsMenu();addFooter();showShop();showCart();window.addEventListener('storage',()=>document.querySelectorAll('[data-ms-cart-count]').forEach(e=>e.textContent=count()))}
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
