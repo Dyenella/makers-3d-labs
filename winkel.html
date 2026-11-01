@@ -286,13 +286,71 @@
 }
 </style>
 
+<style id="bedrijfskerst-kaartstijl">
+#bedrijfskerst-product {
+  background:#18382d;
+  border:1px solid #bda263;
+  box-shadow:0 8px 24px #102d2415;
+}
+#bedrijfskerst-product .mk-photo {
+  position:relative;
+  background:#080d0b;
+  border-bottom:1px solid #bda26370;
+}
+#bedrijfskerst-product .mk-photo::after {
+  content:"KERST";
+  position:absolute;
+  top:12px;
+  left:12px;
+  padding:4px 10px;
+  border-radius:20px;
+  background:#963747;
+  color:#fff3d6;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.12em;
+}
+#bedrijfskerst-product .mk-product-info {
+  background:#18382d;
+  gap:8px;
+}
+#bedrijfskerst-product .mk-category {
+  color:#e5c887;
+}
+#bedrijfskerst-product h3 {
+  color:#fff3d6;
+}
+#bedrijfskerst-product .mk-price {
+  color:#e5c887;
+}
+#bedrijfskerst-product .mk-view {
+  display:block;
+  width:100%;
+  padding:11px 13px;
+  border:1px solid #cc7c88;
+  border-radius:9px;
+  background:#963747;
+  color:#fff3d6;
+  text-decoration:none;
+  line-height:1.5;
+}
+#bedrijfskerst-product .mk-view::before {
+  content:"🎄 ";
+}
+#bedrijfskerst-product .mk-view:hover {
+  background:#7e2938;
+}
+</style>
 </head><body class="ms-site-shell"><header class="ms-simple-head"><a href="index.html">MAKERS 3D LABS ← Naar de homepage</a></header>
 <main class="mk-shop-page">
   <span class="mk-category">Makers 3D Labs / Webshop</span>
   <h1>Onze webshop</h1>
   <p>Ontdek onze collectie 3D-geprinte en lasergegraveerde producten.
   Kies een product om uitvoeringen, prijzen en personalisatie te bekijken.</p>
-<div class="mk-grid">
+<div class="mk-grid"><article class="mk-product" id="bedrijfskerst-product">
+<a class="mk-photo" href="kersthangers-bedrijfslogo.html"><img src="kersthangers-bedrijfslogo.webp" alt="Witte kersthangers met JOUW LOGO als voorbeeldopdruk" loading="lazy"></a>
+<div class="mk-product-info"><span class="mk-category">Kerst · Zakelijk</span><h3>Kersthanger met bedrijfslogo</h3><strong class="mk-price">Vanaf € 8,95</strong><a class="mk-view" href="kersthangers-bedrijfslogo.html">Kies model, kleur en grootte →</a></div>
+</article>
     <article class="mk-product" id="kersthanger-product">
       <a class="mk-photo" href="kersthangers.html"><img src="kersthangers-personalisatie.webp" alt="Witte kersthangers met persoonlijke namen en jaartal" loading="lazy"></a>
       <div class="mk-product-info"><span class="mk-category">Kerst · Gepersonaliseerd</span>

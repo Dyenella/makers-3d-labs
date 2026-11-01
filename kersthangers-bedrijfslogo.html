@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kersthangers met bedrijfslogo | Makers 3D Labs</title>
+<meta name="description" content="Stel jouw persoonlijke kersthanger samen. Kies ronde kerstbal, ster of kerstboom, formaat, gewenste kleur en eigen naam of tekst.">
+<link rel="stylesheet" href="assets/shop.css">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#102d24;color:#fff3d6;font:16px/1.6 system-ui,sans-serif}
+a{color:inherit}header{padding:18px 24px;background:#1d2936}header a{display:inline-block}
+header img{width:240px;max-width:100%;display:block}main{max-width:1200px;margin:auto;padding:35px 24px 70px}
+.crumb{color:#f1d18c;font-size:14px}.layout{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:25px;align-items:start}
+figure{margin:0}.photo{display:block;width:100%;border-radius:20px;background:#000}figcaption,.hint{font-size:13px;color:#cfddd4}
+h1{font-size:clamp(30px,4vw,48px);line-height:1.15;margin:8px 0 20px}
+.tag{color:#f1d18c;font-weight:750;font-size:12px;letter-spacing:.12em}
+form{background:#1c3b2e;border:1px solid #c8a95880;border-radius:20px;padding:25px}
+fieldset{border:0;padding:0;margin:0 0 23px}legend,label.field{font-weight:750;margin-bottom:9px}
+.models,.sizes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{position:relative;display:block;cursor:pointer}.choice input{position:absolute;top:10px;left:10px;accent-color:#a92337}
+.choice span{display:block;border:1px solid #9baf9e;border-radius:12px;padding:12px 12px 12px 34px;height:100%;background:#153226}
+.choice input:checked+span{border:2px solid #f1d18c;padding:11px 11px 11px 33px;background:#31523e}
+.choice input:focus-visible+span{outline:3px solid #fff;outline-offset:3px}
+.thumb{height:95px;background-image:url('kersthangers-bedrijfslogo.webp');background-size:200% 200%;border-radius:8px;margin:0 0 9px -21px;background-color:black}
+.snow{background-position:left top}.star{background-position:right top}.tree{background-position:left bottom}.ball{background-position:right bottom}
+.sizes{grid-template-columns:repeat(3,minmax(0,1fr))}.sizes .choice span{font-size:14px}
+label.field{display:block}input[type=text],input[type=number]{display:block;width:100%;padding:12px;border:1px solid #b8cbbb;border-radius:9px;font:inherit;background:#fff;color:#142b23;margin-top:6px}
+.hint{margin:6px 0 19px}.price{border-top:1px solid #ffffff30;padding-top:18px;margin-top:20px}
+.price strong{font-size:30px;color:#f1d18c}.summary{white-space:pre-line;color:#e5ede6;font-size:14px}
+button{width:100%;padding:15px;background:#a92337;color:#fff8e9;border:1px solid #d77b86;border-radius:10px;font:750 16px system-ui;cursor:pointer}button:hover{background:#c12d43}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #f1d18c;outline-offset:3px}
+@media(max-width:800px){.layout{grid-template-columns:1fr;gap:25px}.photo{max-width:550px;margin:auto}}
+@media(max-width:420px){main{padding:25px 15px}form{padding:18px}.sizes{grid-template-columns:1fr}}
+</style>
+<style id="kh-professioneel">
+body {
+  background:#f7f5ef;
+  color:#20352c;
+}
+.kh-header {
+  padding:0 24px;
+  background:#1d2936;
+}
+.kh-header .head-inner {
+  display:flex;
+  align-items:center;
+  gap:24px;
+  max-width:1200px;
+  min-height:88px;
+  margin:auto;
+}
+.kh-header img {
+  width:220px;
+  height:auto;
+}
+.kh-nav {
+  display:flex;
+  gap:24px;
+  margin-left:auto;
+}
+.kh-nav a {
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:650;
+}
+.kh-header .ms-utilities {
+  margin-left:0;
+}
+main {
+  max-width:1200px;
+  padding-top:25px;
+}
+.crumb {
+  color:#52685c;
+  font-size:13px;
+  text-decoration:none;
+}
+.layout {
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:48px;
+  margin-top:24px;
+}
+.layout > * {
+  min-width:0;
+}
+figure {
+  position:sticky;
+  top:24px;
+}
+.photo {
+  width:100%;
+  height:auto;
+  aspect-ratio:1;
+  object-fit:contain;
+  border-radius:16px;
+}
+figcaption {
+  color:#66756a;
+  font-size:12px;
+  line-height:1.6;
+  padding-top:12px;
+}
+.tag {
+  color:#8a6427;
+  font-size:11px;
+}
+h1 {
+  font-size:clamp(29px,3vw,40px);
+  letter-spacing:-.035em;
+  margin:10px 0 14px;
+}
+.layout section > p {
+  font-size:15px;
+  color:#58685e;
+  margin-bottom:24px;
+}
+form {
+  background:#fff;
+  border:1px solid #dce2d9;
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 8px 30px #20352c06;
+}
+fieldset {
+  margin-bottom:20px;
+}
+legend, label.field {
+  font-size:14px;
+}
+.models {
+  gap:12px;
+}
+.choice span {
+  background:#fff;
+  color:#20352c;
+  border:1px solid #d2dbd1;
+  font-size:14px;
+}
+.choice input:checked + span {
+  background:#eef4ed;
+  border-color:#315c43;
+}
+.choice input {
+  accent-color:#315c43;
+}
+.thumb {
+  height:auto;
+  aspect-ratio:1;
+  background-size:200% 200%;
+}
+.hint {
+  color:#68766c;
+  font-size:12px;
+}
+.summary {
+  color:#3e5345;
+}
+.price {
+  border-color:#e2e6de;
+}
+.price strong {
+  color:#203f2e;
+  font-size:28px;
+}
+#kh-unit {
+  color:#68766c;
+  font-size:13px;
+}
+button {
+  background:#254e36;
+  border-color:#254e36;
+}
+button:hover {
+  background:#183b27;
+}
+@media(max-width:800px) {
+  .layout {
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+  figure {
+    position:static;
+    max-width:500px;
+    margin:auto;
+  }
+  .kh-header .head-inner {
+    flex-wrap:wrap;
+    gap:12px;
+    padding:12px 0;
+  }
+  .kh-header img {
+    width:180px;
+  }
+  .kh-nav {
+    gap:16px;
+  }
+  .kh-header .ms-utilities {
+    margin-left:auto;
+  }
+}
+@media(max-width:420px) {
+  .kh-header {
+    padding:0 16px;
+  }
+  .kh-nav {
+    font-size:13px;
+  }
+  form {
+    padding:18px;
+  }
+}
+</style>
+
+
+<style id="kh-kerstsfeer">
+.kh-season-bar {
+  display:flex;
+  align-items:center;
+  gap:26px;
+  margin-bottom:24px;
+  padding:20px 28px;
+  background:#18382d;
+  color:#fff3d6;
+  border:1px solid #bda263;
+  border-radius:14px;
+}
+.kh-season-label {
+  font-size:11px;
+  font-weight:750;
+  letter-spacing:.16em;
+  color:#e5c887;
+}
+.kh-season-bar p {
+  margin:4px 0 0;
+  font-size:16px;
+}
+.kh-season-balls {
+  display:flex;
+  gap:13px;
+  align-items:flex-start;
+  height:65px;
+  flex-shrink:0;
+}
+.kh-bauble {
+  position:relative;
+  display:block;
+  width:27px;
+  height:30px;
+  margin-top:25px;
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 30% 25%,#ffffffb0,transparent 35%),
+    var(--ball);
+  box-shadow:inset -3px -4px 6px #0003;
+  transform-origin:50% -20px;
+  animation:kh-sway 4s ease-in-out infinite alternate;
+}
+.kh-bauble::before {
+  content:"";
+  position:absolute;
+  width:1px;
+  height:23px;
+  background:#d7bb79;
+  left:50%;
+  top:-23px;
+}
+.kh-bauble::after {
+  content:"";
+  position:absolute;
+  width:9px;
+  height:5px;
+  background:#d7bb79;
+  left:9px;
+  top:-3px;
+  border-radius:2px;
+}
+.kh-red { --ball:#b73549; }
+.kh-gold { --ball:#d6b35f; animation-delay:-1s; }
+.kh-silver { --ball:#e0e5ed; animation-delay:-2s; }
+.tag { color:#963747; }
+h1 { color:#203f32; }
+form {
+  border-top:3px solid #bda263;
+}
+.choice input:checked + span {
+  border-color:#315c43;
+  background:#eef4ed;
+}
+#kh-form button {
+  background:#963747;
+  border-color:#963747;
+}
+#kh-form button:hover {
+  background:#7e2938;
+}
+@keyframes kh-sway {
+  from { transform:rotate(-8deg); }
+  to { transform:rotate(8deg); }
+}
+@media(max-width:540px) {
+  .kh-season-bar {
+    gap:18px;
+    padding:16px;
+  }
+  .kh-season-balls { gap:9px; }
+  .kh-bauble { width:22px; height:25px; }
+  .kh-bauble::after { left:7px; width:8px; }
+  .kh-season-bar p { font-size:14px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .kh-bauble { animation:none; }
+}
+</style>
+
+
+<style id="kh-compact-donker">
+body {
+  background:#1d2936;
+  color:#fff3d6;
+}
+.crumb, .tag {
+  color:#e5c887;
+}
+h1 {
+  color:#fff3d6;
+}
+.layout section > p,
+figcaption,
+#kh-form .hint,
+#kh-form .summary,
+#kh-unit {
+  color:#cbd8d2;
+}
+#kh-form {
+  padding:20px;
+  background:#18382d;
+  border:1px solid #bda26380;
+  box-shadow:none;
+}
+#kh-form .models {
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:8px;
+}
+#kh-form .models .choice > span {
+  padding:7px;
+  border:1px solid #718779;
+  background:#213e32;
+  color:#fff3d6;
+  border-radius:10px;
+  font-size:12px;
+  text-align:center;
+}
+#kh-form .models .choice input:checked + span {
+  padding:6px;
+  border:2px solid #e5c887;
+  background:#35523f;
+}
+#kh-form .models .choice input {
+  top:11px;
+  left:11px;
+  margin:0;
+  accent-color:#a33d4d;
+}
+#kh-form .thumb {
+  width:100%;
+  height:auto;
+  aspect-ratio:1;
+  margin:0 0 7px;
+  border-radius:7px;
+  background-size:200% 200%;
+}
+#kh-form .sizes .choice > span {
+  background:#213e32;
+  color:#fff3d6;
+  border-color:#718779;
+}
+#kh-form .sizes .choice input:checked + span {
+  background:#35523f;
+  border-color:#e5c887;
+}
+#kh-form input[type=text],
+#kh-form input[type=number] {
+  background:#203e33;
+  color:#fff3d6;
+  border-color:#809483;
+}
+#kh-form input::placeholder {
+  color:#b8c8be;
+  opacity:1;
+}
+#kh-form .price {
+  border-color:#ffffff25;
+}
+#kh-total {
+  color:#e5c887;
+}
+@media(max-width:540px) {
+  #kh-form .models {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  #kh-form .models .choice > span {
+    display:grid;
+    grid-template-columns:52px minmax(0,1fr);
+    align-items:center;
+    gap:9px;
+    text-align:left;
+  }
+  #kh-form .thumb {
+    width:52px;
+    margin:0;
+  }
+  #kh-form .models .choice input {
+    top:9px;
+    left:9px;
+    width:12px;
+    height:12px;
+  }
+}
+@media(max-width:360px) {
+  #kh-form .models {
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
+
+<style id="kh-scheiding">
+body {
+  background:#303d4c;
+}
+.kh-header {
+  background:#1d2936;
+  border-bottom:1px solid #bda263;
+  box-shadow:0 5px 20px #00000018;
+}
+</style>
+
+
+<style id="kh-verspreide-kerstballen">
+body {
+  background-color:#303d4c;
+  background-image:url("data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%22%20height%3D%22650%22%0A%20%20%20%20%20viewBox%3D%220%200%20100%20650%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22red%22%20cx%3D%2230%25%22%20cy%3D%2225%25%22%20r%3D%2275%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%23edb0b7%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22.3%22%20stop-color%3D%22%23b94254%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23722b3b%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22gold%22%20cx%3D%2230%25%22%20cy%3D%2225%25%22%20r%3D%2275%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%23fff0bb%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22.4%22%20stop-color%3D%22%23d4b76c%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%238e7135%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22silver%22%20cx%3D%2230%25%22%20cy%3D%2225%25%22%20r%3D%2275%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%23ffffff%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22.4%22%20stop-color%3D%22%23dbe1e9%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%238d9aa9%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cg%20opacity%3D%22.72%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M33%2015v45%20M68%20235v52%20M34%20455v42%22%0A%20%20%20%20%20%20%20%20%20%20stroke%3D%22%23d7bb79%22%20stroke-width%3D%221%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2228%22%20y%3D%2259%22%20width%3D%2210%22%20height%3D%227%22%20rx%3D%222%22%20fill%3D%22%23d7bb79%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2233%22%20cy%3D%2284%22%20r%3D%2221%22%20fill%3D%22url%28%23red%29%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2263%22%20y%3D%22286%22%20width%3D%2210%22%20height%3D%227%22%20rx%3D%222%22%20fill%3D%22%23d7bb79%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2268%22%20cy%3D%22310%22%20r%3D%2220%22%20fill%3D%22url%28%23gold%29%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2229%22%20y%3D%22496%22%20width%3D%2210%22%20height%3D%227%22%20rx%3D%222%22%20fill%3D%22%23d7bb79%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2234%22%20cy%3D%22522%22%20r%3D%2222%22%20fill%3D%22url%28%23silver%29%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A"),url("data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%22%20height%3D%22650%22%0A%20%20%20%20%20viewBox%3D%220%200%20100%20650%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22red%22%20cx%3D%2230%25%22%20cy%3D%2225%25%22%20r%3D%2275%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%23edb0b7%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22.3%22%20stop-color%3D%22%23b94254%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23722b3b%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22gold%22%20cx%3D%2230%25%22%20cy%3D%2225%25%22%20r%3D%2275%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%23fff0bb%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22.4%22%20stop-color%3D%22%23d4b76c%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%238e7135%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%20%20%3CradialGradient%20id%3D%22silver%22%20cx%3D%2230%25%22%20cy%3D%2225%25%22%20r%3D%2275%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%23ffffff%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22.4%22%20stop-color%3D%22%23dbe1e9%22%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%238d9aa9%22%2F%3E%0A%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cg%20opacity%3D%22.72%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M33%2015v45%20M68%20235v52%20M34%20455v42%22%0A%20%20%20%20%20%20%20%20%20%20stroke%3D%22%23d7bb79%22%20stroke-width%3D%221%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2228%22%20y%3D%2259%22%20width%3D%2210%22%20height%3D%227%22%20rx%3D%222%22%20fill%3D%22%23d7bb79%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2233%22%20cy%3D%2284%22%20r%3D%2221%22%20fill%3D%22url%28%23red%29%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2263%22%20y%3D%22286%22%20width%3D%2210%22%20height%3D%227%22%20rx%3D%222%22%20fill%3D%22%23d7bb79%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2268%22%20cy%3D%22310%22%20r%3D%2220%22%20fill%3D%22url%28%23gold%29%22%2F%3E%0A%20%20%20%20%3Crect%20x%3D%2229%22%20y%3D%22496%22%20width%3D%2210%22%20height%3D%227%22%20rx%3D%222%22%20fill%3D%22%23d7bb79%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2234%22%20cy%3D%22522%22%20r%3D%2222%22%20fill%3D%22url%28%23silver%29%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+  background-repeat:repeat-y,repeat-y;
+  background-position:left 110px,right 330px;
+  background-size:clamp(24px,6vw,90px) 650px;
+}
+.kh-season-bar {
+  display:none;
+}
+.kh-header {
+  background:#1d2936;
+}
+@media(max-width:700px) {
+  body {
+    background-size:24px 650px;
+  }
+}
+</style>
+
+<style id="bedrijfskerst-modellen">
+#kh-form .models{grid-template-columns:repeat(3,minmax(0,1fr))}
+#kh-form .models .choice > span{display:flex;align-items:center;justify-content:center;min-height:72px;padding:25px 8px 10px;font-size:13px;text-align:center}
+#kh-form .models .choice input:checked + span{padding:24px 7px 9px}
+@media(max-width:420px){#kh-form .models{grid-template-columns:1fr}#kh-form .models .choice > span{min-height:48px;justify-content:flex-start;padding:12px 12px 12px 35px}#kh-form .models .choice input:checked + span{padding:11px 11px 11px 34px}}
+</style>
+</head><body>
+
+<header class="kh-header">
+  <div class="head-inner">
+    <a href="index.html" aria-label="Makers 3D Labs — Home">
+      <img src="makers3dlabs-logo.webp" alt="Makers 3D Labs">
+    </a>
+    <nav class="kh-nav" aria-label="Hoofdnavigatie">
+      <a href="index.html">Home</a>
+      <a href="winkel.html">Webshop</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<a class="crumb" href="winkel.html">← Terug naar de webshop</a>
+<div class="layout"><figure><img class="photo" src="kersthangers-bedrijfslogo.webp" alt="Voorbeeld: witte ronde kerstbal, ster en kerstboom met JOUW LOGO als voorbeeldopdruk" width="1254" height="1254">
+<figcaption>Voorbeeldontwerpen met een logo als opdruk. Upload jouw bedrijfslogo bij de aanvraag; kleur en definitieve uitvoering bevestigen we vooraf.</figcaption></figure>
+<section aria-labelledby="title"><span class="tag">KERST · PERSOONLIJK GEMAAKT</span><h1 id="title">Jouw bedrijfslogo in de kerstboom.</h1>
+<p>Kies een model, grootte en gewenste kleur. Personalisatie met jouw bedrijfslogo is inbegrepen. Upload je logo in de volgende stap; de uitvoering wordt vooraf bevestigd.</p>
+<form id="kh-form">
+<fieldset><legend>1. Kies jouw hanger</legend><div class="models">
+<label class="choice"><input type="radio" name="model" value="Ronde kerstbal" checked required><span>Ronde kerstbal</span></label>
+<label class="choice"><input type="radio" name="model" value="Ster"><span>Ster</span></label>
+<label class="choice"><input type="radio" name="model" value="Kerstboom"><span>Kerstboom</span></label>
+</div></fieldset>
+<fieldset><legend>2. Kies de grootte</legend><div class="sizes">
+<label class="choice"><input type="radio" name="size" value="8" checked required><span>8 cm<br>€ 8,95</span></label>
+<label class="choice"><input type="radio" name="size" value="10"><span>10 cm<br>€ 10,95</span></label>
+<label class="choice"><input type="radio" name="size" value="12"><span>12 cm<br>€ 13,95</span></label>
+</div><p class="hint">Hoogte van de hanger, zonder ophangkoord. Breedte verschilt per model.</p></fieldset>
+<label class="field" for="kh-color">3. Gewenste kleur<input id="kh-color" name="color" type="text" list="kh-colors" maxlength="60" required placeholder="Bijvoorbeeld wit, rood of champagnegoud"></label>
+<datalist id="kh-colors"><option value="Wit"><option value="Zwart"><option value="Rood"><option value="Groen"><option value="Goud"><option value="Zilver"></datalist>
+<p class="hint">Alle kleuren zijn aan te vragen: kies een suggestie of typ jouw eigen kleur. Beschikbaarheid en eventuele meerprijs van speciale kleuren bevestigen we vooraf.</p>
+<label class="field" for="kh-text">4. Bedrijfsnaam bij jouw logo<input id="kh-text" name="text" type="text" required maxlength="40" placeholder="Vul jouw bedrijfsnaam in"></label>
+<p class="hint">Je uploadt het logo in de volgende stap als PNG, JPG of WebP. De bedrijfsnaam helpt ons de aanvraag te herkennen.</p>
+<label class="field" for="kh-qty">5. Aantal met dit logo en deze uitvoering<input id="kh-qty" name="qty" type="number" min="1" max="100" step="1" value="1" required></label>
+<div class="price" aria-live="polite" aria-atomic="true"><strong id="kh-total">€ 8,95</strong><div id="kh-unit">€ 8,95 per stuk</div><p class="hint">Exclusief verzending. Dit is een aanvraag; prijs, kleur en levertijd worden vóór de bestelling bevestigd.</p><p class="summary" id="kh-summary"></p></div>
+<p id="kh-error" role="alert"></p><button type="submit"><span aria-hidden="true">🎄</span> Vraag deze uitvoering aan →</button>
+<p class="hint">Je keuzes gaan mee naar het aanvraagformulier. Daar vul je jouw contactgegevens in en verstuur je de aanvraag. Je betaalt hier nog niet.</p>
+</form></section></div></main>
+<script>
+const f=document.getElementById('kh-form');
+const prices={'8':895,'10':1095,'12':1395};
+const euro=c=>new Intl.NumberFormat('nl-NL',{style:'currency',currency:'EUR'}).format(c/100);
+function selection(){
+ const d=new FormData(f),size=d.get('size'),qty=Number(d.get('qty'));
+ return {model:d.get('model'),size,color:String(d.get('color')||'').trim(),text:String(d.get('text')||'').trim(),qty,unit:prices[size]};
+}
+function update(){
+ const s=selection(),q=Number.isInteger(s.qty)&&s.qty>=1&&s.qty<=100?s.qty:0;
+ document.getElementById('kh-total').textContent=q?euro(s.unit*q):'Kies een geldig aantal';
+ document.getElementById('kh-unit').textContent=euro(s.unit)+' per stuk';
+ document.getElementById('kh-summary').textContent=s.model+' · '+s.size+' cm'+(s.color?' · '+s.color:'')+(s.text?'\nBedrijf: '+s.text:'');
+}
+f.addEventListener('input',update);f.addEventListener('change',update);update();
+f.addEventListener('submit',e=>{
+ e.preventDefault();const s=selection(),err=document.getElementById('kh-error');
+ if(!s.color||!s.text){err.textContent='Vul een gewenste kleur en jouw bedrijfsnaam in.';return;}
+ if(!Object.hasOwn(prices,s.size)||!Number.isInteger(s.qty)||s.qty<1||s.qty>100){err.textContent='Controleer de grootte en het aantal.';return;}
+ const description=['Kersthanger met bedrijfslogo','Model: '+s.model,'Hoogte: '+s.size+' cm','Gewenste kleur: '+s.color,'Bedrijfsnaam: '+s.text,'Aantal met deze uitvoering: '+s.qty,'Prijs per stuk: '+euro(s.unit),'Producttotaal exclusief verzending: '+euro(s.unit*s.qty),'Kleur, uitvoering en levertijd graag bevestigen.'].join('\n');
+ try{sessionStorage.setItem('makers-bedrijfskerst-aanvraag',JSON.stringify({description,qty:s.qty}));}
+ catch(error){err.textContent='Je browser kan de keuzes niet bewaren. Sta sessieopslag toe en probeer opnieuw.';return;}
+ location.href='contact.html?product=Kersthanger%20met%20bedrijfslogo#quoteForm';
+});
+</script><script src="assets/shop-data.js"></script><script src="assets/shop.js"></script>
+</body></html>

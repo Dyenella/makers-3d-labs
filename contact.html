@@ -44,4 +44,23 @@ if(new URLSearchParams(location.search).get('product')==='Kersthanger met naam')
 }
 </script>
 
+<script id="bedrijfskerst-aanvraag">
+if(new URLSearchParams(location.search).get('product')==='Kersthanger met bedrijfslogo'){
+ const pick=document.getElementById('product'),details=document.getElementById('omschrijving'),count=document.getElementById('aantal'),upload=document.getElementById('fotos');
+ if(pick&&details&&count&&upload){
+  if(!Array.from(pick.options).some(o=>o.value==='Kersthanger met bedrijfslogo')){
+   const option=document.createElement('option');option.value='Kersthanger met bedrijfslogo';option.textContent=option.value;pick.append(option);
+  }
+  pick.value='Kersthanger met bedrijfslogo';upload.required=true;
+  const label=document.querySelector('label[for="fotos"]');
+  if(label)label.textContent='Upload jouw bedrijfslogo (verplicht: PNG, JPG of WebP)';
+  const hint=document.getElementById('fotoHint');
+  if(hint)hint.textContent='Voeg je logo toe als PNG, JPG of WebP. Maximaal 5 bestanden, samen 9 MB. Een scherpe PNG met transparante achtergrond heeft de voorkeur.';
+  try{
+   const data=JSON.parse(sessionStorage.getItem('makers-bedrijfskerst-aanvraag')||'null');
+   if(data&&typeof data.description==='string'&&data.description.length<=1500&&Number.isInteger(data.qty)&&data.qty>=1&&data.qty<=100){details.value=data.description;count.value=String(data.qty);}
+  }catch(error){details.placeholder='Beschrijf model, grootte, kleur, bedrijfsnaam en aantal.';}
+ }
+}
+</script>
 </body></html>
