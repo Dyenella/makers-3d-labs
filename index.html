@@ -67,6 +67,27 @@
   .brand-logo { width: 210px; }
 }
 
+
+/* Nieuw logo in de hero */
+.hero-art .sculpture {
+  width: min(100%, 430px);
+  height: auto;
+  aspect-ratio: 3.2 / 1;
+  transform: none;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+.hero-art .sculpture::before {
+  display: none;
+}
+.hero-art .sculpture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 </style>
 <link rel="stylesheet" href="assets/shop.css">
 <link rel="stylesheet" href="assets/makers-shop-upgrade.css">
@@ -342,7 +363,7 @@
   </header>
   <main>
     <section class="hero">
-      <div class="shell hero-main"><div><div class="eyebrow">Ontwerp • productie • personalisatie</div><h1>Van eerste idee<br>tot <span>iets unieks.</span></h1><p class="hero-copy">Voor ondernemers die willen opvallen. Voor makers met een bijzonder plan. Van premium 3D-producten tot verfijnd maatwerk — ontworpen om indruk te maken.</p><div class="buttons"><a class="button button-primary" href="winkel.html">Bekijk de webshop <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="contact.html">Maatwerk aanvragen <span aria-hidden="true">→</span></a></div></div><div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="sculpture"><span>M</span></div><div class="art-caption">Design · Manufacture · Create</div></div></div>
+      <div class="shell hero-main"><div><div class="eyebrow">Ontwerp • productie • personalisatie</div><h1>Van eerste idee<br>tot <span>iets unieks.</span></h1><p class="hero-copy">Voor ondernemers die willen opvallen. Voor makers met een bijzonder plan. Van premium 3D-producten tot verfijnd maatwerk — ontworpen om indruk te maken.</p><div class="buttons"><a class="button button-primary" href="winkel.html">Bekijk de webshop <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="contact.html">Maatwerk aanvragen <span aria-hidden="true">→</span></a></div></div><div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="sculpture"><img src="makers3dlabs-logo.webp" alt="Makers 3D Labs"></div><div class="art-caption">Design · Manufacture · Create</div></div></div>
       <div class="hero-bottom"><div class="shell hero-meta"><span>3D-printen</span><span>Resin & detailwerk</span><span>Lasergraveren</span><span>Creatief maatwerk</span></div></div>
     </section>
     
