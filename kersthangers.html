@@ -210,6 +210,107 @@ button:hover {
 }
 </style>
 
+
+<style id="kh-kerstsfeer">
+.kh-season-bar {
+  display:flex;
+  align-items:center;
+  gap:26px;
+  margin-bottom:24px;
+  padding:20px 28px;
+  background:#18382d;
+  color:#fff3d6;
+  border:1px solid #bda263;
+  border-radius:14px;
+}
+.kh-season-label {
+  font-size:11px;
+  font-weight:750;
+  letter-spacing:.16em;
+  color:#e5c887;
+}
+.kh-season-bar p {
+  margin:4px 0 0;
+  font-size:16px;
+}
+.kh-season-balls {
+  display:flex;
+  gap:13px;
+  align-items:flex-start;
+  height:65px;
+  flex-shrink:0;
+}
+.kh-bauble {
+  position:relative;
+  display:block;
+  width:27px;
+  height:30px;
+  margin-top:25px;
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 30% 25%,#ffffffb0,transparent 35%),
+    var(--ball);
+  box-shadow:inset -3px -4px 6px #0003;
+  transform-origin:50% -20px;
+  animation:kh-sway 4s ease-in-out infinite alternate;
+}
+.kh-bauble::before {
+  content:"";
+  position:absolute;
+  width:1px;
+  height:23px;
+  background:#d7bb79;
+  left:50%;
+  top:-23px;
+}
+.kh-bauble::after {
+  content:"";
+  position:absolute;
+  width:9px;
+  height:5px;
+  background:#d7bb79;
+  left:9px;
+  top:-3px;
+  border-radius:2px;
+}
+.kh-red { --ball:#b73549; }
+.kh-gold { --ball:#d6b35f; animation-delay:-1s; }
+.kh-silver { --ball:#e0e5ed; animation-delay:-2s; }
+.tag { color:#963747; }
+h1 { color:#203f32; }
+form {
+  border-top:3px solid #bda263;
+}
+.choice input:checked + span {
+  border-color:#315c43;
+  background:#eef4ed;
+}
+#kh-form button {
+  background:#963747;
+  border-color:#963747;
+}
+#kh-form button:hover {
+  background:#7e2938;
+}
+@keyframes kh-sway {
+  from { transform:rotate(-8deg); }
+  to { transform:rotate(8deg); }
+}
+@media(max-width:540px) {
+  .kh-season-bar {
+    gap:18px;
+    padding:16px;
+  }
+  .kh-season-balls { gap:9px; }
+  .kh-bauble { width:22px; height:25px; }
+  .kh-bauble::after { left:7px; width:8px; }
+  .kh-season-bar p { font-size:14px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .kh-bauble { animation:none; }
+}
+</style>
+
 </head><body>
 
 <header class="kh-header">
@@ -224,7 +325,19 @@ button:hover {
   </div>
 </header>
 
-<main><a class="crumb" href="winkel.html">← Terug naar de webshop</a>
+<main>
+<div class="kh-season-bar">
+  <div class="kh-season-balls" aria-hidden="true">
+    <span class="kh-bauble kh-red"></span>
+    <span class="kh-bauble kh-gold"></span>
+    <span class="kh-bauble kh-silver"></span>
+  </div>
+  <div>
+    <span class="kh-season-label">DE KERSTCOLLECTIE</span>
+    <p>Een persoonlijk cadeau voor de feestdagen.</p>
+  </div>
+</div>
+<a class="crumb" href="winkel.html">← Terug naar de webshop</a>
 <div class="layout"><figure><img class="photo" src="kersthangers-personalisatie.webp" alt="Voorbeeldontwerpen: witte sneeuwvlok met Emma, ster met Noah, kerstboom met Familie de Vries en kerstbal met 2026" width="1254" height="1254">
 <figcaption>Voorbeeld van personalisatie. De afbeelding toont witte ontwerpen; jouw gekozen kleur wordt bij de aanvraag besproken. De definitieve uitvoering wordt bevestigd.</figcaption></figure>
 <section aria-labelledby="title"><span class="tag">KERST · PERSOONLIJK GEMAAKT</span><h1 id="title">Jouw naam in de kerstboom.</h1>
@@ -243,7 +356,7 @@ button:hover {
 </div><p class="hint">Hoogte van de hanger, zonder ophangkoord. Breedte verschilt per model.</p></fieldset>
 <label class="field" for="kh-color">3. Gewenste kleur<input id="kh-color" name="color" type="text" list="kh-colors" maxlength="60" required placeholder="Bijvoorbeeld wit, rood of champagnegoud"></label>
 <datalist id="kh-colors"><option value="Wit"><option value="Zwart"><option value="Rood"><option value="Groen"><option value="Goud"><option value="Zilver"></datalist>
-<p class="hint">Iedere kleur kan aangevraagd worden. Beschikbaarheid en eventuele meerprijs van speciale kleuren bevestigen we vooraf.</p>
+<p class="hint">Alle kleuren zijn aan te vragen: kies een suggestie of typ jouw eigen kleur. Beschikbaarheid en eventuele meerprijs van speciale kleuren bevestigen we vooraf.</p>
 <label class="field" for="kh-text">4. Naam of tekst op de hanger<input id="kh-text" name="text" type="text" required maxlength="40" placeholder="Bijvoorbeeld Emma, Familie de Vries of 2026"></label>
 <p class="hint">Maximaal 40 tekens. Controleer de spelling. De opmaak stemmen we af op het gekozen model.</p>
 <label class="field" for="kh-qty">5. Aantal met deze tekst en uitvoering<input id="kh-qty" name="qty" type="number" min="1" max="100" step="1" value="1" required></label>
