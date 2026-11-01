@@ -311,6 +311,117 @@ form {
 }
 </style>
 
+
+<style id="kh-compact-donker">
+body {
+  background:#1d2936;
+  color:#fff3d6;
+}
+.crumb, .tag {
+  color:#e5c887;
+}
+h1 {
+  color:#fff3d6;
+}
+.layout section > p,
+figcaption,
+#kh-form .hint,
+#kh-form .summary,
+#kh-unit {
+  color:#cbd8d2;
+}
+#kh-form {
+  padding:20px;
+  background:#18382d;
+  border:1px solid #bda26380;
+  box-shadow:none;
+}
+#kh-form .models {
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:8px;
+}
+#kh-form .models .choice > span {
+  padding:7px;
+  border:1px solid #718779;
+  background:#213e32;
+  color:#fff3d6;
+  border-radius:10px;
+  font-size:12px;
+  text-align:center;
+}
+#kh-form .models .choice input:checked + span {
+  padding:6px;
+  border:2px solid #e5c887;
+  background:#35523f;
+}
+#kh-form .models .choice input {
+  top:11px;
+  left:11px;
+  margin:0;
+  accent-color:#a33d4d;
+}
+#kh-form .thumb {
+  width:100%;
+  height:auto;
+  aspect-ratio:1;
+  margin:0 0 7px;
+  border-radius:7px;
+  background-size:200% 200%;
+}
+#kh-form .sizes .choice > span {
+  background:#213e32;
+  color:#fff3d6;
+  border-color:#718779;
+}
+#kh-form .sizes .choice input:checked + span {
+  background:#35523f;
+  border-color:#e5c887;
+}
+#kh-form input[type=text],
+#kh-form input[type=number] {
+  background:#203e33;
+  color:#fff3d6;
+  border-color:#809483;
+}
+#kh-form input::placeholder {
+  color:#b8c8be;
+  opacity:1;
+}
+#kh-form .price {
+  border-color:#ffffff25;
+}
+#kh-total {
+  color:#e5c887;
+}
+@media(max-width:540px) {
+  #kh-form .models {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  #kh-form .models .choice > span {
+    display:grid;
+    grid-template-columns:52px minmax(0,1fr);
+    align-items:center;
+    gap:9px;
+    text-align:left;
+  }
+  #kh-form .thumb {
+    width:52px;
+    margin:0;
+  }
+  #kh-form .models .choice input {
+    top:9px;
+    left:9px;
+    width:12px;
+    height:12px;
+  }
+}
+@media(max-width:360px) {
+  #kh-form .models {
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
 </head><body>
 
 <header class="kh-header">
