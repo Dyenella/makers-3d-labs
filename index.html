@@ -900,6 +900,23 @@ body {
   background:#7e2938;
 }
 </style>
+
+<style id="kerst-home-afbeeldingen">
+#kerst .kerst-voorbeeld {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:1;
+  object-fit:contain;
+  background:#000;
+  border-radius:12px;
+  margin-bottom:20px;
+}
+#kerst .kerst-card:has(.kerst-voorbeeld)::before {
+  display:none;
+}
+</style>
+
 </head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
@@ -978,12 +995,14 @@ body {
     </p>
     <div class="kerst-grid">
       <article class="kerst-card">
-        <h3>Kersthangers met naam</h3>
+        <img class="kerst-voorbeeld" src="kersthangers-personalisatie.webp" alt="Witte kersthangers met naam" width="1254" height="1254" loading="lazy">
+<h3>Kersthangers met naam</h3>
         <p>Een naam, jaartal of korte boodschap voor een persoonlijke kerstboom.</p>
         <a href="kersthangers.html">Vraag kersthangers aan →</a>
       </article>
       <article class="kerst-card">
-        <h3>Kerst met jouw bedrijfslogo</h3>
+        <img class="kerst-voorbeeld" src="kersthangers-bedrijfslogo.webp" alt="Kersthangers met bedrijfslogo als voorbeeld" width="1254" height="1254" loading="lazy">
+<h3>Kerst met jouw bedrijfslogo</h3>
         <p>Decoratie voor je bedrijf of een persoonlijk extraatje bij het kerstpakket.</p>
         <a href="kersthangers-bedrijfslogo.html">Vraag zakelijke kerstdecoratie aan →</a>
       </article>
