@@ -525,6 +525,49 @@ body {
 }
 </style>
 
+
+<style id="makers-kerst">
+.kerst-banner {
+  display:flex; align-items:center; justify-content:center;
+  gap:16px; padding:17px 24px;
+  background:#00afb8; color:#102832;
+  text-align:center; font-weight:700;
+}
+.kerst-banner strong { letter-spacing:.12em; }
+.kerst-banner:hover { background:#79d8dc; }
+.kerst-section {
+  padding:75px 0; background:#182431; color:#f5f7fa;
+}
+.kerst-section h2 {
+  font:800 clamp(30px,4vw,48px)/1.15 Manrope,sans-serif;
+  margin:12px 0 18px;
+}
+.kerst-intro { max-width:660px; color:#c4d1dc; }
+.kerst-grid {
+  display:grid; grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:18px; margin-top:30px;
+}
+.kerst-card {
+  display:flex; flex-direction:column;
+  padding:25px; background:#243446;
+  border:1px solid #ffffff20; border-radius:18px;
+}
+.kerst-card h3 { margin:0 0 12px; font-size:20px; }
+.kerst-card p { color:#c4d1dc; font-size:14px; }
+.kerst-card a {
+  margin-top:auto; padding-top:15px;
+  color:#79d8dc; font-weight:800;
+}
+.kerst-label { color:#79d8dc; font-size:13px; font-weight:800; }
+@media(max-width:1000px) {
+  .kerst-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:540px) {
+  .kerst-grid { grid-template-columns:1fr; }
+  .kerst-banner { gap:10px; font-size:13px; flex-wrap:wrap; }
+}
+</style>
+
 </head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
@@ -565,11 +608,56 @@ body {
 </nav>
   </header>
   <main>
+
+<a class="kerst-banner" href="#kerst">
+  <strong>KERST <span aria-hidden="true">🎄</span></strong>
+  <span>Maak de feestdagen persoonlijk</span>
+  <span>Ontdek &amp; vraag aan →</span>
+</a>
+
     <section class="hero">
       <div class="shell hero-main"><div><div class="eyebrow">Ontwerp • productie • personalisatie</div><h1>Van eerste idee<br>tot <span>iets unieks.</span></h1><p class="hero-copy">Voor ondernemers die willen opvallen. Voor makers met een bijzonder plan. Van premium 3D-producten tot verfijnd maatwerk — ontworpen om indruk te maken.</p><div class="buttons"><a class="button button-primary" href="winkel.html">Bekijk de webshop <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="contact.html">Maatwerk aanvragen <span aria-hidden="true">→</span></a></div></div><div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="sculpture"><img src="makers3dlabs-logo.webp" alt=""></div><div class="art-caption">Design · Manufacture · Create</div></div></div>
       <div class="hero-bottom"><div class="shell hero-meta"><span>3D-printen</span><span>Resin & detailwerk</span><span>Lasergraveren</span><span>Creatief maatwerk</span></div></div>
     </section>
     
+
+<section class="kerst-section" id="kerst" aria-labelledby="kerst-title">
+  <div class="shell">
+    <span class="kerst-label">KERST · PERSOONLIJK GEMAAKT</span>
+    <h2 id="kerst-title">Een kerst met jouw naam erop.</h2>
+    <p class="kerst-intro">
+      Voor thuis, aan de feesttafel of als zakelijk cadeau.
+      Vertel ons je idee: we bespreken de uitvoering,
+      aantallen, prijs en gewenste leverdatum.
+    </p>
+    <div class="kerst-grid">
+      <article class="kerst-card">
+        <h3>Kersthangers met naam</h3>
+        <p>Een naam, jaartal of korte boodschap voor een persoonlijke kerstboom.</p>
+        <a href="contact.html?product=Kersthangers%20met%20naam">Vraag kersthangers aan →</a>
+      </article>
+      <article class="kerst-card">
+        <h3>Kerst met jouw bedrijfslogo</h3>
+        <p>Decoratie voor je bedrijf of een persoonlijk extraatje bij het kerstpakket.</p>
+        <a href="contact.html?product=Kerstdecoratie%20met%20bedrijfslogo">Vraag zakelijke kerstdecoratie aan →</a>
+      </article>
+      <article class="kerst-card">
+        <h3>Een persoonlijke kersttafel</h3>
+        <p>Naamkaartjes en servetringen, afgestemd op jouw feesttafel.</p>
+        <a href="contact.html?product=Gepersonaliseerde%20kersttafel">Vraag tafeldecoratie aan →</a>
+      </article>
+      <article class="kerst-card">
+        <h3>Kleine cadeaus op maat</h3>
+        <p>Sleutelhangers of gegraveerde decoratie met een naam of persoonlijke tekst.</p>
+        <a href="contact.html?product=Persoonlijk%20kerstcadeau">Vraag een kerstcadeau aan →</a>
+      </article>
+    </div>
+    <p class="kerst-intro" style="font-size:13px;margin-top:24px">
+      Alles op aanvraag. Beschikbaarheid en levertijd bevestigen we bij je offerte.
+    </p>
+  </div>
+</section>
+
 <section class="m3-featured"
          aria-label="Uitgelicht uit onze webshop"
          id="webshop-uitgelicht">
