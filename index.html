@@ -671,6 +671,93 @@ body {
 }
 </style>
 
+
+<style id="kerst-sectie-sfeer">
+#kerst {
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse at top left,#2b513d80,transparent 60%),
+    #102d24;
+  border-top:1px solid #bda263;
+  border-bottom:1px solid #bda263;
+  padding:85px 0 70px;
+  color:#fff8e9;
+}
+#kerst::before {
+  content:"";
+  position:absolute;
+  top:15px;
+  left:0;
+  right:0;
+  height:22px;
+  border-top:2px solid #59704a;
+  background:
+    radial-gradient(circle,#ffe7a3 0 3px,#e7bc5860 4px,transparent 10px)
+    0 0 / 55px 22px repeat-x;
+  pointer-events:none;
+}
+#kerst .shell {
+  position:relative;
+}
+#kerst .kerst-label {
+  color:#f1d18c;
+  letter-spacing:.14em;
+}
+#kerst h2 {
+  color:#fff3d6;
+}
+#kerst .kerst-intro {
+  color:#d6e3d8;
+}
+#kerst .kerst-card {
+  position:relative;
+  padding:29px;
+  background:linear-gradient(145deg,#254637,#19382b);
+  border:1px solid #c8a95880;
+  box-shadow:0 12px 28px #00000018;
+}
+#kerst .kerst-card::before {
+  display:block;
+  content:"✦";
+  color:#edcc80;
+  font-size:30px;
+  line-height:1;
+  margin-bottom:20px;
+}
+#kerst .kerst-card:nth-child(2)::before { content:"🎄"; }
+#kerst .kerst-card:nth-child(3)::before { content:"✧"; }
+#kerst .kerst-card:nth-child(4)::before { content:"🎁"; }
+#kerst .kerst-card h3 {
+  color:#fff3d6;
+}
+#kerst .kerst-card p {
+  color:#d9e5dc;
+}
+#kerst .kerst-card a {
+  display:block;
+  margin-top:auto;
+  padding:13px 17px;
+  background:#a92337;
+  color:#fff8e9;
+  border:1px solid #d77b86;
+  border-radius:10px;
+  font-size:14px;
+  line-height:1.5;
+}
+#kerst .kerst-card a:hover {
+  background:#c12d43;
+}
+#kerst .kerst-card a:focus-visible {
+  outline:3px solid #f1d18c;
+  outline-offset:4px;
+}
+@media(max-width:540px) {
+  #kerst { padding:70px 0 50px; }
+  #kerst .kerst-card { padding:24px; }
+}
+</style>
+
 </head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
