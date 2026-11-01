@@ -32,6 +32,41 @@
   z-index: 2;
 }
 
+
+/* Makers 3D Labs - donkere navigatie */
+.header {
+  background: #1f2937;
+  box-shadow: 0 1px 0 #344253;
+}
+.brand-logo {
+  display: block;
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+}
+.desktop > a,
+.drop-trigger {
+  color: #ffffff;
+}
+.desktop > a:hover,
+.drop-trigger:hover,
+.drop-trigger[aria-expanded="true"] {
+  background: #304451;
+  color: #00b4bd;
+}
+.nav-cta {
+  background: #00afb8 !important;
+  color: #ffffff !important;
+}
+.hamburger {
+  background: #304451;
+  color: #ffffff;
+  border-color: #53616e;
+}
+@media(max-width:580px) {
+  .brand-logo { width: 210px; }
+}
+
 </style>
 <link rel="stylesheet" href="assets/shop.css">
 <link rel="stylesheet" href="assets/makers-shop-upgrade.css">
@@ -271,7 +306,7 @@
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
   <header class="header">
     <div class="shell head-inner">
-      <a class="wordmark" href="index.html" aria-label="Makers 3D Labs — Home"><span class="mark" aria-hidden="true">M</span><span><strong>MAKERS <em>3D</em> LABS</strong><small>Your idea. Made possible.</small></span></a>
+      <a class="wordmark" href="index.html" aria-label="Makers 3D Labs — Home"><img src="makers3dlabs-logo.webp" alt="Makers 3D Labs — Your idea. Made possible." class="brand-logo"></a>
       
 <nav class="desktop" aria-label="Hoofdnavigatie">
   <a href="index.html">Home</a>
