@@ -20,7 +20,19 @@
     @media(max-width:800px){.shell{width:min(var(--max),calc(100% - 38px))}.head-inner{min-height:76px}.header{top:0}.desktop{display:none}.hamburger{display:block}.mobile-panel{position:absolute;left:0;right:0;top:100%;background:#fffefb;padding:10px 20px 25px;border-top:1px solid var(--line);box-shadow:0 20px 35px #0a232622;max-height:calc(100dvh - 76px);overflow:auto}.mobile-panel.open{display:block}.mobile-panel a,.mobile-panel summary{display:block;padding:15px 10px;border-bottom:1px solid #e8efeb;font-weight:800;font-size:14px}.mobile-panel details a{font-size:13px;font-weight:500;padding-left:30px;color:#52706f}.mobile-panel summary{cursor:pointer;list-style:none}.mobile-panel summary::-webkit-details-marker{display:none}.mobile-panel summary:after{content:'+';float:right;font-size:20px;line-height:1}.mobile-panel details[open] summary:after{content:'−'}.mobile-cta{display:block!important;background:#13373a;color:white!important;text-align:center;border-radius:999px;margin-top:17px}.hero-main{grid-template-columns:1fr;min-height:auto;padding:95px 0 85px}.hero-art{display:none}.hero h1{font-size:clamp(44px,9.3vw,75px)}.services,.products,.projects{grid-template-columns:repeat(2,1fr)}.feature{grid-template-columns:1fr;gap:30px}.section{padding:78px 0}}
     @media(max-width:580px){.announcement{font-size:9px}.shell{width:calc(100% - 34px)}.hero-main{padding:78px 0}.hero h1{font-size:clamp(41px,10vw,56px);letter-spacing:-.055em}.hero-copy{font-size:15px}.buttons{display:flex;flex-direction:column;align-items:stretch}.button{width:100%}.hero-meta{gap:15px;font-size:9px}.section-head{display:block}.section h2,.cta h2{font-size:37px}.services,.products,.projects,.stat-grid{grid-template-columns:1fr}.service{min-height:250px}.service h3{margin-top:28px}.cta-layout{display:block}.cta .button{margin-top:25px}.wordmark strong{font-size:16px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-  </style>
+  
+/* Zorg dat decoratieve lagen geen knoppen blokkeren */
+.hero::before,
+.hero-art,
+.hero-art * {
+  pointer-events: none;
+}
+.hero-main > div:first-child {
+  position: relative;
+  z-index: 2;
+}
+
+</style>
 <link rel="stylesheet" href="assets/shop.css">
 <link rel="stylesheet" href="assets/makers-shop-upgrade.css">
 
