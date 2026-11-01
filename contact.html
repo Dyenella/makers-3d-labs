@@ -25,4 +25,23 @@ form.addEventListener("submit",e=>{
 });
 </script><script src="assets/shop-data.js"></script>
 <script src="assets/shop.js"></script>
+
+<script id="kersthanger-aanvraag">
+if(new URLSearchParams(location.search).get('product')==='Kersthanger met naam'){
+ const pick=document.getElementById('product'),details=document.getElementById('omschrijving'),count=document.getElementById('aantal');
+ if(pick&&details&&count){
+  if(!Array.from(pick.options).some(o=>o.value==='Kersthanger met naam')){
+   const option=document.createElement('option');option.value='Kersthanger met naam';option.textContent='Kersthanger met naam';pick.append(option);
+  }
+  pick.value='Kersthanger met naam';
+  try{
+   const raw=sessionStorage.getItem('makers-kersthanger-aanvraag'),data=raw?JSON.parse(raw):null;
+   if(data&&typeof data.description==='string'&&data.description.length<=1500&&Number.isInteger(data.qty)&&data.qty>=1&&data.qty<=100){
+    details.value=data.description;count.value=String(data.qty);
+   }
+  }catch(error){details.placeholder='Beschrijf het model, de grootte, gewenste kleur, naam of tekst en het aantal.';}
+ }
+}
+</script>
+
 </body></html>
