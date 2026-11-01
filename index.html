@@ -470,6 +470,34 @@ body {
 }
 </style>
 
+
+
+
+
+<style id="emblem-contrast">
+.hero-art {
+  isolation: isolate;
+}
+.hero-art::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at center,
+    #d5edf0 0%,
+    #a4cdd5 30%,
+    rgba(133, 184, 198, .65) 48%,
+    transparent 73%
+  );
+  pointer-events: none;
+}
+.hero-art .sculpture img {
+  filter: drop-shadow(0 14px 22px rgba(0, 0, 0, .3));
+}
+</style>
+
 </head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
