@@ -29,8 +29,201 @@ button{width:100%;padding:15px;background:#a92337;color:#fff8e9;border:1px solid
 button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #f1d18c;outline-offset:3px}
 @media(max-width:800px){.layout{grid-template-columns:1fr;gap:25px}.photo{max-width:550px;margin:auto}}
 @media(max-width:420px){main{padding:25px 15px}form{padding:18px}.sizes{grid-template-columns:1fr}}
-</style></head><body>
-<header><a href="index.html" aria-label="Makers 3D Labs — Home"><img src="makers3dlabs-logo.webp" alt="Makers 3D Labs"></a></header>
+</style>
+<style id="kh-professioneel">
+body {
+  background:#f7f5ef;
+  color:#20352c;
+}
+.kh-header {
+  padding:0 24px;
+  background:#1d2936;
+}
+.kh-header .head-inner {
+  display:flex;
+  align-items:center;
+  gap:24px;
+  max-width:1200px;
+  min-height:88px;
+  margin:auto;
+}
+.kh-header img {
+  width:220px;
+  height:auto;
+}
+.kh-nav {
+  display:flex;
+  gap:24px;
+  margin-left:auto;
+}
+.kh-nav a {
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:650;
+}
+.kh-header .ms-utilities {
+  margin-left:0;
+}
+main {
+  max-width:1200px;
+  padding-top:25px;
+}
+.crumb {
+  color:#52685c;
+  font-size:13px;
+  text-decoration:none;
+}
+.layout {
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:48px;
+  margin-top:24px;
+}
+.layout > * {
+  min-width:0;
+}
+figure {
+  position:sticky;
+  top:24px;
+}
+.photo {
+  width:100%;
+  height:auto;
+  aspect-ratio:1;
+  object-fit:contain;
+  border-radius:16px;
+}
+figcaption {
+  color:#66756a;
+  font-size:12px;
+  line-height:1.6;
+  padding-top:12px;
+}
+.tag {
+  color:#8a6427;
+  font-size:11px;
+}
+h1 {
+  font-size:clamp(29px,3vw,40px);
+  letter-spacing:-.035em;
+  margin:10px 0 14px;
+}
+.layout section > p {
+  font-size:15px;
+  color:#58685e;
+  margin-bottom:24px;
+}
+form {
+  background:#fff;
+  border:1px solid #dce2d9;
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 8px 30px #20352c06;
+}
+fieldset {
+  margin-bottom:20px;
+}
+legend, label.field {
+  font-size:14px;
+}
+.models {
+  gap:12px;
+}
+.choice span {
+  background:#fff;
+  color:#20352c;
+  border:1px solid #d2dbd1;
+  font-size:14px;
+}
+.choice input:checked + span {
+  background:#eef4ed;
+  border-color:#315c43;
+}
+.choice input {
+  accent-color:#315c43;
+}
+.thumb {
+  height:auto;
+  aspect-ratio:1;
+  background-size:200% 200%;
+}
+.hint {
+  color:#68766c;
+  font-size:12px;
+}
+.summary {
+  color:#3e5345;
+}
+.price {
+  border-color:#e2e6de;
+}
+.price strong {
+  color:#203f2e;
+  font-size:28px;
+}
+#kh-unit {
+  color:#68766c;
+  font-size:13px;
+}
+button {
+  background:#254e36;
+  border-color:#254e36;
+}
+button:hover {
+  background:#183b27;
+}
+@media(max-width:800px) {
+  .layout {
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+  figure {
+    position:static;
+    max-width:500px;
+    margin:auto;
+  }
+  .kh-header .head-inner {
+    flex-wrap:wrap;
+    gap:12px;
+    padding:12px 0;
+  }
+  .kh-header img {
+    width:180px;
+  }
+  .kh-nav {
+    gap:16px;
+  }
+  .kh-header .ms-utilities {
+    margin-left:auto;
+  }
+}
+@media(max-width:420px) {
+  .kh-header {
+    padding:0 16px;
+  }
+  .kh-nav {
+    font-size:13px;
+  }
+  form {
+    padding:18px;
+  }
+}
+</style>
+
+</head><body>
+
+<header class="kh-header">
+  <div class="head-inner">
+    <a href="index.html" aria-label="Makers 3D Labs — Home">
+      <img src="makers3dlabs-logo.webp" alt="Makers 3D Labs">
+    </a>
+    <nav class="kh-nav" aria-label="Hoofdnavigatie">
+      <a href="index.html">Home</a>
+      <a href="winkel.html">Webshop</a>
+    </nav>
+  </div>
+</header>
+
 <main><a class="crumb" href="winkel.html">← Terug naar de webshop</a>
 <div class="layout"><figure><img class="photo" src="kersthangers-personalisatie.webp" alt="Voorbeeldontwerpen: witte sneeuwvlok met Emma, ster met Noah, kerstboom met Familie de Vries en kerstbal met 2026" width="1254" height="1254">
 <figcaption>Voorbeeld van personalisatie. De afbeelding toont witte ontwerpen; jouw gekozen kleur wordt bij de aanvraag besproken. De definitieve uitvoering wordt bevestigd.</figcaption></figure>
