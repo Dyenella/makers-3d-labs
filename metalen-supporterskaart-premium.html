@@ -1,0 +1,780 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Gepersonaliseerde Metalen Supporterskaart | Makers 3D Labs</title>
+
+<meta name="description" content="Gepersonaliseerde metalen supporterskaart met lasergravure. Vanaf € 24,95 inclusief btw.">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f5f6f2;
+    color: #173136;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #dce6e2;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 19px;
+    font-weight: 900;
+}
+
+header nav {
+    display: flex;
+    gap: 22px;
+    font-weight: 700;
+}
+
+main {
+    max-width: 1240px;
+    margin: 35px auto 75px;
+    padding: 0 22px;
+}
+
+/* BELANGRIJK: TWEE KOLOMMEN */
+
+.product-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 40%) minmax(0, 1fr);
+    gap: 32px;
+    align-items: start;
+    width: 100%;
+}
+
+.product-layout > * {
+    min-width: 0;
+}
+
+/* LINKERKOLOM: PRODUCTFOTO */
+
+.product-gallery {
+    width: 100%;
+    min-width: 0;
+}
+
+.product-image {
+    width: 100%;
+    background: #080d10;
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 330px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.image-caption {
+    font-size: 12px;
+    color: #6d7c80;
+    margin-top: 12px;
+}
+
+/* RECHTERKOLOM: PRODUCTINFORMATIE */
+
+.product-info {
+    width: 100%;
+    min-width: 0;
+}
+
+.kicker {
+    color: #0c897d;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: clamp(25px, 2.7vw, 37px);
+    line-height: 1.15;
+    letter-spacing: -0.8px;
+    margin: 12px 0 16px;
+}
+
+.price {
+    color: #087f74;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.subtitle {
+    color: #687a7e;
+    font-size: 13px;
+    margin: 5px 0 18px;
+}
+
+.intro {
+    color: #4c6266;
+    margin-bottom: 22px;
+}
+
+/* UITKLAPBARE OPTIES */
+
+details {
+    background: #fff;
+    border: 1px solid #dce8e3;
+    border-radius: 13px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    background: #eaf5f0;
+    padding: 15px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "+";
+    color: #0b8d7e;
+    font-size: 22px;
+}
+
+details[open] summary::after {
+    content: "−";
+}
+
+.options {
+    padding: 14px;
+}
+
+.option {
+    display: flex;
+    gap: 12px;
+    border: 1px solid #dee8e4;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 9px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #f3faf7;
+}
+
+.option input {
+    accent-color: #0b8d7e;
+    margin-top: 5px;
+}
+
+.option span {
+    display: block;
+    flex: 1;
+}
+
+.option small {
+    display: block;
+    color: #697b7f;
+    font-size: 12px;
+}
+
+.field {
+    margin-bottom: 14px;
+}
+
+.field label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.field input,
+.field textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1ded9;
+    border-radius: 9px;
+    background: white;
+    color: #173136;
+    font: inherit;
+}
+
+.field textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+/* PRIJS EN BESTELLEN */
+
+.total-box {
+    border-top: 1px solid #dae6e1;
+    margin-top: 20px;
+    padding-top: 18px;
+}
+
+.total-box strong {
+    display: block;
+    color: #087e73;
+    font-size: 29px;
+}
+
+.small-note {
+    display: block;
+    color: #6c7c7f;
+    font-size: 12px;
+}
+
+.order-button {
+    display: block;
+    width: 100%;
+    background: #15383b;
+    border: 0;
+    color: white;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.order-button:hover {
+    background: #0c8578;
+}
+
+.notice {
+    background: #fff4dc;
+    color: #765522;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 12px;
+}
+
+/* BESCHRIJVING ONDER HET PRODUCT */
+
+.description {
+    margin-top: 35px;
+    background: #fff;
+    border: 1px solid #dce6e2;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.description h2 {
+    margin-top: 0;
+    font-size: 23px;
+}
+
+.description p {
+    color: #52686c;
+}
+
+/* SPECIFICATIES */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-panel {
+    background: #fff;
+    border: 1px solid #dce6e2;
+    border-radius: 18px;
+    padding: 25px;
+}
+
+.info-panel h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.info-panel li {
+    margin-bottom: 8px;
+}
+
+/* MOBIEL */
+
+@media (max-width: 800px) {
+    .product-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .product-image img {
+        max-height: 300px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    .description,
+    .info-panel {
+        padding: 22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo">MAKERS 3D LABS</a>
+
+    <nav>
+        <a href="winkel.html">← Webshop</a>
+        <a href="winkelwagen.html">Winkelwagen</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- PRODUCT FOTO LINKS / OPTIES RECHTS -->
+
+<section class="product-layout">
+
+    <!-- LINKERKOLOM -->
+
+    <div class="product-gallery">
+
+        <div class="product-image">
+            <img
+                src="feyenoord-seizoenskaart-zwart%20%281%29.webp"
+                alt="Voorbeeld van gepersonaliseerde metalen supporterskaart met stadionillustratie"
+            >
+        </div>
+
+        <p class="image-caption">
+            Voorbeeldontwerp. De kaart is volledig te personaliseren.
+            Niet geldig als officiële seizoenkaart of toegangsbewijs.
+        </p>
+
+    </div>
+
+    <!-- RECHTERKOLOM -->
+
+    <div class="product-info">
+
+        <div class="kicker">
+            MAKERS 3D LABS / LASER COLLECTIE
+        </div>
+
+        <h1>
+            Gepersonaliseerde Metalen Supporterskaart – Premium Edition
+        </h1>
+
+        <div class="price">
+            Vanaf € 24,95
+        </div>
+
+        <div class="subtitle">
+            Inclusief btw · Aluminium · 85,6 × 54 mm · Op bestelling
+        </div>
+
+        <p class="intro">
+            Een blijvende herinnering voor de echte voetbalfan!
+            Laat jouw passie voor voetbal vastleggen op een luxe
+            metalen supporterskaart met persoonlijke lasergravure.
+        </p>
+
+        <form id="product-form">
+
+            <!-- UITVOERING -->
+
+            <details open>
+                <summary>Kies jouw uitvoering</summary>
+
+                <div class="options">
+
+                    <label class="option">
+                        <input
+                            type="radio"
+                            name="uitvoering"
+                            value="standaard"
+                            checked
+                        >
+
+                        <span>
+                            <strong>
+                                Standaard supporterskaart – € 24,95
+                            </strong>
+
+                            <small>
+                                Met eigen naam, persoonlijke tekst
+                                en eenvoudige decoratieve elementen.
+                            </small>
+                        </span>
+                    </label>
+
+                    <label class="option">
+                        <input
+                            type="radio"
+                            name="uitvoering"
+                            value="premium"
+                        >
+
+                        <span>
+                            <strong>
+                                Premium supporterskaart – € 29,95
+                            </strong>
+
+                            <small>
+                                Met naam, persoonlijke gegevens,
+                                beschikbare stadionillustratie
+                                en decoratieve details.
+                            </small>
+                        </span>
+                    </label>
+
+                </div>
+            </details>
+
+            <!-- EXTRA OPTIES -->
+
+            <details>
+                <summary>Extra opties</summary>
+
+                <div class="options">
+
+                    <label class="option">
+                        <input type="checkbox" id="dubbel">
+
+                        <span>
+                            Dubbelzijdige gravure
+                            <small>+ € 7,95</small>
+                        </span>
+                    </label>
+
+                    <label class="option">
+                        <input type="checkbox" id="houder">
+
+                        <span>
+                            Bijpassende displayhouder
+                            <small>+ € 7,95</small>
+                        </span>
+                    </label>
+
+                    <label class="option">
+                        <input type="checkbox" id="cadeau">
+
+                        <span>
+                            Luxe cadeauverpakking
+                            <small>+ € 4,95</small>
+                        </span>
+                    </label>
+
+                    <label class="option">
+                        <input type="checkbox" id="maatwerk">
+
+                        <span>
+                            Volledig nieuw maatwerkontwerp
+
+                            <small>
+                                Vanaf + € 14,95.
+                                Definitieve prijs op aanvraag.
+                            </small>
+                        </span>
+                    </label>
+
+                </div>
+            </details>
+
+            <!-- PERSONALISATIE -->
+
+            <details>
+                <summary>Personalisatiegegevens</summary>
+
+                <div class="options">
+
+                    <div class="field">
+                        <label for="naam">
+                            Naam op de kaart
+                        </label>
+
+                        <input
+                            type="text"
+                            id="naam"
+                            maxlength="100"
+                            placeholder="Naam of bijnaam"
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="datum">
+                            Bijzondere datum
+                        </label>
+
+                        <input
+                            type="text"
+                            id="datum"
+                            maxlength="100"
+                            placeholder="Bijvoorbeeld 12-05-2026"
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="tekst">
+                            Persoonlijke tekst en wensen
+                        </label>
+
+                        <textarea
+                            id="tekst"
+                            maxlength="900"
+                            placeholder="Naam, tekst, stadionillustratie of speciale wensen"
+                        ></textarea>
+                    </div>
+
+                </div>
+            </details>
+
+            <!-- TOTAALPRIJS -->
+
+            <div class="total-box">
+
+                Totaal inclusief btw
+
+                <strong id="totaal">
+                    € 24,95
+                </strong>
+
+                <span class="small-note" id="prijsinfo">
+                    Exclusief verzendkosten
+                </span>
+
+            </div>
+
+            <button type="submit" class="order-button">
+                Vraag deze uitvoering aan →
+            </button>
+
+            <div class="notice">
+                Dit is een aanvraag en geen directe betaling.
+                Bij volledig nieuw maatwerk bevestigen wij eerst
+                de definitieve prijs.
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- UITGEBREIDE OMSCHRIJVING -->
+
+<section class="description">
+
+    <h2>
+        Een blijvende herinnering voor de echte voetbalfan
+    </h2>
+
+    <p>
+        Laat jouw passie voor voetbal vastleggen op een luxe
+        metalen supporterskaart van Makers 3D Labs.
+    </p>
+
+    <p>
+        Deze bijzondere kaart wordt met precisie gegraveerd
+        op aluminium en gepersonaliseerd met jouw naam,
+        een speciale datum, persoonlijke tekst of een
+        beschikbare stadionillustratie.
+    </p>
+
+    <p>
+        Dankzij de gedetailleerde lasergravure krijgt iedere kaart
+        een stijlvolle, duurzame uitstraling.
+    </p>
+
+    <p>
+        Perfect als verjaardagscadeau, Vaderdagcadeau,
+        supportersherinnering of decoratief verzamelobject.
+    </p>
+
+    <p>
+        Bij Makers 3D Labs combineren we moderne lasergraveertechnologie
+        met persoonlijke ontwerpen om unieke producten te creëren.
+        Iedere kaart wordt speciaal voor jou gemaakt en
+        zorgvuldig gecontroleerd.
+    </p>
+
+    <p>
+        <strong>Your idea. Made possible.</strong>
+    </p>
+
+</section>
+
+<!-- SPECIFICATIES EN INFORMATIE -->
+
+<div class="info-grid">
+
+    <section class="info-panel">
+
+        <h2>Productspecificaties</h2>
+
+        <ul>
+            <li>Materiaal: aluminium</li>
+            <li>Afmetingen: 85,6 × 54 mm</li>
+            <li>Standaard bankpasformaat</li>
+            <li>Techniek: lasergravure</li>
+            <li>Metallic oppervlak</li>
+            <li>Naam, tekst en beschikbare illustraties</li>
+            <li>Enkelzijdige gravure standaard inbegrepen</li>
+            <li>Geproduceerd op bestelling</li>
+            <li>Decoratief verzamelobject</li>
+        </ul>
+
+    </section>
+
+    <section class="info-panel">
+
+        <h2>Belangrijke informatie</h2>
+
+        <ul>
+            <li>Geen officieel toegangsbewijs</li>
+            <li>Geen geldige seizoenkaart</li>
+            <li>Clublogo's alleen met de benodigde gebruiksrechten</li>
+            <li>Volledig maatwerk vanaf € 14,95 extra</li>
+            <li>Verzendkosten apart berekend</li>
+            <li>Levertijd wordt bij bestelling bevestigd</li>
+            <li>Iedere kaart wordt individueel gepersonaliseerd</li>
+        </ul>
+
+    </section>
+
+</div>
+
+</main>
+
+<!-- AUTOMATISCHE PRIJSBEREKENING -->
+
+<script>
+
+const form = document.getElementById("product-form");
+
+const euro = bedrag =>
+    new Intl.NumberFormat("nl-NL", {
+        style: "currency",
+        currency: "EUR"
+    }).format(bedrag);
+
+const aangevinkt = id =>
+    document.getElementById(id).checked;
+
+function gekozenUitvoering() {
+    return document.querySelector(
+        'input[name="uitvoering"]:checked'
+    ).value;
+}
+
+function berekenPrijs() {
+
+    let prijs = gekozenUitvoering() === "premium"
+        ? 29.95
+        : 24.95;
+
+    if (aangevinkt("dubbel")) {
+        prijs += 7.95;
+    }
+
+    if (aangevinkt("houder")) {
+        prijs += 7.95;
+    }
+
+    if (aangevinkt("cadeau")) {
+        prijs += 4.95;
+    }
+
+    if (aangevinkt("maatwerk")) {
+        prijs += 14.95;
+    }
+
+    document.getElementById("totaal").textContent =
+        (aangevinkt("maatwerk") ? "Vanaf " : "") + euro(prijs);
+
+    document.getElementById("prijsinfo").textContent =
+        aangevinkt("maatwerk")
+            ? "Richtprijs inclusief btw. Definitieve maatwerkprijs op aanvraag."
+            : "Exclusief verzendkosten";
+
+    return prijs;
+}
+
+form.addEventListener("change", berekenPrijs);
+
+form.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const aanvraag = [
+        "Gepersonaliseerde Metalen Supporterskaart",
+        "Uitvoering: " + gekozenUitvoering(),
+        "Prijs: " +
+            (aangevinkt("maatwerk") ? "vanaf " : "") +
+            euro(berekenPrijs()),
+        "Dubbelzijdige gravure: " +
+            (aangevinkt("dubbel") ? "Ja" : "Nee"),
+        "Displayhouder: " +
+            (aangevinkt("houder") ? "Ja" : "Nee"),
+        "Cadeauverpakking: " +
+            (aangevinkt("cadeau") ? "Ja" : "Nee"),
+        "Nieuw maatwerkontwerp: " +
+            (aangevinkt("maatwerk") ? "Ja" : "Nee"),
+        "Naam: " +
+            document.getElementById("naam").value.trim(),
+        "Datum: " +
+            document.getElementById("datum").value.trim(),
+        "Tekst en wensen: " +
+            document.getElementById("tekst").value.trim()
+    ].join(" | ");
+
+    window.location.href =
+        "contact.html?product=" + encodeURIComponent(aanvraag);
+
+});
+
+berekenPrijs();
+
+</script>
+
+</body>
+</html>

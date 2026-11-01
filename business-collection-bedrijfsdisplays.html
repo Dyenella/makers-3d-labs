@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gepersonaliseerde 3D Bedrijfsdisplays – Business Collection | Makers 3D Labs</title>
+<meta name="description" content="Gepersonaliseerde 3D Bedrijfsdisplays – Business Collection. QR-displays, logo-displays en baliehouders voor een professionele bedrijfsuitstraling. Vanaf € 49,95 incl. btw.">
+
+<link rel="stylesheet" href="assets/shop.css">
+<link rel="stylesheet" href="assets/makers-shop-upgrade.css">
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f6f7f5;
+  color: #152a2e;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+a { color: inherit; }
+
+.product-header {
+  background: white;
+  padding: 24px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #dce6e2;
+}
+
+.product-header a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-container {
+  max-width: 1280px;
+  margin: 36px auto 65px;
+  padding: 0 24px;
+}
+
+.product-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.product-layout > div {
+  min-width: 0;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 1.12 / 1;
+  border-radius: 24px;
+  background: #0b1114;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(18, 42, 46, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-image .missing-image {
+  display: none;
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+.product-image.missing img { display: none; }
+.product-image.missing .missing-image { display: block; }
+
+.category {
+  color: #138d82;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: clamp(28px, 2.9vw, 40px);
+  line-height: 1.14;
+  margin: 10px 0 10px;
+  letter-spacing: -0.03em;
+  font-family: Manrope, Arial, sans-serif;
+}
+
+.price {
+  font-size: 31px;
+  font-weight: bold;
+  color: #0f6c63;
+  margin: 10px 0 6px;
+}
+
+.product-info {
+  color: #64777b;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.intro {
+  color: #40565b;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 12px;
+  background: white;
+  border: 1px solid #dce6e2;
+  border-radius: 11px;
+  margin: 6px 0;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.option:hover {
+  border-color: #8ed6ca;
+  background: #f8fdfb;
+}
+
+.option input {
+  margin-top: 6px;
+  accent-color: #128c80;
+}
+
+.option small {
+  display: block;
+  color: #64777b;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.option.disabled {
+  opacity: .55;
+  background: #f4f4f4;
+  cursor: not-allowed;
+}
+
+.option.disabled input {
+  pointer-events: none;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce6e2;
+  border-radius: 12px;
+  font: inherit;
+  min-height: 70px;
+  font-size: 13px;
+}
+
+.total-price {
+  padding: 14px 0;
+  border-top: 1px solid #dce6e2;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.total-price strong {
+  font-size: 28px;
+  display: block;
+  color: #0b8377;
+}
+
+.order-button {
+  width: 100%;
+  background: #142e34;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(20, 46, 52, 0.14);
+}
+
+.order-button:hover {
+  background: #176d64;
+}
+
+.notice {
+  background: #fff5df;
+  color: #705017;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.helper-note {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #5f7579;
+}
+
+.m3-accordion {
+  margin: 12px 0;
+  border: 1px solid #dce6e2;
+  border-radius: 14px;
+  background: white;
+  overflow: hidden;
+}
+
+.m3-accordion summary {
+  padding: 15px 18px;
+  cursor: pointer;
+  font-weight: 800;
+  color: #18383b;
+  background: #f0f7f4;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.m3-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.m3-accordion summary::after {
+  content: "+";
+  font-size: 22px;
+  font-weight: 400;
+  color: #108c80;
+}
+
+.m3-accordion[open] summary::after {
+  content: "−";
+}
+
+.m3-accordion[open] summary {
+  background: #e5f5ef;
+}
+
+.m3-accordion fieldset {
+  margin: 0 !important;
+  padding: 10px 14px 14px !important;
+}
+
+.m3-accordion summary:hover {
+  background: #dff2eb;
+}
+
+.description-wide {
+  margin-top: 26px;
+  padding: 26px 32px;
+  background: white;
+  border: 1px solid #dce6e2;
+  border-radius: 18px;
+  line-height: 1.75;
+}
+
+.description-wide h2 {
+  font-size: 22px;
+  margin: 0 0 10px;
+  color: #133b3d;
+}
+
+.description-wide p {
+  margin: 8px 0;
+  color: #52676c;
+  font-size: 14px;
+}
+
+.description-wide ol {
+  margin: 10px 0 0 18px;
+  color: #52676c;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.detail-box {
+  background: white;
+  border: 1px solid #dce6e2;
+  border-radius: 18px;
+  padding: 22px 24px;
+  box-shadow: 0 9px 30px rgba(23, 46, 48, 0.06);
+}
+
+.detail-box h2 {
+  font-size: 19px;
+  margin-top: 0;
+  color: #15383a;
+}
+
+.detail-box li {
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .product-layout,
+  .details {
+    grid-template-columns: 1fr;
+  }
+
+  .product-container {
+    padding: 0 15px;
+  }
+
+  .description-wide {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+
+<body class="m3-product-style">
+
+<header class="product-header">
+  <a href="index.html">MAKERS 3D LABS</a>
+  <nav>
+    <a href="winkel.html">← Webshop</a>
+    &nbsp; | &nbsp;
+    <a href="winkelwagen.html">Winkelwagen</a>
+  </nav>
+</header>
+
+<main class="product-container">
+
+<div class="product-layout">
+
+  <div>
+    <div class="product-image" id="product-image">
+      <img
+        src="makers-3d-labs-zakelijke-displays.webp"
+        alt="Gepersonaliseerde 3D Bedrijfsdisplays – Business Collection"
+        onerror="document.getElementById('product-image').classList.add('missing')"
+      >
+      <div class="missing-image">
+        Productfoto nog niet gevonden. Controleer de bestandsnaam.
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="category">Makers 3D Labs / Business Collection</div>
+
+    <h1>Gepersonaliseerde 3D Bedrijfsdisplays – Business Collection</h1>
+
+    <div class="price">Vanaf € 49,95</div>
+
+    <div class="product-info">
+      Inclusief btw | 3D-print | Gepersonaliseerd | Op bestelling gemaakt
+    </div>
+
+    <p class="intro">
+      Geef jouw bedrijf een professionele uitstraling met unieke,
+      op maat gemaakte 3D-displays. Van QR-displays tot logo-presentaties:
+      ontworpen op basis van jouw merk, kleuren en bedrijfsidentiteit.
+    </p>
+
+    <form id="product-form">
+
+      <details class="m3-accordion" open>
+        <summary>Kies jouw display</summary>
+        <fieldset>
+          <label class="option">
+            <input type="radio" name="product" value="49.95" data-type="qr-review" checked>
+            <span>
+              QR Review Display – € 49,95
+              <small>Met bedrijfslogo en QR-code naar jouw reviewpagina</small>
+            </span>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="product" value="49.95" data-type="qr-catalogus">
+            <span>
+              QR Catalogus Display – € 49,95
+              <small>Met QR-code naar website, catalogus of menukaart</small>
+            </span>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="product" value="99.95" data-type="logo-display">
+            <span>
+              3D Logo Bureaudisplay – € 99,95
+              <small>Vrijstaand 3D-logo in reliëf, meerkleurig uitgevoerd</small>
+            </span>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="product" value="64.95" data-type="baliehouder">
+            <span>
+              Gepersonaliseerde Baliehouder – € 64,95
+              <small>Baliepresentatie met bedrijfslogo en presentatieplateau</small>
+            </span>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="product" value="249.95" data-type="complete-set">
+            <span>
+              Complete Business Display Set – € 249,95
+              <small>Bevat 1× QR Review, 1× QR Catalogus, 1× 3D Logo Bureaudisplay en 1× Gepersonaliseerde Baliehouder</small>
+            </span>
+          </label>
+        </fieldset>
+      </details>
+
+      <details class="m3-accordion">
+        <summary>Extra opties</summary>
+        <fieldset>
+          <label class="option" id="opt-nfc-review-wrap">
+            <input type="checkbox" id="opt-nfc-review">
+            <span>
+              NFC-functionaliteit voor QR Review Display
+              <small>+ € 14,95 – contactloos openen van reviewpagina</small>
+            </span>
+          </label>
+
+          <label class="option" id="opt-nfc-catalogus-wrap">
+            <input type="checkbox" id="opt-nfc-catalogus">
+            <span>
+              NFC-functionaliteit voor QR Catalogus Display
+              <small>+ € 14,95 – contactloos openen van website of catalogus</small>
+            </span>
+          </label>
+
+          <label class="option" id="opt-extra-qr-wrap">
+            <input type="checkbox" id="opt-extra-qr">
+            <span>
+              Extra QR-code op één display
+              <small>+ € 9,95</small>
+            </span>
+          </label>
+
+          <label class="option" id="opt-kleur-wrap">
+            <input type="checkbox" id="opt-kleur">
+            <span>
+              Extra kleur- of tekstvariant
+              <small>+ € 9,95</small>
+            </span>
+          </label>
+        </fieldset>
+      </details>
+
+      <p><strong>Logo, kleuren en wensen</strong></p>
+
+      <textarea
+        id="personalization"
+        rows="4"
+        maxlength="700"
+        placeholder="Bijvoorbeeld: bedrijfsnaam, gewenste kleuren, website/QR-link, logo-uitleg, gewenste tekst of maatwerkwensen"
+      ></textarea>
+
+      <div class="helper-note" id="extra-note">
+        NFC-functionaliteit en extra QR-codes zijn alleen van toepassing op QR-displays.
+        Voor uitgebreid maatwerk of afwijkende afmetingen geldt: prijs op aanvraag.
+      </div>
+
+      <div class="total-price">
+        Totaalprijs inclusief btw
+        <strong id="total">€ 49,95</strong>
+        <small>Exclusief eventuele verzendkosten</small>
+      </div>
+
+      <button class="order-button" type="submit">
+        Vraag deze uitvoering aan →
+      </button>
+
+      <div class="notice">
+        Online betalen is nog niet actief. Je kunt deze uitvoering voorlopig via het offerteformulier aanvragen.
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<section class="description-wide">
+  <h2>Professionele bedrijfsdisplays, volledig afgestemd op jouw merk</h2>
+
+  <p>
+    Maak indruk op je klanten met de exclusieve Business Collection van Makers 3D Labs.
+    Van stijlvolle bedrijfslogo's en praktische baliedisplays tot QR-codehouders
+    waarmee klanten eenvoudig jouw website, digitale catalogus of reviewpagina kunnen bezoeken.
+  </p>
+
+  <p>
+    Onze displays worden geproduceerd met moderne 3D-printtechnologie en gepersonaliseerd
+    met jouw bedrijfsnaam, logo en huisstijlkleuren.
+    Perfect voor barbershops, kapsalons, restaurants, winkels, salons, recepties en kantoren.
+  </p>
+
+  <p>
+    Alle onderdelen worden zorgvuldig ontworpen, gecontroleerd en geproduceerd op bestelling.
+    Zo ontstaat een professionele en herkenbare presentatie die past bij jouw onderneming.
+  </p>
+
+  <h2 style="margin-top:22px">Hoe werkt bestellen?</h2>
+  <ol>
+    <li>Kies het gewenste display of de complete set.</li>
+    <li>Upload jouw bedrijfslogo en geef je gewenste kleuren door.</li>
+    <li>Lever de gewenste website- of QR-link aan.</li>
+    <li>Wij maken jouw gepersonaliseerde ontwerp.</li>
+    <li>Na goedkeuring produceren we jouw bestelling.</li>
+  </ol>
+</section>
+
+<div class="details">
+
+  <section class="detail-box">
+    <h2>Productspecificaties</h2>
+    <ul>
+      <li>Materiaal: hoogwaardig 3D-printfilament</li>
+      <li>Productiemethode: professionele 3D-printtechnologie</li>
+      <li>Afwerking: zorgvuldig gemonteerd en gecontroleerd</li>
+      <li>Personalisatie: bedrijfsnaam, logo en huisstijl</li>
+      <li>QR-codes: gepersonaliseerd en gecontroleerd op scanbaarheid</li>
+      <li>Gebruik: binnen</li>
+      <li>Productie: op bestelling</li>
+    </ul>
+  </section>
+
+  <section class="detail-box">
+    <h2>Levering en belangrijke informatie</h2>
+    <ul>
+      <li>QR Review Display: € 49,95</li>
+      <li>QR Catalogus Display: € 49,95</li>
+      <li>3D Logo Bureaudisplay: € 99,95</li>
+      <li>Gepersonaliseerde Baliehouder: € 64,95</li>
+      <li>Complete Business Display Set: € 249,95</li>
+      <li>NFC-functionaliteit: + € 14,95 per QR-display</li>
+      <li>Extra QR-code: + € 9,95</li>
+      <li>Extra kleur- of tekstvariant: vanaf € 9,95</li>
+      <li>Uitgebreid maatwerk of afwijkende afmetingen: prijs op aanvraag</li>
+    </ul>
+
+    <p>
+      Makers 3D Labs combineert creativiteit en moderne 3D-printtechnologie
+      om unieke producten te maken die volledig aansluiten bij jouw bedrijf.
+    </p>
+
+    <p><strong>Your idea. Made possible.</strong></p>
+  </section>
+
+</div>
+
+</main>
+
+<script>
+const form = document.getElementById("product-form");
+
+const euro = value => new Intl.NumberFormat("nl-NL", {
+  style: "currency",
+  currency: "EUR"
+}).format(value);
+
+function getSelectedType() {
+  return document.querySelector('input[name="product"]:checked').dataset.type;
+}
+
+function updateExtras() {
+  const type = getSelectedType();
+
+  const reviewWrap = document.getElementById("opt-nfc-review-wrap");
+  const catalogusWrap = document.getElementById("opt-nfc-catalogus-wrap");
+  const extraQrWrap = document.getElementById("opt-extra-qr-wrap");
+
+  const nfcReview = document.getElementById("opt-nfc-review");
+  const nfcCatalogus = document.getElementById("opt-nfc-catalogus");
+  const extraQr = document.getElementById("opt-extra-qr");
+
+  const isReview = type === "qr-review";
+  const isCatalogus = type === "qr-catalogus";
+  const isSet = type === "complete-set";
+
+  const allowReviewNfc = isReview || isSet;
+  const allowCatalogusNfc = isCatalogus || isSet;
+  const allowExtraQr = isReview || isCatalogus || isSet;
+
+  nfcReview.disabled = !allowReviewNfc;
+  nfcCatalogus.disabled = !allowCatalogusNfc;
+  extraQr.disabled = !allowExtraQr;
+
+  if (!allowReviewNfc) nfcReview.checked = false;
+  if (!allowCatalogusNfc) nfcCatalogus.checked = false;
+  if (!allowExtraQr) extraQr.checked = false;
+
+  reviewWrap.classList.toggle("disabled", !allowReviewNfc);
+  catalogusWrap.classList.toggle("disabled", !allowCatalogusNfc);
+  extraQrWrap.classList.toggle("disabled", !allowExtraQr);
+}
+
+function calculateTotal() {
+  const base = Number(document.querySelector('input[name="product"]:checked').value);
+  const nfcReview = document.getElementById("opt-nfc-review").checked ? 14.95 : 0;
+  const nfcCatalogus = document.getElementById("opt-nfc-catalogus").checked ? 14.95 : 0;
+  const extraQr = document.getElementById("opt-extra-qr").checked ? 9.95 : 0;
+  const kleur = document.getElementById("opt-kleur").checked ? 9.95 : 0;
+
+  return base + nfcReview + nfcCatalogus + extraQr + kleur;
+}
+
+function refreshTotal() {
+  updateExtras();
+  document.getElementById("total").textContent = euro(calculateTotal());
+}
+
+form.addEventListener("change", refreshTotal);
+refreshTotal();
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const selected = document.querySelector('input[name="product"]:checked').parentElement.innerText.trim();
+  const notes = document.getElementById("personalization").value.trim();
+
+  const details = [
+    "Gepersonaliseerde 3D Bedrijfsdisplays – Business Collection",
+    "Totaal: " + euro(calculateTotal()),
+    "Keuze: " + selected,
+    "NFC Review: " + (document.getElementById("opt-nfc-review").checked ? "Ja" : "Nee"),
+    "NFC Catalogus: " + (document.getElementById("opt-nfc-catalogus").checked ? "Ja" : "Nee"),
+    "Extra QR-code: " + (document.getElementById("opt-extra-qr").checked ? "Ja" : "Nee"),
+    "Extra kleur/tekstvariant: " + (document.getElementById("opt-kleur").checked ? "Ja" : "Nee"),
+    "Wensen: " + (notes || "Geen")
+  ].join(" | ");
+
+  window.location.href =
+    "contact.html?product=" + encodeURIComponent(details);
+});
+</script>
+
+<script src="assets/shop-data.js"></script>
+<script src="assets/shop.js"></script>
+
+</body>
+</html>

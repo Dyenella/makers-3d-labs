@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anubis – Egyptische God | Antiekgouden Buste | Makers 3D Labs</title>
+<meta name="description" content="Anubis – Egyptische God. Antiekgouden buste in resin, verkrijgbaar in 10 cm en 15 cm. Vanaf € 64,95 incl. btw.">
+
+<link rel="stylesheet" href="assets/shop.css">
+<link rel="stylesheet" href="assets/makers-shop-upgrade.css">
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f6f7f5;
+  color: #152a2e;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+a { color: inherit; }
+
+.product-header {
+  background: white;
+  padding: 24px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #dce6e2;
+}
+
+.product-header a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-container {
+  max-width: 1280px;
+  margin: 36px auto 65px;
+  padding: 0 24px;
+}
+
+.product-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.product-layout > div {
+  min-width: 0;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 1.12 / 1;
+  border-radius: 24px;
+  background: #0b1114;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(18, 42, 46, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-image .missing-image {
+  display: none;
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+.product-image.missing img { display: none; }
+.product-image.missing .missing-image { display: block; }
+
+.category {
+  color: #138d82;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: clamp(28px, 2.9vw, 40px);
+  line-height: 1.14;
+  margin: 10px 0 10px;
+  letter-spacing: -0.03em;
+  font-family: Manrope, Arial, sans-serif;
+}
+
+.price {
+  font-size: 31px;
+  font-weight: bold;
+  color: #0f6c63;
+  margin: 10px 0 6px;
+}
+
+.product-info {
+  color: #64777b;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.intro {
+  color: #40565b;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 12px;
+  background: white;
+  border: 1px solid #dce6e2;
+  border-radius: 11px;
+  margin: 6px 0;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.option:hover {
+  border-color: #8ed6ca;
+  background: #f8fdfb;
+}
+
+.option input {
+  margin-top: 6px;
+  accent-color: #128c80;
+}
+
+.option small {
+  display: block;
+  color: #64777b;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce6e2;
+  border-radius: 12px;
+  font: inherit;
+  min-height: 58px;
+  font-size: 13px;
+}
+
+.total-price {
+  padding: 14px 0;
+  border-top: 1px solid #dce6e2;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.total-price strong {
+  font-size: 28px;
+  display: block;
+  color: #0b8377;
+}
+
+.order-button {
+  width: 100%;
+  background: #142e34;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(20, 46, 52, 0.14);
+}
+
+.order-button:hover {
+  background: #176d64;
+}
+
+.notice {
+  background: #fff5df;
+  color: #705017;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.m3-accordion {
+  margin: 12px 0;
+  border: 1px solid #dce6e2;
+  border-radius: 14px;
+  background: white;
+  overflow: hidden;
+}
+
+.m3-accordion summary {
+  padding: 15px 18px;
+  cursor: pointer;
+  font-weight: 800;
+  color: #18383b;
+  background: #f0f7f4;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.m3-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.m3-accordion summary::after {
+  content: "+";
+  font-size: 22px;
+  font-weight: 400;
+  color: #108c80;
+}
+
+.m3-accordion[open] summary::after {
+  content: "−";
+}
+
+.m3-accordion[open] summary {
+  background: #e5f5ef;
+}
+
+.m3-accordion fieldset {
+  margin: 0 !important;
+  padding: 10px 14px 14px !important;
+}
+
+.m3-accordion summary:hover {
+  background: #dff2eb;
+}
+
+.description-wide {
+  margin-top: 26px;
+  padding: 26px 32px;
+  background: white;
+  border: 1px solid #dce6e2;
+  border-radius: 18px;
+  line-height: 1.75;
+}
+
+.description-wide h2 {
+  font-size: 22px;
+  margin: 0 0 10px;
+  color: #133b3d;
+}
+
+.description-wide p {
+  margin: 8px 0;
+  color: #52676c;
+  font-size: 14px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.detail-box {
+  background: white;
+  border: 1px solid #dce6e2;
+  border-radius: 18px;
+  padding: 22px 24px;
+  box-shadow: 0 9px 30px rgba(23, 46, 48, 0.06);
+}
+
+.detail-box h2 {
+  font-size: 19px;
+  margin-top: 0;
+  color: #15383a;
+}
+
+.detail-box li {
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .product-layout,
+  .details {
+    grid-template-columns: 1fr;
+  }
+
+  .product-container {
+    padding: 0 15px;
+  }
+
+  .description-wide {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+
+<body class="m3-product-style">
+
+<header class="product-header">
+  <a href="index.html">MAKERS 3D LABS</a>
+  <nav>
+    <a href="winkel.html">← Webshop</a>
+    &nbsp; | &nbsp;
+    <a href="winkelwagen.html">Winkelwagen</a>
+  </nav>
+</header>
+
+<main class="product-container">
+
+<div class="product-layout">
+
+  <div>
+    <div class="product-image" id="product-image">
+      <img
+        src="anubis-egyptische-god-goud (1).webp"
+        alt="Anubis – Egyptische God antiekgouden buste"
+        onerror="document.getElementById('product-image').classList.add('missing')"
+      >
+      <div class="missing-image">
+        Productfoto nog niet gevonden. Controleer de bestandsnaam.
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="category">Makers 3D Labs / Egyptische collectie</div>
+
+    <h1>Anubis – Egyptische God | Antiekgouden Buste</h1>
+
+    <div class="price">Vanaf € 64,95</div>
+
+    <div class="product-info">
+      Inclusief btw | Resin | Handgeschilderd antiekgoud | Op bestelling gemaakt
+    </div>
+
+    <p class="intro">
+      Een mysterieus kunstwerk geïnspireerd op het oude Egypte.
+      Een handgeschilderde resin buste met koninklijke hoofdtooi,
+      verfijnde sieraden en een antiekgouden afwerking.
+      Verkrijgbaar in 10 en 15 cm.
+    </p>
+
+    <form id="product-form">
+
+      <details class="m3-accordion" open>
+        <summary>Kies jouw formaat</summary>
+        <fieldset>
+          <label class="option">
+            <input type="radio" name="size" value="64.95" checked>
+            <span>
+              10 cm – € 64,95
+              <small>Compact formaat, ideaal voor vitrinekast of bureau</small>
+            </span>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="size" value="89.95">
+            <span>
+              15 cm – € 89,95
+              <small>Groter displayformaat met meer aanwezigheid</small>
+            </span>
+          </label>
+        </fieldset>
+      </details>
+
+      <details class="m3-accordion">
+        <summary>Personalisatie</summary>
+        <fieldset>
+          <label class="option">
+            <input type="checkbox" id="nameplate">
+            <span>
+              Gepersonaliseerd naamplaatje
+              <small>+ € 12,95 – naam of korte tekst op afzonderlijk plaatje</small>
+            </span>
+          </label>
+        </fieldset>
+      </details>
+
+      <p><strong>Jouw personalisatiewensen</strong></p>
+
+      <textarea
+        id="personalization"
+        rows="3"
+        maxlength="300"
+        placeholder="Bijvoorbeeld de tekst voor het naamplaatje"
+      ></textarea>
+
+      <div class="total-price">
+        Totaalprijs inclusief btw
+        <strong id="total">€ 64,95</strong>
+        <small>Exclusief eventuele verzendkosten</small>
+      </div>
+
+      <button class="order-button" type="submit">
+        Vraag deze uitvoering aan →
+      </button>
+
+      <div class="notice">
+        Online betalen is nog niet actief. Je kunt deze uitvoering voorlopig via het offerteformulier aanvragen.
+      </div>
+
+    </form>
+  </div>
+</div>
+
+
+<section class="description-wide">
+  <h2>Een mysterieus kunstwerk uit het oude Egypte</h2>
+
+  <p>
+    Ontdek de indrukwekkende uitstraling van Anubis,
+    de Egyptische god met het karakteristieke
+    jakhalsachtige hoofd. In de oude Egyptische
+    mythologie werd hij geassocieerd met de bescherming
+    van de doden en het hiernamaals.
+  </p>
+
+  <p>
+    Deze gedetailleerde buste toont Anubis met zijn
+    opvallende lange oren, koninklijke hoofdtooi en
+    rijkversierde Egyptische sieraden.
+  </p>
+
+  <p>
+    De antiekgouden afwerking met donkere schaduwen
+    brengt de fijne details tot leven en geeft het
+    beeld een luxe, eeuwenoude uitstraling.
+    De decoratieve sokkel met Egyptische symbolen
+    maakt het kunstwerk compleet.
+  </p>
+
+  <p>
+    Elk exemplaar wordt met precisie in hoogwaardige
+    resin 3D-geprint en zorgvuldig met de hand
+    geschilderd en afgewerkt.
+  </p>
+
+  <p>
+    Een bijzondere blikvanger voor de woonkamer,
+    kantoorruimte of vitrinekast. Ook een prachtig
+    cadeau voor liefhebbers van Egyptische geschiedenis,
+    mythologie en unieke verzamelobjecten.
+  </p>
+</section>
+
+
+
+<div class="details">
+
+<section class="detail-box">
+  <h2>Productspecificaties</h2>
+  <ul>
+    <li>Materiaal: hoogwaardige 3D-printresin</li>
+    <li>Afwerking: handgeschilderd antiekgoud</li>
+    <li>Stijl: Oude Egypte / Egyptische mythologie</li>
+    <li>Gedetailleerde hoofdtooi en sieraden</li>
+    <li>Decoratieve sokkel met Egyptische ornamenten</li>
+    <li>Kleur: goud met donkere accenten</li>
+    <li>Geschikt voor binnengebruik</li>
+    <li>Productie op bestelling</li>
+    <li>Decoratief verzamelobject, geen speelgoed</li>
+  </ul>
+</section>
+
+<section class="detail-box">
+  <h2>Levering en belangrijke informatie</h2>
+  <ul>
+    <li>Beschikbaar in 10 en 15 cm</li>
+    <li>Geprint in resin en met de hand afgewerkt</li>
+    <li>Gepersonaliseerd naamplaatje: + € 12,95</li>
+    <li>Verzendkosten worden apart berekend</li>
+    <li>De levertijd wordt bij bestelling bevestigd</li>
+    <li>Handgeschilderde kleuren kunnen licht afwijken</li>
+    <li>Productafbeelding is een visuele impressie</li>
+  </ul>
+
+  <p>
+    Bij Makers 3D Labs combineren we moderne
+    3D-printtechnologie met ambachtelijk schilderwerk.
+    Elk beeld wordt met aandacht afgewerkt.
+  </p>
+
+  <p><strong>Your idea. Made possible.</strong></p>
+</section>
+
+</div>
+
+</main>
+
+<script>
+const form = document.getElementById("product-form");
+
+const formatPrice = value =>
+  new Intl.NumberFormat("nl-NL", {
+    style: "currency",
+    currency: "EUR"
+  }).format(value);
+
+function calculateTotal() {
+  const size = Number(
+    document.querySelector('input[name="size"]:checked').value
+  );
+
+  const nameplate =
+    document.getElementById("nameplate").checked ? 12.95 : 0;
+
+  return size + nameplate;
+}
+
+form.addEventListener("change", () => {
+  document.getElementById("total").textContent =
+    formatPrice(calculateTotal());
+});
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const sizeLabel = document.querySelector(
+    'input[name="size"]:checked'
+  ).parentElement.innerText.trim();
+
+  const nameplate = document.getElementById("nameplate").checked;
+  const notes = document.getElementById("personalization").value.trim();
+
+  const details = [
+    "Anubis – Egyptische God | Antiekgouden Buste",
+    "Totaal: " + formatPrice(calculateTotal()),
+    "Formaat: " + sizeLabel,
+    "Naamplaatje: " + (nameplate ? "Ja" : "Nee"),
+    "Wensen: " + (notes || "Geen")
+  ].join(" | ");
+
+  window.location.href =
+    "contact.html?product=" + encodeURIComponent(details);
+});
+</script>
+
+<script src="assets/shop-data.js"></script>
+<script src="assets/shop.js"></script>
+
+</body>
+</html>

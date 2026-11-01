@@ -1,1 +1,411 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Winkel van Makers 3D Labs: gepersonaliseerde 3D-producten en accessoires."><title>Winkel | Makers 3D Labs</title><link rel="stylesheet" href="assets/shop.css"></head><body class="ms-site-shell"><header class="ms-simple-head"><a href="index.html">MAKERS 3D LABS ← Naar de homepage</a></header><main class="ms-page"><span class="ms-eyebrow">Makers 3D Labs / Winkel</span><h1>Ontdek onze producten.</h1><p class="ms-lead">Een selectie van onze 3D-producten. Producten met een vaste prijs kun je straks direct in de winkelwagen plaatsen. Voor personalisatie en grotere oplages vraag je eenvoudig een offerte aan.</p><div id="ms-shop-grid" class="ms-grid"></div><div class="ms-callout"><strong>We bouwen de webshop zorgvuldig op.</strong><p>Prijzen worden pas gepubliceerd nadat materiaal, productietijd, btw en verzending zijn doorgerekend. Zo krijg je geen onjuiste bedragen te zien.</p><a href="producten.html" class="ms-btn ms-btn-outline">Bekijk alle toepassingen</a></div></main><script src="assets/shop-data.js"></script><script src="assets/shop.js"></script></body></html>
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Winkel van Makers 3D Labs: gepersonaliseerde 3D-producten en accessoires."><title>Winkel | Makers 3D Labs</title><link rel="stylesheet" href="assets/shop.css">
+<style id="mk-home-refresh">
+.mk-shop-section {
+  padding: 65px 0 80px;
+  background: #edf3f0;
+}
+.mk-shop-head {
+  margin-bottom: 26px;
+}
+.mk-shop-head h2 {
+  margin: 8px 0 12px;
+  font-size: clamp(29px, 4vw, 44px);
+  line-height: 1.2;
+}
+.mk-shop-head p {
+  color: #64747a;
+  max-width: 650px;
+}
+.mk-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 17px;
+}
+.mk-product {
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #dce6e2;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+}
+.mk-product:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px #10202716;
+}
+.mk-photo {
+  height: 185px;
+  padding: 12px;
+  background: #090e12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mk-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.mk-product-info {
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 166px;
+}
+.mk-category {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #118c80;
+}
+.mk-product-info h3 {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 7px 0 11px;
+  color: #18353a;
+}
+.mk-price {
+  font-size: 16px;
+  color: #087f74;
+  margin-top: auto;
+}
+.mk-view {
+  color: #087f74;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+.mk-all {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 25px;
+  background: #14373b;
+  color: white !important;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 13px;
+}
+.mk-request {
+  padding: 55px 0;
+  background: #fff;
+}
+.mk-request h2 {
+  font-size: clamp(25px,3vw,36px);
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+.mk-request-intro {
+  color: #64747a;
+  max-width: 670px;
+  margin-bottom: 24px;
+}
+.mk-categories {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 12px;
+}
+.mk-cat {
+  background: #f7faf8;
+  border: 1px solid #dce6e2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.mk-cat summary {
+  cursor: pointer;
+  padding: 17px;
+  font-weight: 800;
+  list-style: none;
+  color: #19383b;
+}
+.mk-cat summary::-webkit-details-marker {
+  display: none;
+}
+.mk-cat summary span {
+  float: right;
+  color: #0b897c;
+  font-size: 11px;
+  padding-left: 8px;
+}
+.mk-cat summary:before {
+  content: "+ ";
+  color: #0b897c;
+}
+.mk-cat[open] summary:before {
+  content: "- ";
+}
+.mk-cat-body {
+  padding: 0 18px 18px;
+  font-size: 13px;
+  color: #546b6b;
+}
+.mk-cat-body a {
+  color: #087f74;
+  font-weight: 800;
+  text-decoration: none;
+}
+.mk-webshop-nav {
+  background: #14383b !important;
+  color: white !important;
+  border-radius: 30px !important;
+  padding: 12px 22px !important;
+  margin: 0 4px;
+  font-weight: 800 !important;
+}
+.mk-webshop-nav:hover {
+  background: #087f74 !important;
+  color: white !important;
+}
+.mk-offerte-nav {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  background: transparent !important;
+  color: #65777b !important;
+}
+.mk-offerte-nav:hover {
+  color: #087f74 !important;
+}
+.mk-shop-page {
+  max-width: 1240px;
+  margin: auto;
+  padding: 45px 24px 75px;
+}
+.mk-shop-page h1 {
+  font-size: clamp(32px,4vw,49px);
+  margin-bottom: 10px;
+}
+.mk-shop-page p {
+  color: #64747a;
+}
+.mk-shop-page .mk-grid {
+  margin-top: 27px;
+}
+.mk-shop-page .mk-categories {
+  margin-top: 25px;
+}
+@media(max-width:1050px) {
+  .mk-grid {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+  }
+}
+@media(max-width:800px) {
+  .mk-grid,.mk-categories {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:520px) {
+  .mk-grid,.mk-categories {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .mk-photo {
+    height: 145px;
+    padding: 8px;
+  }
+  .mk-product-info {
+    padding: 12px;
+  }
+  .mk-product-info h3 {
+    font-size: 13px;
+  }
+  .mk-price {
+    font-size: 14px;
+  }
+  .mk-category {
+    font-size: 9px;
+  }
+  .mk-cat summary {
+    padding: 12px;
+    font-size: 12px;
+  }
+  .mk-cat summary span {
+    float: none;
+    display: block;
+    margin-top: 4px;
+  }
+}
+</style>
+
+</head><body class="ms-site-shell"><header class="ms-simple-head"><a href="index.html">MAKERS 3D LABS ← Naar de homepage</a></header>
+<main class="mk-shop-page">
+  <span class="mk-category">Makers 3D Labs / Webshop</span>
+  <h1>Onze webshop</h1>
+  <p>Ontdek onze collectie 3D-geprinte en lasergegraveerde producten.
+  Kies een product om uitvoeringen, prijzen en personalisatie te bekijken.</p>
+<div class="mk-grid">
+    <article class="mk-product">
+      <a class="mk-photo" href="voetbalstadion-deluxe.html">
+        <img src="assets/products/voetbalstadion-deluxe.webp"
+             alt="Voetbalstadion – Deluxe Edition" loading="lazy">
+      </a>
+      <div class="mk-product-info">
+        <span class="mk-category">3D-printen</span>
+        <h3>Voetbalstadion – Deluxe Edition</h3>
+        <strong class="mk-price">€ 369,95</strong>
+        <a class="mk-view" href="voetbalstadion-deluxe.html">
+          Bekijk product &rarr;
+        </a>
+      </div>
+    </article>
+    <article class="mk-product">
+      <a class="mk-photo" href="samurai-oni-deluxe.html">
+        <img src="samurai-oni-deluxe-resin-beeld.webp"
+             alt="Samurai Oni – Deluxe Edition" loading="lazy">
+      </a>
+      <div class="mk-product-info">
+        <span class="mk-category">Resin</span>
+        <h3>Samurai Oni – Deluxe Edition</h3>
+        <strong class="mk-price">€ 149,95</strong>
+        <a class="mk-view" href="samurai-oni-deluxe.html">
+          Bekijk product &rarr;
+        </a>
+      </div>
+    </article>
+    <article class="mk-product">
+      <a class="mk-photo" href="horus-antiekgouden-buste.html">
+        <img src="egyptische-valkengod-horus-goud.webp"
+             alt="Horus – Antiekgouden Buste" loading="lazy">
+      </a>
+      <div class="mk-product-info">
+        <span class="mk-category">Resin</span>
+        <h3>Horus – Antiekgouden Buste</h3>
+        <strong class="mk-price">Vanaf € 64,95</strong>
+        <a class="mk-view" href="horus-antiekgouden-buste.html">
+          Bekijk product &rarr;
+        </a>
+      </div>
+    </article>
+    <article class="mk-product">
+      <a class="mk-photo" href="anubis-antiekgouden-buste.html">
+        <img src="anubis-egyptische-god-goud%20%281%29.webp"
+             alt="Anubis – Antiekgouden Buste" loading="lazy">
+      </a>
+      <div class="mk-product-info">
+        <span class="mk-category">Resin</span>
+        <h3>Anubis – Antiekgouden Buste</h3>
+        <strong class="mk-price">Vanaf € 64,95</strong>
+        <a class="mk-view" href="anubis-antiekgouden-buste.html">
+          Bekijk product &rarr;
+        </a>
+      </div>
+    </article>
+    <article class="mk-product">
+      <a class="mk-photo" href="bastet-antiekgouden-buste.html">
+        <img src="bastet-egyptische-kattengodin-antiekgoud.webp"
+             alt="Bastet – Antiekgouden Buste" loading="lazy">
+      </a>
+      <div class="mk-product-info">
+        <span class="mk-category">Resin</span>
+        <h3>Bastet – Antiekgouden Buste</h3>
+        <strong class="mk-price">Vanaf € 64,95</strong>
+        <a class="mk-view" href="bastet-antiekgouden-buste.html">
+          Bekijk product &rarr;
+        </a>
+      </div>
+    </article>
+    <article class="mk-product">
+      <a class="mk-photo" href="business-collection-bedrijfsdisplays.html">
+        <img src="makers-3d-labs-zakelijke-displays.webp"
+             alt="Business Collection – Bedrijfsdisplays" loading="lazy">
+      </a>
+      <div class="mk-product-info">
+        <span class="mk-category">Zakelijk</span>
+        <h3>Business Collection – Bedrijfsdisplays</h3>
+        <strong class="mk-price">Vanaf € 49,95</strong>
+        <a class="mk-view" href="business-collection-bedrijfsdisplays.html">
+          Bekijk product &rarr;
+        </a>
+      </div>
+    </article>
+    <article class="mk-product">
+      <a class="mk-photo" href="clipper-duo-set.html">
+        <img src="clipper-houders-gepersonaliseerd-set-2%20%281%29.webp"
+             alt="Clipper Duo Set – Gepersonaliseerd" loading="lazy">
+      </a>
+      <div class="mk-product-info">
+        <span class="mk-category">Accessoires</span>
+        <h3>Clipper Duo Set – Gepersonaliseerd</h3>
+        <strong class="mk-price">Vanaf € 22,95</strong>
+        <a class="mk-view" href="clipper-duo-set.html">
+          Bekijk product &rarr;
+        </a>
+      </div>
+    </article>
+    <article class="mk-product">
+      <a class="mk-photo" href="metalen-supporterskaart-premium.html">
+        <img src="feyenoord-seizoenskaart-zwart%20%281%29.webp"
+             alt="Metalen Supporterskaart" loading="lazy">
+      </a>
+      <div class="mk-product-info">
+        <span class="mk-category">Lasergraveren</span>
+        <h3>Metalen Supporterskaart</h3>
+        <strong class="mk-price">Vanaf € 24,95</strong>
+        <a class="mk-view" href="metalen-supporterskaart-premium.html">
+          Bekijk product &rarr;
+        </a>
+      </div>
+    </article></div>
+  <section style="margin-top:60px">
+    <h2>Overige categorieën – op aanvraag</h2>
+    <p>Bekijk de mogelijkheden en vraag een persoonlijk ontwerp aan.</p>
+<div class="mk-categories">
+    <details class="mk-cat">
+      <summary>Gepersonaliseerde sleutelhangers <span>Op aanvraag</span></summary>
+      <div class="mk-cat-body">
+        <p>Sleutelhangers met naam, bedrijfslogo of eigen ontwerp.</p>
+        <p>Prijs en mogelijkheden worden bepaald op basis van
+        afmetingen, materiaal, uitvoering en aantallen.</p>
+        <a href="contact.html?product=Gepersonaliseerde%20sleutelhangers">Vraag mogelijkheden aan &rarr;</a>
+      </div>
+    </details>
+    <details class="mk-cat">
+      <summary>Horeca en tafelproducten <span>Op aanvraag</span></summary>
+      <div class="mk-cat-body">
+        <p>QR-displays, tafelstandaards en gepersonaliseerde accessoires.</p>
+        <p>Prijs en mogelijkheden worden bepaald op basis van
+        afmetingen, materiaal, uitvoering en aantallen.</p>
+        <a href="contact.html?product=Horeca%20en%20tafelproducten">Vraag mogelijkheden aan &rarr;</a>
+      </div>
+    </details>
+    <details class="mk-cat">
+      <summary>Decoratie en woonaccessoires <span>Op aanvraag</span></summary>
+      <div class="mk-cat-body">
+        <p>Bijzondere 3D-ontwerpen, ornamenten en woondecoratie.</p>
+        <p>Prijs en mogelijkheden worden bepaald op basis van
+        afmetingen, materiaal, uitvoering en aantallen.</p>
+        <a href="contact.html?product=Decoratie%20en%20woonaccessoires">Vraag mogelijkheden aan &rarr;</a>
+      </div>
+    </details>
+    <details class="mk-cat">
+      <summary>Maatwerk 3D-printen <span>Op aanvraag</span></summary>
+      <div class="mk-cat-body">
+        <p>Onderdelen, speciale vormen en functionele oplossingen.</p>
+        <p>Prijs en mogelijkheden worden bepaald op basis van
+        afmetingen, materiaal, uitvoering en aantallen.</p>
+        <a href="contact.html?product=Maatwerk%203D-printen">Vraag mogelijkheden aan &rarr;</a>
+      </div>
+    </details>
+    <details class="mk-cat">
+      <summary>Gepersonaliseerde lasergravure <span>Op aanvraag</span></summary>
+      <div class="mk-cat-body">
+        <p>Metalen kaarten, decoratieve platen en bijzondere geschenken.</p>
+        <p>Prijs en mogelijkheden worden bepaald op basis van
+        afmetingen, materiaal, uitvoering en aantallen.</p>
+        <a href="contact.html?product=Gepersonaliseerde%20lasergravure">Vraag mogelijkheden aan &rarr;</a>
+      </div>
+    </details>
+    <details class="mk-cat">
+      <summary>Eigen ontwerp of prototype <span>Op aanvraag</span></summary>
+      <div class="mk-cat-body">
+        <p>Een uniek product op basis van jouw idee of voorbeeld.</p>
+        <p>Prijs en mogelijkheden worden bepaald op basis van
+        afmetingen, materiaal, uitvoering en aantallen.</p>
+        <a href="contact.html?product=Eigen%20ontwerp%20of%20prototype">Vraag mogelijkheden aan &rarr;</a>
+      </div>
+    </details></div>
+  </section>
+</main>
+<script src="assets/shop-data.js"></script><script src="assets/shop.js"></script></body></html>
