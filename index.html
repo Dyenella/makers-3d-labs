@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101b20">
+  <meta name="theme-color" content="#1f2937">
   <meta name="description" content="Makers 3D Labs in Ridderkerk. Ontwerp, 3D-printen, resin en lasergraveren voor ondernemers en particulieren.">
   <title>Makers 3D Labs — Your idea. Made possible.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -322,6 +322,154 @@
 }
 </style>
 
+
+<style id="makers-navy-home">
+:root {
+  --navy: #1f2937;
+  --teal: #00b4bd;
+}
+body {
+  background: var(--navy);
+  color: #f4f7fb;
+}
+.announcement, .footer {
+  background: #182230;
+  color: #c3d1df;
+}
+.announcement b { color: var(--teal); }
+.header {
+  background: var(--navy);
+  box-shadow: 0 1px 0 #ffffff14;
+}
+.head-inner { min-height: 96px; }
+.wordmark { flex-shrink: 0; }
+.brand-logo { width: 260px; }
+.hero { background: var(--navy); }
+.hero::before { border-color: #67dce011; }
+.hero-main {
+  grid-template-columns: 1.08fr .92fr;
+  gap: 20px;
+  padding: 65px 0 70px;
+  min-height: 650px;
+}
+.hero h1 { font-size: clamp(52px, 5.7vw, 82px); }
+.hero h1 span, .eyebrow { color: #36c8d0; }
+.hero-copy { color: #c5cdd8; }
+.hero-art { min-height: 500px; }
+.hero-art .sculpture {
+  width: min(100%, 510px);
+  height: auto;
+  aspect-ratio: 1;
+  transform: none;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+.hero-art .sculpture::before { display: none; }
+.hero-art .sculpture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.orbit {
+  width: 100%;
+  max-width: 490px;
+  border-color: #65d8df26;
+}
+.orbit.two { width: 82%; max-width: 402px; }
+.orbit.three { width: 64%; max-width: 314px; }
+.art-caption { bottom: 0; color: #96b3c5; }
+.hero-meta { color: #aebdce; }
+.hero-bottom { border-color: #ffffff14; }
+.hero .button-primary,
+.hero .button-ghost,
+.mk-webshop-nav {
+  background: #00b4bd !important;
+  border: 1px solid #00b4bd;
+  color: #092b35 !important;
+}
+.hero .button:hover, .mk-webshop-nav:hover {
+  background: #64dce1 !important;
+  color: #092b35 !important;
+}
+.dropdown {
+  background: #263548;
+  border-color: #425267;
+}
+.dropdown a:hover { background: #31475b; }
+.dropdown small { color: #becddd; }
+.desktop > a:hover,
+.drop-trigger:hover,
+.drop-trigger[aria-expanded="true"] {
+  background: #2a3c50;
+  color: #62d8de;
+}
+.section, .mk-shop-section, .mk-request, .m3-featured {
+  background: var(--navy);
+  color: #f4f7fb;
+}
+.kicker, .m3-kicker, .text-link,
+.service .nr, .service a,
+.mk-category, .mk-view, .mk-price, .mk-cat-body a {
+  color: #62d8de;
+}
+.lead, .mk-shop-head p,
+.mk-request-intro, .m3-head p {
+  color: #b9c7d7;
+}
+.service, .mk-product, .mk-cat {
+  background: #253346;
+  border-color: #ffffff18;
+}
+.service p, .mk-cat-body { color: #c1cddd; }
+.mk-product-info h3, .mk-cat summary { color: #f4f7fb; }
+.mk-photo { background: #182230; }
+.mk-all {
+  background: #00b4bd;
+  color: #092b35 !important;
+}
+@media (max-width: 1080px) {
+  .brand-logo { width: 230px; }
+  .hero-art { min-height: 400px; }
+}
+@media (max-width: 800px) {
+  .head-inner { min-height: 80px; }
+  .hero-main {
+    grid-template-columns: 1fr;
+    padding: 60px 0 35px;
+    gap: 15px;
+  }
+  .hero-art {
+    display: grid;
+    min-height: 330px;
+    width: min(100%, 390px);
+    margin: 0 auto;
+  }
+  .hero-art .sculpture { max-width: 350px; }
+  .hero h1 { font-size: clamp(44px, 8vw, 68px); }
+  .mobile-panel {
+    background: #1f2937;
+    border-color: #ffffff18;
+  }
+  .mobile-panel a, .mobile-panel summary {
+    color: #f4f7fb;
+    border-color: #ffffff18;
+  }
+  .mobile-panel details a { color: #c5d5e4; }
+  .mobile-cta {
+    background: #00b4bd;
+    color: #092b35 !important;
+  }
+}
+@media (max-width: 580px) {
+  .brand-logo { width: 210px; }
+  .hero-main { padding-top: 46px; }
+  .hero-art { min-height: 300px; }
+  .hero-art .sculpture { max-width: 310px; }
+}
+</style>
+
 </head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
@@ -363,7 +511,7 @@
   </header>
   <main>
     <section class="hero">
-      <div class="shell hero-main"><div><div class="eyebrow">Ontwerp • productie • personalisatie</div><h1>Van eerste idee<br>tot <span>iets unieks.</span></h1><p class="hero-copy">Voor ondernemers die willen opvallen. Voor makers met een bijzonder plan. Van premium 3D-producten tot verfijnd maatwerk — ontworpen om indruk te maken.</p><div class="buttons"><a class="button button-primary" href="winkel.html">Bekijk de webshop <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="contact.html">Maatwerk aanvragen <span aria-hidden="true">→</span></a></div></div><div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="sculpture"><img src="makers3dlabs-logo.webp" alt="Makers 3D Labs"></div><div class="art-caption">Design · Manufacture · Create</div></div></div>
+      <div class="shell hero-main"><div><div class="eyebrow">Ontwerp • productie • personalisatie</div><h1>Van eerste idee<br>tot <span>iets unieks.</span></h1><p class="hero-copy">Voor ondernemers die willen opvallen. Voor makers met een bijzonder plan. Van premium 3D-producten tot verfijnd maatwerk — ontworpen om indruk te maken.</p><div class="buttons"><a class="button button-primary" href="winkel.html">Bekijk de webshop <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="contact.html">Maatwerk aanvragen <span aria-hidden="true">→</span></a></div></div><div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="sculpture"><img src="Isometric%20navy%20and%20teal%20M%20emblem.png" alt="" width="1280" height="1280" fetchpriority="high"></div><div class="art-caption">Design · Manufacture · Create</div></div></div>
       <div class="hero-bottom"><div class="shell hero-meta"><span>3D-printen</span><span>Resin & detailwerk</span><span>Lasergraveren</span><span>Creatief maatwerk</span></div></div>
     </section>
     
