@@ -568,6 +568,109 @@ body {
 }
 </style>
 
+
+<style id="kerst-feestbalk">
+.kerst-banner {
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  min-height:105px;
+  padding:12px 32px;
+  overflow:hidden;
+  background:#fff8e9;
+  border-top:2px solid #d5ae56;
+  border-bottom:2px solid #d5ae56;
+}
+.kerst-banner:hover { background:#fff1d5; }
+.kerst-banner-copy {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px 22px;
+  text-align:center;
+}
+.kerst-banner strong {
+  color:#b52132;
+  font-size:25px;
+  letter-spacing:.12em;
+}
+.kerst-boodschap {
+  color:#185b3c;
+  font-size:17px;
+  font-weight:800;
+}
+.kerst-link {
+  color:#80570b;
+  font-weight:800;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+.kerst-decor {
+  display:flex;
+  align-items:flex-start;
+  gap:19px;
+  align-self:flex-start;
+  flex-shrink:0;
+  height:80px;
+}
+.kerst-bal {
+  position:relative;
+  display:block;
+  width:27px;
+  height:30px;
+  margin-top:32px;
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 30% 28%,#ffffffb0 0 7%,transparent 24%),
+    var(--bal-kleur);
+  box-shadow:inset -4px -5px 6px #00000025;
+  transform-origin:50% -30px;
+  animation:kerst-slinger 3.2s ease-in-out infinite alternate;
+}
+.kerst-bal::before {
+  content:"";
+  position:absolute;
+  width:1px;
+  height:29px;
+  left:50%;
+  top:-29px;
+  background:#a78335;
+}
+.kerst-bal::after {
+  content:"";
+  position:absolute;
+  width:10px;
+  height:6px;
+  left:calc(50% - 5px);
+  top:-4px;
+  border-radius:2px;
+  background:#c7a24e;
+}
+.bal-rood { --bal-kleur:#bd263b; }
+.bal-goud { --bal-kleur:#d8ad43; animation-delay:-1.1s; }
+.bal-groen { --bal-kleur:#247248; animation-delay:-2.2s; }
+@keyframes kerst-slinger {
+  from { transform:rotate(-13deg); }
+  to { transform:rotate(13deg); }
+}
+@media(max-width:700px) {
+  .kerst-banner { padding:10px 15px; gap:14px; }
+  .kerst-banner-copy { flex-direction:column; gap:4px; }
+  .kerst-banner strong { font-size:21px; }
+  .kerst-boodschap { font-size:14px; }
+  .kerst-link { font-size:13px; }
+  .kerst-decor { gap:10px; }
+  .kerst-bal { width:21px; height:24px; }
+  .kerst-decor .kerst-bal:nth-child(n+2) { display:none; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .kerst-bal { animation:none; }
+}
+</style>
+
 </head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
@@ -609,11 +712,25 @@ body {
   </header>
   <main>
 
+
 <a class="kerst-banner" href="#kerst">
-  <strong>KERST <span aria-hidden="true">🎄</span></strong>
-  <span>Maak de feestdagen persoonlijk</span>
-  <span>Ontdek &amp; vraag aan →</span>
+  <span class="kerst-decor" aria-hidden="true">
+    <span class="kerst-bal bal-rood"></span>
+    <span class="kerst-bal bal-goud"></span>
+    <span class="kerst-bal bal-groen"></span>
+  </span>
+  <span class="kerst-banner-copy">
+    <strong>KERST <span aria-hidden="true">🎄</span></strong>
+    <span class="kerst-boodschap">Maak de feestdagen persoonlijk</span>
+    <span class="kerst-link">Ontdek &amp; vraag aan →</span>
+  </span>
+  <span class="kerst-decor kerst-decor-rechts" aria-hidden="true">
+    <span class="kerst-bal bal-groen"></span>
+    <span class="kerst-bal bal-rood"></span>
+    <span class="kerst-bal bal-goud"></span>
+  </span>
 </a>
+
 
     <section class="hero">
       <div class="shell hero-main"><div><div class="eyebrow">Ontwerp • productie • personalisatie</div><h1>Van eerste idee<br>tot <span>iets unieks.</span></h1><p class="hero-copy">Voor ondernemers die willen opvallen. Voor makers met een bijzonder plan. Van premium 3D-producten tot verfijnd maatwerk — ontworpen om indruk te maken.</p><div class="buttons"><a class="button button-primary" href="winkel.html">Bekijk de webshop <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="contact.html">Maatwerk aanvragen <span aria-hidden="true">→</span></a></div></div><div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="sculpture"><img src="makers3dlabs-logo.webp" alt=""></div><div class="art-caption">Design · Manufacture · Create</div></div></div>
