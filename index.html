@@ -474,27 +474,54 @@ body {
 
 
 
-<style id="emblem-contrast">
-.hero-art {
-  isolation: isolate;
+
+
+
+
+
+
+<style id="original-emblem">
+.header,
+.hero {
+  background: #1d2936 !important;
 }
+
 .hero-art::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  border-radius: 50%;
-  background: radial-gradient(
-    ellipse at center,
-    #d5edf0 0%,
-    #a4cdd5 30%,
-    rgba(133, 184, 198, .65) 48%,
-    transparent 73%
-  );
-  pointer-events: none;
+  display: none !important;
 }
+
+.hero-art .sculpture {
+  position: relative;
+  width: min(100%, 450px);
+  height: auto;
+  aspect-ratio: 450 / 500;
+  overflow: hidden;
+  background: transparent;
+  transform: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.hero-art .sculpture::before {
+  display: none;
+}
+
 .hero-art .sculpture img {
-  filter: drop-shadow(0 14px 22px rgba(0, 0, 0, .3));
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 355.555556% !important;
+  max-width: none !important;
+  height: 100% !important;
+  object-fit: fill !important;
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+.hero-art .orbit {
+  border-color: rgba(111, 180, 192, .18);
 }
 </style>
 
@@ -539,7 +566,7 @@ body {
   </header>
   <main>
     <section class="hero">
-      <div class="shell hero-main"><div><div class="eyebrow">Ontwerp • productie • personalisatie</div><h1>Van eerste idee<br>tot <span>iets unieks.</span></h1><p class="hero-copy">Voor ondernemers die willen opvallen. Voor makers met een bijzonder plan. Van premium 3D-producten tot verfijnd maatwerk — ontworpen om indruk te maken.</p><div class="buttons"><a class="button button-primary" href="winkel.html">Bekijk de webshop <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="contact.html">Maatwerk aanvragen <span aria-hidden="true">→</span></a></div></div><div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="sculpture"><img src="Isometric%20navy%20and%20teal%20M%20emblem.png" alt="" width="1280" height="1280" fetchpriority="high"></div><div class="art-caption">Design · Manufacture · Create</div></div></div>
+      <div class="shell hero-main"><div><div class="eyebrow">Ontwerp • productie • personalisatie</div><h1>Van eerste idee<br>tot <span>iets unieks.</span></h1><p class="hero-copy">Voor ondernemers die willen opvallen. Voor makers met een bijzonder plan. Van premium 3D-producten tot verfijnd maatwerk — ontworpen om indruk te maken.</p><div class="buttons"><a class="button button-primary" href="winkel.html">Bekijk de webshop <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="contact.html">Maatwerk aanvragen <span aria-hidden="true">→</span></a></div></div><div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="sculpture"><img src="makers3dlabs-logo.webp" alt=""></div><div class="art-caption">Design · Manufacture · Create</div></div></div>
       <div class="hero-bottom"><div class="shell hero-meta"><span>3D-printen</span><span>Resin & detailwerk</span><span>Lasergraveren</span><span>Creatief maatwerk</span></div></div>
     </section>
     
