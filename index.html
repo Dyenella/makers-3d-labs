@@ -1504,7 +1504,30 @@ body {
   .bal-sjaal::after,.bal-sjaal i { animation:none; }
 }
 </style>
-</head>
+<style id="real-bauble-css">
+#kerst-kortingsbal{position:fixed;top:auto;left:auto;right:18px;bottom:20px;width:175px;height:175px;z-index:900;filter:drop-shadow(3px 9px 7px #0005);animation:real-bauble-drop 3s both;isolation:isolate}
+#kerst-kortingsbal[hidden]{display:none!important}
+#kerst-kortingsbal::before,#kerst-kortingsbal::after{display:none!important}
+#kerst-kortingsbal .discount-ball{position:relative;inset:auto;display:block;width:100%;height:100%;padding:0;border:0;border-radius:0;background:none;box-shadow:none;filter:none;animation:real-bauble-sway 6s ease-in-out 3s infinite alternate;transform-origin:50% 5%;color:#fff7e6;text-decoration:none}
+#kerst-kortingsbal .discount-ball::before,#kerst-kortingsbal .discount-ball::after{display:none!important}
+#kerst-kortingsbal .real-bauble-image{display:block;width:100%;height:100%;object-fit:contain}
+#kerst-kortingsbal .discount-copy{position:absolute;left:49%;top:43%;transform:translate(-50%,-50%);z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:0;width:90px;line-height:1.05;text-align:center;color:#fff8e6;text-shadow:0 1px 3px #520313,0 0 6px #520313;font-family:inherit;animation:none}
+#kerst-kortingsbal .discount-copy strong{font-size:13px;letter-spacing:.12em;color:inherit}
+#kerst-kortingsbal .discount-copy b{font-size:33px;margin:1px 0;color:inherit;line-height:1}
+#kerst-kortingsbal .discount-copy span{font-size:14px;color:inherit}
+#kerst-kortingsbal .discount-close{position:absolute;top:5px;right:0;width:26px;height:26px;border:1px solid #e9d9c4;background:#263243e8;border-radius:50%;color:white;font:20px/1 sans-serif;cursor:pointer;z-index:4}
+#kerst-kortingsbal :focus-visible{outline:3px solid #8ce1e4;outline-offset:3px}
+#kerst-kortingsbal .real-light{position:absolute;width:5px;height:5px;border-radius:50%;background:var(--glow);box-shadow:0 0 5px 2px var(--glow);pointer-events:none;animation:real-light-glow 2.8s ease-in-out infinite alternate;opacity:.3}
+#kerst-kortingsbal .light-red{left:17%;top:65%;--glow:#ff4054}
+#kerst-kortingsbal .light-green{left:28%;top:79%;--glow:#4cff6a;animation-delay:-.8s}
+#kerst-kortingsbal .light-gold{left:49%;top:81%;--glow:#ffc845;animation-delay:-1.6s}
+#kerst-kortingsbal .light-blue{left:69%;top:74%;--glow:#4aafff;animation-delay:-2.2s}
+@keyframes real-light-glow{from{opacity:.15}to{opacity:.8}}
+@keyframes real-bauble-drop{0%{transform:translateY(calc(-100vh - 200px)) rotate(-9deg)}48%{transform:translateY(0) rotate(4deg)}65%{transform:translateY(-95px) rotate(-4deg)}78%{transform:translateY(0)}87%{transform:translateY(-30px) rotate(2deg)}94%{transform:translateY(0)}97%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+@keyframes real-bauble-sway{from{transform:rotate(-2deg)}to{transform:rotate(2deg)}}
+@media(max-width:700px){#kerst-kortingsbal{width:145px;height:145px;right:10px;bottom:15px}#kerst-kortingsbal .discount-copy strong{font-size:11px}#kerst-kortingsbal .discount-copy b{font-size:28px}#kerst-kortingsbal .discount-copy span{font-size:12px}}
+@media(prefers-reduced-motion:reduce){#kerst-kortingsbal,#kerst-kortingsbal .discount-ball,#kerst-kortingsbal .real-light{animation:none}}
+</style></head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
   <header class="header">
@@ -1719,12 +1742,5 @@ body {
   </script>
 <script src="assets/shop-data.js"></script>
 <script src="assets/shop.js"></script>
-<script src="assets/home-slideshow.js"></script><aside id="kerst-kortingsbal" class="discount-bauble" aria-label="Kerstactie: 5% korting op alle artikelen" hidden>
-<button class="discount-close" type="button" aria-label="Kerstactie sluiten">×</button>
-<a class="discount-ball" href="winkel.html"><span class="discount-cap" aria-hidden="true"></span>
-<span class="bal-sjaal" aria-hidden="true">
-  <i></i><i></i><i></i><i></i><i></i>
-</span>
-<span class="discount-copy"><strong>KERST</strong><span>Pak je</span><b>5%</b><span>korting</span><small>op alle artikelen</small></span></a>
-</aside><script id="kerst-kortingsbal-js">(()=>{const ball=document.getElementById('kerst-kortingsbal');if(!ball)return;let dismissed=false;try{dismissed=sessionStorage.getItem('kerst-kortingsbal-dicht')==='1';}catch(e){}if(!dismissed)ball.hidden=false;ball.querySelector('.discount-close').addEventListener('click',()=>{ball.hidden=true;try{sessionStorage.setItem('kerst-kortingsbal-dicht','1');}catch(e){}});})();</script></body>
+<script src="assets/home-slideshow.js"></script><aside id="kerst-kortingsbal" class="discount-bauble" aria-label="Kerst: 5% korting" hidden><button class="discount-close" type="button" aria-label="Kerstactie sluiten">×</button><a class="discount-ball" href="winkel.html"><img class="real-bauble-image" src="kerstbal-glitter-3d.webp" alt="" width="1254" height="1254"><span class="discount-copy"><strong>KERST</strong><b>5%</b><span>korting</span></span><span class="real-light light-red" aria-hidden="true"></span><span class="real-light light-green" aria-hidden="true"></span><span class="real-light light-gold" aria-hidden="true"></span><span class="real-light light-blue" aria-hidden="true"></span></a></aside><script id="kerst-kortingsbal-js">(()=>{const ball=document.getElementById('kerst-kortingsbal');if(!ball)return;let dismissed=false;try{dismissed=sessionStorage.getItem('kerst-kortingsbal-3d-dicht')==='1';}catch(e){}if(!dismissed)ball.hidden=false;ball.querySelector('.discount-close').addEventListener('click',()=>{ball.hidden=true;try{sessionStorage.setItem('kerst-kortingsbal-3d-dicht','1');}catch(e){}});})();</script></body>
 </html>
