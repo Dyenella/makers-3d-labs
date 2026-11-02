@@ -513,6 +513,14 @@ body.ms-site-shell{background:#303d4c;color:#f3f7fa}
 @media(max-width:350px){.shop-category-card span{font-size:14px;padding:10px 9px 3px}.shop-category-card small{padding:0 9px 12px;font-size:11px}}
 @media(prefers-reduced-motion:reduce){.shop-category-card{transition:none}}
 </style>
+
+<style id="shop-eerst-categorie">
+.shop-filter-panel[hidden],
+.mk-shop-page .mk-grid[hidden] {
+  display:none !important;
+}
+</style>
+
 </head><body class="ms-site-shell"><header class="ms-simple-head shop-brand-header">
 <div class="head-inner">
 <a href="index.html" aria-label="Makers 3D Labs — Home"><img src="makers3dlabs-logo.webp" alt="Makers 3D Labs — Your idea. Made possible." width="1600" height="500"></a>
@@ -663,65 +671,7 @@ body.ms-site-shell{background:#303d4c;color:#f3f7fa}
         </a>
       </div>
     </article></div>
-  <section style="margin-top:60px">
-    <h2>Overige categorieën – op aanvraag</h2>
-    <p>Bekijk de mogelijkheden en vraag een persoonlijk ontwerp aan.</p>
-<div class="mk-categories">
-    <details class="mk-cat">
-      <summary>Gepersonaliseerde sleutelhangers <span>Op aanvraag</span></summary>
-      <div class="mk-cat-body">
-        <p>Sleutelhangers met naam, bedrijfslogo of eigen ontwerp.</p>
-        <p>Prijs en mogelijkheden worden bepaald op basis van
-        afmetingen, materiaal, uitvoering en aantallen.</p>
-        <a href="contact.html?product=Gepersonaliseerde%20sleutelhangers">Vraag mogelijkheden aan &rarr;</a>
-      </div>
-    </details>
-    <details class="mk-cat">
-      <summary>Horeca en tafelproducten <span>Op aanvraag</span></summary>
-      <div class="mk-cat-body">
-        <p>QR-displays, tafelstandaards en gepersonaliseerde accessoires.</p>
-        <p>Prijs en mogelijkheden worden bepaald op basis van
-        afmetingen, materiaal, uitvoering en aantallen.</p>
-        <a href="contact.html?product=Horeca%20en%20tafelproducten">Vraag mogelijkheden aan &rarr;</a>
-      </div>
-    </details>
-    <details class="mk-cat">
-      <summary>Decoratie en woonaccessoires <span>Op aanvraag</span></summary>
-      <div class="mk-cat-body">
-        <p>Bijzondere 3D-ontwerpen, ornamenten en woondecoratie.</p>
-        <p>Prijs en mogelijkheden worden bepaald op basis van
-        afmetingen, materiaal, uitvoering en aantallen.</p>
-        <a href="contact.html?product=Decoratie%20en%20woonaccessoires">Vraag mogelijkheden aan &rarr;</a>
-      </div>
-    </details>
-    <details class="mk-cat">
-      <summary>Maatwerk 3D-printen <span>Op aanvraag</span></summary>
-      <div class="mk-cat-body">
-        <p>Onderdelen, speciale vormen en functionele oplossingen.</p>
-        <p>Prijs en mogelijkheden worden bepaald op basis van
-        afmetingen, materiaal, uitvoering en aantallen.</p>
-        <a href="contact.html?product=Maatwerk%203D-printen">Vraag mogelijkheden aan &rarr;</a>
-      </div>
-    </details>
-    <details class="mk-cat">
-      <summary>Gepersonaliseerde lasergravure <span>Op aanvraag</span></summary>
-      <div class="mk-cat-body">
-        <p>Metalen kaarten, decoratieve platen en bijzondere geschenken.</p>
-        <p>Prijs en mogelijkheden worden bepaald op basis van
-        afmetingen, materiaal, uitvoering en aantallen.</p>
-        <a href="contact.html?product=Gepersonaliseerde%20lasergravure">Vraag mogelijkheden aan &rarr;</a>
-      </div>
-    </details>
-    <details class="mk-cat">
-      <summary>Eigen ontwerp of prototype <span>Op aanvraag</span></summary>
-      <div class="mk-cat-body">
-        <p>Een uniek product op basis van jouw idee of voorbeeld.</p>
-        <p>Prijs en mogelijkheden worden bepaald op basis van
-        afmetingen, materiaal, uitvoering en aantallen.</p>
-        <a href="contact.html?product=Eigen%20ontwerp%20of%20prototype">Vraag mogelijkheden aan &rarr;</a>
-      </div>
-    </details></div>
-  </section>
+  
 </main>
 <script src="assets/shop-data.js"></script><script src="assets/shop.js"></script><script id="makers-webshop-categorieen">
 (function(){
@@ -750,11 +700,16 @@ body.ms-site-shell{background:#303d4c;color:#f3f7fa}
   bloemenvazen:{title:'Bloemenvazen op maat',text:'Wil je een decoratieve vaas in een bijzondere vorm? Vertel ons je gewenste model, kleur en formaat. We bevestigen vooraf de uitvoering, prijs en mogelijkheden.',product:'Bloemenvazen'},
   maskers:{title:'Maskers op maat',text:'Vraag een decoratief of cosplaymasker aan. Geef het ontwerp, de maat en gewenste afwerking door; we bevestigen de mogelijkheden en prijs vooraf.',product:'Maskers'}
  };
- let active='alles';
+ let active='';
  function update(){
+  const chosen=active!=='';
+  const filterPanel=document.querySelector('.shop-filter-panel');
+  if(filterPanel)filterPanel.hidden=!chosen;
+  grid.hidden=!chosen;
+
   const q=search.value.trim().toLocaleLowerCase('nl-NL');
   let count=0;
-  cards.forEach(item=>{const show=(active==='alles'||item.categories.includes(active))&&(!q||item.text.includes(q));item.card.hidden=!show;if(show)count++;});
+  cards.forEach(item=>{const show=(active!==''&&(active==='alles'||item.categories.includes(active)))&&(!q||item.text.includes(q));item.card.hidden=!show;if(show)count++;});
   buttons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.shopCategory===active)));
   const request=document.getElementById('shop-category-request'),special=requested[active];
   request.replaceChildren();request.hidden=!special;
