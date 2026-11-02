@@ -2,3 +2,34 @@
 .showcase-caption,
 .showcase-controls p { display: none !important; }
 .showcase-controls { justify-content: center; }
+
+/* Alleen foto's, zacht opgenomen in de homepage */
+.hero-showcase {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  overflow: visible !important;
+}
+.showcase-caption,
+.showcase-controls {
+  display: none !important;
+}
+.showcase-viewport {
+  overflow: hidden;
+  -webkit-mask-image: radial-gradient(ellipse closest-side, black 65%, transparent 100%);
+  mask-image: radial-gradient(ellipse closest-side, black 65%, transparent 100%);
+}
+.showcase-slide img {
+  background: transparent !important;
+}
+.showcase-slide.is-entering {
+  animation: zachte-foto 1s ease both !important;
+}
+@keyframes zachte-foto {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .showcase-slide.is-entering { animation: none !important; }
+}
