@@ -491,6 +491,28 @@ body.ms-site-shell{background:#303d4c;color:#f3f7fa}
   background:#7e2938;
 }
 </style>
+<style id="shop-category-gallery-style">
+#shop-category-gallery{margin:30px 0 24px}
+#shop-category-gallery h2{color:#fff;font-size:clamp(24px,3vw,32px);line-height:1.2;margin:0 0 10px}
+#shop-category-gallery .shop-category-intro{color:#c4d3df;font-size:14px;max-width:750px;margin:0 0 20px}
+.shop-category-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.shop-category-card{display:flex;flex-direction:column;align-items:stretch;text-align:left;min-width:0;overflow:hidden;padding:0;background:#223244;border:1px solid #607b8e;border-radius:14px;color:#fff;font:inherit;cursor:pointer}
+.shop-category-card img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;background:#152330}
+.shop-category-card span{padding:13px 14px 3px;font-size:17px;font-weight:750}
+.shop-category-card small{padding:0 14px 14px;color:#9ccdd5;font-size:12px}
+.shop-category-card:hover{border-color:#79d6db;background:#2a4053}
+.shop-category-card[aria-pressed="true"]{border:2px solid #6dd6d9;box-shadow:0 0 0 2px #6dd6d922}
+.shop-category-card[aria-pressed="true"] span{color:#8ce1e4}
+.shop-category-card:focus-visible{outline:3px solid #8ce1e4;outline-offset:4px}
+#shop-category-request{margin:18px 0 25px;padding:22px;border:1px solid #7298a3;border-radius:14px;background:#203749;color:#e7f0f6}
+#shop-category-request h3{margin:0 0 8px;color:#fff;font-size:21px}
+#shop-category-request p{color:#c4d3df;font-size:14px;margin:0 0 16px}
+#shop-category-request a{display:inline-block;background:#00afb8;color:#082d34;padding:11px 18px;border-radius:9px;text-decoration:none;font-weight:750}
+#shop-category-request[hidden]{display:none!important}
+@media(max-width:800px){.shop-category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.shop-category-card span{font-size:16px}}
+@media(max-width:350px){.shop-category-card span{font-size:14px;padding:10px 9px 3px}.shop-category-card small{padding:0 9px 12px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.shop-category-card{transition:none}}
+</style>
 </head><body class="ms-site-shell"><header class="ms-simple-head shop-brand-header">
 <div class="head-inner">
 <a href="index.html" aria-label="Makers 3D Labs — Home"><img src="makers3dlabs-logo.webp" alt="Makers 3D Labs — Your idea. Made possible." width="1600" height="500"></a>
@@ -501,18 +523,15 @@ body.ms-site-shell{background:#303d4c;color:#f3f7fa}
   <h1>Onze webshop</h1>
   <p>Ontdek onze collectie 3D-geprinte en lasergegraveerde producten.
   Kies een product om uitvoeringen, prijzen en personalisatie te bekijken.</p>
+<section id="shop-category-gallery" aria-labelledby="shop-category-title">
+<h2 id="shop-category-title">Shop per categorie</h2>
+<p class="shop-category-intro">Kies een categorie en ontdek de producten. De foto's laten voorbeelden van de mogelijkheden zien.</p>
+<div class="shop-category-grid"><button class="shop-category-card" type="button" data-shop-category="kerst" aria-pressed="false"><img src="categorie-kerst.webp" alt="Persoonlijke decoratie en kerstcadeaus" width="1254" height="1254" loading="lazy"><span>Kerst</span><small>Bekijk producten →</small></button><button class="shop-category-card" type="button" data-shop-category="zakelijk" aria-pressed="false"><img src="categorie-zakelijk.webp" alt="Bedrijfsdisplays, QR-standaards en logo-artikelen" width="1254" height="1254" loading="lazy"><span>Zakelijk</span><small>Bekijk producten →</small></button><button class="shop-category-card" type="button" data-shop-category="voetbal" aria-pressed="false"><img src="categorie-voetbal.webp" alt="Stadionmodellen en supportersartikelen" width="1254" height="1254" loading="lazy"><span>Voetbal</span><small>Bekijk producten →</small></button><button class="shop-category-card" type="button" data-shop-category="resin" aria-pressed="false"><img src="categorie-resin.webp" alt="Gedetailleerde beelden en miniaturen" width="1254" height="1254" loading="lazy"><span>Resin</span><small>Bekijk producten →</small></button><button class="shop-category-card" type="button" data-shop-category="laser" aria-pressed="false"><img src="categorie-lasergravure.webp" alt="Persoonlijke gravures op hout en metaal" width="1254" height="1254" loading="lazy"><span>Lasergravure</span><small>Bekijk producten →</small></button><button class="shop-category-card" type="button" data-shop-category="bloemenvazen" aria-pressed="false"><img src="categorie-bloemenvazen.webp" alt="Decoratieve vazen op aanvraag" width="1254" height="1254" loading="lazy"><span>Bloemenvazen</span><small>Op aanvraag</small></button><button class="shop-category-card" type="button" data-shop-category="persoonlijk" aria-pressed="false"><img src="categorie-gepersonaliseerd.webp" alt="Namen, teksten en persoonlijke cadeaus" width="1254" height="1254" loading="lazy"><span>Gepersonaliseerd</span><small>Bekijk producten →</small></button><button class="shop-category-card" type="button" data-shop-category="maskers" aria-pressed="false"><img src="categorie-maskers.webp" alt="Decoratieve en cosplaymaskers op aanvraag" width="1254" height="1254" loading="lazy"><span>Maskers</span><small>Op aanvraag</small></button></div></section>
 <section class="shop-filter-panel" aria-label="Producten zoeken en filteren">
 <div class="shop-search"><label for="shop-search">Zoek een product</label><input id="shop-search" type="search" placeholder="Bijvoorbeeld kersthanger, stadion of Anubis" autocomplete="off"></div>
-<div class="shop-filter-buttons" role="group" aria-label="Productcategorie">
-<button type="button" data-category="alles" aria-pressed="true">Alles</button>
-<button type="button" data-category="kerst" aria-pressed="false">Kerst</button>
-<button type="button" data-category="voetbal" aria-pressed="false">Voetbal</button>
-<button type="button" data-category="resin" aria-pressed="false">Resin</button>
-<button type="button" data-category="zakelijk" aria-pressed="false">Zakelijk</button>
-<button type="button" data-category="laser" aria-pressed="false">Lasergravure</button>
-<button type="button" data-category="persoonlijk" aria-pressed="false">Gepersonaliseerd</button>
-</div><p id="shop-filter-count" role="status" aria-live="polite"></p>
+<div class="shop-filter-buttons"><button type="button" data-shop-category="alles" aria-pressed="true">Alle producten</button></div><p id="shop-filter-count" role="status" aria-live="polite"></p>
 <p id="shop-filter-empty" hidden>Geen producten gevonden. Kies een andere categorie of pas je zoekterm aan.</p>
+<div id="shop-category-request" hidden></div>
 </section>
 <div class="mk-grid"><article class="mk-product" id="kleine-cadeaus-product">
 <a class="mk-photo" href="kleine-cadeaus.html"><img src="kleine-cadeaus-kerstsfeer.webp" alt="Persoonlijke sleutelhangers en gegraveerde cadeaulabels" loading="lazy"></a>
@@ -706,10 +725,9 @@ body.ms-site-shell{background:#303d4c;color:#f3f7fa}
 </main>
 <script src="assets/shop-data.js"></script><script src="assets/shop.js"></script><script id="makers-webshop-categorieen">
 (function(){
- const search=document.getElementById('shop-search');
- const panel=document.querySelector('.shop-filter-buttons');
- const grid=document.querySelector('.mk-shop-page .mk-grid');
- if(!search||!panel||!grid)return;
+ const search=document.getElementById('shop-search'),grid=document.querySelector('.mk-shop-page .mk-grid');
+ if(!search||!grid)return;
+ const buttons=Array.from(document.querySelectorAll('[data-shop-category]'));
  const mapping={
   'kersthangers.html':['kerst','persoonlijk'],
   'kersthangers-bedrijfslogo.html':['kerst','zakelijk','persoonlijk'],
@@ -728,21 +746,29 @@ body.ms-site-shell{background:#303d4c;color:#f3f7fa}
   const link=card.querySelector('a[href]'),href=link?link.getAttribute('href').split(/[?#]/)[0]:'';
   return {card,categories:mapping[href]||[],text:card.textContent.toLocaleLowerCase('nl-NL')};
  });
+ const requested={
+  bloemenvazen:{title:'Bloemenvazen op maat',text:'Wil je een decoratieve vaas in een bijzondere vorm? Vertel ons je gewenste model, kleur en formaat. We bevestigen vooraf de uitvoering, prijs en mogelijkheden.',product:'Bloemenvazen'},
+  maskers:{title:'Maskers op maat',text:'Vraag een decoratief of cosplaymasker aan. Geef het ontwerp, de maat en gewenste afwerking door; we bevestigen de mogelijkheden en prijs vooraf.',product:'Maskers'}
+ };
  let active='alles';
  function update(){
   const q=search.value.trim().toLocaleLowerCase('nl-NL');
   let count=0;
-  cards.forEach(item=>{
-   const show=(active==='alles'||item.categories.includes(active))&&(!q||item.text.includes(q));
-   item.card.hidden=!show;if(show)count++;
-  });
-  document.getElementById('shop-filter-count').textContent=count+' van '+cards.length+' producten';
-  document.getElementById('shop-filter-empty').hidden=count>0;
+  cards.forEach(item=>{const show=(active==='alles'||item.categories.includes(active))&&(!q||item.text.includes(q));item.card.hidden=!show;if(show)count++;});
+  buttons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.shopCategory===active)));
+  const request=document.getElementById('shop-category-request'),special=requested[active];
+  request.replaceChildren();request.hidden=!special;
+  if(special){
+   const heading=document.createElement('h3');heading.textContent=special.title;
+   const text=document.createElement('p');text.textContent=special.text;
+   const link=document.createElement('a');link.href='contact.html?product='+encodeURIComponent(special.product)+'#quoteForm';link.textContent='Vraag jouw ontwerp aan →';
+   request.append(heading,text,link);
+  }
+  document.getElementById('shop-filter-count').textContent=special?'Deze categorie is beschikbaar op aanvraag.':count+' van '+cards.length+' producten';
+  document.getElementById('shop-filter-empty').hidden=count>0||Boolean(special);
  }
- panel.querySelectorAll('button[data-category]').forEach(button=>button.addEventListener('click',()=>{
-  active=button.dataset.category;
-  panel.querySelectorAll('button[data-category]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
-  update();
+ buttons.forEach(button=>button.addEventListener('click',()=>{
+  active=button.dataset.shopCategory;search.value='';update();
  }));
  search.addEventListener('input',update);
  update();

@@ -97,4 +97,15 @@ if(new URLSearchParams(location.search).get('product')==='3D Voetbalstadion Delu
  }
 }
 </script>
+<script id="categorie-maatwerk-aanvraag">
+(function(){
+ const name=new URLSearchParams(location.search).get('product');
+ if(!['Bloemenvazen','Maskers'].includes(name))return;
+ const pick=document.getElementById('product'),details=document.getElementById('omschrijving');
+ if(!pick||!details)return;
+ if(!Array.from(pick.options).some(o=>o.value===name)){const option=document.createElement('option');option.value=name;option.textContent=name;pick.append(option);}
+ pick.value=name;
+ details.placeholder=name==='Bloemenvazen'?'Beschrijf de gewenste vaas: model, kleur, formaat en eventueel het gebruik met droogbloemen of verse bloemen.':'Beschrijf het masker: ontwerp, maat, kleur en gewenste afwerking.';
+})();
+</script>
 </body></html>
