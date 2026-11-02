@@ -118,4 +118,4 @@ if(new URLSearchParams(location.search).get('product')==='Handtas-bloemenvaas'){
  }
 }
 </script>
-</body></html>
+<script id="masker-aanvraag">(()=>{if(new URLSearchParams(location.search).get('product')!=='Masker')return;const select=document.getElementById('product');if(select){if(!Array.from(select.options).some(o=>o.value==='Masker'))select.add(new Option('Masker','Masker'));select.value='Masker';}try{const data=JSON.parse(sessionStorage.getItem('masker-aanvraag')||'null');if(data){const desc=document.getElementById('omschrijving'),qty=document.getElementById('aantal');if(desc)desc.value=data.description;if(qty)qty.value=data.quantity;}}catch(e){}})();</script></body></html>
