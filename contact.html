@@ -87,4 +87,14 @@ if(new URLSearchParams(location.search).get('product')==='Kleine cadeaus op maat
  }
 }
 </script>
+<script id="stadion-aanvraag">
+if(new URLSearchParams(location.search).get('product')==='3D Voetbalstadion Deluxe'){
+ const pick=document.getElementById('product'),details=document.getElementById('omschrijving');
+ if(pick&&details){
+  if(!Array.from(pick.options).some(o=>o.value==='3D Voetbalstadion Deluxe')){const o=document.createElement('option');o.value='3D Voetbalstadion Deluxe';o.textContent=o.value;pick.append(o);}
+  pick.value='3D Voetbalstadion Deluxe';
+  try{const data=JSON.parse(sessionStorage.getItem('makers-stadion-aanvraag')||'null');if(data&&typeof data.description==='string'&&data.description.length<=3000)details.value=data.description;}catch(error){}
+ }
+}
+</script>
 </body></html>

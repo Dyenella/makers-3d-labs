@@ -201,6 +201,144 @@ textarea {
 }
 </style>
 <link rel="stylesheet" href="assets/makers-shop-upgrade.css">
+<style id="stadion-keuze-stijl">
+#stadion-keuze{padding:17px;background:#edf5f1;border:1px solid #c5dacf;border-radius:12px;margin-bottom:16px}
+#stadion-keuze h2{font-size:18px;margin:0 0 10px}
+#stadion-keuze label{display:block;font-size:13px;font-weight:700;margin:10px 0 5px}
+#stadion-keuze select,#stadion-keuze input{display:block;box-sizing:border-box;width:100%;max-width:100%;padding:12px;border:1px solid #a7c2b5;border-radius:8px;background:#fff;color:#152a2e;font:inherit;font-size:14px}
+#stadion-keuze .product-info{font-size:12px;margin:12px 0 0}
+#stadion-keuze :focus-visible{outline:3px solid #128c80;outline-offset:3px}
+#ander-stadion-velden[hidden]{display:none}
+</style>
+
+<style id="voetbal-sfeer">
+body.m3-product-style {
+  background-color:#303d4c;
+  background-image:url("data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%22%20height%3D%22600%22%0A%20%20%20%20%20viewBox%3D%220%200%20100%20600%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cg%20id%3D%22ball%22%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%2225%22%20fill%3D%22%23e4eaf0%22%20stroke%3D%22%238795a6%22%20stroke-width%3D%221.5%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0-10%2010-3%206%209-6%209-10-3Z%22%20fill%3D%22%23182632%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0-10%200-24%20M10-3%2023-8%20M6%209%2015%2020%20M-6%209-15%2020%20M-10-3-23-8%22%0A%20%20%20%20%20%20%20%20%20%20%20%20fill%3D%22none%22%20stroke%3D%22%23182632%22%20stroke-width%3D%222%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M-8-24%200-19%208-24%20M24-6%2018%201%2023%2010%20M13%2021%205%2019-1%2025%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M-19%2017-17%208-25%203%22%0A%20%20%20%20%20%20%20%20%20%20%20%20fill%3D%22none%22%20stroke%3D%22%23182632%22%20stroke-width%3D%224%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cg%20opacity%3D%22.35%22%3E%0A%20%20%20%20%3Cuse%20href%3D%22%23ball%22%20x%3D%2235%22%20y%3D%2290%22%2F%3E%0A%20%20%20%20%3Cuse%20href%3D%22%23ball%22%20x%3D%2268%22%20y%3D%22330%22%2F%3E%0A%20%20%20%20%3Cuse%20href%3D%22%23ball%22%20x%3D%2230%22%20y%3D%22535%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A"),url("data:image/svg+xml,%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%22%20height%3D%22600%22%0A%20%20%20%20%20viewBox%3D%220%200%20100%20600%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cg%20id%3D%22ball%22%3E%0A%20%20%20%20%20%20%3Ccircle%20r%3D%2225%22%20fill%3D%22%23e4eaf0%22%20stroke%3D%22%238795a6%22%20stroke-width%3D%221.5%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0-10%2010-3%206%209-6%209-10-3Z%22%20fill%3D%22%23182632%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M0-10%200-24%20M10-3%2023-8%20M6%209%2015%2020%20M-6%209-15%2020%20M-10-3-23-8%22%0A%20%20%20%20%20%20%20%20%20%20%20%20fill%3D%22none%22%20stroke%3D%22%23182632%22%20stroke-width%3D%222%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M-8-24%200-19%208-24%20M24-6%2018%201%2023%2010%20M13%2021%205%2019-1%2025%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M-19%2017-17%208-25%203%22%0A%20%20%20%20%20%20%20%20%20%20%20%20fill%3D%22none%22%20stroke%3D%22%23182632%22%20stroke-width%3D%224%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cg%20opacity%3D%22.35%22%3E%0A%20%20%20%20%3Cuse%20href%3D%22%23ball%22%20x%3D%2235%22%20y%3D%2290%22%2F%3E%0A%20%20%20%20%3Cuse%20href%3D%22%23ball%22%20x%3D%2268%22%20y%3D%22330%22%2F%3E%0A%20%20%20%20%3Cuse%20href%3D%22%23ball%22%20x%3D%2230%22%20y%3D%22535%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+  background-repeat:repeat-y,repeat-y;
+  background-position:left 110px,right 290px;
+  background-size:clamp(22px,6vw,90px) 600px;
+  color:#f0f5f8;
+}
+.product-header {
+  background:#1d2936;
+  color:#fff;
+  border-bottom:2px solid #4c9a66;
+}
+.product-header a {
+  color:#fff;
+}
+.product-layout .category {
+  color:#91d7aa;
+}
+.product-layout h1 {
+  color:#fff;
+}
+.product-layout .price,
+.product-layout .total-price strong {
+  color:#a5e2b9;
+}
+.product-layout .product-info {
+  color:#d0dce5;
+}
+#stadion-keuze {
+  background:#183b2b;
+  border-color:#6eaa83;
+  color:#f2f8f4;
+}
+#stadion-keuze h2 {
+  color:#fff;
+}
+#stadion-keuze .product-info {
+  color:#d0e3d6;
+}
+#stadion-keuze select,
+#stadion-keuze input,
+.product-layout textarea {
+  background:#243f34;
+  color:#fff;
+  border-color:#8ba997;
+}
+#stadion-keuze select option,
+#stadion-keuze select optgroup {
+  background:#243f34;
+  color:#fff;
+}
+.product-layout textarea::placeholder,
+#stadion-keuze input::placeholder {
+  color:#c1d1c8;
+  opacity:1;
+}
+.m3-accordion {
+  background:#183b2b;
+  border-color:#6eaa83;
+}
+.m3-accordion summary,
+.m3-accordion[open] summary {
+  background:#234d36;
+  color:#fff;
+}
+.m3-accordion summary:hover {
+  background:#2c6042;
+}
+.m3-accordion summary::after {
+  color:#a5e2b9;
+}
+.product-layout .option {
+  background:#234334;
+  color:#f4f8f5;
+  border-color:#6f927d;
+}
+.product-layout .option small {
+  color:#ccdfd2;
+}
+.product-layout .option:has(input:checked) {
+  background:#315f43;
+  border-color:#a5e2b9;
+}
+.product-layout .option input {
+  accent-color:#83d39c;
+}
+.product-layout .total-price {
+  border-color:#ffffff30;
+}
+.product-layout .order-button {
+  background:#347b4c;
+  color:#fff;
+  border:1px solid #91d7aa;
+}
+.product-layout .order-button::before {
+  content:"⚽ ";
+}
+.product-layout .order-button:hover {
+  background:#28603b;
+}
+.product-layout .notice {
+  background:#24394a;
+  color:#d8e6f0;
+  border:1px solid #6b879e;
+}
+.m3-description-wide,
+.detail-box {
+  background:#213345;
+  color:#e5edf3;
+  border-color:#61788b;
+}
+.m3-description-wide h2,
+.detail-box h2 {
+  color:#a5e2b9;
+}
+.m3-description-wide p,
+.detail-box li {
+  color:#d0dce5;
+}
+@media(max-width:700px) {
+  body.m3-product-style {
+    background-size:22px 600px;
+  }
+}
+</style>
+
 </head>
 
 <body class="m3-product-style">
@@ -236,7 +374,7 @@ textarea {
 
     <h1>3D Voetbalstadion – Deluxe Edition</h1>
 
-    <div class="price">€ 369,95</div>
+    <div class="price">Vanaf € 369,95</div>
 
     <div class="product-info">
       Inclusief btw | 30–35 cm | Volledig in kleur | Op bestelling gemaakt
@@ -263,6 +401,19 @@ textarea {
     </p>
 
     <form id="product-form">
+<section id="stadion-keuze" aria-labelledby="stadion-label">
+<h2 id="stadion-label">Kies jouw stadion</h2>
+<label for="stadion-select">Club en stadion *</label>
+<select id="stadion-select" required><option value="">Kies jouw stadion</option><optgroup label="Nederlandse profclubs"><option value="ADO Den Haag — WerkTalent Stadion — Den Haag">ADO Den Haag — WerkTalent Stadion — Den Haag</option><option value="AZ — AFAS Stadion — Alkmaar">AZ — AFAS Stadion — Alkmaar</option><option value="Ajax — Johan Cruijff ArenA — Amsterdam">Ajax — Johan Cruijff ArenA — Amsterdam</option><option value="Almere City FC — Yanmar Stadion — Almere">Almere City FC — Yanmar Stadion — Almere</option><option value="De Graafschap — De Vijverberg — Doetinchem">De Graafschap — De Vijverberg — Doetinchem</option><option value="Excelsior — Woudestein — Rotterdam">Excelsior — Woudestein — Rotterdam</option><option value="FC Den Bosch — De Vliert — &#x27;s-Hertogenbosch">FC Den Bosch — De Vliert — &#x27;s-Hertogenbosch</option><option value="FC Dordrecht — De Krommedijk — Dordrecht">FC Dordrecht — De Krommedijk — Dordrecht</option><option value="FC Eindhoven — Jan Louwers Stadion — Eindhoven">FC Eindhoven — Jan Louwers Stadion — Eindhoven</option><option value="FC Emmen — De Oude Meerdijk — Emmen">FC Emmen — De Oude Meerdijk — Emmen</option><option value="FC Groningen — Euroborg — Groningen">FC Groningen — Euroborg — Groningen</option><option value="FC Twente — De Grolsch Veste — Enschede">FC Twente — De Grolsch Veste — Enschede</option><option value="FC Utrecht — Stadion Galgenwaard — Utrecht">FC Utrecht — Stadion Galgenwaard — Utrecht</option><option value="FC Volendam — Kras Stadion — Volendam">FC Volendam — Kras Stadion — Volendam</option><option value="Feyenoord — De Kuip — Rotterdam">Feyenoord — De Kuip — Rotterdam</option><option value="Fortuna Sittard — Fortuna Sittard Stadion — Sittard">Fortuna Sittard — Fortuna Sittard Stadion — Sittard</option><option value="Go Ahead Eagles — De Adelaarshorst — Deventer">Go Ahead Eagles — De Adelaarshorst — Deventer</option><option value="Helmond Sport — MySteel Stadion — Helmond">Helmond Sport — MySteel Stadion — Helmond</option><option value="Heracles Almelo — Asito Stadion — Almelo">Heracles Almelo — Asito Stadion — Almelo</option><option value="MVV Maastricht — De Geusselt — Maastricht">MVV Maastricht — De Geusselt — Maastricht</option><option value="N.E.C. — De Goffert — Nijmegen">N.E.C. — De Goffert — Nijmegen</option><option value="NAC Breda — Rat Verlegh Stadion — Breda">NAC Breda — Rat Verlegh Stadion — Breda</option><option value="PEC Zwolle — MAC3PARK Stadion — Zwolle">PEC Zwolle — MAC3PARK Stadion — Zwolle</option><option value="PSV — Philips Stadion — Eindhoven">PSV — Philips Stadion — Eindhoven</option><option value="RKC Waalwijk — Mandemakers Stadion — Waalwijk">RKC Waalwijk — Mandemakers Stadion — Waalwijk</option><option value="Roda JC — Parkstad Limburg Stadion — Kerkrade">Roda JC — Parkstad Limburg Stadion — Kerkrade</option><option value="SC Cambuur — Kooi Stadion — Leeuwarden">SC Cambuur — Kooi Stadion — Leeuwarden</option><option value="Sparta Rotterdam — Het Kasteel — Rotterdam">Sparta Rotterdam — Het Kasteel — Rotterdam</option><option value="TOP Oss — Frans Heesen Stadion — Oss">TOP Oss — Frans Heesen Stadion — Oss</option><option value="Telstar — Schoonenberg — Velsen-Zuid">Telstar — Schoonenberg — Velsen-Zuid</option><option value="VVV-Venlo — De Koel — Venlo">VVV-Venlo — De Koel — Venlo</option><option value="Vitesse — GelreDome — Arnhem">Vitesse — GelreDome — Arnhem</option><option value="Willem II — Koning Willem II Stadion — Tilburg">Willem II — Koning Willem II Stadion — Tilburg</option><option value="sc Heerenveen — Abe Lenstra Stadion — Heerenveen">sc Heerenveen — Abe Lenstra Stadion — Heerenveen</option></optgroup><optgroup label="Jong-teams — thuislocaties"><option value="Jong Ajax — De Toekomst — Amsterdam-Duivendrecht">Jong Ajax — De Toekomst — Amsterdam-Duivendrecht</option><option value="Jong AZ — AFAS Trainingscomplex — Wijdewormer">Jong AZ — AFAS Trainingscomplex — Wijdewormer</option><option value="Jong PSV — De Herdgang — Eindhoven">Jong PSV — De Herdgang — Eindhoven</option><option value="Jong FC Utrecht — Sportcomplex Zoudenbalch — Utrecht">Jong FC Utrecht — Sportcomplex Zoudenbalch — Utrecht</option></optgroup><optgroup label="Bekende internationale stadions"><option value="Camp Nou — FC Barcelona — Barcelona, Spanje">Camp Nou — FC Barcelona — Barcelona, Spanje</option><option value="Santiago Bernabéu — Real Madrid — Madrid, Spanje">Santiago Bernabéu — Real Madrid — Madrid, Spanje</option><option value="Wembley Stadium — Londen, Engeland">Wembley Stadium — Londen, Engeland</option><option value="San Siro / Giuseppe Meazza — Milaan, Italië">San Siro / Giuseppe Meazza — Milaan, Italië</option><option value="Maracanã — Rio de Janeiro, Brazilië">Maracanã — Rio de Janeiro, Brazilië</option></optgroup><option value="ander">Ander stadion — zelf invullen</option></select>
+<div id="ander-stadion-velden" hidden>
+<label for="ander-stadion">Naam van het stadion *</label>
+<input id="ander-stadion" type="text" maxlength="120" disabled placeholder="Vul de stadionnaam in">
+<label for="stadion-locatie">Club, stad en land *</label>
+<input id="stadion-locatie" type="text" maxlength="160" disabled placeholder="Bijvoorbeeld clubnaam, stad en land">
+</div>
+<p class="product-info">Stadionnamen staan soms onder hun bekende naam. Kies ‘Ander stadion’ voor een andere of historische uitvoering. Haalbaarheid, definitieve prijs en levertijd worden vooraf bevestigd. De foto toont een voorbeeldmodel.</p>
+</section>
+
 
       <fieldset>
         <legend>Kies jouw verlichting</legend>
@@ -322,7 +473,7 @@ textarea {
       ></textarea>
 
       <div class="total-price">
-        Totaalprijs inclusief btw
+        Prijsindicatie inclusief btw, vanaf
         <strong id="total">€ 369,95</strong>
         <small>Exclusief eventuele verzendkosten</small>
       </div>
@@ -383,6 +534,20 @@ textarea {
 <script>
 const form = document.getElementById("product-form");
 
+const stadiumSelect=document.getElementById('stadion-select');
+const customStadium=document.getElementById('ander-stadion');
+const stadiumLocation=document.getElementById('stadion-locatie');
+function toggleCustomStadium(){
+ const custom=stadiumSelect.value==='ander';
+ document.getElementById('ander-stadion-velden').hidden=!custom;
+ [customStadium,stadiumLocation].forEach(field=>{field.disabled=!custom;field.required=custom;});
+}
+stadiumSelect.addEventListener('change',()=>{stadiumSelect.setCustomValidity('');toggleCustomStadium();});[customStadium,stadiumLocation].forEach(field=>field.addEventListener('input',()=>field.setCustomValidity('')));toggleCustomStadium();
+function selectedStadium(){
+ return stadiumSelect.value==='ander' ? customStadium.value.trim()+' — '+stadiumLocation.value.trim() : stadiumSelect.value;
+}
+
+
 const formatPrice = value =>
   new Intl.NumberFormat("nl-NL", {
     style: "currency",
@@ -410,6 +575,12 @@ form.addEventListener("change", () => {
 
 form.addEventListener("submit", function(event) {
   event.preventDefault();
+  if(!stadiumSelect.value || (stadiumSelect.value==='ander' && (!customStadium.value.trim() || !stadiumLocation.value.trim()))){
+    stadiumSelect.setCustomValidity(!stadiumSelect.value?'Kies een stadion.':'');
+    if(stadiumSelect.value==='ander'){customStadium.setCustomValidity(customStadium.value.trim()?'':'Vul een stadionnaam in.');stadiumLocation.setCustomValidity(stadiumLocation.value.trim()?'':'Vul club, stad en land in.');}
+    form.reportValidity();return;
+  }
+
 
   const lighting = document.querySelector(
     'input[name="lighting"]:checked'
@@ -421,6 +592,8 @@ form.addEventListener("submit", function(event) {
 
   const details = [
     "3D Voetbalstadion – Deluxe Edition",
+    "Stadion: " + selectedStadium(),
+    "Beschikbaarheid en definitieve uitvoering graag bevestigen.",
     "Totaal: " + formatPrice(calculateTotal()),
     "Verlichting: " + lighting,
     "Naamplaatje: " + (nameplate ? "Ja" : "Nee"),
@@ -428,8 +601,9 @@ form.addEventListener("submit", function(event) {
     "Wensen: " + (notes || "Geen")
   ].join(" | ");
 
-  window.location.href =
-    "contact.html?product=" + encodeURIComponent(details);
+  try{sessionStorage.setItem('makers-stadion-aanvraag',JSON.stringify({description:details}));}
+  catch(error){alert('Je browser kan de keuzes niet bewaren. Sta sessieopslag toe en probeer opnieuw.');return;}
+  window.location.href = "contact.html?product=3D%20Voetbalstadion%20Deluxe#quoteForm";
 });
 </script>
 
