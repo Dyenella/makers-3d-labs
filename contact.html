@@ -108,4 +108,14 @@ if(new URLSearchParams(location.search).get('product')==='3D Voetbalstadion Delu
  details.placeholder=name==='Bloemenvazen'?'Beschrijf de gewenste vaas: model, kleur, formaat en eventueel het gebruik met droogbloemen of verse bloemen.':'Beschrijf het masker: ontwerp, maat, kleur en gewenste afwerking.';
 })();
 </script>
+<script id="handtasvaas-aanvraag">
+if(new URLSearchParams(location.search).get('product')==='Handtas-bloemenvaas'){
+ const pick=document.getElementById('product'),details=document.getElementById('omschrijving'),count=document.getElementById('aantal');
+ if(pick&&details&&count){
+  if(!Array.from(pick.options).some(o=>o.value==='Handtas-bloemenvaas')){const o=document.createElement('option');o.value='Handtas-bloemenvaas';o.textContent=o.value;pick.append(o);}
+  pick.value='Handtas-bloemenvaas';
+  try{const data=JSON.parse(sessionStorage.getItem('makers-handtasvaas-aanvraag')||'null');if(data&&typeof data.description==='string'&&data.description.length<=1500&&Number.isInteger(data.qty)&&data.qty>=1&&data.qty<=100){details.value=data.description;count.value=String(data.qty);}}catch(e){}
+ }
+}
+</script>
 </body></html>
