@@ -1422,6 +1422,88 @@ body {
   .discount-copy { animation:none; }
 }
 </style>
+
+<style id="bal-sjaal-lichtjes">
+.bal-sjaal {
+  position:absolute;
+  left:-4%;
+  bottom:15%;
+  width:108%;
+  height:22px;
+  border-radius:40% 30% 45% 35%;
+  background:
+    repeating-linear-gradient(95deg,#f4f3ed 0 4px,#d9e5e7 5px 7px);
+  border-top:4px solid #fff;
+  box-shadow:0 5px 8px #33081970,inset 0 -5px 6px #9ab9c550;
+  transform:rotate(-9deg);
+  pointer-events:none;
+  z-index:2;
+}
+.bal-sjaal::after {
+  content:"";
+  position:absolute;
+  right:13px;
+  top:10px;
+  width:20px;
+  height:43px;
+  background:repeating-linear-gradient(90deg,#fff 0 3px,#d7e6e8 4px 6px);
+  border-radius:3px 3px 7px 7px;
+  border-bottom:5px dashed #fff;
+  transform:rotate(-12deg);
+  transform-origin:top center;
+  animation:sjaal-wapper 3s ease-in-out infinite alternate;
+}
+.bal-sjaal i {
+  position:absolute;
+  top:4px;
+  left:12%;
+  width:7px;
+  height:9px;
+  border-radius:45%;
+  background:var(--lamp);
+  color:var(--lamp);
+  box-shadow:0 0 5px currentColor,0 0 12px currentColor;
+  animation:sjaal-lamp 2.8s ease-in-out infinite;
+  --lamp:#ff506b;
+}
+.bal-sjaal i:nth-child(2) {
+  left:30%;--lamp:#57ebaf;animation-delay:-.6s;
+}
+.bal-sjaal i:nth-child(3) {
+  left:48%;--lamp:#ffda64;animation-delay:-1.2s;
+}
+.bal-sjaal i:nth-child(4) {
+  left:66%;--lamp:#66caff;animation-delay:-1.8s;
+}
+.bal-sjaal i:nth-child(5) {
+  left:84%;--lamp:#df8aff;animation-delay:-2.4s;
+}
+.discount-copy {
+  position:relative;
+  z-index:3;
+  transform:translateY(-10px);
+}
+.discount-copy b { font-size:31px; }
+.discount-copy small {
+  background:#690c25;
+  border-radius:5px;
+  padding:2px 4px;
+}
+@keyframes sjaal-wapper {
+  from { transform:rotate(-12deg); }
+  to { transform:rotate(6deg); }
+}
+@keyframes sjaal-lamp {
+  0%,100% { opacity:.3; box-shadow:0 0 2px currentColor; }
+  35%,65% {
+    opacity:1;
+    box-shadow:0 0 6px currentColor,0 0 15px currentColor;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .bal-sjaal::after,.bal-sjaal i { animation:none; }
+}
+</style>
 </head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
@@ -1639,6 +1721,10 @@ body {
 <script src="assets/shop.js"></script>
 <script src="assets/home-slideshow.js"></script><aside id="kerst-kortingsbal" class="discount-bauble" aria-label="Kerstactie: 5% korting op alle artikelen" hidden>
 <button class="discount-close" type="button" aria-label="Kerstactie sluiten">×</button>
-<a class="discount-ball" href="winkel.html"><span class="discount-cap" aria-hidden="true"></span><span class="discount-copy"><strong>KERST</strong><span>Pak je</span><b>5%</b><span>korting</span><small>op alle artikelen</small></span></a>
+<a class="discount-ball" href="winkel.html"><span class="discount-cap" aria-hidden="true"></span>
+<span class="bal-sjaal" aria-hidden="true">
+  <i></i><i></i><i></i><i></i><i></i>
+</span>
+<span class="discount-copy"><strong>KERST</strong><span>Pak je</span><b>5%</b><span>korting</span><small>op alle artikelen</small></span></a>
 </aside><script id="kerst-kortingsbal-js">(()=>{const ball=document.getElementById('kerst-kortingsbal');if(!ball)return;let dismissed=false;try{dismissed=sessionStorage.getItem('kerst-kortingsbal-dicht')==='1';}catch(e){}if(!dismissed)ball.hidden=false;ball.querySelector('.discount-close').addEventListener('click',()=>{ball.hidden=true;try{sessionStorage.setItem('kerst-kortingsbal-dicht','1');}catch(e){}});})();</script></body>
 </html>
