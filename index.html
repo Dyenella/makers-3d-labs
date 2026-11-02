@@ -1565,6 +1565,54 @@ body {
   #kerst-kortingsbal::after { animation:none; }
 }
 </style>
+
+<style id="kerst-sneeuwsterren-css">
+#kerst {
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+}
+#kerst-sneeuwsterren {
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none;
+  z-index:0;
+}
+#kerst > .shell {
+  position:relative;
+  z-index:1;
+}
+#kerst-sneeuwsterren i {
+  position:absolute;
+  left:var(--x);
+  top:-5%;
+  color:#fff;
+  font-size:var(--maat);
+  font-style:normal;
+  line-height:1;
+  opacity:0;
+  text-shadow:0 0 5px #ffffff50;
+  animation:kerst-vlok-val var(--duur) linear var(--wacht) infinite;
+}
+#kerst-sneeuwsterren .ster {
+  color:#f1d18c;
+  text-shadow:0 0 8px #eecb7870;
+}
+@keyframes kerst-vlok-val {
+  0% { top:-5%; transform:translateX(-12px) rotate(0deg); opacity:0; }
+  8% { opacity:.65; }
+  50% { transform:translateX(18px) rotate(100deg); }
+  90% { opacity:.65; }
+  100% { top:105%; transform:translateX(-8px) rotate(210deg); opacity:0; }
+}
+@media(max-width:700px) {
+  #kerst-sneeuwsterren i:nth-child(n+17) { display:none; }
+}
+@media(prefers-reduced-motion:reduce) {
+  #kerst-sneeuwsterren { display:none; }
+}
+</style>
 </head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
@@ -1632,7 +1680,7 @@ body {
     </section>
     
 
-<section class="kerst-section" id="kerst" aria-labelledby="kerst-title">
+<section class="kerst-section" id="kerst" aria-labelledby="kerst-title"><div id="kerst-sneeuwsterren" aria-hidden="true"><i class="ster" style="--x:0%;--duur:10s;--wacht:-0.0s;--maat:10px">✦</i><i class="vlok" style="--x:37%;--duur:11s;--wacht:-0.8s;--maat:13px">❄</i><i class="vlok" style="--x:74%;--duur:12s;--wacht:-1.6s;--maat:16px">❄</i><i class="vlok" style="--x:11%;--duur:13s;--wacht:-2.4000000000000004s;--maat:19px">❄</i><i class="ster" style="--x:48%;--duur:14s;--wacht:-3.2s;--maat:22px">✦</i><i class="vlok" style="--x:85%;--duur:15s;--wacht:-4.0s;--maat:10px">❄</i><i class="vlok" style="--x:22%;--duur:16s;--wacht:-4.800000000000001s;--maat:13px">❄</i><i class="vlok" style="--x:59%;--duur:10s;--wacht:-5.6000000000000005s;--maat:16px">❄</i><i class="ster" style="--x:96%;--duur:11s;--wacht:-6.4s;--maat:19px">✦</i><i class="vlok" style="--x:33%;--duur:12s;--wacht:-7.2s;--maat:22px">❄</i><i class="vlok" style="--x:70%;--duur:13s;--wacht:-8.0s;--maat:10px">❄</i><i class="vlok" style="--x:7%;--duur:14s;--wacht:-8.8s;--maat:13px">❄</i><i class="ster" style="--x:44%;--duur:15s;--wacht:-9.600000000000001s;--maat:16px">✦</i><i class="vlok" style="--x:81%;--duur:16s;--wacht:-10.4s;--maat:19px">❄</i><i class="vlok" style="--x:18%;--duur:10s;--wacht:-11.200000000000001s;--maat:22px">❄</i><i class="vlok" style="--x:55%;--duur:11s;--wacht:-12.0s;--maat:10px">❄</i><i class="ster" style="--x:92%;--duur:12s;--wacht:-12.8s;--maat:13px">✦</i><i class="vlok" style="--x:29%;--duur:13s;--wacht:-13.600000000000001s;--maat:16px">❄</i><i class="vlok" style="--x:66%;--duur:14s;--wacht:-14.4s;--maat:19px">❄</i><i class="vlok" style="--x:3%;--duur:15s;--wacht:-15.200000000000001s;--maat:22px">❄</i><i class="ster" style="--x:40%;--duur:16s;--wacht:-16.0s;--maat:10px">✦</i><i class="vlok" style="--x:77%;--duur:10s;--wacht:-16.8s;--maat:13px">❄</i><i class="vlok" style="--x:14%;--duur:11s;--wacht:-17.6s;--maat:16px">❄</i><i class="vlok" style="--x:51%;--duur:12s;--wacht:-18.400000000000002s;--maat:19px">❄</i><i class="ster" style="--x:88%;--duur:13s;--wacht:-19.200000000000003s;--maat:22px">✦</i><i class="vlok" style="--x:25%;--duur:14s;--wacht:-20.0s;--maat:10px">❄</i><i class="vlok" style="--x:62%;--duur:15s;--wacht:-20.8s;--maat:13px">❄</i><i class="vlok" style="--x:99%;--duur:16s;--wacht:-21.6s;--maat:16px">❄</i></div>
   <div class="shell">
     <span class="kerst-label">KERST · PERSOONLIJK GEMAAKT</span>
     <h2 id="kerst-title">Een kerst met jouw naam erop.</h2>
