@@ -1208,6 +1208,59 @@ body {
   .kerst-banner::after { animation:none; }
 }
 </style>
+
+<style id="kerst-vuurwerk-stijl">
+.kerst-vuurwerk {
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  overflow:hidden;
+}
+.kerst-vuurwerk i {
+  position:absolute;
+  left:18%;
+  top:48%;
+  width:52px;
+  height:52px;
+  color:#f1d18c;
+  background:repeating-conic-gradient(
+    from 0deg,
+    transparent 0deg 27deg,
+    currentColor 28deg 30deg,
+    transparent 31deg 45deg
+  );
+  -webkit-mask-image:radial-gradient(circle,transparent 30%,black 34% 48%,transparent 52%);
+  mask-image:radial-gradient(circle,transparent 30%,black 34% 48%,transparent 52%);
+  opacity:0;
+  animation:balk-vuurwerk 4.8s ease-out infinite;
+}
+.kerst-vuurwerk i:nth-child(2) {
+  left:40%;
+  top:20%;
+  color:#8ce1e4;
+  animation-delay:-1.2s;
+}
+.kerst-vuurwerk i:nth-child(3) {
+  left:68%;
+  top:60%;
+  animation-delay:-2.4s;
+}
+.kerst-vuurwerk i:nth-child(4) {
+  left:86%;
+  top:30%;
+  color:#8ce1e4;
+  animation-delay:-3.6s;
+}
+@keyframes balk-vuurwerk {
+  0% { transform:translate(-50%,-50%) scale(.1); opacity:0; }
+  12% { opacity:.65; }
+  45% { transform:translate(-50%,-50%) scale(1.8); opacity:0; }
+  100% { transform:translate(-50%,-50%) scale(1.8); opacity:0; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .kerst-vuurwerk { display:none; }
+}
+</style>
 </head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
@@ -1250,7 +1303,7 @@ body {
   <main>
 
 
-<a class="kerst-banner" href="#kerst">
+<a class="kerst-banner" href="#kerst"><span class="kerst-vuurwerk" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
   <span class="kerst-decor" aria-hidden="true">
     <span class="kerst-bal bal-rood"></span>
     <span class="kerst-bal bal-goud"></span>
