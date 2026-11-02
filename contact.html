@@ -118,4 +118,11 @@ if(new URLSearchParams(location.search).get('product')==='Handtas-bloemenvaas'){
  }
 }
 </script>
-<script id="masker-aanvraag">(()=>{if(new URLSearchParams(location.search).get('product')!=='Masker')return;const select=document.getElementById('product');if(select){if(!Array.from(select.options).some(o=>o.value==='Masker'))select.add(new Option('Masker','Masker'));select.value='Masker';}try{const data=JSON.parse(sessionStorage.getItem('masker-aanvraag')||'null');if(data){const desc=document.getElementById('omschrijving'),qty=document.getElementById('aantal');if(desc)desc.value=data.description;if(qty)qty.value=data.quantity;}}catch(e){}})();</script></body></html>
+<script id="masker-aanvraag">(()=>{if(new URLSearchParams(location.search).get('product')!=='Masker')return;const select=document.getElementById('product');if(select){if(!Array.from(select.options).some(o=>o.value==='Masker'))select.add(new Option('Masker','Masker'));select.value='Masker';}try{const data=JSON.parse(sessionStorage.getItem('masker-aanvraag')||'null');if(data){const desc=document.getElementById('omschrijving'),qty=document.getElementById('aantal');if(desc)desc.value=data.description;if(qty)qty.value=data.quantity;}}catch(e){}})();</script><script id="paint-request-prefill">(()=>{const kind=new URLSearchParams(location.search).get('product');if(!['Schilderpakket','Onbewerkt'].includes(kind))return;const product=document.getElementById('product'),description=document.getElementById('omschrijving');const title=kind==='Schilderpakket'?'Schilderpakket / verfspullen':'Onbewerkt artikel';if(product){if(!Array.from(product.options).some(o=>o.value===title))product.add(new Option(title,title));product.value=title;}if(description&&!description.value.trim())description.value=kind==='Schilderpakket'?'Ik wil een schilderpakket aanvragen.
+Te verven artikel: 
+Gewenste kleuren: 
+Gewenste spullen (verf, penselen, primer, voorbereiding): 
+Aantal: ':'Ik wil een artikel onbewerkt aanvragen.
+Welk artikel: 
+Gewenste maat en aantal: 
+Overige wensen: ';})();</script></body></html>
