@@ -75,4 +75,16 @@ if(new URLSearchParams(location.search).get('product')==='Persoonlijke kersttafe
  }
 }
 </script>
+<script id="kleine-cadeaus-aanvraag">
+if(new URLSearchParams(location.search).get('product')==='Kleine cadeaus op maat'){
+ const pick=document.getElementById('product'),details=document.getElementById('omschrijving'),count=document.getElementById('aantal');
+ if(pick&&details&&count){
+  if(!Array.from(pick.options).some(o=>o.value==='Kleine cadeaus op maat')){const option=document.createElement('option');option.value='Kleine cadeaus op maat';option.textContent=option.value;pick.append(option);}
+  pick.value='Kleine cadeaus op maat';
+  try{const data=JSON.parse(sessionStorage.getItem('makers-kleine-cadeaus-aanvraag')||'null');
+   if(data&&typeof data.description==='string'&&data.description.length<=1500&&Number.isInteger(data.qty)&&data.qty>=1&&data.qty<=100){details.value=data.description;count.value=String(data.qty);}
+  }catch(error){details.placeholder='Beschrijf de uitvoering, kleur, naam of tekst en het aantal.';}
+ }
+}
+</script>
 </body></html>

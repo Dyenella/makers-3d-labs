@@ -972,6 +972,61 @@ body {
   background:#7e2938;
 }
 </style>
+<style id="kleine-cadeaus-kaartstijl">
+#kleine-cadeaus-product {
+  background:#18382d;
+  border:1px solid #bda263;
+  box-shadow:0 8px 24px #102d2415;
+}
+#kleine-cadeaus-product .mk-photo {
+  position:relative;
+  background:#080d0b;
+  border-bottom:1px solid #bda26370;
+}
+#kleine-cadeaus-product .mk-photo::after {
+  content:"KERST";
+  position:absolute;
+  top:12px;
+  left:12px;
+  padding:4px 10px;
+  border-radius:20px;
+  background:#963747;
+  color:#fff3d6;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.12em;
+}
+#kleine-cadeaus-product .mk-product-info {
+  background:#18382d;
+  gap:8px;
+}
+#kleine-cadeaus-product .mk-category {
+  color:#e5c887;
+}
+#kleine-cadeaus-product h3 {
+  color:#fff3d6;
+}
+#kleine-cadeaus-product .mk-price {
+  color:#e5c887;
+}
+#kleine-cadeaus-product .mk-view {
+  display:block;
+  width:100%;
+  padding:11px 13px;
+  border:1px solid #cc7c88;
+  border-radius:9px;
+  background:#963747;
+  color:#fff3d6;
+  text-decoration:none;
+  line-height:1.5;
+}
+#kleine-cadeaus-product .mk-view::before {
+  content:"🎄 ";
+}
+#kleine-cadeaus-product .mk-view:hover {
+  background:#7e2938;
+}
+</style>
 </head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
@@ -1068,9 +1123,10 @@ body {
         <a href="persoonlijke-kersttafel.html">Vraag tafeldecoratie aan →</a>
       </article>
       <article class="kerst-card">
-        <h3>Kleine cadeaus op maat</h3>
+        <img class="kerst-voorbeeld" src="kleine-cadeaus-kerstsfeer.webp" alt="Voorbeeld van kleine persoonlijke kerstcadeaus" width="1254" height="1254" loading="lazy">
+<h3>Kleine cadeaus op maat</h3>
         <p>Sleutelhangers of gegraveerde decoratie met een naam of persoonlijke tekst.</p>
-        <a href="contact.html?product=Persoonlijk%20kerstcadeau">Vraag een kerstcadeau aan →</a>
+        <a href="kleine-cadeaus.html">Vraag een kerstcadeau aan →</a>
       </article>
     </div>
     <p class="kerst-intro" style="font-size:13px;margin-top:24px">
@@ -1173,7 +1229,10 @@ body {
     <p>Van handgeschilderde resin beelden tot gepersonaliseerde
     accessoires, bedrijfsdisplays en lasergravure.</p>
   </div>
-<div class="mk-grid"><article class="mk-product" id="kersttafel-product">
+<div class="mk-grid"><article class="mk-product" id="kleine-cadeaus-product">
+<a class="mk-photo" href="kleine-cadeaus.html"><img src="kleine-cadeaus-kerstsfeer.webp" alt="Persoonlijke sleutelhangers en gegraveerde cadeaulabels" loading="lazy"></a>
+<div class="mk-product-info"><span class="mk-category">Kerst · Persoonlijk cadeau</span><h3>Kleine cadeaus op maat</h3><strong class="mk-price">Prijs op aanvraag</strong><a class="mk-view" href="kleine-cadeaus.html">Kies jouw cadeau →</a></div>
+</article><article class="mk-product" id="kersttafel-product">
 <a class="mk-photo" href="persoonlijke-kersttafel.html"><img src="persoonlijke-kersttafel.webp" alt="Gepersonaliseerde naamkaartjes en servetringen op een kersttafel" loading="lazy"></a>
 <div class="mk-product-info"><span class="mk-category">Kerst · Aan tafel</span><h3>Een persoonlijke kersttafel</h3><strong class="mk-price">Vanaf € 3,95 per gast</strong><a class="mk-view" href="persoonlijke-kersttafel.html">Kies jouw uitvoering →</a></div>
 </article><article class="mk-product" id="bedrijfskerst-product">
