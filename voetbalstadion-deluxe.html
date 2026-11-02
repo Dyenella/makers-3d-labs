@@ -999,5 +999,93 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 </style>
 
+
+<style id="stadion-info-compact">
+.stadion-info-vouw {
+  margin:10px 0;
+  border:1px solid #739a81;
+  border-radius:10px;
+  background:#213345;
+  overflow:hidden;
+}
+.stadion-info-vouw summary {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  padding:12px 16px;
+  background:#234d36;
+  color:#fff;
+  cursor:pointer;
+  font-size:14px;
+  font-weight:700;
+  list-style:none;
+}
+.stadion-info-vouw summary::-webkit-details-marker {
+  display:none;
+}
+.stadion-info-vouw summary::after {
+  content:"+";
+  color:#a5e2b9;
+  font-size:21px;
+}
+.stadion-info-vouw[open] summary::after {
+  content:"−";
+}
+.stadion-info-vouw summary:focus-visible {
+  outline:3px solid #a5e2b9;
+  outline-offset:-3px;
+}
+.stadion-info-inhoud {
+  padding:12px 16px;
+  color:#d0dce5;
+  font-size:13px;
+  line-height:1.6;
+}
+.stadion-info-inhoud p {
+  margin:6px 0;
+}
+.stadion-info-inhoud ul {
+  margin:4px 0;
+  padding-left:19px;
+}
+.stadion-info-inhoud li {
+  margin:3px 0;
+}
+.details {
+  gap:12px !important;
+  margin-top:0 !important;
+  align-items:start;
+}
+</style>
+
+<script id="stadion-info-compact-script">
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(
+    ".m3-description-wide, .details .detail-box"
+  ).forEach(function (section) {
+    const heading = section.querySelector("h2");
+    if (!heading) return;
+
+    const details = document.createElement("details");
+    details.className = "stadion-info-vouw";
+
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent.trim();
+
+    const content = document.createElement("div");
+    content.className = "stadion-info-inhoud";
+
+    heading.remove();
+    while (section.firstChild) {
+      content.appendChild(section.firstChild);
+    }
+
+    details.append(summary, content);
+    section.replaceWith(details);
+  });
+});
+</script>
+
 </body>
 </html>
