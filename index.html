@@ -1277,7 +1277,82 @@ body {
 @keyframes discount-glitter{from{opacity:.25}to{opacity:.65}}
 @media(max-width:700px){.discount-bauble{right:12px;top:95px;width:142px;height:162px}.discount-ball{width:142px;height:142px}.discount-copy strong{font-size:12px}.discount-copy>span{font-size:13px}.discount-copy b{font-size:36px}.discount-copy small{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.discount-bauble,.discount-ball,.discount-ball::before{animation:none}}
-</style></head>
+</style>
+<style id="kortingsbal-realistisch">
+.discount-bauble {
+  top:auto;
+  bottom:22px;
+  right:22px;
+  width:136px;
+  height:156px;
+  filter:drop-shadow(5px 12px 9px #0006);
+  animation:bal-vallen-stuiteren 3s both;
+}
+.discount-ball {
+  width:136px;
+  height:136px;
+  border:1px solid #d8677070;
+  background:
+    radial-gradient(ellipse at 29% 22%,#fff9 0%,#fff2 9%,transparent 24%),
+    radial-gradient(ellipse at 70% 80%,#27000a99,transparent 60%),
+    radial-gradient(circle at 38% 32%,#ef5266,#b00f31 52%,#560619 95%);
+  box-shadow:
+    inset 4px 4px 9px #ffb0ba60,
+    inset -12px -15px 22px #26000b90,
+    inset 0 0 3px #ffc8bb80;
+  animation:bal-nawiegen 7s ease-in-out 3s infinite alternate;
+}
+.discount-ball::before {
+  background:
+    radial-gradient(circle,#fff7dd 0 .5px,transparent 1.2px) 0 0/9px 11px,
+    radial-gradient(circle,#f7b45f 0 .5px,transparent 1.1px) 4px 5px/13px 15px;
+  opacity:.32;
+}
+.discount-copy { padding:12px; }
+.discount-copy strong { font-size:12px; }
+.discount-copy>span { font-size:13px; }
+.discount-copy b { font-size:35px; }
+.discount-copy small { font-size:9px; }
+.discount-close {
+  width:26px;
+  height:26px;
+  font-size:19px;
+}
+@keyframes bal-vallen-stuiteren {
+  0% {
+    transform:translateY(calc(-100vh - 180px)) rotate(-12deg);
+    opacity:1;
+  }
+  48% { transform:translateY(0) rotate(5deg); }
+  50% { transform:translateY(0) scale(1.07,.93); }
+  65% { transform:translateY(-105px) rotate(-5deg); }
+  78% { transform:translateY(0) scale(1.04,.96); }
+  87% { transform:translateY(-35px) rotate(3deg); }
+  94% { transform:translateY(0); }
+  97% { transform:translateY(-10px); }
+  100% { transform:translateY(0) rotate(0); }
+}
+@keyframes bal-nawiegen {
+  from { transform:rotate(-2deg); }
+  to { transform:rotate(2deg); }
+}
+@media(max-width:700px) {
+  .discount-bauble {
+    right:14px;
+    bottom:18px;
+    width:120px;
+    height:140px;
+  }
+  .discount-ball { width:120px; height:120px; }
+  .discount-copy b { font-size:30px; }
+  .discount-copy>span { font-size:12px; }
+  .discount-copy small { font-size:8px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .discount-bauble,.discount-ball { animation:none; }
+}
+</style>
+</head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
   <header class="header">
