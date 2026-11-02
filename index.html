@@ -1828,5 +1828,13 @@ body {
   </script>
 <script src="assets/shop-data.js"></script>
 <script src="assets/shop.js"></script>
-<script src="assets/home-slideshow.js"></script><aside id="kerst-kortingsbal" class="discount-bauble" aria-label="Kerst: 5% korting" hidden><button class="discount-close" type="button" aria-label="Kerstactie sluiten">×</button><a class="discount-ball" href="winkel.html"><img class="real-bauble-image" src="kerstbal-glitter-3d.webp" alt="" width="1254" height="1254"><span class="discount-copy"><strong>KERST</strong><b>5%</b><span>korting</span></span><span class="real-light light-red" aria-hidden="true"></span><span class="real-light light-green" aria-hidden="true"></span><span class="real-light light-gold" aria-hidden="true"></span><span class="real-light light-blue" aria-hidden="true"></span></a></aside><script id="kerst-kortingsbal-js">(()=>{const ball=document.getElementById('kerst-kortingsbal');if(!ball)return;let dismissed=false;try{dismissed=sessionStorage.getItem('kerst-kortingsbal-3d-dicht')==='1';}catch(e){}if(!dismissed)ball.hidden=false;ball.querySelector('.discount-close').addEventListener('click',()=>{ball.hidden=true;try{sessionStorage.setItem('kerst-kortingsbal-3d-dicht','1');}catch(e){}});})();</script></body>
+<script src="assets/home-slideshow.js"></script><aside id="kerst-kortingsbal" class="discount-bauble" aria-label="Kerst: 5% korting" hidden><button class="discount-close" type="button" aria-label="Kerstactie sluiten">×</button><a class="discount-ball" href="winkel.html"><img class="real-bauble-image" src="kerstbal-glitter-3d.webp" alt="" width="1254" height="1254"><span class="discount-copy"><strong>KERST</strong><b>5%</b><span>korting</span></span><span class="real-light light-red" aria-hidden="true"></span><span class="real-light light-green" aria-hidden="true"></span><span class="real-light light-gold" aria-hidden="true"></span><span class="real-light light-blue" aria-hidden="true"></span></a></aside><script id="kerst-kortingsbal-js">
+(()=>{
+  const ball=document.getElementById('kerst-kortingsbal');
+  if(!ball)return;
+  ball.hidden=false;
+  const close=ball.querySelector('.discount-close');
+  if(close)close.addEventListener('click',()=>{ball.hidden=true;});
+})();
+</script></body>
 </html>
