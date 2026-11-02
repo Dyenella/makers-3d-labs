@@ -33,3 +33,5 @@
 @media (prefers-reduced-motion: reduce) {
   .showcase-slide.is-entering { animation: none !important; }
 }
+
+.hero-showcase .showcase-controls { display: none !important; }
