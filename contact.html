@@ -63,4 +63,16 @@ if(new URLSearchParams(location.search).get('product')==='Kersthanger met bedrij
  }
 }
 </script>
+<script id="kersttafel-aanvraag">
+if(new URLSearchParams(location.search).get('product')==='Persoonlijke kersttafel'){
+ const pick=document.getElementById('product'),details=document.getElementById('omschrijving'),count=document.getElementById('aantal');
+ if(pick&&details&&count){
+  if(!Array.from(pick.options).some(o=>o.value==='Persoonlijke kersttafel')){const option=document.createElement('option');option.value='Persoonlijke kersttafel';option.textContent=option.value;pick.append(option);}
+  pick.value='Persoonlijke kersttafel';
+  try{const data=JSON.parse(sessionStorage.getItem('makers-kersttafel-aanvraag')||'null');
+   if(data&&typeof data.description==='string'&&data.description.length<=3000&&Number.isInteger(data.qty)&&data.qty>=1&&data.qty<=100){details.value=data.description;count.value=String(data.qty);}
+  }catch(error){details.placeholder='Beschrijf de uitvoering, kleur en namen van je gasten.';}
+ }
+}
+</script>
 </body></html>
