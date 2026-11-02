@@ -367,6 +367,14 @@ body.m3-product-style {
         Productfoto nog niet gevonden. Controleer de bestandsnaam.
       </div>
     </div>
+
+<p id="stadion-fotobijschrift"
+   style="margin:10px 0 0;color:#d0dce5;font-size:13px;line-height:1.6">
+  <strong>De Kuip — Feyenoord Rotterdam.</strong><br>
+  Dit is een voorbeeldfoto. De uitvoering van jouw gekozen stadion
+  kan hiervan afwijken.
+</p>
+
   </div>
 
   <div>
@@ -890,6 +898,106 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
+
+
+<style id="voetbal-compact-gelijk">
+.product-container {
+  max-width:1180px !important;
+  margin:24px auto 40px !important;
+}
+.product-layout {
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+  gap:24px !important;
+}
+.product-layout h1 {
+  font-size:clamp(25px,2.5vw,34px) !important;
+}
+.product-image {
+  max-height:480px;
+}
+#stadion-keuze {
+  padding:12px;
+  margin-bottom:10px;
+}
+#stadion-keuze h2 {
+  font-size:16px;
+  margin-bottom:6px;
+}
+#stadion-keuze label {
+  margin-top:6px;
+}
+#stadion-keuze select,
+#stadion-keuze input,
+.product-layout textarea {
+  padding:9px !important;
+  font-size:13px !important;
+  background:#234d36 !important;
+  color:#fff !important;
+  border:1px solid #739a81 !important;
+}
+#stadion-keuze select option,
+#stadion-keuze select optgroup {
+  background:#234d36;
+  color:#fff;
+}
+.m3-accordion {
+  margin:8px 0 !important;
+  background:#183b2b !important;
+  border-color:#739a81 !important;
+}
+.m3-accordion summary,
+.m3-accordion[open] summary,
+.product-layout .option,
+.product-layout .order-button {
+  background:#234d36 !important;
+  color:#fff !important;
+  border-color:#739a81 !important;
+}
+.m3-accordion summary {
+  padding:11px 14px !important;
+  font-size:14px;
+}
+.m3-accordion summary:hover,
+.product-layout .option:hover,
+.product-layout .order-button:hover {
+  background:#306344 !important;
+}
+.product-layout .option:has(input:checked) {
+  background:#234d36 !important;
+  border-color:#b0e6c0 !important;
+  box-shadow:inset 0 0 0 1px #b0e6c0;
+}
+.product-layout .option small {
+  color:#d2e5d8 !important;
+}
+.product-layout .option input {
+  accent-color:#83d39c;
+}
+.product-layout .order-button {
+  border:1px solid #739a81;
+  padding:11px !important;
+}
+.product-layout .total-price {
+  padding:7px 0 !important;
+  margin-top:7px !important;
+}
+.m3-description-wide {
+  padding:18px 22px;
+  margin-top:18px;
+}
+.detail-box {
+  padding:16px 20px !important;
+}
+@media(max-width:800px) {
+  .product-layout {
+    grid-template-columns:1fr !important;
+    gap:20px !important;
+  }
+  .product-image {
+    max-height:360px;
+  }
+}
+</style>
 
 </body>
 </html>
