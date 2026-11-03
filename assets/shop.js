@@ -27,7 +27,38 @@
  function addFooter(){
   const current=document.querySelector('footer:not(.ms-footer)');if(current)current.remove();
   if(document.querySelector('.ms-footer'))return;
-  const f=document.createElement('footer');f.className='ms-footer';f.innerHTML=`<div class="ms-footer-inner"><div class="ms-footer-grid"><div><div class="ms-footer-brand">MAKERS 3D LABS</div><p class="ms-footer-tagline">Your idea. Made possible.</p><p>3D-printen · Resin · Lasergraveren<br>Ridderkerk, Nederland</p></div><div><h3>Shop</h3><a href="winkel.html">Winkel</a><a href="contact.html">Maatwerk aanvragen</a></div><div><h3>Mijn account</h3><a href="account.html">Inloggen / registreren</a><a href="bestellingen.html">Mijn bestellingen</a><a href="account.html#adressen">Mijn adressen</a><a href="winkelwagen.html">Winkelwagen</a></div><div><h3>Klantenservice</h3><a href="contact.html">Contact</a><a href="informatie.html">Veelgestelde vragen</a><a href="informatie.html">Verzending en levering</a><a href="informatie.html">Retourneren</a></div><div><h3>Informatie</h3><a href="over-ons.html">Over ons</a><a href="algemene-voorwaarden.html">Algemene voorwaarden</a><a href="informatie.html">Privacy en cookies</a><a href="informatie.html">Herroepingsrecht</a></div></div><div class="ms-footer-bottom">© ${new Date().getFullYear()} Makers 3D Labs · Ridderkerk <div class="ms-footer-note">Bestellen, betalen en inloggen zijn nog niet actief. De informatieve pagina's zijn in voorbereiding.</div></div></div>`;
+  const f=document.createElement('footer');f.className='ms-footer';f.innerHTML=`
+<div class="ms-footer-inner">
+  <div class="ms-footer-grid">
+    <div>
+      <div class="ms-footer-brand">MAKERS 3D LABS</div>
+      <p class="ms-footer-tagline">Your idea. Made possible.</p>
+      <p>3D-printen · Resin · Lasergraveren<br>
+      Ridderkerk, Nederland</p>
+    </div>
+    <div>
+      <h3>Webshop</h3>
+      <a href="winkel.html">Bekijk de webshop</a>
+      <a href="contact.html">Maatwerk aanvragen</a>
+    </div>
+    <div>
+      <h3>Mijn account</h3>
+      <a href="account.html">Mijn account</a>
+      <a href="bestellingen.html">Mijn bestellingen</a>
+      <a href="winkelwagen.html">Winkelwagen</a>
+    </div>
+    <div>
+      <h3>Over Makers 3D Labs</h3>
+      <a href="over-ons.html">Over ons</a>
+      <a href="contact.html">Contact</a>
+      <a href="informatie.html">Informatie &amp; voorwaarden</a>
+    </div>
+  </div>
+  <div class="ms-footer-bottom">
+    © ${new Date().getFullYear()} Makers 3D Labs · Ridderkerk
+  </div>
+</div>
+`;
   document.body.append(f);
  }
  function showShop(){const el=document.getElementById('ms-shop-grid');if(!el)return;const products=window.MAKERS_SHOP_PRODUCTS||[];el.innerHTML=products.length?products.map(p=>`<article class="ms-card"><div class="ms-card-body"><h2>${String(p.name||'Product').replace(/[&<>"']/g,'')}</h2><p>Productinformatie volgt.</p><a class="ms-btn" href="contact.html">Offerte aanvragen</a></div></article>`).join(''):`<article class="ms-card"><div class="ms-card-body"><h2>Standaardproducten</h2><p>We voegen vaste producten en gecontroleerde prijzen toe voordat bestellen wordt ingeschakeld.</p><a class="ms-btn" href="producten.html">Bekijk de catalogus</a></div></article><article class="ms-card"><div class="ms-card-body"><h2>Gepersonaliseerd maatwerk</h2><p>Vertel ons jouw wensen en ontvang een offerte.</p><a class="ms-btn" href="contact.html">Vraag een offerte aan</a></div></article>`}

@@ -21,3 +21,24 @@
 .ms-utilities .ms-utility-label{display:none!important}
 .ms-utilities .ms-badge{min-width:18px;height:18px;font-size:10px}
 @media(min-width:801px){.head-inner{gap:12px}.desktop{gap:0}.desktop>a,.desktop .drop-trigger{padding-left:9px;padding-right:9px}.desktop .nav-cta{margin-left:5px}}
+
+/* footer-indeling-v2 */
+.ms-footer .ms-footer-grid {
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 32px;
+}
+@media(max-width:900px) {
+  .ms-footer .ms-footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .ms-footer .ms-footer-grid > div:first-child {
+    grid-column: 1 / -1;
+  }
+}
+@media(max-width:520px) {
+  .ms-footer .ms-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+/* einde-footer-indeling-v2 */
