@@ -304,7 +304,67 @@ main .btn:hover {
   }
 }
 </style>
-<link rel="stylesheet" href="assets/bovenmenu.css?v=1"></head><body><header><div class="container nav"><a href="index.html" class="logo"><img src="makers3dlabs-logo.webp" alt="Makers 3D Labs — homepage"></a><button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navigation">☰</button><nav id="navigation"><a href="index.html">Home</a><a href="producten.html">Producten</a><a href="portfolio.html">Portfolio</a><a href="over-ons.html" class="active">Over ons</a><a href="contact.html" class="navbtn">Offerte aanvragen</a></nav></div></header>
+<link rel="stylesheet" href="assets/bovenmenu.css?v=1">
+<style id="about-product-style">
+#about-product-showcase {
+  min-width: 0;
+  position: relative;
+  align-self: center;
+}
+.about-product-stage {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #202735;
+}
+.about-product-slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  animation: about-product-enter .7s ease both;
+}
+.about-product-slide[hidden] {
+  display: none !important;
+}
+.about-product-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  min-height: 0;
+}
+.about-product-slide span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 20px 18px;
+  background: linear-gradient(transparent, #16222fee);
+  color: #f5f6fa;
+  font: 700 17px/1.4 "DM Sans", Arial, sans-serif;
+  text-align: center;
+}
+.about-product-pause {
+  display: block;
+  margin: 8px 0 0 auto;
+  padding: 4px 8px;
+  border: 0;
+  background: transparent;
+  color: #a9c9d0;
+  font: 12px/1.5 Arial, sans-serif;
+  cursor: pointer;
+}
+@keyframes about-product-enter {
+  from { opacity: 0; transform: scale(1.025); }
+  to { opacity: 1; transform: scale(1); }
+}
+@media(prefers-reduced-motion: reduce) {
+  .about-product-slide { animation: none; }
+}
+</style>
+</head><body><header><div class="container nav"><a href="index.html" class="logo"><img src="makers3dlabs-logo.webp" alt="Makers 3D Labs — homepage"></a><button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navigation">☰</button><nav id="navigation"><a href="index.html">Home</a><a href="producten.html">Producten</a><a href="portfolio.html">Portfolio</a><a href="over-ons.html" class="active">Over ons</a><a href="contact.html" class="navbtn">Offerte aanvragen</a></nav></div></header>
 <main>
 <section class="hero">
   <div class="container">
@@ -335,11 +395,7 @@ main .btn:hover {
       kan al genoeg zijn om het gesprek te beginnen. We bekijken
       samen wat mogelijk is en welke uitvoering bij jouw wensen past.</p>
     </div>
-    <div class="statement">
-      Jouw idee.<br>
-      Onze aandacht.<br>
-      Persoonlijk gemaakt.
-    </div>
+    <div id="about-product-showcase" aria-label="Een selectie uit onze webshop"><div class="about-product-stage"><a class="about-product-slide" href="masker-aurora.html"><img src="masker-aurora-voorbeeld.webp" alt="Aurora masker" width="1254" height="1254" loading="lazy"><span>Aurora masker</span></a><a class="about-product-slide" href="samurai-oni-deluxe.html" hidden><img src="samurai-oni-deluxe-resin-beeld.webp" alt="Samurai Oni – Deluxe Edition" width="1254" height="1254" loading="lazy"><span>Samurai Oni – Deluxe Edition</span></a><a class="about-product-slide" href="vaas-rugzak.html" hidden><img src="vaas-rugzak-voorbeeld.webp" alt="Rugzak tasvaas" width="1254" height="1254" loading="lazy"><span>Rugzak tasvaas</span></a><a class="about-product-slide" href="lasergravure-snijplank.html" hidden><img src="lasergravure-snijplank-voorbeeld.webp" alt="Snijplank met gravure" width="1254" height="1254" loading="lazy"><span>Snijplank met gravure</span></a><a class="about-product-slide" href="horus-antiekgouden-buste.html" hidden><img src="egyptische-valkengod-horus-goud.webp" alt="Horus – Antiekgouden buste" width="1254" height="1254" loading="lazy"><span>Horus – Antiekgouden buste</span></a></div><button type="button" class="about-product-pause" aria-label="Slideshow pauzeren">Pauzeren</button></div>
   </div>
 </section>
 
@@ -413,4 +469,44 @@ main .btn:hover {
 </main>
 <footer><div class="container foot"><span><strong>MAKERS 3D LABS</strong> · Your idea. Made possible.</span><span>© <span id="year">2026</span> Makers 3D Labs · Ridderkerk</span></div></footer><script>document.getElementById("year").textContent=new Date().getFullYear();const b=document.querySelector(".menu-btn"),n=document.getElementById("navigation");b.addEventListener("click",()=>{const o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.setAttribute("aria-label",o?"Sluit menu":"Open menu");b.textContent=o?"×":"☰"});n.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{n.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰"}));</script><script src="assets/shop-data.js"></script>
 <script src="assets/shop.js"></script>
-<script src="assets/bovenmenu.js?v=1"></script></body></html>
+<script src="assets/bovenmenu.js?v=1"></script>
+<script id="about-product-script">
+(()=>{
+  const root=document.getElementById('about-product-showcase');
+  if(!root)return;
+  const slides=[...root.querySelectorAll('.about-product-slide')];
+  const button=root.querySelector('.about-product-pause');
+  const motion=matchMedia('(prefers-reduced-motion: reduce)');
+  let index=0, paused=motion.matches, timer;
+
+  function schedule(){
+    clearInterval(timer);
+    button.textContent=paused?'Afspelen':'Pauzeren';
+    button.setAttribute('aria-label',
+      paused?'Slideshow afspelen':'Slideshow pauzeren');
+    if(paused || document.hidden || root.matches(':hover') ||
+       root.contains(document.activeElement))return;
+    timer=setInterval(()=>{
+      slides[index].hidden=true;
+      index=(index+1)%slides.length;
+      slides[index].hidden=false;
+    },3000);
+  }
+
+  button.addEventListener('click',()=>{
+    paused=!paused;
+    schedule();
+  });
+  root.addEventListener('mouseenter',()=>clearInterval(timer));
+  root.addEventListener('mouseleave',schedule);
+  root.addEventListener('focusin',()=>clearInterval(timer));
+  root.addEventListener('focusout',()=>setTimeout(schedule,0));
+  document.addEventListener('visibilitychange',schedule);
+  motion.addEventListener('change',e=>{
+    paused=e.matches;
+    schedule();
+  });
+  schedule();
+})();
+</script>
+</body></html>
