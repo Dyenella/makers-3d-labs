@@ -1622,7 +1622,27 @@ body {
 #webshop-uitgelicht .m3-carousel-actions button{cursor:pointer}
 @keyframes stadium-reveal{from{opacity:.25}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){#webshop-uitgelicht .m3-slide{animation:none}}
-</style><link rel="stylesheet" href="assets/bovenmenu.css?v=2"><style id="stadions-zonder-knoppen">#webshop-uitgelicht #m3-prev,#webshop-uitgelicht #m3-next,#webshop-uitgelicht [data-stadium-pause]{display:none!important}</style><link rel="stylesheet" href="assets/verf-home.css?v=1"></head>
+</style><link rel="stylesheet" href="assets/bovenmenu.css?v=2"><style id="stadions-zonder-knoppen">#webshop-uitgelicht #m3-prev,#webshop-uitgelicht #m3-next,#webshop-uitgelicht [data-stadium-pause]{display:none!important}</style><link rel="stylesheet" href="assets/verf-home.css?v=1">
+<style id="verf-sectie-scheiding">
+#diensten.paint-supplies {
+  position: relative;
+  background: #293342 !important;
+  border-top: 1px solid #56747e;
+  padding-top: 56px;
+}
+#diensten.paint-supplies::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(180px, 35%);
+  height: 3px;
+  border-radius: 3px;
+  background: #8bd0d8;
+}
+</style>
+</head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
   <header class="header">
