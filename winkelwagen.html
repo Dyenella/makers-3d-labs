@@ -1,1 +1,61 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Winkelwagen | Makers 3D Labs</title><link rel="stylesheet" href="assets/shop.css"><link rel="stylesheet" href="assets/bovenmenu.css?v=2"></head><body class="ms-site-shell"><header class="ms-simple-head"><a href="index.html">MAKERS 3D LABS ← Naar de homepage</a></header><main class="ms-page"><span class="ms-eyebrow">Webshop</span><h1>Mijn winkelwagen.</h1><p class="ms-lead">Bekijk je gekozen producten en pas aantallen aan. Er wordt nog niets besteld of betaald.</p><div id="ms-cart"></div></main><script src="assets/shop-data.js"></script><script src="assets/shop.js"></script><script src="assets/bovenmenu.js?v=2"></script></body></html>
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Winkelwagen | Makers 3D Labs</title><link rel="stylesheet" href="assets/shop.css"><link rel="stylesheet" href="assets/bovenmenu.css?v=2">
+<style id="winkelwagen-huisstijl">
+body.ms-site-shell {
+  background: #242b38;
+  color: #f5f6fa;
+}
+main.ms-page {
+  max-width: 1240px;
+  margin: auto;
+  padding: 40px 24px 64px;
+}
+.ms-page h1 {
+  color: #f5f6fa;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.15;
+  margin: 14px 0 20px;
+}
+.ms-page .ms-eyebrow {
+  color: #91d1d9;
+}
+.ms-page .ms-lead,
+#ms-cart p {
+  color: #c6d0de;
+  line-height: 1.65;
+}
+#ms-cart .ms-empty {
+  background: #2d3748;
+  border: 1px solid #536174;
+  border-radius: 18px;
+  padding: 28px;
+  margin-top: 28px;
+  color: #f5f6fa;
+}
+#ms-cart h2 {
+  color: #f5f6fa;
+  font-size: 23px;
+  margin-top: 0;
+}
+#ms-cart .ms-btn {
+  display: inline-block;
+  background: #83cbd4;
+  color: #142932;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 22px;
+  font-weight: 700;
+  text-decoration: none;
+}
+#ms-cart .ms-btn:hover {
+  background: #a0dce2;
+}
+#ms-cart .ms-btn:focus-visible {
+  outline: 3px solid #f5f6fa;
+  outline-offset: 4px;
+}
+@media(max-width: 600px) {
+  main.ms-page { padding: 28px 20px 40px; }
+  #ms-cart .ms-empty { padding: 20px; }
+}
+</style>
+</head><body class="ms-site-shell"><header class="ms-simple-head"><a href="index.html">MAKERS 3D LABS ← Naar de homepage</a></header><main class="ms-page"><span class="ms-eyebrow">Webshop</span><h1>Mijn winkelwagen.</h1><p class="ms-lead">Bekijk je gekozen producten en pas aantallen aan. Er wordt nog niets besteld of betaald.</p><div id="ms-cart"></div></main><script src="assets/shop-data.js"></script><script src="assets/shop.js"></script><script src="assets/bovenmenu.js?v=2"></script></body></html>
