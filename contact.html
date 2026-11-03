@@ -209,8 +209,87 @@ main .bottom p {
   }
 }
 </style>
+
+<style id="contact-upload-compact">
+main .upload-zone {
+  padding: 14px 16px;
+  border-width: 1px;
+  border-radius: 10px;
+  min-height: 0;
+}
+main .upload-zone input[type="file"] {
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+main input[type="file"]::file-selector-button {
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 7px;
+}
+main .upload-zone .hint {
+  margin: 10px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+main .upload-list {
+  grid-template-columns: repeat(auto-fit, minmax(85px, 110px));
+  gap: 8px;
+  margin-top: 12px;
+}
+main .upload-list:empty,
+main .upload-error:empty {
+  display: none;
+}
+main .upload-item {
+  padding: 6px;
+  border-radius: 8px;
+}
+main .upload-item img {
+  height: 70px;
+  object-fit: contain;
+}
+main .upload-item span {
+  font-size: 11px;
+  line-height: 1.4;
+}
+main .upload-error {
+  min-height: 0;
+  margin-top: 8px;
+  font-size: 12px;
+}
+main .check {
+  gap: 10px;
+  margin: 18px 0;
+}
+main .check input {
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+  padding: 0;
+}
+main .check label {
+  font-size: 12px;
+  line-height: 1.65;
+}
+main .action {
+  padding: 11px 18px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 9px;
+  min-height: 44px;
+  margin: 0;
+}
+main .form-card .privacy {
+  margin: 16px 0 0;
+  font-size: 11px;
+  line-height: 1.65;
+  color: #b8c5d3;
+}
+</style>
 </head><body><header><div class="container nav"><a href="index.html" class="logo">MAKERS <span>3D</span> LABS</a><button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navigation">☰</button><nav id="navigation"><a href="index.html">Home</a><a href="producten.html">Producten</a><a href="portfolio.html">Portfolio</a><a href="over-ons.html">Over ons</a><a href="contact.html" class="navbtn active">Offerte aanvragen</a></nav></div></header>
-<main><section class="hero"><div class="container"><div class="tag">Contact · Makers 3D Labs</div><h1>Een goed idee begint<br><span>met een gesprek.</span></h1><p>Vertel ons welk product of ontwerp je zoekt. Met de juiste informatie kunnen we een offerte op maat voorbereiden.</p></div></section><section class="section"><div class="container layout"><aside><div class="eyebrow">Neem contact op</div><h2>We denken graag met je mee.</h2><p class="lead">Een enkele creatie of een grotere zakelijke bestelling? Beschrijf je wensen, gewenste aantallen en eventuele deadline.</p><div class="info"><strong>Gevestigd in Ridderkerk</strong><p>Ridderkerk / Rotterdam, Nederland</p></div><div class="info"><strong>Contactgegevens volgen</strong><p>Zakelijk e-mailadres en WhatsApp-nummer worden toegevoegd zodra ze zijn bevestigd.</p></div><p class="lead" style="font-size:13px;margin-top:26px">Aanvragen worden door een externe formulierenservice verwerkt. De verzendfunctie wordt na e-mailverificatie geactiveerd.</p></aside><div class="form-card"><h2>Bereid jouw offerteaanvraag voor</h2><p>Vul hieronder je gegevens in en voeg eventueel voorbeeldfoto’s toe. Na verzenden verwerkt onze formulierdienst de aanvraag.</p><form id="quoteForm" method="POST" action="https://formsubmit.co/alejandrojenniferbruna@gmail.com" enctype="multipart/form-data"><input type="hidden" name="_subject" value="Nieuwe offerteaanvraag | Makers 3D Labs"><input type="hidden" name="_captcha" value="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><div class="fields"><div class="field"><label for="naam">Naam <span>*</span></label><input id="naam" name="naam" type="text" autocomplete="name" maxlength="120" required placeholder="Jouw naam"></div><div class="field"><label for="bedrijf">Bedrijfsnaam</label><input id="bedrijf" name="bedrijf" type="text" autocomplete="organization" maxlength="120" placeholder="Optioneel"></div><div class="field"><label for="email">E-mailadres <span>*</span></label><input id="email" name="email" type="email" autocomplete="email" maxlength="180" required placeholder="naam@voorbeeld.nl"></div><div class="field"><label for="telefoon">Telefoonnummer</label><input id="telefoon" name="telefoon" type="tel" autocomplete="tel" maxlength="40" placeholder="Optioneel"></div><div class="field"><label for="product">Welk product of welke dienst? <span>*</span></label><select id="product" name="product" required><option value="">Kies een optie</option><option>Google-reviewstandaard</option><option>Logo-sleutelhangers</option><option>3D-bedrijfslogo</option><option>QR-tafelstandaard</option><option>Productdisplay</option><option>Resin / detailwerk</option><option>Lasergraveren</option><option>3D-printen / functioneel ontwerp</option><option>Overig maatwerk</option></select></div><div class="field"><label for="aantal">Aantal</label><input id="aantal" name="aantal" type="number" min="1" max="100000" step="1" placeholder="Bijv. 50"><div class="hint">Mag leeg blijven als je dit nog niet weet.</div></div><div class="field full"><label for="datum">Gewenste leverdatum</label><input id="datum" name="datum" type="date"><div class="hint">Een gewenste datum is geen gegarandeerde levertijd.</div></div><div class="field full"><label for="omschrijving">Beschrijf jouw idee <span>*</span></label><textarea id="omschrijving" name="omschrijving" maxlength="3000" minlength="10" required placeholder="Wat wil je laten maken? Denk aan formaat, kleuren, toepassing en andere wensen."></textarea></div><div class="field full"><label for="fotos">Foto’s of voorbeeldafbeeldingen toevoegen (optioneel)</label><div class="upload-zone"><input type="file" id="fotos" name="fotos" accept="image/jpeg,image/png,image/webp" multiple aria-describedby="fotoHint fotoError"><div class="hint" id="fotoHint">Selecteer maximaal 5 afbeeldingen (JPG, PNG of WebP), samen maximaal 9 MB. Je ziet hieronder een voorbeeld. De afbeeldingen worden samen met de aanvraag verstuurd zodra het formulier is geactiveerd.</div><div class="upload-list" id="uploadList" aria-live="polite"></div><div class="upload-error" id="fotoError" role="alert"></div></div></div></div><div class="check"><input type="checkbox" id="akkoord" required><label for="akkoord">Ik geef toestemming om mijn ingevulde gegevens en eventuele afbeeldingen via FormSubmit naar Makers 3D Labs te versturen voor het behandelen van mijn aanvraag. <span>*</span></label></div><button class="action" type="submit">Offerteaanvraag versturen →</button></form><p class="privacy">Na activatie verwerkt FormSubmit de aanvraag en eventuele afbeeldingen en stuurt deze per e-mail door. Deel geen gevoelige persoonsgegevens in foto’s of tekst.</p></div></div></section><div class="bottom"><strong>Your idea. Made possible.</strong><p>Persoonlijk maatwerk · Ridderkerk</p></div></main><footer><div class="container foot"><span><strong>MAKERS 3D LABS</strong> · Your idea. Made possible.</span><span>© <span id="year">2026</span> Makers 3D Labs · Ridderkerk</span></div></footer>
+<main><section class="hero"><div class="container"><div class="tag">Contact · Makers 3D Labs</div><h1>Een goed idee begint<br><span>met een gesprek.</span></h1><p>Vertel ons welk product of ontwerp je zoekt. Met de juiste informatie kunnen we een offerte op maat voorbereiden.</p></div></section><section class="section"><div class="container layout"><aside><div class="eyebrow">Neem contact op</div><h2>We denken graag met je mee.</h2><p class="lead">Een enkele creatie of een grotere zakelijke bestelling? Beschrijf je wensen, gewenste aantallen en eventuele deadline.</p><div class="info"><strong>Gevestigd in Ridderkerk</strong><p>Ridderkerk / Rotterdam, Nederland</p></div><div class="info"><strong>Contactgegevens volgen</strong><p>Zakelijk e-mailadres en WhatsApp-nummer worden toegevoegd zodra ze zijn bevestigd.</p></div><p class="lead" style="font-size:13px;margin-top:26px">Aanvragen worden door een externe formulierenservice verwerkt. De verzendfunctie wordt na e-mailverificatie geactiveerd.</p></aside><div class="form-card"><h2>Bereid jouw offerteaanvraag voor</h2><p>Vul hieronder je gegevens in en voeg eventueel voorbeeldfoto’s toe. Na verzenden verwerkt onze formulierdienst de aanvraag.</p><form id="quoteForm" method="POST" action="https://formsubmit.co/alejandrojenniferbruna@gmail.com" enctype="multipart/form-data"><input type="hidden" name="_subject" value="Nieuwe offerteaanvraag | Makers 3D Labs"><input type="hidden" name="_captcha" value="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><div class="fields"><div class="field"><label for="naam">Naam <span>*</span></label><input id="naam" name="naam" type="text" autocomplete="name" maxlength="120" required placeholder="Jouw naam"></div><div class="field"><label for="bedrijf">Bedrijfsnaam</label><input id="bedrijf" name="bedrijf" type="text" autocomplete="organization" maxlength="120" placeholder="Optioneel"></div><div class="field"><label for="email">E-mailadres <span>*</span></label><input id="email" name="email" type="email" autocomplete="email" maxlength="180" required placeholder="naam@voorbeeld.nl"></div><div class="field"><label for="telefoon">Telefoonnummer</label><input id="telefoon" name="telefoon" type="tel" autocomplete="tel" maxlength="40" placeholder="Optioneel"></div><div class="field"><label for="product">Welk product of welke dienst? <span>*</span></label><select id="product" name="product" required><option value="">Kies een optie</option><option>Google-reviewstandaard</option><option>Logo-sleutelhangers</option><option>3D-bedrijfslogo</option><option>QR-tafelstandaard</option><option>Productdisplay</option><option>Resin / detailwerk</option><option>Lasergraveren</option><option>3D-printen / functioneel ontwerp</option><option>Overig maatwerk</option></select></div><div class="field"><label for="aantal">Aantal</label><input id="aantal" name="aantal" type="number" min="1" max="100000" step="1" placeholder="Bijv. 50"><div class="hint">Mag leeg blijven als je dit nog niet weet.</div></div><div class="field full"><label for="datum">Gewenste leverdatum</label><input id="datum" name="datum" type="date"><div class="hint">Een gewenste datum is geen gegarandeerde levertijd.</div></div><div class="field full"><label for="omschrijving">Beschrijf jouw idee <span>*</span></label><textarea id="omschrijving" name="omschrijving" maxlength="3000" minlength="10" required placeholder="Wat wil je laten maken? Denk aan formaat, kleuren, toepassing en andere wensen."></textarea></div><div class="field full"><label for="fotos">Foto’s of voorbeeldafbeeldingen toevoegen (optioneel)</label><div class="upload-zone"><input type="file" id="fotos" name="fotos" accept="image/jpeg,image/png,image/webp" multiple aria-describedby="fotoHint fotoError"><div class="hint" id="fotoHint">Maximaal 5 afbeeldingen · JPG, PNG of WebP · Samen maximaal 9 MB.</div><div class="upload-list" id="uploadList" aria-live="polite"></div><div class="upload-error" id="fotoError" role="alert"></div></div></div></div><div class="check"><input type="checkbox" id="akkoord" required><label for="akkoord">Ik geef toestemming om mijn ingevulde gegevens en eventuele afbeeldingen via FormSubmit naar Makers 3D Labs te versturen voor het behandelen van mijn aanvraag. <span>*</span></label></div><button class="action" type="submit">Offerteaanvraag versturen →</button></form><p class="privacy">Na activatie verwerkt FormSubmit de aanvraag en eventuele afbeeldingen en stuurt deze per e-mail door. Deel geen gevoelige persoonsgegevens in foto’s of tekst.</p></div></div></section><div class="bottom"><strong>Your idea. Made possible.</strong><p>Persoonlijk maatwerk · Ridderkerk</p></div></main><footer><div class="container foot"><span><strong>MAKERS 3D LABS</strong> · Your idea. Made possible.</span><span>© <span id="year">2026</span> Makers 3D Labs · Ridderkerk</span></div></footer>
 <script>
 document.getElementById("year").textContent=new Date().getFullYear();
 const m=document.querySelector(".menu-btn"),n=document.getElementById("navigation");m.addEventListener("click",()=>{const o=n.classList.toggle("open");m.setAttribute("aria-expanded",String(o));m.setAttribute("aria-label",o?"Sluit menu":"Open menu");m.textContent=o?"×":"☰"});n.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{n.classList.remove("open");m.setAttribute("aria-expanded","false");m.textContent="☰"}));
