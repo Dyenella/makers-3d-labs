@@ -44,7 +44,7 @@
     <div>
       <h3>Mijn account</h3>
       <a href="account.html">Mijn account</a>
-      <a href="bestellingen.html">Mijn bestellingen</a>
+      <a href="bestellingen.html">Mijn bestellingen</a><a href="offertes.html">Mijn offertes</a><a href="facturen.html">Mijn facturen</a>
       <a href="winkelwagen.html">Winkelwagen</a>
     </div>
     <div>
