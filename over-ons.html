@@ -364,6 +364,35 @@ main .btn:hover {
   .about-product-slide { animation: none; }
 }
 </style>
+
+<style id="about-idea-compact">
+main .about-idea-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid #465263;
+}
+main .about-idea-action p {
+  color: #c3cbd6;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 580px;
+}
+main .about-idea-action .btn {
+  flex-shrink: 0;
+}
+@media(max-width:700px) {
+  main .about-idea-action {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+</style>
 </head><body><header><div class="container nav"><a href="index.html" class="logo"><img src="makers3dlabs-logo.webp" alt="Makers 3D Labs — homepage"></a><button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navigation">☰</button><nav id="navigation"><a href="index.html">Home</a><a href="producten.html">Producten</a><a href="portfolio.html">Portfolio</a><a href="over-ons.html" class="active">Over ons</a><a href="contact.html" class="navbtn">Offerte aanvragen</a></nav></div></header>
 <main>
 <section class="hero">
@@ -452,20 +481,16 @@ main .btn:hover {
         artikelen kun je ook een onbeschilderde uitvoering kiezen.</p>
       </article>
     </div>
+<div class="about-idea-action">
+  <p>Heb je al iets in gedachten? Stuur ons je wensen,
+  een foto of een schets.</p>
+  <a href="contact.html" class="btn">Vertel ons jouw idee →</a>
+</div>
+
   </div>
 </section>
 
-<section class="cta">
-  <div class="container">
-    <div>
-      <div class="tag">Your idea. Made possible.</div>
-      <h2>Wat mogen we voor jou maken?</h2>
-      <p>Voor jezelf, als cadeau of voor je bedrijf:
-      vertel ons wat je in gedachten hebt.</p>
-    </div>
-    <a href="contact.html" class="btn">Vertel ons jouw idee →</a>
-  </div>
-</section>
+
 </main>
 <footer><div class="container foot"><span><strong>MAKERS 3D LABS</strong> · Your idea. Made possible.</span><span>© <span id="year">2026</span> Makers 3D Labs · Ridderkerk</span></div></footer><script>document.getElementById("year").textContent=new Date().getFullYear();const b=document.querySelector(".menu-btn"),n=document.getElementById("navigation");b.addEventListener("click",()=>{const o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.setAttribute("aria-label",o?"Sluit menu":"Open menu");b.textContent=o?"×":"☰"});n.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{n.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰"}));</script><script src="assets/shop-data.js"></script>
 <script src="assets/shop.js"></script>
