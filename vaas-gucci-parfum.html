@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bloom parfumvaas | Makers 3D Labs</title>
+<meta name="description" content="Bloom parfumvaas: kant-en-klaar afgewerkte 3D-vaas in klein, middel en groot. Kies formaat en gewenste kleur.">
+<link rel="stylesheet" href="assets/shop.css"><link rel="stylesheet" href="assets/categorie-paginas.css">
+<style>
+.vase-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:38px;align-items:start;margin-top:24px}
+.vase-image{margin:0;position:sticky;top:24px}.vase-image img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#1d2936;border-radius:18px}
+.vase-image figcaption{font-size:12px;color:#bdcdda;line-height:1.6;margin-top:12px}
+.vase-kicker{color:#83d7dd;font-size:11px;font-weight:750;letter-spacing:.12em}
+.vase-info h1{font-size:clamp(28px,3.4vw,43px);line-height:1.15;letter-spacing:-.035em;margin:10px 0 17px}
+.vase-intro{color:#c4d3df}.vase-form{padding:22px;background:#213345;border:1px solid #638194;border-radius:16px}
+.vase-form fieldset{border:0;padding:0;margin:0 0 20px;min-width:0}.vase-form legend,.vase-field{font-size:14px;font-weight:750}
+.vase-sizes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:10px}
+.vase-choice{position:relative;cursor:pointer}.vase-choice input{position:absolute;left:10px;top:10px;accent-color:#00afb8;margin:0}
+.vase-choice span{display:block;padding:30px 10px 13px;border:1px solid #7a95a6;border-radius:10px;background:#293f51;color:#fff;font-size:13px}
+.vase-choice input:checked+span{border:2px solid #80dce1;padding:29px 9px 12px;background:#2b4b5b}
+.vase-choice input:focus-visible+span{outline:3px solid #80dce1;outline-offset:3px}
+.vase-field{display:block;margin-top:18px}
+.vase-form input[type=text],.vase-form input[type=number]{display:block;width:100%;margin-top:7px;padding:12px;background:#172a38;color:#fff;border:1px solid #7891a4;border-radius:9px;font:inherit}
+.vase-form input::placeholder{color:#afc2cf;opacity:1}
+.vase-hint{color:#b8cbd8;font-size:12px;line-height:1.6;margin:8px 0 15px}
+.vase-price{margin-top:20px;padding-top:18px;border-top:1px solid #ffffff30}
+.vase-price strong{font-size:30px;color:#8ce1e4}.vase-unit{font-size:13px;color:#c4d3df}
+.vase-summary{white-space:pre-line;font-size:13px;color:#dce9f2}
+.vase-submit{width:100%;padding:14px;border:1px solid #00afb8;border-radius:10px;background:#00afb8;color:#082d34;font:750 15px Arial,sans-serif;cursor:pointer}
+.vase-submit:hover{background:#77dce1}.vase-error{font-size:13px;color:#ffcfb8}
+.vase-details{margin-top:20px;border:1px solid #638194;border-radius:12px;background:#213345;overflow:hidden}
+.vase-details summary{padding:14px 17px;color:#fff;cursor:pointer;font-weight:700}.vase-details div{padding:0 18px 16px;color:#c4d3df;font-size:13px}.vase-details ul{margin:0;padding-left:18px}
+@media(max-width:800px){.vase-layout{grid-template-columns:1fr;gap:24px}.vase-image{position:static;max-width:550px;margin:auto}}
+@media(max-width:420px){.vase-form{padding:17px}.vase-sizes{grid-template-columns:1fr}.vase-choice span{padding:12px 12px 12px 34px}.vase-choice input:checked+span{padding:11px 11px 11px 33px}.vase-choice input{top:15px}}
+</style></head><body>
+<header class="category-header"><div class="head-inner"><a href="index.html" aria-label="Makers 3D Labs — Home"><img src="makers3dlabs-logo.webp" alt="Makers 3D Labs" width="1600" height="500"></a><nav class="category-nav" aria-label="Hoofdnavigatie"><a href="index.html">Home</a><a href="winkel.html">Webshop</a></nav></div></header>
+<main class="category-main"><a class="category-crumb" href="categorie-bloemenvazen.html">← Terug naar Bloemenvazen</a>
+<div class="vase-layout"><figure class="vase-image"><img src="vaas-gucci-parfum-voorbeeld.webp" alt="Bloom parfumvaas — AI-voorbeeldontwerp met bloemen" width="1254" height="1254">
+<figcaption>AI-voorbeeldontwerp, Gucci-geïnspireerd. Geen officieel merkproduct. Kant-en-klaar afgewerkte vaas; bloemen en waterdichte binnenvaas niet inbegrepen. Definitieve uitvoering en beschikbaarheid bevestigen we vooraf.</figcaption></figure>
+<section class="vase-info" aria-labelledby="vase-title"><span class="vase-kicker">PARFUMVAZEN · KANT-EN-KLAAR</span><h1 id="vase-title">Bloom parfumvaas</h1>
+<p class="vase-intro">Een decoratieve 3D-geprinte vaas, Gucci-geïnspireerd. Alleen kant-en-klaar afgewerkt verkrijgbaar. Kies klein, middel of groot en geef je gewenste kleuren door.</p>
+<form id="vase-form" class="vase-form">
+<fieldset><legend>1. Kies jouw formaat</legend><div class="vase-sizes">
+<label class="vase-choice"><input type="radio" name="size" value="15" checked required><span><b>Klein · 15 cm</b><br>€ 34,95</span></label>
+<label class="vase-choice"><input type="radio" name="size" value="20"><span><b>Middel · 20 cm</b><br>€ 49,95</span></label>
+<label class="vase-choice"><input type="radio" name="size" value="25"><span><b>Groot · 25 cm</b><br>€ 69,95</span></label>
+</div><p class="vase-hint">Totale hoogte van de vaas, zonder bloemen; inclusief handvat bij tasmodellen. Breedte en diepte schalen mee met het model.</p></fieldset>
+<label class="vase-field" for="vase-color">2. Gewenste kleur van de vaas<input id="vase-color" name="color" value="Roze" type="text" list="vase-colors" required maxlength="60" placeholder="Bijvoorbeeld crème, zwart, zachtroze of een eigen kleur"></label>
+<datalist id="vase-colors"><option value="Crème"><option value="Wit"><option value="Zwart"><option value="Zachtroze"><option value="Beige"><option value="Rood"><option value="Groen"><option value="Blauw"><option value="Turquoise"><option value="Goud"><option value="Zilver"></datalist>
+<p class="vase-hint">Alle kleuren zijn aan te vragen: kies een suggestie of typ jouw eigen kleur. Beschikbaarheid en eventuele meerprijs voor speciale kleuren of afwerkingen worden vooraf bevestigd.</p>
+<label class="vase-field" for="vase-letters">3. Gewenste kleur van de details<input id="vase-letters" name="letters" type="text" list="letter-colors" required maxlength="60" value="Zwart"></label>
+<datalist id="letter-colors"><option value="Goud"><option value="Zilver"><option value="Wit"><option value="Zwart"><option value="Dezelfde kleur als de vaas"></datalist>
+<label class="vase-field" for="vase-qty">4. Aantal<input id="vase-qty" name="qty" type="number" min="1" max="100" step="1" required value="1"></label>
+<div class="vase-price" aria-live="polite" aria-atomic="true"><strong id="vase-total">€ 34,95</strong><div id="vase-unit" class="vase-unit">€ 34,95 per stuk</div><p id="vase-summary" class="vase-summary"></p></div>
+<p class="vase-hint">Zonder bloemen en exclusief verzending. Dit is een aanvraag; de definitieve uitvoering, prijs en levertijd worden vóór de bestelling bevestigd.</p>
+<p id="vase-error" class="vase-error" role="alert"></p><button class="vase-submit" type="submit">Vraag deze vaas aan →</button>
+<p class="vase-hint">Je keuzes gaan mee naar het aanvraagformulier. Daar vul je jouw contactgegevens in. Online afrekenen is nog niet actief.</p>
+</form>
+<details class="vase-details"><summary>Gebruik en uitvoering</summary><div><ul><li>Decoratieve 3D-print; fijne printlijnen kunnen zichtbaar zijn.</li><li>Voor droogbloemen en kunstbloemen.</li><li>Gebruik voor verse bloemen alleen een passende waterdichte binnenvaas. Die is niet inbegrepen.</li><li>De waterdichtheid van de print zelf is niet bevestigd; vul de print niet rechtstreeks met water.</li><li>De kleur kan op een beeldscherm iets afwijken.</li><li>Levertijd en definitieve uitvoering worden vooraf bevestigd.</li></ul></div></details>
+</section></div></main>
+<script>
+const vf=document.getElementById('vase-form'),vp={'15':3495,'20':4995,'25':6995},vn={'15':'Klein','20':'Middel','25':'Groot'};
+const veuro=c=>new Intl.NumberFormat('nl-NL',{style:'currency',currency:'EUR'}).format(c/100);
+function vaseSelection(){const d=new FormData(vf),size=d.get('size');return {size,color:String(d.get('color')||'').trim(),letters:String(d.get('letters')||'').trim(),qty:Number(d.get('qty')),price:vp[size]};}
+function updateVase(){
+ const s=vaseSelection(),valid=Number.isInteger(s.qty)&&s.qty>=1&&s.qty<=100;
+ document.getElementById('vase-total').textContent=valid?veuro(s.price*s.qty):'Kies een geldig aantal';
+ document.getElementById('vase-unit').textContent=veuro(s.price)+' per stuk';
+ document.getElementById('vase-summary').textContent=vn[s.size]+' · '+s.size+' cm totale hoogte'+(s.color?'\nVaaskleur: '+s.color:'')+(s.letters?'\nDetailkleur: '+s.letters:'');
+}
+vf.addEventListener('input',updateVase);vf.addEventListener('change',updateVase);updateVase();
+vf.addEventListener('submit',event=>{
+ event.preventDefault();const s=vaseSelection(),error=document.getElementById('vase-error');
+ if(!Object.hasOwn(vp,s.size)||!s.color||!s.letters||!Number.isInteger(s.qty)||s.qty<1||s.qty>100){error.textContent='Kies een formaat, vul beide kleuren in en kies een aantal van 1 tot 100.';return;}
+ const description=['Bloom parfumvaas — Gucci-geïnspireerd','Uitvoering: kant-en-klaar afgewerkt','Formaat: '+vn[s.size]+' — '+s.size+' cm totale hoogte','Kleur vaas: '+s.color,'Kleur details: '+s.letters,'Aantal: '+s.qty,'Prijs per stuk: '+veuro(s.price),'Producttotaal exclusief verzending: '+veuro(s.price*s.qty),'Zonder bloemen en zonder waterdichte binnenvaas.','Definitieve kleuren, uitvoering en levertijd graag bevestigen.'].join('\n');
+ try{sessionStorage.setItem('makers-collectievaas-aanvraag',JSON.stringify({description,qty:s.qty}));}
+ catch(e){error.textContent='Je browser kan de keuzes niet bewaren. Sta sessieopslag toe en probeer opnieuw.';return;}
+ location.href='contact.html?product=Collectievaas#quoteForm';
+});
+</script><script src="assets/shop-data.js"></script><script src="assets/shop.js"></script></body></html>
