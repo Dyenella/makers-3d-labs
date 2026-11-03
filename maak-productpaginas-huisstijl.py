@@ -1,0 +1,82 @@
+from pathlib import Path
+import re
+
+css='''
+body.mk-product-theme{margin:0!important;background:#242b38!important;color:#f5f6fa!important;font-family:"DM Sans",Arial,sans-serif;line-height:1.7;color-scheme:dark}
+body.mk-product-theme main{width:100%;max-width:1200px!important;margin:32px auto 60px!important;padding:0 24px!important;color:#f5f6fa!important;background-color:transparent!important}
+body.mk-product-theme main *{box-sizing:border-box}
+body.mk-product-theme main :is(.layout,.product-layout,.mask-layout,.vase-layout,.laser-layout,.resin-layout){display:grid!important;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)!important;gap:30px!important;align-items:start!important}
+body.mk-product-theme main :is(.layout,.product-layout,.mask-layout,.vase-layout,.laser-layout,.resin-layout)>*{min-width:0}
+body.mk-product-theme main h1{color:#f5f6fa!important;font-size:clamp(28px,3.5vw,42px)!important;line-height:1.2!important;letter-spacing:-1px!important;margin:10px 0 18px!important}
+body.mk-product-theme main h2{color:#f5f6fa!important;font-size:23px!important;line-height:1.35!important}
+body.mk-product-theme main h3{color:#f5f6fa!important;line-height:1.4}
+body.mk-product-theme main :is(p,li,figcaption,.intro,.muted,.subtitle,.product-info,.hint,.helper-note,.small-note,.mask-note,.vase-intro,.vase-hint,.vase-summary,.resin-small){color:#c3cbd6!important}
+body.mk-product-theme main :is(.product-info,.mask-info,.vase-info){background-color:transparent!important}
+body.mk-product-theme main :is(.kicker,.category,.tag,.vase-kicker,.resin-kicker){color:#87ced6!important;font-size:11px!important;letter-spacing:1.5px!important;text-transform:uppercase}
+body.mk-product-theme main a{color:#87ced6;text-underline-offset:4px}
+body.mk-product-theme main :is(.crumb,.category-crumb){color:#87ced6!important;font-size:13px!important}
+body.mk-product-theme main :is(.photo,.product-image,.mask-photo,.laser-photo){background-color:#080d12!important;border-radius:16px!important;border-color:#46566c!important;box-shadow:none!important}
+body.mk-product-theme main :is(.photo,.product-image){min-height:0!important}
+body.mk-product-theme main :is(.photo img,.product-image img,.mask-photo img,.vase-image img,.laser-photo img,.resin-photo img,img.photo){display:block;width:100%;max-width:100%;max-height:640px;object-fit:contain!important;object-position:center;height:auto;border-radius:14px}
+body.mk-product-theme main :is(.vase-image img,.resin-photo img){background-color:#080d12!important}
+body.mk-product-theme main :is(.image-caption,figcaption){font-size:12px!important;line-height:1.6!important;margin-top:10px}
+body.mk-product-theme main :is(form,.mask-form,.vase-form,.laser-form,.resin-form){background-color:#2b3546!important;border-color:#46566c!important;border-radius:15px!important;box-shadow:none!important}
+body.mk-product-theme main :is(.mask-form,.vase-form,.laser-form,.resin-form){padding:22px!important}
+body.mk-product-theme main :is(details,.accordion,.m3-accordion){background-color:#293747!important;border-color:#4b5d70!important;border-radius:11px!important;margin:12px 0!important;overflow:hidden}
+body.mk-product-theme main summary{background-color:#304353!important;color:#edf5f8!important;padding:13px 16px!important;font-size:14px!important}
+body.mk-product-theme main summary::after{color:#87ced6!important}
+body.mk-product-theme main :is(.options,.content){background-color:transparent!important;color:#c3cbd6!important}
+body.mk-product-theme main :is(.option,.choice>span,.vase-choice>span,.resin-size){background-color:#243343!important;border-color:#53677b!important;color:#f5f6fa!important;border-radius:9px!important}
+body.mk-product-theme main :is(.choice input:checked+span,.vase-choice input:checked+span,.resin-size:has(input:checked),.option:has(input:checked)){background-color:#365360!important;border-color:#87ced6!important;color:#f5f6fa!important}
+body.mk-product-theme main :is(label,legend){color:#f5f6fa!important}
+body.mk-product-theme main input:not([type=radio]):not([type=checkbox]):not([type=hidden]),body.mk-product-theme main :is(select,textarea){background-color:#202a39!important;color:#f5f6fa!important;border-color:#596d81!important;border-radius:9px!important;font-family:inherit;font-size:14px!important}
+body.mk-product-theme main :is(input,textarea)::placeholder{color:#aab9cb!important;opacity:1}
+body.mk-product-theme main select option{color:#f5f6fa!important;background-color:#202a39!important}
+body.mk-product-theme main input:is([type=radio],[type=checkbox]){accent-color:#69b7c1!important}
+body.mk-product-theme main :is(.price,.total,.total-price,.mask-price,.vase-price,.laser-total,.resin-total,.total-box strong){color:#a9dfe4!important;font-weight:800}
+body.mk-product-theme main :is(.total,.total-price,.total-box){background-color:#293d46!important;border-color:#4b6572!important;border-radius:11px!important}
+body.mk-product-theme main :is(.price,.mask-price,.vase-price,.laser-total,.resin-total){font-size:30px!important;line-height:1.3}
+body.mk-product-theme main :is(.action,.order-button,.vase-submit,.resin-submit,button[type=submit],.laser-form button){background:#69b7c1!important;color:#142932!important;border:0!important;border-radius:10px!important;padding:12px 18px!important;font:700 14px/1.5 Arial,sans-serif!important;min-height:44px;text-decoration:none!important}
+body.mk-product-theme main :is(.action,.order-button,.vase-submit,.resin-submit,button[type=submit]):hover{background:#8ccdd5!important}
+body.mk-product-theme main :is(.notice,.description,.description-wide,.info,.detail-box,.info-panel,.vase-details>div,.vase-details>section,.resin-info){background-color:#2b3546!important;border-color:#46566c!important;color:#c3cbd6!important;border-radius:14px!important;box-shadow:none!important}
+body.mk-product-theme main :is(.description,.description-wide){padding:24px!important;margin-top:26px!important}
+body.mk-product-theme main :is(.info,.detail-box,.info-panel){padding:22px!important}
+body.mk-product-theme main :is(.details,.info-grid,.grid,.resin-details){gap:20px!important;margin-top:24px}
+body.mk-product-theme main :focus-visible{outline:3px solid #87ced6;outline-offset:3px}
+/* Product-level details styles must never turn the shared menu white. */
+body.mk-product-theme #mk-unified-header details{background:transparent!important;border:0!important;border-radius:0!important;padding:0!important;margin:0!important;overflow:visible!important}
+body.mk-product-theme #mk-unified-header summary{background:transparent!important;color:#f5f6fa!important;border:0!important;border-radius:0!important;display:block!important}
+body.mk-product-theme #mk-unified-header summary::after{content:none!important;display:none!important}
+@media(max-width:850px){body.mk-product-theme main :is(.layout,.product-layout,.mask-layout,.vase-layout,.laser-layout,.resin-layout){grid-template-columns:1fr!important;gap:24px!important}body.mk-product-theme main :is(.vase-image,.resin-photo){position:static!important}body.mk-product-theme main :is(.photo img,.product-image img,.mask-photo img,.vase-image img,.laser-photo img,.resin-photo img,img.photo){max-height:560px}body.mk-product-theme main :is(.details,.info-grid,.grid,.resin-details){grid-template-columns:1fr!important}}
+@media(max-width:520px){body.mk-product-theme main{padding:0 18px!important;margin-top:24px!important}body.mk-product-theme main :is(.mask-form,.vase-form,.laser-form,.resin-form){padding:18px!important}body.mk-product-theme main :is(.info,.detail-box,.info-panel){padding:19px!important}}
+'''
+
+# Recognise product pages through their existing layout, not through all HTML files.
+markers=['product-layout','mask-layout','vase-layout','laser-layout','resin-layout']
+exclude={'index.html','winkel.html','producten.html','diensten.html','portfolio.html','over-ons.html','contact.html','informatie.html','algemene-voorwaarden.html','account.html','bestellingen.html','offertes.html','facturen.html','adressen.html','winkelwagen.html'}
+changes=[]
+for p in Path('.').glob('*.html'):
+ if p.name in exclude or p.name.startswith('categorie-'):continue
+ text=p.read_text(encoding='utf-8')
+ main=re.search(r'<main\b[\s\S]*?</main>',text,re.I)
+ if not main:continue
+ product=any(re.search(r'class="[^"]*\b'+re.escape(m)+r'\b',main[0]) for m in markers)
+ product=product or ('class="layout"' in main[0] and ('id="product-form"' in main[0] or 'class="kh-header"' in text or p.name in {'kersthangers.html','kersthangers-bedrijfslogo.html','persoonlijke-kersttafel.html','kleine-cadeaus.html'}))
+ product=product or p.name.startswith(('resin-','stadion-','masker-','vaas-','lasergravure-')) or p.name in {'ontwerp-eigen-masker.html','ontwerp-eigen-stadion.html'}
+ if not product:continue
+ def body(m):
+  tag=m[0]
+  if re.search(r'\bclass="',tag):
+   return re.sub(r'\bclass="([^"]*)"',lambda c:'class="'+(' '.join(dict.fromkeys(c[1].split()+['mk-product-theme'])))+'"',tag,count=1)
+  return tag[:-1]+' class="mk-product-theme">'
+ text=re.sub(r'<body\b[^>]*>',body,text,count=1,flags=re.I)
+ text=re.sub(r'<link\b[^>]*href="assets/product-huisstijl\.css(?:\?[^"]*)?"[^>]*>','',text)
+ text=text.replace('</head>','<link rel="stylesheet" href="assets/product-huisstijl.css?v=1"></head>',1)
+ changes.append((p,text))
+if not changes:raise SystemExit('Geen productpagina’s gevonden. Controleer de projectmap.')
+assets=Path('assets');assets.mkdir(exist_ok=True)
+(assets/'product-huisstijl.css').write_text(css,encoding='utf-8')
+for p,text in changes:p.write_text(text,encoding='utf-8')
+Path('product-huisstijl-bestanden.txt').write_text('assets/product-huisstijl.css\n'+'\n'.join(p.name for p,_ in changes)+'\n',encoding='utf-8')
+print(f'Klaar: {len(changes)} productpagina’s in de huisstijl van de homepage. Foto’s, formulierkeuzes, prijzen en bestaande scripts behouden.')
+print('Nog niet gepubliceerd.')
