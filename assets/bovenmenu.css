@@ -23,3 +23,63 @@
 #mk-unified-header :focus-visible{outline:3px solid #87ced6!important;outline-offset:4px!important}
 @media(max-width:850px){#mk-unified-header{padding:16px 20px!important}#mk-unified-header .mk-menu-inner{gap:12px!important;flex-wrap:wrap!important}#mk-unified-header .mk-brand img{width:200px!important}#mk-unified-header .mk-mobile-toggle{display:block!important}#mk-unified-header .mk-main-nav{display:none!important;order:5!important;width:100%!important;flex-direction:column!important;align-items:stretch!important;gap:4px!important;padding-top:12px!important}#mk-unified-header.mk-open .mk-main-nav{display:flex!important}#mk-unified-header .mk-service-list{position:static!important;width:100%!important;margin:6px 0!important;box-shadow:none!important}#mk-unified-header .mk-shop{text-align:center!important}#mk-unified-header .ms-utility{min-width:36px!important;min-height:36px!important;padding:8px!important}}
 @media(prefers-reduced-motion:reduce){#mk-unified-header *{scroll-behavior:auto!important}}
+
+/* bovenmenu-uniform */
+body #mk-unified-header {
+  display: block !important;
+  width: 100% !important;
+  background: #242b38 !important;
+}
+body #mk-unified-header .mk-menu-inner {
+  width: 100% !important;
+}
+body #mk-unified-header details {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  box-shadow: none !important;
+}
+body #mk-unified-header summary {
+  display: block !important;
+  background: transparent !important;
+  color: #f5f6fa !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 10px 0 !important;
+  box-shadow: none !important;
+  font: 700 14px/1.5 Arial, sans-serif !important;
+  list-style: none !important;
+}
+body #mk-unified-header summary::before,
+body #mk-unified-header summary::after,
+body #mk-unified-header summary::-webkit-details-marker {
+  content: none !important;
+  display: none !important;
+}
+body #mk-unified-header .mk-menu-link {
+  font: 700 14px/1.5 Arial, sans-serif !important;
+  color: #f5f6fa !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+body #mk-unified-header .mk-shop {
+  background: #65b3be !important;
+  color: #142932 !important;
+  padding: 13px 24px !important;
+  border-radius: 30px !important;
+}
+body #mk-unified-header .mk-shop:hover {
+  background: #8ccdd5 !important;
+}
+body #mk-unified-header .ms-utility {
+  background: #e9f5f1 !important;
+  color: #123338 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+/* einde-bovenmenu-uniform */

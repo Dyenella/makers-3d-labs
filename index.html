@@ -1613,7 +1613,7 @@ body {
   #kerst-sneeuwsterren { display:none; }
 }
 </style>
-<link rel="stylesheet" href="assets/bovenmenu.css?v=1"><style id="stadions-home-slideshow">
+<style id="stadions-home-slideshow">
 #webshop-uitgelicht .m3-slide[hidden]{display:none!important}
 #webshop-uitgelicht .m3-track{transform:none!important}
 #webshop-uitgelicht .m3-slide{width:100%;flex:0 0 100%;animation:stadium-reveal .65s ease both}
@@ -1622,7 +1622,7 @@ body {
 #webshop-uitgelicht .m3-carousel-actions button{cursor:pointer}
 @keyframes stadium-reveal{from{opacity:.25}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){#webshop-uitgelicht .m3-slide{animation:none}}
-</style></head>
+</style><link rel="stylesheet" href="assets/bovenmenu.css?v=2"></head>
 <body>
   <div class="announcement">MAKERS 3D LABS <b>•</b> CREATIVE MANUFACTURING STUDIO <b>•</b> RIDDERKERK</div>
   <header class="header">
@@ -1806,7 +1806,7 @@ body {
   const close=ball.querySelector('.discount-close');
   if(close)close.addEventListener('click',()=>{ball.hidden=true;});
 })();
-</script><script src="assets/bovenmenu.js?v=1"></script><script id="stadions-home-slideshow-js">
+</script><script id="stadions-home-slideshow-js">
 (()=>{const root=document.getElementById('webshop-uitgelicht');if(!root)return;
 const slides=[...root.querySelectorAll('#m3-slide-track > .m3-slide')];if(slides.length<2)return;
 const count=root.querySelector('#m3-slide-count');
@@ -1822,5 +1822,5 @@ function show(i,manual=false){index=(i+slides.length)%slides.length;slides.forEa
 function schedule(){clearInterval(timer);pause.textContent=paused?'Afspelen':'Pauzeren';pause.setAttribute('aria-label',paused?'Stadionslideshow afspelen':'Stadionslideshow pauzeren');if(!paused&&!document.hidden&&!root.matches(':hover')&&!root.contains(document.activeElement))timer=setInterval(()=>show(index+1),5000);}
 prev.addEventListener('click',()=>{show(index-1,true);schedule();});next.addEventListener('click',()=>{show(index+1,true);schedule();});pause.addEventListener('click',()=>{paused=!paused;schedule();});
 root.addEventListener('mouseenter',()=>clearInterval(timer));root.addEventListener('mouseleave',schedule);root.addEventListener('focusin',()=>clearInterval(timer));root.addEventListener('focusout',()=>setTimeout(schedule,0));document.addEventListener('visibilitychange',schedule);motion.addEventListener('change',e=>{paused=e.matches;schedule();});show(0);schedule();})();
-</script></body>
+</script><script src="assets/bovenmenu.js?v=2"></script></body>
 </html>
