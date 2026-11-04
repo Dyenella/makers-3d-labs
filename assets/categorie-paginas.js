@@ -12,7 +12,7 @@ function update(){
  document.getElementById('price-error').textContent=invalid?'Vul geldige bedragen in; minimum mag niet hoger zijn dan maximum.':'';
  let visible=0;
  cards.forEach(item=>{
-  let show=!invalid&&(!q||item.name.includes(q))&&(!colors.length||colors.some(c=>item.colors.includes(c)))&&(!types.length||types.includes(item.kind))&&(!onlyPersonal.checked||item.personal);
+  let show=(!checked('zodiac').length||checked('zodiac').includes(item.el.dataset.zodiac))&&!invalid&&(!q||item.name.includes(q))&&(!colors.length||colors.some(c=>item.colors.includes(c)))&&(!types.length||types.includes(item.kind))&&(!onlyPersonal.checked||item.personal);
   if(item.price===null){show=show&&onRequest.checked;}
   else{show=show&&(low===null||item.price>=Math.round(low*100))&&(high===null||item.price<=Math.round(high*100));}
   item.el.hidden=!show;if(show)visible++;
