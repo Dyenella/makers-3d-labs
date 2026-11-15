@@ -69,9 +69,8 @@ a { color: inherit; }
   text-align: center;
 }
 
-.product-image.missing img { display: none; }
-.product-image.missing .missing-image { display: block; }
-
+.product-image.missing,
+.product-image.missing + #stadion-fotobijschrift { display: none; }
 .category {
   color: #138d82;
   font-weight: bold;
@@ -339,7 +338,9 @@ body.m3-product-style {
 }
 </style>
 
-<link rel="stylesheet" href="assets/product-huisstijl.css?v=1"><link rel="stylesheet" href="assets/bovenmenu.css?v=2"></head>
+<link rel="stylesheet" href="assets/product-huisstijl.css?v=1"><link rel="stylesheet" href="assets/bovenmenu.css?v=2">
+<meta property="og:image" content="https://www.makers3dlabs.nl/stadion-fc-volendam-voorbeeld.webp">
+</head>
 
 <body class="m3-product-style mk-product-theme">
 
@@ -363,9 +364,6 @@ body.m3-product-style {
         alt="Kras Stadion — FC Volendam — AI-voorbeeldmodel"
         onerror="document.getElementById('product-image').classList.add('missing')"
       >
-      <div class="missing-image">
-        Productfoto nog niet gevonden. Controleer de bestandsnaam.
-      </div>
     </div>
 
 <p id="stadion-fotobijschrift" style="margin:10px 0 0;color:#d0dce5;font-size:13px;line-height:1.6"><strong>Kras Stadion — FC Volendam.</strong><br>AI-voorbeeldafbeelding van dit stadion; details kunnen afwijken. Definitieve uitvoering en levertijd bevestigen we vooraf.</p>
