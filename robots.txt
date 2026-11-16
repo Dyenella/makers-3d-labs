@@ -8,5 +8,6 @@ Disallow: /offertes.html
 Disallow: /bedankt.html
 Disallow: /winkelwagen.html
 Disallow: /backups/
+Disallow: /beheer.html
 
 Sitemap: https://www.makers3dlabs.nl/sitemap.xml

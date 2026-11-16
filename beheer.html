@@ -1,0 +1,77 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#242b38"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="same-origin"><title>Beheer | Makers 3D Labs</title><link rel="stylesheet" href="assets/shop.css"><link rel="stylesheet" href="assets/klantomgeving.css?v=1"><link rel="stylesheet" href="assets/beheer.css?v=1"></head>
+<body class="ms-site-shell"><header class="ms-simple-head"><a href="index.html">Makers 3D Labs ← Home</a></header>
+<main class="customer beheer">
+<span class="customer-kicker">Alleen voor Makers 3D Labs</span>
+<h1>Beheer klantomgeving</h1>
+<div class="customer-message" id="bh-message" role="status">Beheer laden…</div>
+
+<section class="customer-panel" id="bh-login" hidden>
+  <h2>Inloggen als beheerder</h2>
+  <p>Vul je beheerdersadres in. Je krijgt een inloglink per e-mail. Open die link in deze browser.</p>
+  <form id="bh-login-form"><label for="bh-login-email">E-mailadres</label>
+    <input type="email" id="bh-login-email" autocomplete="email" required maxlength="180">
+    <button type="submit" id="bh-login-submit">Stuur mijn inloglink</button>
+    <p class="customer-small" id="bh-login-msg" role="status"></p></form>
+</section>
+
+<div id="bh-app" hidden>
+  <div class="customer-session"><p id="bh-who"></p><button type="button" class="customer-secondary" id="bh-signout">Uitloggen</button></div>
+
+  <div class="bh-grid">
+    <section class="customer-panel">
+      <h2>1. Kies een klant</h2>
+      <input type="search" id="bh-search" placeholder="Zoek op naam, bedrijf of e-mail" aria-label="Zoek klant">
+      <ul class="bh-customers" id="bh-customers"></ul>
+      <details class="bh-invite"><summary>Nieuwe klant uitnodigen</summary>
+        <form id="bh-invite-form">
+          <label for="bh-invite-name">Naam</label><input id="bh-invite-name" maxlength="120">
+          <label for="bh-invite-email">E-mailadres *</label><input id="bh-invite-email" type="email" required maxlength="180">
+          <button type="submit">Stuur uitnodiging</button>
+          <p class="customer-small">De klant krijgt een mail om zijn klantomgeving te openen. Daarna staat hij in de lijst.</p>
+        </form>
+      </details>
+    </section>
+
+    <section class="customer-panel" id="bh-work">
+      <h2 id="bh-customer-title">2. Klant</h2>
+      <p id="bh-customer-info" class="customer-small">Kies eerst links een klant.</p>
+
+      <div id="bh-forms" hidden>
+        <div class="bh-tabs" role="tablist">
+          <button type="button" role="tab" data-tab="quote" aria-selected="true">Offerte</button>
+          <button type="button" role="tab" data-tab="invoice" aria-selected="false">Factuur</button>
+          <button type="button" role="tab" data-tab="order" aria-selected="false">Bestelling</button>
+        </div>
+
+        <form id="bh-form" class="bh-form">
+          <div class="bh-row">
+            <div><label for="bh-number">Nummer *</label><input id="bh-number" required maxlength="40"></div>
+            <div><label for="bh-total">Totaal incl. btw (€) *</label><input id="bh-total" required inputmode="decimal" placeholder="49,95"></div>
+          </div>
+          <label for="bh-title">Omschrijving *</label><input id="bh-title" required maxlength="200" placeholder="Bijv. Lasergravure drinkglazen (6 stuks)">
+          <div data-only="order">
+            <label for="bh-items">Artikelen (één per regel, bijv. "2 x Oni masker rood")</label>
+            <textarea id="bh-items" rows="4" maxlength="3000"></textarea>
+            <label for="bh-pay">Betaling</label>
+            <select id="bh-pay"><option value="open">Openstaand</option><option value="paid">Betaald</option></select>
+          </div>
+          <div data-only="invoice">
+            <label for="bh-order-number">Hoort bij bestelling (optioneel)</label><input id="bh-order-number" maxlength="40">
+          </div>
+          <div data-only="quote invoice">
+            <label for="bh-pdf">PDF toevoegen (optioneel, max. 10 MB)</label><input id="bh-pdf" type="file" accept="application/pdf">
+          </div>
+          <button type="submit" id="bh-save">Opslaan en klant mailen</button>
+          <p class="customer-small">De klant krijgt automatisch een e-mail dat er iets voor hem klaarstaat.</p>
+        </form>
+
+        <h2 class="bh-sub">Wat deze klant al heeft</h2>
+        <div id="bh-records"></div>
+      </div>
+    </section>
+  </div>
+</div>
+</main>
+<script src="assets/klant-config.js"></script>
+<script src="assets/beheer.js?v=1"></script>
+</body></html>
