@@ -153,7 +153,7 @@ Deno.serve(async (req) => {
     success_url: `${SITE}/bedankt.html?betaald=1`,
     cancel_url: `${product.url}?betaling=geannuleerd`,
     metadata: { request_id: reqId, kind: "product", product: product.id },
-    payment_intent_data: { metadata: { request_id: reqId }, statement_descriptor_suffix: "MAKERS3D" },
+    payment_intent_data: { metadata: { request_id: reqId }, statement_descriptor_suffix: "WEBSHOP" },
     custom_text: { submit: { message: "Je bestelling wordt op maat gemaakt. Na betaling ontvang je een bevestiging per e-mail." } },
   });
   if (session.status >= 400) {

@@ -55,7 +55,7 @@ Deno.serve(async (req) => {
       line_items: [{ quantity: 1, price_data: { currency: "eur", unit_amount: doc.total_cents, tax_behavior: "inclusive", product_data: { name: `${label} – ${String(doc.title).slice(0, 180)}` } } }],
       success_url: `${SITE}/${back}?betaald=1`, cancel_url: `${SITE}/${back}`,
       metadata: { request_id: reqId, kind, document: doc.id },
-      payment_intent_data: { metadata: { request_id: reqId }, statement_descriptor_suffix: "MAKERS3D" },
+      payment_intent_data: { metadata: { request_id: reqId }, statement_descriptor_suffix: "WEBSHOP" },
     }),
   });
   const s = await r.json();
