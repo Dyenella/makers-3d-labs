@@ -63,3 +63,26 @@ insert into public.makers_admins(user_id)
 
 commit;
 select count(*) as beheerders from public.makers_admins;
+
+-- Beheerders op e-mailadres (toegevoegd 16-11-2026).
+create table if not exists public.makers_admin_emails (email text primary key);
+alter table public.makers_admin_emails enable row level security;
+revoke all on public.makers_admin_emails from anon, authenticated;
+insert into public.makers_admin_emails(email) values ('alejandrobrunasanchez@gmail.com'), ('jwinkels1991@gmail.com') on conflict do nothing;
+create or replace function public.is_makers_admin() returns boolean
+language sql stable security definer set search_path = public, auth as $$
+  select exists (select 1 from public.makers_admins a where a.user_id = (select auth.uid()))
+      or exists (select 1 from auth.users u join public.makers_admin_emails e on lower(e.email) = lower(u.email)
+                 where u.id = (select auth.uid()) and u.email_confirmed_at is not null);
+$$;
+create or replace function public.makers_sync_admin() returns trigger
+language plpgsql security definer set search_path = public as $$
+begin
+  if new.email_confirmed_at is not null and exists (select 1 from public.makers_admin_emails e where lower(e.email) = lower(new.email)) then
+    insert into public.makers_admins(user_id) values (new.id) on conflict do nothing;
+  end if;
+  return new;
+end $$;
+drop trigger if exists makers_sync_admin on auth.users;
+create trigger makers_sync_admin after insert or update of email_confirmed_at, email on auth.users
+  for each row execute function public.makers_sync_admin();

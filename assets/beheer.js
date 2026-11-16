@@ -181,7 +181,7 @@
 
   el('bh-login-form').addEventListener('submit', async (e) => {
     e.preventDefault(); const b = el('bh-login-submit'); b.disabled = true;
-    const { error } = await state.client.auth.signInWithOtp({ email: el('bh-login-email').value.trim(), options: { shouldCreateUser: false, emailRedirectTo: location.origin + '/beheer.html' } });
+    const { error } = await state.client.auth.signInWithOtp({ email: el('bh-login-email').value.trim(), options: { shouldCreateUser: true, emailRedirectTo: location.origin + '/beheer.html' } });
     el('bh-login-msg').textContent = error ? 'De inloglink kon niet worden verstuurd.' : 'Kijk in je mail en open de inloglink in deze browser.';
     b.disabled = false;
   });
