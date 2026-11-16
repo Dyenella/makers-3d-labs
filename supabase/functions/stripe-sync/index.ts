@@ -82,7 +82,7 @@ async function syncProduct(p: Product) {
 
 Deno.serve(async (req) => {
   // Alleen met service-role sleutel.
-  const token = (req.headers.get("authorization") || "").replace(/^Bearer\s+/i, "");
+  const token = req.headers.get("apikey") || (req.headers.get("authorization") || "").replace(/^Bearer\s+/i, "");
   const probe = createClient(Deno.env.get("SUPABASE_URL")!, token, { auth: { persistSession: false } });
   const { error: authErr } = await probe.auth.admin.listUsers({ page: 1, perPage: 1 });
   if (authErr) return new Response(JSON.stringify({ error: "forbidden" }), { status: 403 });
