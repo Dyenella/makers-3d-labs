@@ -1,0 +1,6550 @@
+{
+ "currency": "eur",
+ "tax_behavior": "inclusive",
+ "count": 192,
+ "products": [
+  {
+   "id": "m3d_anubis_antiekgouden_buste",
+   "file": "anubis-antiekgouden-buste.html",
+   "url": "https://www.makers3dlabs.nl/anubis-antiekgouden-buste.html",
+   "name": "Anubis – Egyptische God – Antiekgouden Buste",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/anubis-egyptische-god-goud%20(1).webp",
+   "variants": [
+    {
+     "key": "10-cm",
+     "label": "10 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "15-cm",
+     "label": "15 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1295,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_bastet_antiekgouden_buste",
+   "file": "bastet-antiekgouden-buste.html",
+   "url": "https://www.makers3dlabs.nl/bastet-antiekgouden-buste.html",
+   "name": "Bastet – Egyptische God – Antiekgouden Buste",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/bastet-egyptische-kattengodin-antiekgoud.webp",
+   "variants": [
+    {
+     "key": "10-cm",
+     "label": "10 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "15-cm",
+     "label": "15 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1295,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_business_collection_bedrijfsdisplays",
+   "file": "business-collection-bedrijfsdisplays.html",
+   "url": "https://www.makers3dlabs.nl/business-collection-bedrijfsdisplays.html",
+   "name": "Gepersonaliseerde 3D Bedrijfsdisplays – Business Collection",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/makers-3d-labs-zakelijke-displays.webp",
+   "variants": [
+    {
+     "key": "qr-review-display",
+     "label": "QR Review Display",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "qr-catalogus-display",
+     "label": "QR Catalogus Display",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "3d-logo-bureaudisplay",
+     "label": "3D Logo Bureaudisplay",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "gepersonaliseerde-baliehouder",
+     "label": "Gepersonaliseerde Baliehouder",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "complete-business-display-set",
+     "label": "Complete Business Display Set",
+     "cents": 24995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "nfc-voor-qr-review-display",
+     "label": "NFC voor QR Review Display",
+     "cents": 1495,
+     "firm": true
+    },
+    {
+     "key": "nfc-voor-qr-catalogus-display",
+     "label": "NFC voor QR Catalogus Display",
+     "cents": 1495,
+     "firm": true
+    },
+    {
+     "key": "extra-qr-code-op-een-display",
+     "label": "Extra QR-code op één display",
+     "cents": 995,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_clipper_duo_set",
+   "file": "clipper-duo-set.html",
+   "url": "https://www.makers3dlabs.nl/clipper-duo-set.html",
+   "name": "Clipper Duo Set – Gepersonaliseerde 3D-Houders",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/clipper-houders-gepersonaliseerd-set-2%20(1).webp",
+   "variants": [
+    {
+     "key": "enkele-clipper-houder",
+     "label": "Enkele Clipper-houder",
+     "cents": 2295,
+     "firm": true
+    },
+    {
+     "key": "clipper-duo-set",
+     "label": "Clipper Duo Set",
+     "cents": 3995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "derde-houder-bij-duo-set",
+     "label": "Derde houder (bij Duo Set)",
+     "cents": 1795,
+     "firm": true
+    },
+    {
+     "key": "complex-eigen-logo",
+     "label": "Complex eigen logo",
+     "cents": 995,
+     "firm": true
+    },
+    {
+     "key": "extra-kleurcombinatie",
+     "label": "Extra kleurcombinatie",
+     "cents": 495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_handtas_bloemenvaas",
+   "file": "handtas-bloemenvaas.html",
+   "url": "https://www.makers3dlabs.nl/handtas-bloemenvaas.html",
+   "name": "Handtas-bloemenvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvaas-handtas-dior.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_horus_antiekgouden_buste",
+   "file": "horus-antiekgouden-buste.html",
+   "url": "https://www.makers3dlabs.nl/horus-antiekgouden-buste.html",
+   "name": "Horus – Egyptische God – Antiekgouden Buste",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/egyptische-valkengod-horus-goud.webp",
+   "variants": [
+    {
+     "key": "10-cm",
+     "label": "10 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "15-cm",
+     "label": "15 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1295,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_kersthangers_bedrijfslogo",
+   "file": "kersthangers-bedrijfslogo.html",
+   "url": "https://www.makers3dlabs.nl/kersthangers-bedrijfslogo.html",
+   "name": "Kersthangers met bedrijfslogo",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/makers3dlabs-logo.webp",
+   "variants": [
+    {
+     "key": "8-cm",
+     "label": "8 cm",
+     "cents": 895,
+     "firm": true
+    },
+    {
+     "key": "10-cm",
+     "label": "10 cm",
+     "cents": 1095,
+     "firm": true
+    },
+    {
+     "key": "12-cm",
+     "label": "12 cm",
+     "cents": 1395,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_kersthangers",
+   "file": "kersthangers.html",
+   "url": "https://www.makers3dlabs.nl/kersthangers.html",
+   "name": "Kersthangers met naam",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kersthangers-personalisatie-kerstsfeer.webp",
+   "variants": [
+    {
+     "key": "8-cm",
+     "label": "8 cm",
+     "cents": 895,
+     "firm": true
+    },
+    {
+     "key": "10-cm",
+     "label": "10 cm",
+     "cents": 1095,
+     "firm": true
+    },
+    {
+     "key": "12-cm",
+     "label": "12 cm",
+     "cents": 1395,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_acryl_ledbord",
+   "file": "lasergravure-acryl-ledbord.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-acryl-ledbord.html",
+   "name": "Acryl LED-bord met gravure",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-acryl-ledbord-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-plaat-circa-15-x-10-cm",
+     "label": "Klein · plaat circa 15 × 10 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-plaat-circa-20-x-15-cm",
+     "label": "Middel · plaat circa 20 × 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "groot-plaat-circa-25-x-20-cm",
+     "label": "Groot · plaat circa 25 × 20 cm",
+     "cents": 5995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_cadeaukist",
+   "file": "lasergravure-cadeaukist.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-cadeaukist.html",
+   "name": "Houten cadeau- of herinneringskist",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-cadeaukist-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-x-15-x-8-cm",
+     "label": "Klein · circa 15 × 15 × 8 cm",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-x-20-x-10-cm",
+     "label": "Middel · circa 20 × 20 × 10 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-30-x-20-x-15-cm",
+     "label": "Groot · circa 30 × 20 × 15 cm",
+     "cents": 5495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_dierenpenning",
+   "file": "lasergravure-dierenpenning.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-dierenpenning.html",
+   "name": "Dierenpenning met gravure",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-dierenpenning-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "rond-circa-2-5-cm-1-stuk",
+     "label": "Rond · Ø circa 2,5 cm · 1 stuk",
+     "cents": 995,
+     "firm": true
+    },
+    {
+     "key": "rond-circa-3-2-cm-1-stuk",
+     "label": "Rond · Ø circa 3,2 cm · 1 stuk",
+     "cents": 1195,
+     "firm": true
+    },
+    {
+     "key": "botvorm-circa-4-x-2-5-cm-1-stuk",
+     "label": "Botvorm · circa 4 × 2,5 cm · 1 stuk",
+     "cents": 1295,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_drinkglas",
+   "file": "lasergravure-drinkglas.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-drinkglas.html",
+   "name": "Drinkglas met gravure",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-drinkglas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-200-ml-1-glas",
+     "label": "Klein · circa 200 ml · 1 glas",
+     "cents": 1495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-300-ml-1-glas",
+     "label": "Middel · circa 300 ml · 1 glas",
+     "cents": 1795,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-400-ml-1-glas",
+     "label": "Groot · circa 400 ml · 1 glas",
+     "cents": 1995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_fotolijst",
+   "file": "lasergravure-fotolijst.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-fotolijst.html",
+   "name": "Fotolijst met gravure",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-fotolijst-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "fotoformaat-10-x-15-cm",
+     "label": "Fotoformaat 10 × 15 cm",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "fotoformaat-13-x-18-cm",
+     "label": "Fotoformaat 13 × 18 cm",
+     "cents": 2495,
+     "firm": true
+    },
+    {
+     "key": "fotoformaat-20-x-25-cm",
+     "label": "Fotoformaat 20 × 25 cm",
+     "cents": 3495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_houten_naambord",
+   "file": "lasergravure-houten-naambord.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-houten-naambord.html",
+   "name": "Houten naambord",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-houten-naambord-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-20-x-10-cm",
+     "label": "Klein · circa 20 × 10 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-30-x-15-cm",
+     "label": "Middel · circa 30 × 15 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-40-x-20-cm",
+     "label": "Groot · circa 40 × 20 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_leren_portemonnee",
+   "file": "lasergravure-leren-portemonnee.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-leren-portemonnee.html",
+   "name": "Leren portemonnee met gravure",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-leren-portemonnee-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "compact-circa-10-x-8-cm",
+     "label": "Compact · circa 10 × 8 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "standaard-circa-12-x-9-cm",
+     "label": "Standaard · circa 12 × 9 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-14-x-10-cm",
+     "label": "Groot · circa 14 × 10 cm",
+     "cents": 4495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_notitieboek",
+   "file": "lasergravure-notitieboek.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-notitieboek.html",
+   "name": "Notitieboek met gravure",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-notitieboek-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "a6-circa-10-5-x-14-8-cm",
+     "label": "A6 · circa 10,5 × 14,8 cm",
+     "cents": 1495,
+     "firm": true
+    },
+    {
+     "key": "a5-circa-14-8-x-21-cm",
+     "label": "A5 · circa 14,8 × 21 cm",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "a4-circa-21-x-29-7-cm",
+     "label": "A4 · circa 21 × 29,7 cm",
+     "cents": 2995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_onderzetters",
+   "file": "lasergravure-onderzetters.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-onderzetters.html",
+   "name": "Onderzetters met gravure",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-onderzetters-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "set-van-4-circa-9-cm",
+     "label": "Set van 4 · Ø circa 9 cm",
+     "cents": 1795,
+     "firm": true
+    },
+    {
+     "key": "set-van-4-circa-10-cm",
+     "label": "Set van 4 · Ø circa 10 cm",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "set-van-6-circa-10-cm",
+     "label": "Set van 6 · Ø circa 10 cm",
+     "cents": 2795,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_rvs_drinkfles",
+   "file": "lasergravure-rvs-drinkfles.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-rvs-drinkfles.html",
+   "name": "RVS drinkfles met gravure",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-rvs-drinkfles-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-500-ml",
+     "label": "Klein · circa 500 ml",
+     "cents": 2495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-750-ml",
+     "label": "Middel · circa 750 ml",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-1000-ml",
+     "label": "Groot · circa 1000 ml",
+     "cents": 3495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_sleutelhangers",
+   "file": "lasergravure-sleutelhangers.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-sleutelhangers.html",
+   "name": "Houten sleutelhanger",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-sleutelhangers-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "rond-circa-4-cm-1-stuk",
+     "label": "Rond · Ø circa 4 cm · 1 stuk",
+     "cents": 795,
+     "firm": true
+    },
+    {
+     "key": "rechthoek-circa-5-x-3-cm-1-stuk",
+     "label": "Rechthoek · circa 5 × 3 cm · 1 stuk",
+     "cents": 895,
+     "firm": true
+    },
+    {
+     "key": "zeshoek-circa-5-cm-1-stuk",
+     "label": "Zeshoek · circa 5 cm · 1 stuk",
+     "cents": 995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_snijplank",
+   "file": "lasergravure-snijplank.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-snijplank.html",
+   "name": "Snijplank met gravure",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-snijplank-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-25-x-15-cm",
+     "label": "Klein · circa 25 × 15 cm",
+     "cents": 2495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-35-x-20-cm",
+     "label": "Middel · circa 35 × 20 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-45-x-25-cm",
+     "label": "Groot · circa 45 × 25 cm",
+     "cents": 4495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_thermosbeker",
+   "file": "lasergravure-thermosbeker.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-thermosbeker.html",
+   "name": "Thermosbeker met gravure",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-thermosbeker-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-350-ml",
+     "label": "Klein · circa 350 ml",
+     "cents": 2495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-500-ml",
+     "label": "Middel · circa 500 ml",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-750-ml",
+     "label": "Groot · circa 750 ml",
+     "cents": 3495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_wijnglazen",
+   "file": "lasergravure-wijnglazen.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-wijnglazen.html",
+   "name": "Wijnglas met gravure",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-wijnglazen-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "circa-350-ml-1-glas",
+     "label": "Circa 350 ml · 1 glas",
+     "cents": 1495,
+     "firm": true
+    },
+    {
+     "key": "circa-450-ml-1-glas",
+     "label": "Circa 450 ml · 1 glas",
+     "cents": 1795,
+     "firm": true
+    },
+    {
+     "key": "set-van-2-circa-450-ml-per-glas",
+     "label": "Set van 2 · circa 450 ml per glas",
+     "cents": 3295,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_lasergravure_zakelijk_bord",
+   "file": "lasergravure-zakelijk-bord.html",
+   "url": "https://www.makers3dlabs.nl/lasergravure-zakelijk-bord.html",
+   "name": "Zakelijk bord met gravure",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/lasergravure-zakelijk-bord-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-x-7-5-cm",
+     "label": "Klein · circa 15 × 7,5 cm",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-x-10-cm",
+     "label": "Middel · circa 20 × 10 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-30-x-15-cm",
+     "label": "Groot · circa 30 × 15 cm",
+     "cents": 5995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_masker_aurora",
+   "file": "masker-aurora.html",
+   "url": "https://www.makers3dlabs.nl/masker-aurora.html",
+   "name": "Aurora",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-aurora-wit-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 17995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_bleek_horror",
+   "file": "masker-bleek-horror.html",
+   "url": "https://www.makers3dlabs.nl/masker-bleek-horror.html",
+   "name": "Bleek horrormasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-bleek-horror.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 5495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 7495,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 10995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_cyberpunk",
+   "file": "masker-cyberpunk.html",
+   "url": "https://www.makers3dlabs.nl/masker-cyberpunk.html",
+   "name": "Cyberpunk",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-cyberpunk-onbewerkt-met-verf.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10495,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 17995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_eclips",
+   "file": "masker-eclips.html",
+   "url": "https://www.makers3dlabs.nl/masker-eclips.html",
+   "name": "Eclips",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-eclips-wit-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 15995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_feniks",
+   "file": "masker-feniks.html",
+   "url": "https://www.makers3dlabs.nl/masker-feniks.html",
+   "name": "Feniks",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-feniks-wit-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 19995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_hannya",
+   "file": "masker-hannya.html",
+   "url": "https://www.makers3dlabs.nl/masker-hannya.html",
+   "name": "Hannya Klassiek",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-hannya.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "meerkleurig-en-gedetailleerd",
+     "label": "Meerkleurig en gedetailleerd",
+     "cents": 16995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_kitsune",
+   "file": "masker-kitsune.html",
+   "url": "https://www.makers3dlabs.nl/masker-kitsune.html",
+   "name": "Kitsune Vos",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-kitsune-onbewerkt-met-verf.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 8495,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 13995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_nachtwachter_origineel",
+   "file": "masker-nachtwachter-origineel.html",
+   "url": "https://www.makers3dlabs.nl/masker-nachtwachter-origineel.html",
+   "name": "Nachtwachter masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-nachtwachter-origineel.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 16995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_oceaan",
+   "file": "masker-oceaan.html",
+   "url": "https://www.makers3dlabs.nl/masker-oceaan.html",
+   "name": "Oceaan",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-oceaan-wit-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 15995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_oni_crimson",
+   "file": "masker-oni-crimson.html",
+   "url": "https://www.makers3dlabs.nl/masker-oni-crimson.html",
+   "name": "Oni Crimson",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-oni-onbewerkt-met-verf.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 18995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_oni_imperial",
+   "file": "masker-oni-imperial.html",
+   "url": "https://www.makers3dlabs.nl/masker-oni-imperial.html",
+   "name": "Oni Imperial",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/oni-masker-rood-goud.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "meerkleurig-en-gedetailleerd",
+     "label": "Meerkleurig en gedetailleerd",
+     "cents": 16995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_oni_klassiek",
+   "file": "masker-oni-klassiek.html",
+   "url": "https://www.makers3dlabs.nl/masker-oni-klassiek.html",
+   "name": "Oni Klassiek",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-oni-klassiek-foto.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "meerkleurig-en-gedetailleerd",
+     "label": "Meerkleurig en gedetailleerd",
+     "cents": 16995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_oni_ornament",
+   "file": "masker-oni-ornament.html",
+   "url": "https://www.makers3dlabs.nl/masker-oni-ornament.html",
+   "name": "Oni Ornament",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/oni-masker-wit.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 5495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "meerkleurig-en-gedetailleerd",
+     "label": "Meerkleurig en gedetailleerd",
+     "cents": 14995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_pestdokter",
+   "file": "masker-pestdokter.html",
+   "url": "https://www.makers3dlabs.nl/masker-pestdokter.html",
+   "name": "Pestdokter",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-pestdokter-onbewerkt-met-verf.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 18995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_poollicht",
+   "file": "masker-poollicht.html",
+   "url": "https://www.makers3dlabs.nl/masker-poollicht.html",
+   "name": "Poollicht",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-poollicht-wit-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10495,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 17995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_prisma",
+   "file": "masker-prisma.html",
+   "url": "https://www.makers3dlabs.nl/masker-prisma.html",
+   "name": "Prisma",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-prisma-wit-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 15995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_ruimtejager",
+   "file": "masker-ruimtejager.html",
+   "url": "https://www.makers3dlabs.nl/masker-ruimtejager.html",
+   "name": "Ruimtejager masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-ruimtejager.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_samurai_menpo",
+   "file": "masker-samurai-menpo.html",
+   "url": "https://www.makers3dlabs.nl/masker-samurai-menpo.html",
+   "name": "Samurai Menpo",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-samurai-onbewerkt-met-verf.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 16995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_schedel",
+   "file": "masker-schedel.html",
+   "url": "https://www.makers3dlabs.nl/masker-schedel.html",
+   "name": "Schedel",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-schedel-onbewerkt-met-verf.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 8495,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 14995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_stalen_heerser",
+   "file": "masker-stalen-heerser.html",
+   "url": "https://www.makers3dlabs.nl/masker-stalen-heerser.html",
+   "name": "Stalen heerser masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-stalen-heerser.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 8995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 14995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_steengolem_origineel",
+   "file": "masker-steengolem-origineel.html",
+   "url": "https://www.makers3dlabs.nl/masker-steengolem-origineel.html",
+   "name": "Steengolem masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-steengolem-origineel.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 8495,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 13995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_sterrenbeeld_krijger_boogschutter",
+   "file": "masker-sterrenbeeld-krijger-boogschutter.html",
+   "url": "https://www.makers3dlabs.nl/masker-sterrenbeeld-krijger-boogschutter.html",
+   "name": "Boogschutter — Krijgersmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-sterrenbeeld-mannelijk-boogschutter.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_sterrenbeeld_krijger_kreeft",
+   "file": "masker-sterrenbeeld-krijger-kreeft.html",
+   "url": "https://www.makers3dlabs.nl/masker-sterrenbeeld-krijger-kreeft.html",
+   "name": "Kreeft — Krijgersmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-sterrenbeeld-mannelijk-kreeft.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_sterrenbeeld_krijger_leeuw",
+   "file": "masker-sterrenbeeld-krijger-leeuw.html",
+   "url": "https://www.makers3dlabs.nl/masker-sterrenbeeld-krijger-leeuw.html",
+   "name": "Leeuw — Krijgersmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-sterrenbeeld-mannelijk-leeuw.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_sterrenbeeld_krijger_maagd",
+   "file": "masker-sterrenbeeld-krijger-maagd.html",
+   "url": "https://www.makers3dlabs.nl/masker-sterrenbeeld-krijger-maagd.html",
+   "name": "Maagd — Krijgersmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-sterrenbeeld-mannelijk-maagd.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_sterrenbeeld_krijger_ram",
+   "file": "masker-sterrenbeeld-krijger-ram.html",
+   "url": "https://www.makers3dlabs.nl/masker-sterrenbeeld-krijger-ram.html",
+   "name": "Ram — Krijgersmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-sterrenbeeld-mannelijk-ram.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_sterrenbeeld_krijger_schorpioen",
+   "file": "masker-sterrenbeeld-krijger-schorpioen.html",
+   "url": "https://www.makers3dlabs.nl/masker-sterrenbeeld-krijger-schorpioen.html",
+   "name": "Schorpioen — Krijgersmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-sterrenbeeld-mannelijk-schorpioen.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_sterrenbeeld_krijger_steenbok",
+   "file": "masker-sterrenbeeld-krijger-steenbok.html",
+   "url": "https://www.makers3dlabs.nl/masker-sterrenbeeld-krijger-steenbok.html",
+   "name": "Steenbok — Krijgersmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-sterrenbeeld-mannelijk-steenbok.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_sterrenbeeld_krijger_stier",
+   "file": "masker-sterrenbeeld-krijger-stier.html",
+   "url": "https://www.makers3dlabs.nl/masker-sterrenbeeld-krijger-stier.html",
+   "name": "Stier — Krijgersmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-sterrenbeeld-mannelijk-stier.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_sterrenbeeld_krijger_tweelingen",
+   "file": "masker-sterrenbeeld-krijger-tweelingen.html",
+   "url": "https://www.makers3dlabs.nl/masker-sterrenbeeld-krijger-tweelingen.html",
+   "name": "Tweelingen — Krijgersmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-sterrenbeeld-mannelijk-tweelingen.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_sterrenbeeld_krijger_vissen",
+   "file": "masker-sterrenbeeld-krijger-vissen.html",
+   "url": "https://www.makers3dlabs.nl/masker-sterrenbeeld-krijger-vissen.html",
+   "name": "Vissen — Krijgersmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-sterrenbeeld-mannelijk-vissen.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_sterrenbeeld_krijger_waterman",
+   "file": "masker-sterrenbeeld-krijger-waterman.html",
+   "url": "https://www.makers3dlabs.nl/masker-sterrenbeeld-krijger-waterman.html",
+   "name": "Waterman — Krijgersmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-sterrenbeeld-mannelijk-waterman.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_sterrenbeeld_krijger_weegschaal",
+   "file": "masker-sterrenbeeld-krijger-weegschaal.html",
+   "url": "https://www.makers3dlabs.nl/masker-sterrenbeeld-krijger-weegschaal.html",
+   "name": "Weegschaal — Krijgersmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-sterrenbeeld-mannelijk-weegschaal.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_titaan",
+   "file": "masker-titaan.html",
+   "url": "https://www.makers3dlabs.nl/masker-titaan.html",
+   "name": "Titaan",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-titaan-wit-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10495,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 16995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_valk",
+   "file": "masker-valk.html",
+   "url": "https://www.makers3dlabs.nl/masker-valk.html",
+   "name": "Valk",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-valk-wit-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 7495,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 12995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_vulkaan",
+   "file": "masker-vulkaan.html",
+   "url": "https://www.makers3dlabs.nl/masker-vulkaan.html",
+   "name": "Vulkaan",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-vulkaan-wit-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 15995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_masker_zandstorm",
+   "file": "masker-zandstorm.html",
+   "url": "https://www.makers3dlabs.nl/masker-zandstorm.html",
+   "name": "Zandstorm",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/masker-zandstorm-wit-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "volledig-handbeschilderd",
+     "label": "Volledig handbeschilderd",
+     "cents": 15995,
+     "firm": false
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_metalen_supporterskaart_premium",
+   "file": "metalen-supporterskaart-premium.html",
+   "url": "https://www.makers3dlabs.nl/metalen-supporterskaart-premium.html",
+   "name": "Gepersonaliseerde Metalen Supporterskaart – Premium Edition",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/feyenoord-seizoenskaart-zwart%20(1).webp",
+   "variants": [
+    {
+     "key": "standaard-supporterskaart",
+     "label": "Standaard supporterskaart",
+     "cents": 2495,
+     "firm": true
+    },
+    {
+     "key": "premium-supporterskaart",
+     "label": "Premium supporterskaart",
+     "cents": 2995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "dubbelzijdige-gravure",
+     "label": "Dubbelzijdige gravure",
+     "cents": 795,
+     "firm": true
+    },
+    {
+     "key": "houder",
+     "label": "Houder",
+     "cents": 795,
+     "firm": true
+    },
+    {
+     "key": "luxe-cadeauverpakking",
+     "label": "Luxe cadeauverpakking",
+     "cents": 495,
+     "firm": true
+    },
+    {
+     "key": "maatwerk",
+     "label": "Maatwerk",
+     "cents": 1495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_persoonlijke_kersttafel",
+   "file": "persoonlijke-kersttafel.html",
+   "url": "https://www.makers3dlabs.nl/persoonlijke-kersttafel.html",
+   "name": "Persoonlijke kersttafel",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/persoonlijke-kersttafel.webp",
+   "variants": [
+    {
+     "key": "naamkaartje-per-gast",
+     "label": "Naamkaartje (per gast)",
+     "cents": 395,
+     "firm": true
+    },
+    {
+     "key": "servetring-met-naam-per-gast",
+     "label": "Servetring met naam (per gast)",
+     "cents": 495,
+     "firm": true
+    },
+    {
+     "key": "naamkaartje-servetring-per-gast",
+     "label": "Naamkaartje + servetring (per gast)",
+     "cents": 795,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_bergreusje",
+   "file": "resin-bergreusje.html",
+   "url": "https://www.makers3dlabs.nl/resin-bergreusje.html",
+   "name": "Bergreusje",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-bergreusje-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 6495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_boswachter",
+   "file": "resin-boswachter.html",
+   "url": "https://www.makers3dlabs.nl/resin-boswachter.html",
+   "name": "Boswachter",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-boswachter-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_ijs_konijn",
+   "file": "resin-ijs-konijn.html",
+   "url": "https://www.makers3dlabs.nl/resin-ijs-konijn.html",
+   "name": "IJskonijn",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-ijs-konijn-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 6495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_koraal_axolotl",
+   "file": "resin-koraal-axolotl.html",
+   "url": "https://www.makers3dlabs.nl/resin-koraal-axolotl.html",
+   "name": "Koraalaxolotl",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-koraal-axolotl-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_kristal_schildpad",
+   "file": "resin-kristal-schildpad.html",
+   "url": "https://www.makers3dlabs.nl/resin-kristal-schildpad.html",
+   "name": "Kristalschildpad",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-kristal-schildpad-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 6495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_maanvos",
+   "file": "resin-maanvos.html",
+   "url": "https://www.makers3dlabs.nl/resin-maanvos.html",
+   "name": "Maanvos",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-maanvos-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_mechanische_uil",
+   "file": "resin-mechanische-uil.html",
+   "url": "https://www.makers3dlabs.nl/resin-mechanische-uil.html",
+   "name": "Mechanische uil",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-mechanische-uil-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_oceaan_draak",
+   "file": "resin-oceaan-draak.html",
+   "url": "https://www.makers3dlabs.nl/resin-oceaan-draak.html",
+   "name": "Oceaandraak",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-oceaan-draak-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 9995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_paddenstoel_tovenaar",
+   "file": "resin-paddenstoel-tovenaar.html",
+   "url": "https://www.makers3dlabs.nl/resin-paddenstoel-tovenaar.html",
+   "name": "Paddenstoeltovenaar",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-paddenstoel-tovenaar-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_pompoen_ridder",
+   "file": "resin-pompoen-ridder.html",
+   "url": "https://www.makers3dlabs.nl/resin-pompoen-ridder.html",
+   "name": "Pompoenridder",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-pompoen-ridder-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_ruimte_kat",
+   "file": "resin-ruimte-kat.html",
+   "url": "https://www.makers3dlabs.nl/resin-ruimte-kat.html",
+   "name": "Ruimtekat",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-ruimte-kat-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_sterren_hert",
+   "file": "resin-sterren-hert.html",
+   "url": "https://www.makers3dlabs.nl/resin-sterren-hert.html",
+   "name": "Sterrenhert",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-sterren-hert-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_sterren_robot",
+   "file": "resin-sterren-robot.html",
+   "url": "https://www.makers3dlabs.nl/resin-sterren-robot.html",
+   "name": "Sterrenrobot",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-sterren-robot-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_stoompanda",
+   "file": "resin-stoompanda.html",
+   "url": "https://www.makers3dlabs.nl/resin-stoompanda.html",
+   "name": "Stoompanda",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-stoompanda-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_tuin_draak",
+   "file": "resin-tuin-draak.html",
+   "url": "https://www.makers3dlabs.nl/resin-tuin-draak.html",
+   "name": "Tuindraak",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-tuin-draak-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_vlinder_draak",
+   "file": "resin-vlinder-draak.html",
+   "url": "https://www.makers3dlabs.nl/resin-vlinder-draak.html",
+   "name": "Vlinderdraak",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-vlinder-draak-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 9995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_vogel_schrijver",
+   "file": "resin-vogel-schrijver.html",
+   "url": "https://www.makers3dlabs.nl/resin-vogel-schrijver.html",
+   "name": "Vogelschrijver",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-vogel-schrijver-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 9995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_vuur_draakje",
+   "file": "resin-vuur-draakje.html",
+   "url": "https://www.makers3dlabs.nl/resin-vuur-draakje.html",
+   "name": "Vuurdraakje",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-vuur-draakje-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_woestijn_fennek",
+   "file": "resin-woestijn-fennek.html",
+   "url": "https://www.makers3dlabs.nl/resin-woestijn-fennek.html",
+   "name": "Woestijnfennek",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-woestijn-fennek-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_resin_wolken_drakeling",
+   "file": "resin-wolken-drakeling.html",
+   "url": "https://www.makers3dlabs.nl/resin-wolken-drakeling.html",
+   "name": "Wolkendrakeling",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin-wolken-drakeling-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-circa-15-cm",
+     "label": "Klein – circa 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-circa-20-cm",
+     "label": "Middel – circa 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-circa-25-cm",
+     "label": "Groot – circa 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_samurai_oni_deluxe",
+   "file": "samurai-oni-deluxe.html",
+   "url": "https://www.makers3dlabs.nl/samurai-oni-deluxe.html",
+   "name": "Samurai Oni – Deluxe Edition",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/samurai-oni-deluxe-resin-beeld.webp",
+   "variants": [
+    {
+     "key": "samurai-oni-deluxe-edition",
+     "label": "Samurai Oni – Deluxe Edition",
+     "cents": 14995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1495,
+     "firm": true
+    },
+    {
+     "key": "eigen-kleurwensen",
+     "label": "Eigen kleurwensen",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "premium-extra-beschermlaag",
+     "label": "Premium extra beschermlaag",
+     "cents": 995,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_ado_den_haag",
+   "file": "stadion-ado-den-haag.html",
+   "url": "https://www.makers3dlabs.nl/stadion-ado-den-haag.html",
+   "name": "WerkTalent Stadion — ADO Den Haag",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-ado-den-haag-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 34995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_ajax_arena",
+   "file": "stadion-ajax-arena.html",
+   "url": "https://www.makers3dlabs.nl/stadion-ajax-arena.html",
+   "name": "Johan Cruijff ArenA — Ajax",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-ajax-arena-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 39995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_almere_city",
+   "file": "stadion-almere-city.html",
+   "url": "https://www.makers3dlabs.nl/stadion-almere-city.html",
+   "name": "Yanmar Stadion — Almere City FC",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-almere-city-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_az_alkmaar",
+   "file": "stadion-az-alkmaar.html",
+   "url": "https://www.makers3dlabs.nl/stadion-az-alkmaar.html",
+   "name": "AFAS Stadion — AZ",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-az-alkmaar-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 34995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_camp_nou",
+   "file": "stadion-camp-nou.html",
+   "url": "https://www.makers3dlabs.nl/stadion-camp-nou.html",
+   "name": "Camp Nou — FC Barcelona",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-camp-nou-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 39995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_de_graafschap",
+   "file": "stadion-de-graafschap.html",
+   "url": "https://www.makers3dlabs.nl/stadion-de-graafschap.html",
+   "name": "De Vijverberg — De Graafschap",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-de-graafschap-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 32995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_excelsior",
+   "file": "stadion-excelsior.html",
+   "url": "https://www.makers3dlabs.nl/stadion-excelsior.html",
+   "name": "Woudestein — Excelsior",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-excelsior-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_fc_den_bosch",
+   "file": "stadion-fc-den-bosch.html",
+   "url": "https://www.makers3dlabs.nl/stadion-fc-den-bosch.html",
+   "name": "De Vliert — FC Den Bosch",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-fc-den-bosch-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_fc_dordrecht",
+   "file": "stadion-fc-dordrecht.html",
+   "url": "https://www.makers3dlabs.nl/stadion-fc-dordrecht.html",
+   "name": "De Krommedijk — FC Dordrecht",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-fc-dordrecht-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_fc_eindhoven",
+   "file": "stadion-fc-eindhoven.html",
+   "url": "https://www.makers3dlabs.nl/stadion-fc-eindhoven.html",
+   "name": "Jan Louwers Stadion — FC Eindhoven",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-fc-eindhoven-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_fc_emmen",
+   "file": "stadion-fc-emmen.html",
+   "url": "https://www.makers3dlabs.nl/stadion-fc-emmen.html",
+   "name": "De Oude Meerdijk — FC Emmen",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-fc-emmen-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_fc_groningen",
+   "file": "stadion-fc-groningen.html",
+   "url": "https://www.makers3dlabs.nl/stadion-fc-groningen.html",
+   "name": "Euroborg — FC Groningen",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-fc-groningen-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 34995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_fc_twente",
+   "file": "stadion-fc-twente.html",
+   "url": "https://www.makers3dlabs.nl/stadion-fc-twente.html",
+   "name": "De Grolsch Veste — FC Twente",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-fc-twente-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 34995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_fc_utrecht",
+   "file": "stadion-fc-utrecht.html",
+   "url": "https://www.makers3dlabs.nl/stadion-fc-utrecht.html",
+   "name": "Stadion Galgenwaard — FC Utrecht",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-fc-utrecht-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 34995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_fc_volendam",
+   "file": "stadion-fc-volendam.html",
+   "url": "https://www.makers3dlabs.nl/stadion-fc-volendam.html",
+   "name": "Kras Stadion — FC Volendam",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-fc-volendam-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_fortuna_sittard",
+   "file": "stadion-fortuna-sittard.html",
+   "url": "https://www.makers3dlabs.nl/stadion-fortuna-sittard.html",
+   "name": "Fortuna Sittard Stadion — Fortuna Sittard",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-fortuna-sittard-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 32995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_go_ahead_eagles",
+   "file": "stadion-go-ahead-eagles.html",
+   "url": "https://www.makers3dlabs.nl/stadion-go-ahead-eagles.html",
+   "name": "De Adelaarshorst — Go Ahead Eagles",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-go-ahead-eagles-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 32995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_helmond_sport",
+   "file": "stadion-helmond-sport.html",
+   "url": "https://www.makers3dlabs.nl/stadion-helmond-sport.html",
+   "name": "MySteel Stadion — Helmond Sport",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-helmond-sport-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_heracles",
+   "file": "stadion-heracles.html",
+   "url": "https://www.makers3dlabs.nl/stadion-heracles.html",
+   "name": "Asito Stadion — Heracles Almelo",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-heracles-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 34995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_jong_ajax",
+   "file": "stadion-jong-ajax.html",
+   "url": "https://www.makers3dlabs.nl/stadion-jong-ajax.html",
+   "name": "De Toekomst — Jong Ajax",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-jong-ajax-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_jong_az",
+   "file": "stadion-jong-az.html",
+   "url": "https://www.makers3dlabs.nl/stadion-jong-az.html",
+   "name": "AFAS Trainingscomplex — Jong AZ",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-jong-az-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_jong_psv",
+   "file": "stadion-jong-psv.html",
+   "url": "https://www.makers3dlabs.nl/stadion-jong-psv.html",
+   "name": "De Herdgang — Jong PSV",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-jong-psv-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_jong_utrecht",
+   "file": "stadion-jong-utrecht.html",
+   "url": "https://www.makers3dlabs.nl/stadion-jong-utrecht.html",
+   "name": "Sportcomplex Zoudenbalch — Jong FC Utrecht",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-jong-utrecht-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_maracana",
+   "file": "stadion-maracana.html",
+   "url": "https://www.makers3dlabs.nl/stadion-maracana.html",
+   "name": "Maracanã",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-maracana-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 37995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_mvv_maastricht",
+   "file": "stadion-mvv-maastricht.html",
+   "url": "https://www.makers3dlabs.nl/stadion-mvv-maastricht.html",
+   "name": "De Geusselt — MVV Maastricht",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-mvv-maastricht-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_nac_breda",
+   "file": "stadion-nac-breda.html",
+   "url": "https://www.makers3dlabs.nl/stadion-nac-breda.html",
+   "name": "Rat Verlegh Stadion — NAC Breda",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-nac-breda-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 34995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_nec_nijmegen",
+   "file": "stadion-nec-nijmegen.html",
+   "url": "https://www.makers3dlabs.nl/stadion-nec-nijmegen.html",
+   "name": "De Goffert — N.E.C.",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-nec-nijmegen-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 32995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_pec_zwolle",
+   "file": "stadion-pec-zwolle.html",
+   "url": "https://www.makers3dlabs.nl/stadion-pec-zwolle.html",
+   "name": "MAC3PARK Stadion — PEC Zwolle",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-pec-zwolle-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 32995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_psv",
+   "file": "stadion-psv.html",
+   "url": "https://www.makers3dlabs.nl/stadion-psv.html",
+   "name": "Philips Stadion — PSV",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-psv-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 37995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_rkc_waalwijk",
+   "file": "stadion-rkc-waalwijk.html",
+   "url": "https://www.makers3dlabs.nl/stadion-rkc-waalwijk.html",
+   "name": "Mandemakers Stadion — RKC Waalwijk",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-rkc-waalwijk-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_roda_jc",
+   "file": "stadion-roda-jc.html",
+   "url": "https://www.makers3dlabs.nl/stadion-roda-jc.html",
+   "name": "Parkstad Limburg Stadion — Roda JC",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-roda-jc-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 34995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_san_siro",
+   "file": "stadion-san-siro.html",
+   "url": "https://www.makers3dlabs.nl/stadion-san-siro.html",
+   "name": "San Siro / Giuseppe Meazza",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-san-siro-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 42995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_santiago_bernabeu",
+   "file": "stadion-santiago-bernabeu.html",
+   "url": "https://www.makers3dlabs.nl/stadion-santiago-bernabeu.html",
+   "name": "Santiago Bernabéu — Real Madrid",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-santiago-bernabeu-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 42995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_sc_cambuur",
+   "file": "stadion-sc-cambuur.html",
+   "url": "https://www.makers3dlabs.nl/stadion-sc-cambuur.html",
+   "name": "Kooi Stadion — SC Cambuur",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-sc-cambuur-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 34995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_sc_heerenveen",
+   "file": "stadion-sc-heerenveen.html",
+   "url": "https://www.makers3dlabs.nl/stadion-sc-heerenveen.html",
+   "name": "Abe Lenstra Stadion — sc Heerenveen",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-sc-heerenveen-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 34995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_sparta_rotterdam",
+   "file": "stadion-sparta-rotterdam.html",
+   "url": "https://www.makers3dlabs.nl/stadion-sparta-rotterdam.html",
+   "name": "Het Kasteel — Sparta Rotterdam",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-sparta-rotterdam-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 36995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_telstar",
+   "file": "stadion-telstar.html",
+   "url": "https://www.makers3dlabs.nl/stadion-telstar.html",
+   "name": "Schoonenberg — Telstar",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-telstar-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_top_oss",
+   "file": "stadion-top-oss.html",
+   "url": "https://www.makers3dlabs.nl/stadion-top-oss.html",
+   "name": "Frans Heesen Stadion — TOP Oss",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-top-oss-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_vitesse",
+   "file": "stadion-vitesse.html",
+   "url": "https://www.makers3dlabs.nl/stadion-vitesse.html",
+   "name": "GelreDome — Vitesse",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-vitesse-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 39995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_vvv_venlo",
+   "file": "stadion-vvv-venlo.html",
+   "url": "https://www.makers3dlabs.nl/stadion-vvv-venlo.html",
+   "name": "De Koel — VVV-Venlo",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-vvv-venlo-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 27995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_wembley",
+   "file": "stadion-wembley.html",
+   "url": "https://www.makers3dlabs.nl/stadion-wembley.html",
+   "name": "Wembley Stadium",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-wembley-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 39995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_stadion_willem_ii",
+   "file": "stadion-willem-ii.html",
+   "url": "https://www.makers3dlabs.nl/stadion-willem-ii.html",
+   "name": "Koning Willem II Stadion — Willem II",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-willem-ii-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 32995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_maskers_boogschutter",
+   "file": "sterrenbeeld-maskers-boogschutter.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-maskers-boogschutter.html",
+   "name": "Boogschutter — Sterrenbeeldmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/maskers-boogschutter-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_maskers_kreeft",
+   "file": "sterrenbeeld-maskers-kreeft.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-maskers-kreeft.html",
+   "name": "Kreeft — Sterrenbeeldmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/maskers-kreeft-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_maskers_leeuw",
+   "file": "sterrenbeeld-maskers-leeuw.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-maskers-leeuw.html",
+   "name": "Leeuw — Sterrenbeeldmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/maskers-leeuw-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_maskers_maagd",
+   "file": "sterrenbeeld-maskers-maagd.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-maskers-maagd.html",
+   "name": "Maagd — Sterrenbeeldmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/maskers-maagd-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_maskers_ram",
+   "file": "sterrenbeeld-maskers-ram.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-maskers-ram.html",
+   "name": "Ram — Sterrenbeeldmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/maskers-ram-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_maskers_schorpioen",
+   "file": "sterrenbeeld-maskers-schorpioen.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-maskers-schorpioen.html",
+   "name": "Schorpioen — Sterrenbeeldmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/maskers-schorpioen-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_maskers_steenbok",
+   "file": "sterrenbeeld-maskers-steenbok.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-maskers-steenbok.html",
+   "name": "Steenbok — Sterrenbeeldmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/maskers-steenbok-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_maskers_stier",
+   "file": "sterrenbeeld-maskers-stier.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-maskers-stier.html",
+   "name": "Stier — Sterrenbeeldmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/maskers-stier-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_maskers_tweelingen",
+   "file": "sterrenbeeld-maskers-tweelingen.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-maskers-tweelingen.html",
+   "name": "Tweelingen — Sterrenbeeldmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/maskers-tweelingen-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_maskers_vissen",
+   "file": "sterrenbeeld-maskers-vissen.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-maskers-vissen.html",
+   "name": "Vissen — Sterrenbeeldmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/maskers-vissen-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_maskers_waterman",
+   "file": "sterrenbeeld-maskers-waterman.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-maskers-waterman.html",
+   "name": "Waterman — Sterrenbeeldmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/maskers-waterman-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 10995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 19995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_maskers_weegschaal",
+   "file": "sterrenbeeld-maskers-weegschaal.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-maskers-weegschaal.html",
+   "name": "Weegschaal — Sterrenbeeldmasker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/maskers-weegschaal-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "wit-onbeschilderd",
+     "label": "Wit, onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "een-gewenste-kleur",
+     "label": "Eén gewenste kleur",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "volledig-handgeschilderd",
+     "label": "Volledig handgeschilderd",
+     "cents": 17995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "naam-of-korte-tekst",
+     "label": "Naam of korte tekst",
+     "cents": 1495,
+     "firm": true
+    }
+   ]
+  },
+  {
+   "id": "m3d_sterrenbeeld_persoonlijk_boogschutter",
+   "file": "sterrenbeeld-persoonlijk-boogschutter.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-persoonlijk-boogschutter.html",
+   "name": "Boogschutter — Naamreliëf",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/persoonlijk-boogschutter-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 5495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_persoonlijk_kreeft",
+   "file": "sterrenbeeld-persoonlijk-kreeft.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-persoonlijk-kreeft.html",
+   "name": "Kreeft — Opbergbakje",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/persoonlijk-kreeft-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 2495,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 4495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_persoonlijk_leeuw",
+   "file": "sterrenbeeld-persoonlijk-leeuw.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-persoonlijk-leeuw.html",
+   "name": "Leeuw — Naamblok",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/persoonlijk-leeuw-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 5495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_persoonlijk_maagd",
+   "file": "sterrenbeeld-persoonlijk-maagd.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-persoonlijk-maagd.html",
+   "name": "Maagd — Initialenbladwijzer",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/persoonlijk-maagd-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 1295,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 1595,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 1995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_persoonlijk_ram",
+   "file": "sterrenbeeld-persoonlijk-ram.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-persoonlijk-ram.html",
+   "name": "Ram — Naambordje",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/persoonlijk-ram-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 5495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_persoonlijk_schorpioen",
+   "file": "sterrenbeeld-persoonlijk-schorpioen.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-persoonlijk-schorpioen.html",
+   "name": "Schorpioen — Telefoonstandaard",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/persoonlijk-schorpioen-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 2495,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 4495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_persoonlijk_steenbok",
+   "file": "sterrenbeeld-persoonlijk-steenbok.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-persoonlijk-steenbok.html",
+   "name": "Steenbok — Initialenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/persoonlijk-steenbok-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 5495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_persoonlijk_stier",
+   "file": "sterrenbeeld-persoonlijk-stier.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-persoonlijk-stier.html",
+   "name": "Stier — Boekensteun",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/persoonlijk-stier-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 5495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_persoonlijk_tweelingen",
+   "file": "sterrenbeeld-persoonlijk-tweelingen.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-persoonlijk-tweelingen.html",
+   "name": "Tweelingen — Dubbele pennenhouder",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/persoonlijk-tweelingen-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 5495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_persoonlijk_vissen",
+   "file": "sterrenbeeld-persoonlijk-vissen.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-persoonlijk-vissen.html",
+   "name": "Vissen — Herinneringshart",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/persoonlijk-vissen-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 2995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 5495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_persoonlijk_waterman",
+   "file": "sterrenbeeld-persoonlijk-waterman.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-persoonlijk-waterman.html",
+   "name": "Waterman — Pennenbak",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/persoonlijk-waterman-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 2495,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 4495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_persoonlijk_weegschaal",
+   "file": "sterrenbeeld-persoonlijk-weegschaal.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-persoonlijk-weegschaal.html",
+   "name": "Weegschaal — Dubbel opbergbakje",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/persoonlijk-weegschaal-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 5995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_resin_boogschutter",
+   "file": "sterrenbeeld-resin-boogschutter.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-resin-boogschutter.html",
+   "name": "Boogschutter — Resin sterrenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/resin/resin-boogschutter-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 10995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_resin_kreeft",
+   "file": "sterrenbeeld-resin-kreeft.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-resin-kreeft.html",
+   "name": "Kreeft — Resin sterrenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/resin/resin-kreeft-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 10995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_resin_leeuw",
+   "file": "sterrenbeeld-resin-leeuw.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-resin-leeuw.html",
+   "name": "Leeuw — Resin sterrenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/resin/resin-leeuw-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 9995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_resin_maagd",
+   "file": "sterrenbeeld-resin-maagd.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-resin-maagd.html",
+   "name": "Maagd — Resin sterrenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/resin/resin-maagd-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 9995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_resin_ram",
+   "file": "sterrenbeeld-resin-ram.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-resin-ram.html",
+   "name": "Ram — Resin sterrenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/resin/resin-ram-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 9995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_resin_schorpioen",
+   "file": "sterrenbeeld-resin-schorpioen.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-resin-schorpioen.html",
+   "name": "Schorpioen — Resin sterrenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/resin/resin-schorpioen-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 10995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_resin_steenbok",
+   "file": "sterrenbeeld-resin-steenbok.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-resin-steenbok.html",
+   "name": "Steenbok — Resin sterrenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/resin/resin-steenbok-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 10995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_resin_stier",
+   "file": "sterrenbeeld-resin-stier.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-resin-stier.html",
+   "name": "Stier — Resin sterrenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/resin/resin-stier-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 9995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_resin_tweelingen",
+   "file": "sterrenbeeld-resin-tweelingen.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-resin-tweelingen.html",
+   "name": "Tweelingen — Resin sterrenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/resin/resin-tweelingen-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 10995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_resin_vissen",
+   "file": "sterrenbeeld-resin-vissen.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-resin-vissen.html",
+   "name": "Vissen — Resin sterrenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/resin/resin-vissen-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 10995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_resin_waterman",
+   "file": "sterrenbeeld-resin-waterman.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-resin-waterman.html",
+   "name": "Waterman — Resin sterrenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/resin/resin-waterman-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 7995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 10995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_sterrenbeeld_resin_weegschaal",
+   "file": "sterrenbeeld-resin-weegschaal.html",
+   "url": "https://www.makers3dlabs.nl/sterrenbeeld-resin-weegschaal.html",
+   "name": "Weegschaal — Resin sterrenbeeld",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/resin/resin-weegschaal-sterrenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein",
+     "label": "Klein",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel",
+     "label": "Middel",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot",
+     "label": "Groot",
+     "cents": 9995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_balenciaga_tas",
+   "file": "vaas-balenciaga-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-balenciaga-tas.html",
+   "name": "Hourglass tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-balenciaga-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_bowlingtas",
+   "file": "vaas-bowlingtas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-bowlingtas.html",
+   "name": "Bowling tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-bowlingtas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_bucketbag",
+   "file": "vaas-bucketbag.html",
+   "url": "https://www.makers3dlabs.nl/vaas-bucketbag.html",
+   "name": "Bucketbag tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-bucketbag-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_chanel_parfum",
+   "file": "vaas-chanel-parfum.html",
+   "url": "https://www.makers3dlabs.nl/vaas-chanel-parfum.html",
+   "name": "No. 5 parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-chanel-parfum-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_chanel_tas",
+   "file": "vaas-chanel-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-chanel-tas.html",
+   "name": "Quilt tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-chanel-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_clutch",
+   "file": "vaas-clutch.html",
+   "url": "https://www.makers3dlabs.nl/vaas-clutch.html",
+   "name": "Clutch tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-clutch-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_dior_parfum",
+   "file": "vaas-dior-parfum.html",
+   "url": "https://www.makers3dlabs.nl/vaas-dior-parfum.html",
+   "name": "Amfora parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-dior-parfum-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_dior_tas",
+   "file": "vaas-dior-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-dior-tas.html",
+   "name": "Cannage tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-dior-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_fendi_tas",
+   "file": "vaas-fendi-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-fendi-tas.html",
+   "name": "Baguette tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-fendi-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_gucci_parfum",
+   "file": "vaas-gucci-parfum.html",
+   "url": "https://www.makers3dlabs.nl/vaas-gucci-parfum.html",
+   "name": "Bloom parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-gucci-parfum-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_gucci_tas",
+   "file": "vaas-gucci-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-gucci-tas.html",
+   "name": "Bamboe tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-gucci-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 9495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_halvemaan",
+   "file": "vaas-halvemaan.html",
+   "url": "https://www.makers3dlabs.nl/vaas-halvemaan.html",
+   "name": "Halvemaan tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-halvemaan-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_harttas",
+   "file": "vaas-harttas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-harttas.html",
+   "name": "Hart tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-harttas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_hermes_tas",
+   "file": "vaas-hermes-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-hermes-tas.html",
+   "name": "Lock tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-hermes-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 9495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_jacquemus_tas",
+   "file": "vaas-jacquemus-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-jacquemus-tas.html",
+   "name": "Mini-handle tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-jacquemus-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_koffertje",
+   "file": "vaas-koffertje.html",
+   "url": "https://www.makers3dlabs.nl/vaas-koffertje.html",
+   "name": "Koffertje tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-koffertje-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 9495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_louis_vuitton_tas",
+   "file": "vaas-louis-vuitton-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-louis-vuitton-tas.html",
+   "name": "Monogram tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-louis-vuitton-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_makeuptasje",
+   "file": "vaas-makeuptasje.html",
+   "url": "https://www.makers3dlabs.nl/vaas-makeuptasje.html",
+   "name": "Make-uptasje vaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-makeuptasje-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_parfum_artdeco",
+   "file": "vaas-parfum-artdeco.html",
+   "url": "https://www.makers3dlabs.nl/vaas-parfum-artdeco.html",
+   "name": "Art deco parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-parfum-artdeco-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_parfum_druppel",
+   "file": "vaas-parfum-druppel.html",
+   "url": "https://www.makers3dlabs.nl/vaas-parfum-druppel.html",
+   "name": "Druppel parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-parfum-druppel-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_parfum_octagon",
+   "file": "vaas-parfum-octagon.html",
+   "url": "https://www.makers3dlabs.nl/vaas-parfum-octagon.html",
+   "name": "Octagon parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-parfum-octagon-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_parfum_rond",
+   "file": "vaas-parfum-rond.html",
+   "url": "https://www.makers3dlabs.nl/vaas-parfum-rond.html",
+   "name": "Ronde parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-parfum-rond-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_parfum_sculptuur",
+   "file": "vaas-parfum-sculptuur.html",
+   "url": "https://www.makers3dlabs.nl/vaas-parfum-sculptuur.html",
+   "name": "Sculptuur parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-parfum-sculptuur-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_prada_parfum",
+   "file": "vaas-prada-parfum.html",
+   "url": "https://www.makers3dlabs.nl/vaas-prada-parfum.html",
+   "name": "Triangle parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-prada-parfum-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_prada_tas",
+   "file": "vaas-prada-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-prada-tas.html",
+   "name": "Triangle tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-prada-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_rugzak",
+   "file": "vaas-rugzak.html",
+   "url": "https://www.makers3dlabs.nl/vaas-rugzak.html",
+   "name": "Rugzak tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-rugzak-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 9495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_saint_laurent_tas",
+   "file": "vaas-saint-laurent-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-saint-laurent-tas.html",
+   "name": "Chevron tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-saint-laurent-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_shopper",
+   "file": "vaas-shopper.html",
+   "url": "https://www.makers3dlabs.nl/vaas-shopper.html",
+   "name": "Shopper tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-shopper-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_ysl_parfum",
+   "file": "vaas-ysl-parfum.html",
+   "url": "https://www.makers3dlabs.nl/vaas-ysl-parfum.html",
+   "name": "Libre parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-ysl-parfum-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_zadeltas",
+   "file": "vaas-zadeltas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-zadeltas.html",
+   "name": "Zadel tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-zadeltas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 9495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_voetbalstadion_deluxe",
+   "file": "voetbalstadion-deluxe.html",
+   "url": "https://www.makers3dlabs.nl/voetbalstadion-deluxe.html",
+   "name": "De Kuip — Feyenoord",
+   "category": "Voetbalstadions",
+   "image": "https://www.makers3dlabs.nl/stadion-feyenoord-de-kuip-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "standaard-volledig-handgeschilderd-gemon",
+     "label": "Standaard – volledig handgeschilderd, gemonteerd",
+     "cents": 36995,
+     "firm": true
+    }
+   ],
+   "addons": [
+    {
+     "key": "led-sfeerverlichting",
+     "label": "LED-sfeerverlichting",
+     "cents": 7995,
+     "firm": false
+    },
+    {
+     "key": "premium-led-verlichting",
+     "label": "Premium LED-verlichting",
+     "cents": 13995,
+     "firm": false
+    },
+    {
+     "key": "gepersonaliseerd-naamplaatje",
+     "label": "Gepersonaliseerd naamplaatje",
+     "cents": 1995,
+     "firm": true
+    },
+    {
+     "key": "afwijkende-kleurwensen",
+     "label": "Afwijkende kleurwensen",
+     "cents": 3495,
+     "firm": false
+    }
+   ]
+  }
+ ]
+}
