@@ -1,0 +1,28 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#242b38"><meta name="robots" content="noindex,nofollow"><title>Bedankt voor je aanvraag | Makers 3D Labs</title><link rel="stylesheet" href="assets/shop.css"><link rel="stylesheet" href="assets/klantomgeving.css?v=1"><link rel="stylesheet" href="assets/bovenmenu.css?v=2">
+<style>
+.thanks{max-width:720px;margin:48px auto;padding:0 20px}
+.thanks-card{background:#fff;border:1px solid #dce6e2;border-radius:18px;padding:40px 32px;text-align:center;box-shadow:0 10px 30px rgba(16,32,39,.06)}
+.thanks-icon{width:72px;height:72px;border-radius:50%;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:700;color:#fff;background:#00b4bd}
+.thanks-card.fout .thanks-icon{background:#d9534f}
+.thanks h1{margin:0 0 12px;font-size:30px;color:#102027}
+.thanks p{color:#64747a;font-size:17px;line-height:1.6;margin:0 0 12px}
+.thanks-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.thanks-actions a{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:700;text-decoration:none}
+.thanks-actions .primary{background:#00b4bd;color:#fff}
+.thanks-actions .secondary{border:1px solid #dce6e2;color:#102027}
+</style></head>
+<body class="ms-site-shell"><header class="ms-simple-head"><a href="index.html">Makers 3D Labs ← Home</a></header>
+<main class="thanks">
+<div class="thanks-card" id="ok"><div class="thanks-icon" aria-hidden="true">✓</div>
+<h1>Bedankt voor je aanvraag!</h1>
+<p>We hebben je aanvraag goed ontvangen. Je krijgt zo meteen een bevestiging per e-mail. Zie je die niet? Kijk dan ook even in je spammap.</p>
+<p><strong>We reageren binnen 24 uur</strong> met een voorstel voor uitvoering, prijs en levertijd.</p>
+<div class="thanks-actions"><a class="primary" href="winkel.html">Verder kijken in de webshop</a><a class="secondary" href="index.html">Naar de homepage</a></div></div>
+<div class="thanks-card fout" id="fout" hidden><div class="thanks-icon" aria-hidden="true">!</div>
+<h1>Er ging iets mis</h1>
+<p>Je aanvraag kon helaas niet worden verstuurd. Controleer of je e-mailadres klopt en probeer het opnieuw.</p>
+<p>Lukt het niet? Mail ons dan direct via <a href="mailto:info@makers3dlabs.nl">info@makers3dlabs.nl</a>.</p>
+<div class="thanks-actions"><a class="primary" href="javascript:history.back()">Terug naar het formulier</a><a class="secondary" href="contact.html">Naar contact</a></div></div>
+</main>
+<script>if(new URLSearchParams(location.search).get('status')==='fout'){document.getElementById('ok').hidden=true;document.getElementById('fout').hidden=false;document.title='Er ging iets mis | Makers 3D Labs';}</script>
+<script src="assets/shop-data.js"></script><script src="assets/shop.js"></script><script src="assets/bovenmenu.js?v=2"></script></body></html>
