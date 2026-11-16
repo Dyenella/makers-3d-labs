@@ -81,10 +81,7 @@
         .m3d-pay .m3d-pm{display:block;margin-top:6px;font-size:12px;opacity:.75}
       </style>
       <h3>Direct bestellen en betalen</h3>
-      <div class="m3d-row" role="radiogroup" aria-label="Levering">
-        <label><input type="radio" name="_m3d_delivery" value="ship" checked> Verzenden (€ 6,95, gratis vanaf € 75)</label>
-        <label><input type="radio" name="_m3d_delivery" value="pickup"> Gratis ophalen in Ridderkerk</label>
-      </div>
+      <div class="m3d-row">Verzenden met <strong>PostNL</strong> of <strong>DHL</strong> (je kiest bij het afrekenen) · vanaf € 5,25 · gratis vanaf € 400 · <a href="informatie.html#verzending">tarieven</a></div>
       <button type="button" class="m3d-pay-btn">Direct afrekenen →</button>
       <span class="m3d-pm">iDEAL · Bancontact · creditcard — veilig betalen via Stripe</span>
       <div class="m3d-msg" role="alert"></div>
@@ -124,7 +121,7 @@
       fd.set('_variant', String(c.v));
       fd.set('_addons', c.addons.join(','));
       fd.set('_qty', String(Math.min(100, Math.max(1, c.qty))));
-      fd.set('_delivery', box.querySelector('input[name="_m3d_delivery"]:checked').value);
+      fd.set('_delivery', 'ship');
       for (const id of ['personalization', 'notes', 'personal-text', 'kt-names', 'kt-notes', 'kt-color', 'naam', 'tekst', 'datum']) {
         const el = document.getElementById(id); if (el && el.value && !el.name) fd.set(id, el.value);
       }

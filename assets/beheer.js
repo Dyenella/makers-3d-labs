@@ -106,6 +106,21 @@
         msg(error ? 'Betaalstatus wijzigen is niet gelukt.' : 'Betaalstatus bijgewerkt.');
       });
       card.append(pay);
+      const tt = node('div'); tt.style.cssText = 'display:flex;gap:6px;flex-wrap:wrap;margin-top:6px';
+      const car = node('select'); car.setAttribute('aria-label', 'Vervoerder ' + r.number);
+      for (const v of ['', 'PostNL', 'DHL']) { const op = node('option', v || 'Vervoerder…'); op.value = v; if (v === (r.carrier || '')) op.selected = true; car.append(op); }
+      const code = node('input'); code.placeholder = 'Track & trace-code'; code.value = r.tracking_code || ''; code.maxLength = 60; code.style.flex = '1';
+      const pc = node('input'); pc.placeholder = 'Postcode'; pc.value = r.ship_postcode || ''; pc.maxLength = 12; pc.style.width = '90px';
+      const save = node('button', 'Opslaan'); save.type = 'button';
+      save.addEventListener('click', async () => {
+        save.disabled = true;
+        const { error } = await state.client.from('customer_orders').update({ carrier: car.value || null, tracking_code: code.value.trim() || null, ship_postcode: pc.value.replace(/\s/g, '').toUpperCase() || null }).eq('id', r.id);
+        save.disabled = false;
+        msg(error ? 'Opslaan is niet gelukt.' : 'Track & trace opgeslagen. Zet de status daarna op "Verzonden": de klant krijgt dan een mail met de volg-link.');
+      });
+      tt.append(car, code, pc, save);
+      const tl = node('label', 'Verzending'); tl.style.marginTop = '6px';
+      card.append(tl, tt);
     }
     return card;
   }

@@ -152,13 +152,13 @@ async function createInvoice(admin: any, session: any, o: { userId: string | nul
   return { number, bytes };
 }
 
-async function sessionLines(session: any, fallbackName: string, detail: string): Promise<Line[]> {
+async function sessionLines(session: any, fallbackName: string, detail: string, shipLabel = "Verzendkosten"): Promise<Line[]> {
   const out: Line[] = [];
   const li = await stripeGet(`checkout/sessions/${session.id}/line_items?limit=100`);
   if (li.status === 200) for (const it of li.body.data || []) out.push({ description: it.description || fallbackName, detail, quantity: it.quantity || 1, totalCents: it.amount_total });
   const shipping = session.shipping_cost?.amount_total || session.total_details?.amount_shipping || 0;
   if (!out.length) out.push({ description: fallbackName, detail, quantity: 1, totalCents: session.amount_total - shipping });
-  if (shipping > 0) out.push({ description: "Verzendkosten", quantity: 1, totalCents: shipping });
+  if (shipping > 0) out.push({ description: shipLabel, quantity: 1, totalCents: shipping });
   return out;
 }
 
@@ -234,11 +234,17 @@ Deno.serve(async (req) => {
   const d = new Date();
   const number = `BST-${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}-${reqId.slice(0, 4).toUpperCase()}`;
   const options = [p.variant?.label, ...(p.addons || []).map((a: any) => "+ " + a.label)].filter(Boolean).join(" · ");
+  const rateId = typeof session.shipping_cost?.shipping_rate === "string" ? session.shipping_cost.shipping_rate : session.shipping_cost?.shipping_rate?.id;
+  const carrier = (rateId && p.carriers?.[rateId]) || null;
+  const shipClassName = ({ klein: "brievenbuspakje", normaal: "pakket", groot: "groot pakket" } as Record<string, string>)[p.ship] || "pakket";
+  const shipLabel = carrier ? `Verzendkosten – ${carrier} ${shipClassName}` : "Verzendkosten";
+  const postcode = String(ship?.address?.postal_code || "").replace(/\s/g, "").toUpperCase().slice(0, 12) || null;
   let orderId: string | null = null;
   if (userId) {
     const { data: order } = await admin.from("customer_orders").insert({
       user_id: userId, number, title: p.product?.name || "Bestelling", status: "received", payment_status: "paid",
       total_cents: session.amount_total, items: [{ quantity: p.qty || 1, name: p.product?.name, options }],
+      carrier, ship_postcode: postcode,
     }).select("id").maybeSingle();
     orderId = order?.id || null;
     await admin.from("checkout_requests").update({ user_id: userId, order_id: orderId }).eq("id", reqId);
@@ -249,7 +255,7 @@ Deno.serve(async (req) => {
   let invoiceNumber = "";
   try {
     const inv = await createInvoice(admin, session, { userId, reqId, name, email, address: addr, orderNumber: number, title: p.product?.name || "Bestelling",
-      lines: await sessionLines(session, p.product?.name || "Bestelling", options) });
+      lines: await sessionLines(session, p.product?.name || "Bestelling", options, shipLabel) });
     invoiceNumber = inv.number;
     attachments.push({ filename: inv.number + ".pdf", content: b64(inv.bytes.buffer as ArrayBuffer) });
   } catch (err) { console.error("factuur", err); }
@@ -261,7 +267,7 @@ Deno.serve(async (req) => {
   }
   const rows: [string, string][] = [
     ["Bestelnummer", number], ["Factuur", invoiceNumber || "niet aangemaakt — controleer"], ["Product", p.product?.name || ""], ["Uitvoering", options], ["Aantal", String(p.qty || 1)],
-    ["Betaald (incl. verzending)", money(session.amount_total)], ["Levering", p.delivery === "pickup" ? "Ophalen in Ridderkerk" : "Verzenden"],
+    ["Betaald (incl. verzending)", money(session.amount_total)], ["Verzending", carrier ? `${carrier} – ${shipClassName}` : "Verzenden"],
     ["Klant", `${name} <${email}>`], ["Telefoon", phone], ["Adres", addr], ["Productpagina", p.product?.url || ""],
     ...((p.details || []) as [string, string][]).map(([k, v]) => [k, v] as [string, string]),
   ];

@@ -6,7 +6,28 @@ import { createClient } from "npm:@supabase/supabase-js@2";
 const SITE = "https://www.makers3dlabs.nl";
 const CATALOG = SITE + "/assets/catalogus.json";
 const KEY = Deno.env.get("STRIPE_SECRET_KEY")!;
-const SHIP_CENTS = 695, FREE_FROM = 7500;
+const FREE_FROM = 40000; // gratis verzenden vanaf € 400
+// Verzendtarieven incl. btw (goedgekeurd 17-11-2026).
+const RATES = {
+  klein: [{ carrier: "PostNL", name: "PostNL – brievenbuspakje", cents: 550 }, { carrier: "DHL", name: "DHL – brievenbuspakket", cents: 525 }],
+  normaal: [{ carrier: "PostNL", name: "PostNL – pakket", cents: 895 }, { carrier: "DHL", name: "DHL – pakket", cents: 795 }],
+  groot: [{ carrier: "PostNL", name: "PostNL – groot pakket (extra stevig verpakt)", cents: 1295 }, { carrier: "DHL", name: "DHL – groot pakket (extra stevig verpakt)", cents: 1295 }],
+} as const;
+type ShipClass = keyof typeof RATES;
+// Artikelen die door de brievenbus passen (met maximaal aantal per brievenbuspakje).
+const SMALL: Record<string, number> = {
+  "persoonlijke-kersttafel.html": 12, "lasergravure-sleutelhangers.html": 4, "lasergravure-dierenpenning.html": 4,
+  "lasergravure-leren-portemonnee.html": 1, "product-053-bladwijzer-bergen.html": 3,
+};
+function shipClass(product: any, variant: any, qty: number): ShipClass {
+  const label = String(variant.label || "");
+  if (product.file in SMALL && qty <= SMALL[product.file] && !/^(Middel|Groot)/.test(label)) return "klein";
+  if (product.category === "Voetbalstadions") return "groot";
+  if (product.category === "Lasergravure") return "normaal"; // vlakke artikelen
+  if (product.category === "Maskers") return /^(Klein|Middel)/.test(label) ? "normaal" : "groot";
+  if (/^Groot/.test(label) || /\b(2[5-9]|[3-9]\d)\s?(–\s?\d+\s?)?cm\b/.test(label)) return "groot";
+  return "normaal";
+}
 const ORIGINS = [SITE, "https://makers3dlabs.nl"];
 const IMG = ["image/jpeg", "image/png", "image/webp"];
 
@@ -70,7 +91,8 @@ Deno.serve(async (req) => {
   if (addons.some((a: any) => !a.firm)) return json({ error: "Een gekozen extra optie heeft eerst een prijsvoorstel nodig. Gebruik de aanvraagknop." }, 400);
   const qty = Math.trunc(Number(fd.get("_qty") || 1));
   if (!Number.isInteger(qty) || qty < 1 || qty > 100) return json({ error: "Kies een aantal tussen 1 en 100." }, 400);
-  const delivery = fd.get("_delivery") === "pickup" ? "pickup" : "ship";
+  const delivery = "ship";
+  const ship = shipClass(product, variant, qty);
 
   // Stripe-prijzen ophalen via lookup_key.
   const lookups = [`${product.id}__${variant.key}`, ...addons.map((a: any) => `${product.id}__addon__${a.key}`)].map((k) => k.slice(0, 200));
@@ -102,22 +124,29 @@ Deno.serve(async (req) => {
     product: { id: product.id, file: product.file, name: product.name, url: product.url },
     variant: { label: variant.label, cents: variant.cents },
     addons: addons.map((a: any) => ({ label: a.label, cents: a.cents })),
-    qty, delivery, subtotal, details,
+    qty, delivery, ship, subtotal, details,
   };
   const ins = await admin.from("checkout_requests").insert({ id: reqId, kind: "product", payload, uploads, amount_cents: subtotal });
   if (ins.error) return json({ error: "Er ging iets mis. Probeer het opnieuw." }, 500);
 
   const freeShip = subtotal >= FREE_FROM;
-  const shipping_options = delivery === "pickup"
-    ? undefined
-    : [{ shipping_rate_data: { display_name: freeShip ? "Verzenden (gratis vanaf € 75)" : "Verzenden binnen Nederland", type: "fixed_amount", fixed_amount: { amount: freeShip ? 0 : SHIP_CENTS, currency: "eur" }, tax_behavior: "inclusive" } }];
+  const perItem = ship === "groot" ? qty : 1; // elk groot stuk gaat in een eigen doos
+  const rates = RATES[ship];
+  const shipping_options = rates.map((r) => ({
+    shipping_rate_data: {
+      display_name: freeShip ? `${r.name} · gratis vanaf € 400` : (perItem > 1 ? `${r.name} · ${perItem} dozen` : r.name),
+      type: "fixed_amount", fixed_amount: { amount: freeShip ? 0 : r.cents * perItem, currency: "eur" }, tax_behavior: "inclusive",
+      metadata: { carrier: r.carrier, class: ship },
+      delivery_estimate: { minimum: { unit: "business_day", value: 1 }, maximum: { unit: "business_day", value: 3 } },
+    },
+  }));
 
   const session = await stripe("POST", "checkout/sessions", {
     mode: "payment",
     locale: "nl",
     line_items: lookups.map((k) => ({ price: (byKey.get(k) as any).id, quantity: qty })),
     shipping_options,
-    shipping_address_collection: delivery === "ship" ? { allowed_countries: ["NL", "BE"] } : undefined,
+    shipping_address_collection: { allowed_countries: ["NL"] },
     phone_number_collection: { enabled: true },
     billing_address_collection: "auto",
     customer_creation: "always",
@@ -131,6 +160,9 @@ Deno.serve(async (req) => {
     console.error(session.body);
     return json({ error: "Afrekenen kon niet worden gestart. Probeer het later opnieuw." }, 502);
   }
-  await admin.from("checkout_requests").update({ stripe_session: session.body.id }).eq("id", reqId);
+  // Koppeling verzendtarief → vervoerder bewaren (voor de bestelling en track & trace).
+  const carriers: Record<string, string> = {};
+  (session.body.shipping_options || []).forEach((o: any, i: number) => { if (o.shipping_rate) carriers[o.shipping_rate] = rates[i]?.carrier || ""; });
+  await admin.from("checkout_requests").update({ stripe_session: session.body.id, payload: { ...payload, carriers } }).eq("id", reqId);
   return json({ url: session.body.url });
 });

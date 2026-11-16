@@ -74,6 +74,16 @@ Deno.serve(async (req) => {
     paras = rec.status === "shipped" ? ["Je bestelling is onderweg naar je toe!"] : rec.status === "completed" ? ["Je bestelling is afgerond. Veel plezier ermee!"] : ["De status van je bestelling is gewijzigd."];
     rows = [["Bestelling", rec.number], ["Omschrijving", rec.title], ["Nieuwe status", s]];
     button = ["Bekijk mijn bestelling", SITE + "/bestellingen.html"];
+    if (rec.status === "shipped" && rec.carrier) rows.push(["Vervoerder", rec.carrier]);
+    if (rec.status === "shipped" && rec.tracking_code) {
+      const code = encodeURIComponent(String(rec.tracking_code).replace(/\s/g, ""));
+      const pc = encodeURIComponent(String(rec.ship_postcode || ""));
+      const url = rec.carrier === "DHL"
+        ? `https://www.dhl.com/nl-nl/home/tracking/tracking-ecommerce.html?submit=1&tracking-id=${code}`
+        : `https://jouw.postnl.nl/track-and-trace/${code}-NL-${pc}`;
+      rows.push(["Track & trace", String(rec.tracking_code)]);
+      button = ["Volg je pakket", url];
+    }
   } else {
     return new Response("skip");
   }
