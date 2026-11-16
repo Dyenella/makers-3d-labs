@@ -73,6 +73,7 @@
         .m3d-pay{margin:18px 0 6px;padding:16px;border:1px solid rgba(0,180,189,.45);border-radius:12px;background:rgba(0,180,189,.08)}
         .m3d-pay h3{margin:0 0 8px;font-size:17px}
         .m3d-pay .m3d-row{display:flex;gap:16px;flex-wrap:wrap;margin:6px 0 12px;font-size:14px}
+        .m3d-pay .m3d-ship{margin:4px 0 12px;font-size:14px;line-height:1.5}
         .m3d-pay label{display:inline-flex;gap:6px;align-items:center;cursor:pointer;font-weight:600}
         .m3d-pay button{width:100%;border:0;border-radius:10px;padding:14px 18px;font:700 16px/1.3 Arial,sans-serif;background:#00b4bd;color:#fff;cursor:pointer}
         .m3d-pay button:disabled{opacity:.6;cursor:wait}
@@ -81,7 +82,7 @@
         .m3d-pay .m3d-pm{display:block;margin-top:6px;font-size:12px;opacity:.75}
       </style>
       <h3>Direct bestellen en betalen</h3>
-      <div class="m3d-row">Verzenden met <strong>PostNL</strong> of <strong>DHL</strong> (je kiest bij het afrekenen) · vanaf € 5,25 · gratis vanaf € 400 · <a href="informatie.html#verzending">tarieven</a></div>
+      <p class="m3d-ship">Verzenden met <strong>PostNL</strong> of <strong>DHL</strong> — je kiest bij het afrekenen. Vanaf € 5,25, gratis vanaf € 400. <a href="informatie.html#verzending">Bekijk de tarieven</a></p>
       <button type="button" class="m3d-pay-btn">Direct afrekenen →</button>
       <span class="m3d-pm">iDEAL · Bancontact · creditcard — veilig betalen via Stripe</span>
       <div class="m3d-msg" role="alert"></div>
