@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /account.html
+Disallow: /adressen.html
+Disallow: /bestellingen.html
+Disallow: /facturen.html
+Disallow: /offertes.html
+Disallow: /bedankt.html
+Disallow: /winkelwagen.html
+Disallow: /backups/
+
+Sitemap: https://www.makers3dlabs.nl/sitemap.xml

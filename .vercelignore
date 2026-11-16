@@ -1,2 +1,6 @@
 supabase/
 database/
+backups/
+*.py
+*.csv
+README.txt
