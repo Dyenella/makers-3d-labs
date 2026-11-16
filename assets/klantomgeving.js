@@ -26,10 +26,12 @@ function render(records){const list=el('customer-records');if(!list)return;list.
  for(const record of records){const card=node('article',undefined,'customer-record'),head=node('div',undefined,'customer-record-head');head.append(node('h3',record.number||'Zonder nummer'),node('span',statusNames[record.status]||'In behandeling','customer-status'));card.append(head,node('p',record.title||'Jouw opdracht'),node('p','Datum: '+date(record.created_at)),node('p',money(record.total_cents)+' incl. btw','customer-amount'));
   if(record.order_number)card.append(node('p','Bestelling: '+record.order_number));
   if(view==='orders'){if(record.payment_status)card.append(node('p','Betaling: '+(statusNames[record.payment_status]||'In behandeling')));if(Array.isArray(record.items)&&record.items.length){const details=node('details'),ul=node('ul');details.append(node('summary','Bekijk orderdetails'));for(const item of record.items){ul.append(node('li',String(item.quantity||1)+' × '+String(item.name||'Artikel')+(item.options?' · '+String(item.options):'')));}details.append(ul);card.append(details);}}
+  if((view==='invoices'&&record.status==='issued')||(view==='quotes'&&record.status==='sent')){const pb=node('button',view==='invoices'?'Betaal nu':'Akkoord en betalen','customer-download');pb.type='button';pb.style.marginRight='8px';pb.addEventListener('click',()=>payDoc(record,pb));card.append(pb);}
   if(record.file_path){const b=node('button','Download PDF','customer-download');b.type='button';b.addEventListener('click',()=>download(record,b));card.append(b);}else if(view!=='orders')card.append(node('p','Het PDF-document is nog niet toegevoegd.','customer-small'));
   list.append(card);
  }
 }
+async function payDoc(record,button){if(!state.client||!state.user)return;button.disabled=true;const t=button.textContent;button.textContent='Even geduld…';try{const {data:s}=await state.client.auth.getSession();const cfg=window.MAKERS_CUSTOMER_CONFIG;const r=await fetch(cfg.url+'/functions/v1/betaal-document',{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+s.session.access_token,apikey:cfg.publishableKey},body:JSON.stringify({kind:view==='invoices'?'invoice':'quote',id:record.id})});const j=await r.json().catch(()=>({}));if(!r.ok||!j.url)throw new Error(j.error||'Betalen kon niet worden gestart.');location.href=j.url;}catch(e){message(e.message);button.disabled=false;button.textContent=t;}}
 async function load(){if(!state.client||!state.user)return;const revision=++state.revision,userId=state.user.id;message('');
  if(view==='overview')return;
  if(view==='addresses'){
@@ -66,5 +68,6 @@ el('customer-refresh')?.addEventListener('click',()=>load().catch(()=>message('V
 el('customer-profile')?.addEventListener('submit',async e=>{e.preventDefault();if(!state.client||!state.user)return;const button=e.target.querySelector('button');button.disabled=true;const payload={user_id:state.user.id};for(const [key,value]of new FormData(e.target))payload[key]=String(value).trim();try{const {error}=await state.client.from('customer_profiles').upsert(payload,{onConflict:'user_id'});if(error)throw error;message('Je gegevens zijn opgeslagen. Een adreswijziging past een al bevestigde bestelling niet automatisch aan.');}catch{message('Opslaan is niet gelukt. Probeer opnieuw.');}finally{button.disabled=false;}});
 window.addEventListener('pagehide',clearPrivate);
 window.addEventListener('pageshow',event=>{if(event.persisted)location.reload();});
+if(new URLSearchParams(location.search).get('betaald')==='1')setTimeout(()=>message('Bedankt! Je betaling is gelukt. De status wordt binnen enkele ogenblikken bijgewerkt.'),800);
 start();
 })();
