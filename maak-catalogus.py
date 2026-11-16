@@ -58,10 +58,39 @@ def V(label, c, firm=True):
     return {"key": slug(label), "label": label, "cents": int(c), "firm": bool(firm)}
 
 
+# Kostprijsmodel (goedgekeurd 16-11-2026): arbeid € 30/u, printeruur € 1,75, filament € 30/kg,
+# 35% marge, 3% Stripe, 21% btw. Prijzen incl. btw, afgerond op ,95.
+PRINT_PRICES = {  # formaat -> (wit, één kleur, volledig handgeschilderd)
+    "Klein – ± 10–12 cm": (3495, 6495, 11995),
+    "Middel – ± 15–20 cm": (6995, 12995, 23995),
+    "Groot – ± 25–30 cm": (13495, 22495, 41495),
+}
+PRINT_FINISH = ("Wit / onbeschilderd", "Eén gewenste kleur", "Volledig handgeschilderd")
+LASER_PRICES = {  # formaat -> (naturel met gravure, geschilderde afwerking)
+    "Klein – ± 10 cm": (3995, 9995),
+    "Middel – ± 20 cm": (6495, 11995),
+    "Groot – ± 30 cm": (9495, 15495),
+}
+LASER_FINISH = ("Natuurlijk hout met gravure", "Geschilderde afwerking")
+
 products, skipped = [], []
 for f in sorted(glob.glob("*.html")):
     s = open(f, encoding="utf-8").read()
-    if re.search(r'name="robots"[^>]+noindex', s) or "Prijs op aanvraag" in s:
+    if re.search(r'name="robots"[^>]+noindex', s):
+        continue
+    if re.match(r"product-\d{3}-", f) and 'id="formaat"' in s and 'id="uitvoering"' in s:
+        kicker = re.search(r'np-kicker">([^<·]+)', s)
+        cat = kicker.group(1).strip() if kicker else "Op bestelling"
+        p = base(f, s, cat)
+        laser = cat.lower().startswith("laser")
+        table, finishes = (LASER_PRICES, LASER_FINISH) if laser else (PRINT_PRICES, PRINT_FINISH)
+        for size, prices in table.items():
+            for fin, c in zip(finishes, prices):
+                p["variants"].append(V(f"{size} · {fin}", c))
+        p["pricing"] = "laser" if laser else "print"
+        products.append(p)
+        continue
+    if "Prijs op aanvraag" in s:
         continue
     form = re.search(r"<form.*?</form>", s, re.S)
     fm = form.group(0) if form else ""
@@ -104,7 +133,7 @@ for f in sorted(glob.glob("*.html")):
         p = base(f, s, "Maskers")
         for m in re.finditer(r'<option value="(\d+)">([^<]+)</option>', fm):
             lab = clean(m.group(2))
-            p["variants"].append(V(re.split(r"\s+—\s+", lab)[0], int(m.group(1)), not SOFT.search(lab)))
+            p["variants"].append(V(re.split(r"\s+—\s+", lab)[0], int(m.group(1))))
         a = re.search(r"€ ?14,95", fm)
         if a:
             p["addons"].append(V("Naam of korte tekst", 1495))

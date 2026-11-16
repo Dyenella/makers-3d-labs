@@ -33,6 +33,11 @@
       if (/aanvraag/i.test($('#formaat', form)?.value || '')) block = 'Voor een eigen maat maken we eerst een prijsvoorstel.';
       if (checked('np-extra')) addons.push(0); qty = num('#aantal');
     }
+    else if ($('#formaat', form) && $('#uitvoering', form)) { // productpagina's 001–100: formaat × uitvoering
+      const fi = $('#formaat', form).selectedIndex - 1, nf = $('#uitvoering', form).options.length;
+      if (/eigen maat/i.test($('#formaat', form).value)) block = 'Voor een eigen maat maken we eerst een prijsvoorstel.';
+      v = fi < 0 ? -1 : fi * nf + $('#uitvoering', form).selectedIndex; qty = num('#aantal');
+    }
     else if (page === 'business-collection-bedrijfsdisplays.html') {
       v = [...form.querySelectorAll('input[name="product"]')].findIndex((r) => r.checked);
       ['opt-nfc-review', 'opt-nfc-catalogus', 'opt-extra-qr'].forEach((id, i) => { if (checked(id) && !document.getElementById(id).disabled) addons.push(i); });
@@ -89,6 +94,16 @@
     // Oude teksten "online betalen is nog niet actief" verbergen.
     form.querySelectorAll('p, div, small').forEach((n) => { if (/online betalen is nog niet (actief|beschikbaar)/i.test(n.textContent) && !n.querySelector('form, input, button')) n.hidden = true; });
 
+    // Live prijs op de productpagina's met formaat × uitvoering.
+    const priceEl = document.querySelector('.np-price');
+    if (product.pricing && priceEl) {
+      const upd = () => {
+        const c = readChoice(form), vr = product.variants[c.v];
+        if (c.block) priceEl.textContent = 'Prijs op aanvraag (eigen maat)';
+        else if (vr) priceEl.textContent = euro(vr.cents * Math.max(1, c.qty)) + (c.qty > 1 ? ` (${c.qty} × ${euro(vr.cents)})` : '');
+      };
+      form.addEventListener('change', upd); form.addEventListener('input', upd);
+    }
     const msg = box.querySelector('.m3d-msg');
     const btn = box.querySelector('.m3d-pay-btn');
     btn.addEventListener('click', async () => {

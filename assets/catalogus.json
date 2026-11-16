@@ -1,7 +1,7 @@
 {
  "currency": "eur",
  "tax_behavior": "inclusive",
- "count": 192,
+ "count": 292,
  "products": [
   {
    "id": "m3d_anubis_antiekgouden_buste",
@@ -741,7 +741,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 17995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -813,7 +813,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 17995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -849,7 +849,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 15995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -885,7 +885,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 19995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -921,7 +921,7 @@
      "key": "meerkleurig-en-gedetailleerd",
      "label": "Meerkleurig en gedetailleerd",
      "cents": 16995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -957,7 +957,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 13995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -1029,7 +1029,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 15995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -1065,7 +1065,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 18995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -1101,7 +1101,7 @@
      "key": "meerkleurig-en-gedetailleerd",
      "label": "Meerkleurig en gedetailleerd",
      "cents": 16995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -1137,7 +1137,7 @@
      "key": "meerkleurig-en-gedetailleerd",
      "label": "Meerkleurig en gedetailleerd",
      "cents": 16995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -1173,7 +1173,7 @@
      "key": "meerkleurig-en-gedetailleerd",
      "label": "Meerkleurig en gedetailleerd",
      "cents": 14995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -1209,7 +1209,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 18995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -1245,7 +1245,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 17995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -1281,7 +1281,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 15995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -1353,7 +1353,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 16995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -1389,7 +1389,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 14995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -1929,7 +1929,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 16995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -1965,7 +1965,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 12995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -2001,7 +2001,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 15995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -2037,7 +2037,7 @@
      "key": "volledig-handbeschilderd",
      "label": "Volledig handbeschilderd",
      "cents": 15995,
-     "firm": false
+     "firm": true
     }
    ],
    "addons": [
@@ -2125,6 +2125,6390 @@
     }
    ],
    "addons": []
+  },
+  {
+   "id": "m3d_product_001_winterdorp_relief",
+   "file": "product-001-winterdorp-relief.html",
+   "url": "https://www.makers3dlabs.nl/product-001-winterdorp-relief.html",
+   "name": "Winterdorp reliëf",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/001-winterdorp-reli%C3%ABf.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_002_rendier_boekensteunen",
+   "file": "product-002-rendier-boekensteunen.html",
+   "url": "https://www.makers3dlabs.nl/product-002-rendier-boekensteunen.html",
+   "name": "Rendier boekensteunen",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/002-rendier-boekensteunen.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_003_kerstkrans_tafelobject",
+   "file": "product-003-kerstkrans-tafelobject.html",
+   "url": "https://www.makers3dlabs.nl/product-003-kerstkrans-tafelobject.html",
+   "name": "Kerstkrans tafelobject",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/003-kerstkrans-tafelobject.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_004_notenkraker_miniatuur",
+   "file": "product-004-notenkraker-miniatuur.html",
+   "url": "https://www.makers3dlabs.nl/product-004-notenkraker-miniatuur.html",
+   "name": "Notenkraker miniatuur",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/004-notenkraker-miniatuur.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_005_peperkoekhuis_bakje",
+   "file": "product-005-peperkoekhuis-bakje.html",
+   "url": "https://www.makers3dlabs.nl/product-005-peperkoekhuis-bakje.html",
+   "name": "Peperkoekhuis bakje",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/005-peperkoekhuis-bakje.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_006_winteruil",
+   "file": "product-006-winteruil.html",
+   "url": "https://www.makers3dlabs.nl/product-006-winteruil.html",
+   "name": "Winteruil",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/006-winteruil.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_007_kerstster_spiraal",
+   "file": "product-007-kerstster-spiraal.html",
+   "url": "https://www.makers3dlabs.nl/product-007-kerstster-spiraal.html",
+   "name": "Spiraal kerstster",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/007-kerstster-spiraal.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_008_sneeuwbol_zonder_glas",
+   "file": "product-008-sneeuwbol-zonder-glas.html",
+   "url": "https://www.makers3dlabs.nl/product-008-sneeuwbol-zonder-glas.html",
+   "name": "Winterwereld sculptuur",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/008-sneeuwbol-zonder-glas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_009_slee_pennenbak",
+   "file": "product-009-slee-pennenbak.html",
+   "url": "https://www.makers3dlabs.nl/product-009-slee-pennenbak.html",
+   "name": "Slee pennenbak",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/009-slee-pennenbak.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_010_kerstboom_stapelbeeld",
+   "file": "product-010-kerstboom-stapelbeeld.html",
+   "url": "https://www.makers3dlabs.nl/product-010-kerstboom-stapelbeeld.html",
+   "name": "Stapelkerstboom",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/010-kerstboom-stapelbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_011_poolvos_winterbeeld",
+   "file": "product-011-poolvos-winterbeeld.html",
+   "url": "https://www.makers3dlabs.nl/product-011-poolvos-winterbeeld.html",
+   "name": "Poolvos winterbeeld",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/011-poolvos-winterbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_012_advent_cijferblokken",
+   "file": "product-012-advent-cijferblokken.html",
+   "url": "https://www.makers3dlabs.nl/product-012-advent-cijferblokken.html",
+   "name": "Advent cijferblokken",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/012-advent-cijferblokken.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_013_kersttrein_decoratie",
+   "file": "product-013-kersttrein-decoratie.html",
+   "url": "https://www.makers3dlabs.nl/product-013-kersttrein-decoratie.html",
+   "name": "Kersttrein decoratie",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kerst/013-kersttrein-decoratie.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_014_bureau_organizer_golf",
+   "file": "product-014-bureau-organizer-golf.html",
+   "url": "https://www.makers3dlabs.nl/product-014-bureau-organizer-golf.html",
+   "name": "Golf bureau-organizer",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/zakelijk/014-bureau-organizer-golf.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_015_visitekaart_waaier",
+   "file": "product-015-visitekaart-waaier.html",
+   "url": "https://www.makers3dlabs.nl/product-015-visitekaart-waaier.html",
+   "name": "Waaier visitekaarthouder",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/zakelijk/015-visitekaart-waaier.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_016_telefoonstandaard_boog",
+   "file": "product-016-telefoonstandaard-boog.html",
+   "url": "https://www.makers3dlabs.nl/product-016-telefoonstandaard-boog.html",
+   "name": "Boog telefoonstandaard",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/zakelijk/016-telefoonstandaard-boog.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_017_balie_organizer",
+   "file": "product-017-balie-organizer.html",
+   "url": "https://www.makers3dlabs.nl/product-017-balie-organizer.html",
+   "name": "Balie organizer",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/zakelijk/017-balie-organizer.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_018_vergaderbordje",
+   "file": "product-018-vergaderbordje.html",
+   "url": "https://www.makers3dlabs.nl/product-018-vergaderbordje.html",
+   "name": "Vergaderbordje",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/zakelijk/018-vergaderbordje.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_019_tafelnummer_07",
+   "file": "product-019-tafelnummer-07.html",
+   "url": "https://www.makers3dlabs.nl/product-019-tafelnummer-07.html",
+   "name": "Tafelnummer 07",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/zakelijk/019-tafelnummer-07.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_020_pennenhouder_zeskant",
+   "file": "product-020-pennenhouder-zeskant.html",
+   "url": "https://www.makers3dlabs.nl/product-020-pennenhouder-zeskant.html",
+   "name": "Zeskant pennenhouder",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/zakelijk/020-pennenhouder-zeskant.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_021_award_groeilijnen",
+   "file": "product-021-award-groeilijnen.html",
+   "url": "https://www.makers3dlabs.nl/product-021-award-groeilijnen.html",
+   "name": "Groeilijnen award",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/zakelijk/021-award-groeilijnen.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_022_medaille_display",
+   "file": "product-022-medaille-display.html",
+   "url": "https://www.makers3dlabs.nl/product-022-medaille-display.html",
+   "name": "Medaille display",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/zakelijk/022-medaille-display.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_023_naamblok_bureau",
+   "file": "product-023-naamblok-bureau.html",
+   "url": "https://www.makers3dlabs.nl/product-023-naamblok-bureau.html",
+   "name": "Bureau naamblok",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/zakelijk/023-naamblok-bureau.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_024_brochurehouder_laag",
+   "file": "product-024-brochurehouder-laag.html",
+   "url": "https://www.makers3dlabs.nl/product-024-brochurehouder-laag.html",
+   "name": "Lage brochurehouder",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/zakelijk/024-brochurehouder-laag.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_025_kabelgeleider_bureau",
+   "file": "product-025-kabelgeleider-bureau.html",
+   "url": "https://www.makers3dlabs.nl/product-025-kabelgeleider-bureau.html",
+   "name": "Bureau kabelgeleider",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/zakelijk/025-kabelgeleider-bureau.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_026_logo_podium_abstract",
+   "file": "product-026-logo-podium-abstract.html",
+   "url": "https://www.makers3dlabs.nl/product-026-logo-podium-abstract.html",
+   "name": "Abstract logo podium",
+   "category": "Zakelijk",
+   "image": "https://www.makers3dlabs.nl/makers3dlabs-logo.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_027_voetbal_schoenenbeeld",
+   "file": "product-027-voetbal-schoenenbeeld.html",
+   "url": "https://www.makers3dlabs.nl/product-027-voetbal-schoenenbeeld.html",
+   "name": "Voetbalschoen sculptuur",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/voetbal/027-voetbal-schoenenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_028_voetbal_boekensteunen",
+   "file": "product-028-voetbal-boekensteunen.html",
+   "url": "https://www.makers3dlabs.nl/product-028-voetbal-boekensteunen.html",
+   "name": "Voetbal boekensteunen",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/voetbal/028-voetbal-boekensteunen.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_029_keeper_handschoenbeeld",
+   "file": "product-029-keeper-handschoenbeeld.html",
+   "url": "https://www.makers3dlabs.nl/product-029-keeper-handschoenbeeld.html",
+   "name": "Keeper sculptuur",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/voetbal/029-keeper-handschoenbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_030_voetbal_tactiekrelief",
+   "file": "product-030-voetbal-tactiekrelief.html",
+   "url": "https://www.makers3dlabs.nl/product-030-voetbal-tactiekrelief.html",
+   "name": "Tactiek reliëf",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/voetbal/030-voetbal-tactiekreli%C3%ABf.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_031_voetbal_trofee_spiraal",
+   "file": "product-031-voetbal-trofee-spiraal.html",
+   "url": "https://www.makers3dlabs.nl/product-031-voetbal-trofee-spiraal.html",
+   "name": "Spiraal voetbaltrofee",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/voetbal/031-voetbal-trofee-spiraal.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_032_stadion_tunnel_miniatuur",
+   "file": "product-032-stadion-tunnel-miniatuur.html",
+   "url": "https://www.makers3dlabs.nl/product-032-stadion-tunnel-miniatuur.html",
+   "name": "Spelerstunnel miniatuur",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/voetbal/032-stadion-tunnel-miniatuur.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_033_voetbalshirt_relief",
+   "file": "product-033-voetbalshirt-relief.html",
+   "url": "https://www.makers3dlabs.nl/product-033-voetbalshirt-relief.html",
+   "name": "Voetbalshirt reliëf",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/voetbal/033-voetbalshirt-reli%C3%ABf.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_034_voetbal_penhouder",
+   "file": "product-034-voetbal-penhouder.html",
+   "url": "https://www.makers3dlabs.nl/product-034-voetbal-penhouder.html",
+   "name": "Voetbal pennenhouder",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/voetbal/034-voetbal-penhouder.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_035_supporter_sjaal_relief",
+   "file": "product-035-supporter-sjaal-relief.html",
+   "url": "https://www.makers3dlabs.nl/product-035-supporter-sjaal-relief.html",
+   "name": "Supporter reliëf",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/voetbal/035-supporter-sjaal-reli%C3%ABf.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_036_beker_met_doelnet",
+   "file": "product-036-beker-met-doelnet.html",
+   "url": "https://www.makers3dlabs.nl/product-036-beker-met-doelnet.html",
+   "name": "Doelnet beker",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/voetbal/036-beker-met-doelnet.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_037_voetbal_silhouet",
+   "file": "product-037-voetbal-silhouet.html",
+   "url": "https://www.makers3dlabs.nl/product-037-voetbal-silhouet.html",
+   "name": "Omhaal voetbalbeeld",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/voetbal/037-voetbal-silhouet.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_038_stadionstoelen_bureau",
+   "file": "product-038-stadionstoelen-bureau.html",
+   "url": "https://www.makers3dlabs.nl/product-038-stadionstoelen-bureau.html",
+   "name": "Tribune bureauhouder",
+   "category": "Voetbal",
+   "image": "https://www.makers3dlabs.nl/voetbal/038-stadionstoelen-bureau.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_039_bibliotheek_schildpad",
+   "file": "product-039-bibliotheek-schildpad.html",
+   "url": "https://www.makers3dlabs.nl/product-039-bibliotheek-schildpad.html",
+   "name": "Bibliotheekschildpad",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/039-bibliotheek-schildpad.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_040_theepot_slak",
+   "file": "product-040-theepot-slak.html",
+   "url": "https://www.makers3dlabs.nl/product-040-theepot-slak.html",
+   "name": "Theepotslak",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/040-theepot-slak.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_041_beek_otter",
+   "file": "product-041-beek-otter.html",
+   "url": "https://www.makers3dlabs.nl/product-041-beek-otter.html",
+   "name": "Beekotter",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/041-beek-otter.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_042_astronoom_egel",
+   "file": "product-042-astronoom-egel.html",
+   "url": "https://www.makers3dlabs.nl/product-042-astronoom-egel.html",
+   "name": "Astronoom egel",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/042-astronoom-egel.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_043_molen_geest",
+   "file": "product-043-molen-geest.html",
+   "url": "https://www.makers3dlabs.nl/product-043-molen-geest.html",
+   "name": "Molengeest",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/043-molen-geest.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_044_mos_golem",
+   "file": "product-044-mos-golem.html",
+   "url": "https://www.makers3dlabs.nl/product-044-mos-golem.html",
+   "name": "Mosgolem",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/044-mos-golem.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_045_koi_wolk",
+   "file": "product-045-koi-wolk.html",
+   "url": "https://www.makers3dlabs.nl/product-045-koi-wolk.html",
+   "name": "Koi wolkbeeld",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/045-koi-wolk.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_046_woestijn_kameleon",
+   "file": "product-046-woestijn-kameleon.html",
+   "url": "https://www.makers3dlabs.nl/product-046-woestijn-kameleon.html",
+   "name": "Woestijnkameleon",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/046-woestijn-kameleon.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_047_koffie_griffioen",
+   "file": "product-047-koffie-griffioen.html",
+   "url": "https://www.makers3dlabs.nl/product-047-koffie-griffioen.html",
+   "name": "Kleine griffioen",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/047-koffie-griffioen.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_048_bosbakker",
+   "file": "product-048-bosbakker.html",
+   "url": "https://www.makers3dlabs.nl/product-048-bosbakker.html",
+   "name": "Bosbakker",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/048-bosbakker.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_049_maanwalvis",
+   "file": "product-049-maanwalvis.html",
+   "url": "https://www.makers3dlabs.nl/product-049-maanwalvis.html",
+   "name": "Maanwalvis",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/049-maanwalvis.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_050_ravenwachter",
+   "file": "product-050-ravenwachter.html",
+   "url": "https://www.makers3dlabs.nl/product-050-ravenwachter.html",
+   "name": "Ravenwachter",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/050-ravenwachter.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_051_vulkaansalamander",
+   "file": "product-051-vulkaansalamander.html",
+   "url": "https://www.makers3dlabs.nl/product-051-vulkaansalamander.html",
+   "name": "Vulkaansalamander",
+   "category": "Resin",
+   "image": "https://www.makers3dlabs.nl/resin/051-vulkaansalamander.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_052_bureaulegger_hout",
+   "file": "product-052-bureaulegger-hout.html",
+   "url": "https://www.makers3dlabs.nl/product-052-bureaulegger-hout.html",
+   "name": "Houten bureauplaat",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/laser/052-bureaulegger-hout.webp",
+   "variants": [
+    {
+     "key": "klein-10-cm-natuurlijk-hout-met-gravure",
+     "label": "Klein – ± 10 cm · Natuurlijk hout met gravure",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "klein-10-cm-geschilderde-afwerking",
+     "label": "Klein – ± 10 cm · Geschilderde afwerking",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-natuurlijk-hout-met-gravure",
+     "label": "Middel – ± 20 cm · Natuurlijk hout met gravure",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-geschilderde-afwerking",
+     "label": "Middel – ± 20 cm · Geschilderde afwerking",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-natuurlijk-hout-met-gravure",
+     "label": "Groot – ± 30 cm · Natuurlijk hout met gravure",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-geschilderde-afwerking",
+     "label": "Groot – ± 30 cm · Geschilderde afwerking",
+     "cents": 15495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "laser"
+  },
+  {
+   "id": "m3d_product_053_bladwijzer_bergen",
+   "file": "product-053-bladwijzer-bergen.html",
+   "url": "https://www.makers3dlabs.nl/product-053-bladwijzer-bergen.html",
+   "name": "Bergen bladwijzer",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/laser/053-bladwijzer-bergen.webp",
+   "variants": [
+    {
+     "key": "klein-10-cm-natuurlijk-hout-met-gravure",
+     "label": "Klein – ± 10 cm · Natuurlijk hout met gravure",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "klein-10-cm-geschilderde-afwerking",
+     "label": "Klein – ± 10 cm · Geschilderde afwerking",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-natuurlijk-hout-met-gravure",
+     "label": "Middel – ± 20 cm · Natuurlijk hout met gravure",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-geschilderde-afwerking",
+     "label": "Middel – ± 20 cm · Geschilderde afwerking",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-natuurlijk-hout-met-gravure",
+     "label": "Groot – ± 30 cm · Natuurlijk hout met gravure",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-geschilderde-afwerking",
+     "label": "Groot – ± 30 cm · Geschilderde afwerking",
+     "cents": 15495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "laser"
+  },
+  {
+   "id": "m3d_product_054_receptenstandaard",
+   "file": "product-054-receptenstandaard.html",
+   "url": "https://www.makers3dlabs.nl/product-054-receptenstandaard.html",
+   "name": "Receptenstandaard",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/laser/054-receptenstandaard.webp",
+   "variants": [
+    {
+     "key": "klein-10-cm-natuurlijk-hout-met-gravure",
+     "label": "Klein – ± 10 cm · Natuurlijk hout met gravure",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "klein-10-cm-geschilderde-afwerking",
+     "label": "Klein – ± 10 cm · Geschilderde afwerking",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-natuurlijk-hout-met-gravure",
+     "label": "Middel – ± 20 cm · Natuurlijk hout met gravure",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-geschilderde-afwerking",
+     "label": "Middel – ± 20 cm · Geschilderde afwerking",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-natuurlijk-hout-met-gravure",
+     "label": "Groot – ± 30 cm · Natuurlijk hout met gravure",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-geschilderde-afwerking",
+     "label": "Groot – ± 30 cm · Geschilderde afwerking",
+     "cents": 15495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "laser"
+  },
+  {
+   "id": "m3d_product_055_sterrenbeeld_paneel",
+   "file": "product-055-sterrenbeeld-paneel.html",
+   "url": "https://www.makers3dlabs.nl/product-055-sterrenbeeld-paneel.html",
+   "name": "Sterrenbeeld paneel",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/laser/055-sterrenbeeld-paneel.webp",
+   "variants": [
+    {
+     "key": "klein-10-cm-natuurlijk-hout-met-gravure",
+     "label": "Klein – ± 10 cm · Natuurlijk hout met gravure",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "klein-10-cm-geschilderde-afwerking",
+     "label": "Klein – ± 10 cm · Geschilderde afwerking",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-natuurlijk-hout-met-gravure",
+     "label": "Middel – ± 20 cm · Natuurlijk hout met gravure",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-geschilderde-afwerking",
+     "label": "Middel – ± 20 cm · Geschilderde afwerking",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-natuurlijk-hout-met-gravure",
+     "label": "Groot – ± 30 cm · Natuurlijk hout met gravure",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-geschilderde-afwerking",
+     "label": "Groot – ± 30 cm · Geschilderde afwerking",
+     "cents": 15495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "laser"
+  },
+  {
+   "id": "m3d_product_056_deurhanger_stilte",
+   "file": "product-056-deurhanger-stilte.html",
+   "url": "https://www.makers3dlabs.nl/product-056-deurhanger-stilte.html",
+   "name": "Stilte deurhanger",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/laser/056-deurhanger-stilte.webp",
+   "variants": [
+    {
+     "key": "klein-10-cm-natuurlijk-hout-met-gravure",
+     "label": "Klein – ± 10 cm · Natuurlijk hout met gravure",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "klein-10-cm-geschilderde-afwerking",
+     "label": "Klein – ± 10 cm · Geschilderde afwerking",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-natuurlijk-hout-met-gravure",
+     "label": "Middel – ± 20 cm · Natuurlijk hout met gravure",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-geschilderde-afwerking",
+     "label": "Middel – ± 20 cm · Geschilderde afwerking",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-natuurlijk-hout-met-gravure",
+     "label": "Groot – ± 30 cm · Natuurlijk hout met gravure",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-geschilderde-afwerking",
+     "label": "Groot – ± 30 cm · Geschilderde afwerking",
+     "cents": 15495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "laser"
+  },
+  {
+   "id": "m3d_product_057_familieboom_relief",
+   "file": "product-057-familieboom-relief.html",
+   "url": "https://www.makers3dlabs.nl/product-057-familieboom-relief.html",
+   "name": "Familieboom paneel",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/laser/057-familieboom-reli%C3%ABf.webp",
+   "variants": [
+    {
+     "key": "klein-10-cm-natuurlijk-hout-met-gravure",
+     "label": "Klein – ± 10 cm · Natuurlijk hout met gravure",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "klein-10-cm-geschilderde-afwerking",
+     "label": "Klein – ± 10 cm · Geschilderde afwerking",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-natuurlijk-hout-met-gravure",
+     "label": "Middel – ± 20 cm · Natuurlijk hout met gravure",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-geschilderde-afwerking",
+     "label": "Middel – ± 20 cm · Geschilderde afwerking",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-natuurlijk-hout-met-gravure",
+     "label": "Groot – ± 30 cm · Natuurlijk hout met gravure",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-geschilderde-afwerking",
+     "label": "Groot – ± 30 cm · Geschilderde afwerking",
+     "cents": 15495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "laser"
+  },
+  {
+   "id": "m3d_product_058_meetlat_kinderkamer",
+   "file": "product-058-meetlat-kinderkamer.html",
+   "url": "https://www.makers3dlabs.nl/product-058-meetlat-kinderkamer.html",
+   "name": "Kinderkamer meetlat",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/laser/058-meetlat-kinderkamer.webp",
+   "variants": [
+    {
+     "key": "klein-10-cm-natuurlijk-hout-met-gravure",
+     "label": "Klein – ± 10 cm · Natuurlijk hout met gravure",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "klein-10-cm-geschilderde-afwerking",
+     "label": "Klein – ± 10 cm · Geschilderde afwerking",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-natuurlijk-hout-met-gravure",
+     "label": "Middel – ± 20 cm · Natuurlijk hout met gravure",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-geschilderde-afwerking",
+     "label": "Middel – ± 20 cm · Geschilderde afwerking",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-natuurlijk-hout-met-gravure",
+     "label": "Groot – ± 30 cm · Natuurlijk hout met gravure",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-geschilderde-afwerking",
+     "label": "Groot – ± 30 cm · Geschilderde afwerking",
+     "cents": 15495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "laser"
+  },
+  {
+   "id": "m3d_product_059_puzzel_dieren",
+   "file": "product-059-puzzel-dieren.html",
+   "url": "https://www.makers3dlabs.nl/product-059-puzzel-dieren.html",
+   "name": "Dieren legpuzzel",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/laser/059-puzzel-dieren.webp",
+   "variants": [
+    {
+     "key": "klein-10-cm-natuurlijk-hout-met-gravure",
+     "label": "Klein – ± 10 cm · Natuurlijk hout met gravure",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "klein-10-cm-geschilderde-afwerking",
+     "label": "Klein – ± 10 cm · Geschilderde afwerking",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-natuurlijk-hout-met-gravure",
+     "label": "Middel – ± 20 cm · Natuurlijk hout met gravure",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-geschilderde-afwerking",
+     "label": "Middel – ± 20 cm · Geschilderde afwerking",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-natuurlijk-hout-met-gravure",
+     "label": "Groot – ± 30 cm · Natuurlijk hout met gravure",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-geschilderde-afwerking",
+     "label": "Groot – ± 30 cm · Geschilderde afwerking",
+     "cents": 15495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "laser"
+  },
+  {
+   "id": "m3d_product_060_sieraadbakje_geometrie",
+   "file": "product-060-sieraadbakje-geometrie.html",
+   "url": "https://www.makers3dlabs.nl/product-060-sieraadbakje-geometrie.html",
+   "name": "Geometrisch houten bakje",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/laser/060-sieraadbakje-geometrie.webp",
+   "variants": [
+    {
+     "key": "klein-10-cm-natuurlijk-hout-met-gravure",
+     "label": "Klein – ± 10 cm · Natuurlijk hout met gravure",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "klein-10-cm-geschilderde-afwerking",
+     "label": "Klein – ± 10 cm · Geschilderde afwerking",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-natuurlijk-hout-met-gravure",
+     "label": "Middel – ± 20 cm · Natuurlijk hout met gravure",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-geschilderde-afwerking",
+     "label": "Middel – ± 20 cm · Geschilderde afwerking",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-natuurlijk-hout-met-gravure",
+     "label": "Groot – ± 30 cm · Natuurlijk hout met gravure",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-geschilderde-afwerking",
+     "label": "Groot – ± 30 cm · Geschilderde afwerking",
+     "cents": 15495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "laser"
+  },
+  {
+   "id": "m3d_product_061_bureaukalender_blokken",
+   "file": "product-061-bureaukalender-blokken.html",
+   "url": "https://www.makers3dlabs.nl/product-061-bureaukalender-blokken.html",
+   "name": "Houten bureaukalender",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/laser/061-bureaukalender-blokken.webp",
+   "variants": [
+    {
+     "key": "klein-10-cm-natuurlijk-hout-met-gravure",
+     "label": "Klein – ± 10 cm · Natuurlijk hout met gravure",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "klein-10-cm-geschilderde-afwerking",
+     "label": "Klein – ± 10 cm · Geschilderde afwerking",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-natuurlijk-hout-met-gravure",
+     "label": "Middel – ± 20 cm · Natuurlijk hout met gravure",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-geschilderde-afwerking",
+     "label": "Middel – ± 20 cm · Geschilderde afwerking",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-natuurlijk-hout-met-gravure",
+     "label": "Groot – ± 30 cm · Natuurlijk hout met gravure",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-geschilderde-afwerking",
+     "label": "Groot – ± 30 cm · Geschilderde afwerking",
+     "cents": 15495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "laser"
+  },
+  {
+   "id": "m3d_product_062_mandala_bureaubeeld",
+   "file": "product-062-mandala-bureaubeeld.html",
+   "url": "https://www.makers3dlabs.nl/product-062-mandala-bureaubeeld.html",
+   "name": "Mandala bureaubeeld",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/laser/062-mandala-bureaubeeld.webp",
+   "variants": [
+    {
+     "key": "klein-10-cm-natuurlijk-hout-met-gravure",
+     "label": "Klein – ± 10 cm · Natuurlijk hout met gravure",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "klein-10-cm-geschilderde-afwerking",
+     "label": "Klein – ± 10 cm · Geschilderde afwerking",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-natuurlijk-hout-met-gravure",
+     "label": "Middel – ± 20 cm · Natuurlijk hout met gravure",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-geschilderde-afwerking",
+     "label": "Middel – ± 20 cm · Geschilderde afwerking",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-natuurlijk-hout-met-gravure",
+     "label": "Groot – ± 30 cm · Natuurlijk hout met gravure",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-geschilderde-afwerking",
+     "label": "Groot – ± 30 cm · Geschilderde afwerking",
+     "cents": 15495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "laser"
+  },
+  {
+   "id": "m3d_product_063_dierenportret_plaat",
+   "file": "product-063-dierenportret-plaat.html",
+   "url": "https://www.makers3dlabs.nl/product-063-dierenportret-plaat.html",
+   "name": "Dierenportret plaat",
+   "category": "Lasergravure",
+   "image": "https://www.makers3dlabs.nl/laser/063-dierenportret-plaat.webp",
+   "variants": [
+    {
+     "key": "klein-10-cm-natuurlijk-hout-met-gravure",
+     "label": "Klein – ± 10 cm · Natuurlijk hout met gravure",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "klein-10-cm-geschilderde-afwerking",
+     "label": "Klein – ± 10 cm · Geschilderde afwerking",
+     "cents": 9995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-natuurlijk-hout-met-gravure",
+     "label": "Middel – ± 20 cm · Natuurlijk hout met gravure",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm-geschilderde-afwerking",
+     "label": "Middel – ± 20 cm · Geschilderde afwerking",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-natuurlijk-hout-met-gravure",
+     "label": "Groot – ± 30 cm · Natuurlijk hout met gravure",
+     "cents": 9495,
+     "firm": true
+    },
+    {
+     "key": "groot-30-cm-geschilderde-afwerking",
+     "label": "Groot – ± 30 cm · Geschilderde afwerking",
+     "cents": 15495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "laser"
+  },
+  {
+   "id": "m3d_product_064_accordeonvaas",
+   "file": "product-064-accordeonvaas.html",
+   "url": "https://www.makers3dlabs.nl/product-064-accordeonvaas.html",
+   "name": "Accordeonvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/064-accordeonvaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_065_kiezelvaas",
+   "file": "product-065-kiezelvaas.html",
+   "url": "https://www.makers3dlabs.nl/product-065-kiezelvaas.html",
+   "name": "Kiezelvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/065-kiezelvaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_066_vouwvaas",
+   "file": "product-066-vouwvaas.html",
+   "url": "https://www.makers3dlabs.nl/product-066-vouwvaas.html",
+   "name": "Vouwvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/066-vouwvaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_067_schelpvaas",
+   "file": "product-067-schelpvaas.html",
+   "url": "https://www.makers3dlabs.nl/product-067-schelpvaas.html",
+   "name": "Schelpvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/067-schelpvaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_068_koraalvaas",
+   "file": "product-068-koraalvaas.html",
+   "url": "https://www.makers3dlabs.nl/product-068-koraalvaas.html",
+   "name": "Koraalvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/068-koraalvaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_069_boogvaas",
+   "file": "product-069-boogvaas.html",
+   "url": "https://www.makers3dlabs.nl/product-069-boogvaas.html",
+   "name": "Boogvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/069-boogvaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_070_maanvaas",
+   "file": "product-070-maanvaas.html",
+   "url": "https://www.makers3dlabs.nl/product-070-maanvaas.html",
+   "name": "Maanvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/070-maanvaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_071_schaakvaas",
+   "file": "product-071-schaakvaas.html",
+   "url": "https://www.makers3dlabs.nl/product-071-schaakvaas.html",
+   "name": "Schaakvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/071-schaakvaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_072_vlechtvaas",
+   "file": "product-072-vlechtvaas.html",
+   "url": "https://www.makers3dlabs.nl/product-072-vlechtvaas.html",
+   "name": "Vlechtvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/072-vlechtvaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_073_duinvaas",
+   "file": "product-073-duinvaas.html",
+   "url": "https://www.makers3dlabs.nl/product-073-duinvaas.html",
+   "name": "Duinvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/073-duinvaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_074_origami_vaas",
+   "file": "product-074-origami-vaas.html",
+   "url": "https://www.makers3dlabs.nl/product-074-origami-vaas.html",
+   "name": "Origami vaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/074-origami-vaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_075_wolkenvaas",
+   "file": "product-075-wolkenvaas.html",
+   "url": "https://www.makers3dlabs.nl/product-075-wolkenvaas.html",
+   "name": "Wolkenvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/075-wolkenvaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_076_golfring_vaas",
+   "file": "product-076-golfring-vaas.html",
+   "url": "https://www.makers3dlabs.nl/product-076-golfring-vaas.html",
+   "name": "Golfring vaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/bloemenvazen/076-golfring-vaas.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_077_initialen_boekensteun",
+   "file": "product-077-initialen-boekensteun.html",
+   "url": "https://www.makers3dlabs.nl/product-077-initialen-boekensteun.html",
+   "name": "Initialen boekensteun",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/077-initialen-boekensteun.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_078_naam_pennenbak",
+   "file": "product-078-naam-pennenbak.html",
+   "url": "https://www.makers3dlabs.nl/product-078-naam-pennenbak.html",
+   "name": "Naam pennenbak",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/078-naam-pennenbak.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_079_geboortebloem_relief",
+   "file": "product-079-geboortebloem-relief.html",
+   "url": "https://www.makers3dlabs.nl/product-079-geboortebloem-relief.html",
+   "name": "Geboortebloem reliëf",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/079-geboortebloem-reli%C3%ABf.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_080_dierennaam_bakje",
+   "file": "product-080-dierennaam-bakje.html",
+   "url": "https://www.makers3dlabs.nl/product-080-dierennaam-bakje.html",
+   "name": "Dierennaam bakje",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/080-dierennaam-bakje.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_081_coordinaten_bureauplaat",
+   "file": "product-081-coordinaten-bureauplaat.html",
+   "url": "https://www.makers3dlabs.nl/product-081-coordinaten-bureauplaat.html",
+   "name": "Coordinaten bureauplaat",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/081-coordinaten-bureauplaat.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_082_jubileum_beeld",
+   "file": "product-082-jubileum-beeld.html",
+   "url": "https://www.makers3dlabs.nl/product-082-jubileum-beeld.html",
+   "name": "Jubileum beeld",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/082-jubileum-beeld.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_083_boekenlegger_initialen",
+   "file": "product-083-boekenlegger-initialen.html",
+   "url": "https://www.makers3dlabs.nl/product-083-boekenlegger-initialen.html",
+   "name": "Initialen boekenlegger",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/083-boekenlegger-initialen.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_084_harten_naambeeld",
+   "file": "product-084-harten-naambeeld.html",
+   "url": "https://www.makers3dlabs.nl/product-084-harten-naambeeld.html",
+   "name": "Harten naambeeld",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/084-harten-naambeeld.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_085_sterren_naamplaat",
+   "file": "product-085-sterren-naamplaat.html",
+   "url": "https://www.makers3dlabs.nl/product-085-sterren-naamplaat.html",
+   "name": "Sterren naamplaat",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/085-sterren-naamplaat.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_086_herinneringsberg",
+   "file": "product-086-herinneringsberg.html",
+   "url": "https://www.makers3dlabs.nl/product-086-herinneringsberg.html",
+   "name": "Herinneringsberg",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/086-herinneringsberg.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_087_hondenportret_beeld",
+   "file": "product-087-hondenportret-beeld.html",
+   "url": "https://www.makers3dlabs.nl/product-087-hondenportret-beeld.html",
+   "name": "Hondenportret beeld",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/087-hondenportret-beeld.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_088_vingerafdruk_relief",
+   "file": "product-088-vingerafdruk-relief.html",
+   "url": "https://www.makers3dlabs.nl/product-088-vingerafdruk-relief.html",
+   "name": "Vingerafdruk relief",
+   "category": "Persoonlijk",
+   "image": "https://www.makers3dlabs.nl/persoonlijk/088-vingerafdruk-reli%C3%ABf.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_089_masker_bladwachter",
+   "file": "product-089-masker-bladwachter.html",
+   "url": "https://www.makers3dlabs.nl/product-089-masker-bladwachter.html",
+   "name": "Bladwachter masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/089-masker-bladwachter.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_090_masker_zonnepriester",
+   "file": "product-090-masker-zonnepriester.html",
+   "url": "https://www.makers3dlabs.nl/product-090-masker-zonnepriester.html",
+   "name": "Zonnepriester masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/090-masker-zonnepriester.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_091_masker_boskat",
+   "file": "product-091-masker-boskat.html",
+   "url": "https://www.makers3dlabs.nl/product-091-masker-boskat.html",
+   "name": "Boskat masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/091-masker-boskat.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_092_masker_zeewachter",
+   "file": "product-092-masker-zeewachter.html",
+   "url": "https://www.makers3dlabs.nl/product-092-masker-zeewachter.html",
+   "name": "Zeewachter masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/092-masker-zeewachter.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_093_masker_kristalwachter",
+   "file": "product-093-masker-kristalwachter.html",
+   "url": "https://www.makers3dlabs.nl/product-093-masker-kristalwachter.html",
+   "name": "Kristalwachter masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/093-masker-kristalwachter.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_094_masker_woestijnwachter",
+   "file": "product-094-masker-woestijnwachter.html",
+   "url": "https://www.makers3dlabs.nl/product-094-masker-woestijnwachter.html",
+   "name": "Woestijnwachter masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/094-masker-woestijnwachter.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_095_masker_uilenblik",
+   "file": "product-095-masker-uilenblik.html",
+   "url": "https://www.makers3dlabs.nl/product-095-masker-uilenblik.html",
+   "name": "Uilenblik masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/095-masker-uilenblik.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_096_masker_ijswacht",
+   "file": "product-096-masker-ijswacht.html",
+   "url": "https://www.makers3dlabs.nl/product-096-masker-ijswacht.html",
+   "name": "IJswacht masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/096-masker-ijswacht.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_097_masker_rozentuin",
+   "file": "product-097-masker-rozentuin.html",
+   "url": "https://www.makers3dlabs.nl/product-097-masker-rozentuin.html",
+   "name": "Rozentuin masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/097-masker-rozentuin.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_098_masker_draakschub",
+   "file": "product-098-masker-draakschub.html",
+   "url": "https://www.makers3dlabs.nl/product-098-masker-draakschub.html",
+   "name": "Draakschub masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/098-masker-draakschub.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_099_masker_labyrint",
+   "file": "product-099-masker-labyrint.html",
+   "url": "https://www.makers3dlabs.nl/product-099-masker-labyrint.html",
+   "name": "Labyrint masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/099-masker-labyrint.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
+  },
+  {
+   "id": "m3d_product_100_masker_maanwachter",
+   "file": "product-100-masker-maanwachter.html",
+   "url": "https://www.makers3dlabs.nl/product-100-masker-maanwachter.html",
+   "name": "Maanwachter masker",
+   "category": "Maskers",
+   "image": "https://www.makers3dlabs.nl/maskers/100-masker-maanwachter.webp",
+   "variants": [
+    {
+     "key": "klein-10-12-cm-wit-onbeschilderd",
+     "label": "Klein – ± 10–12 cm · Wit / onbeschilderd",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-een-gewenste-kleur",
+     "label": "Klein – ± 10–12 cm · Eén gewenste kleur",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "klein-10-12-cm-volledig-handgeschilderd",
+     "label": "Klein – ± 10–12 cm · Volledig handgeschilderd",
+     "cents": 11995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-wit-onbeschilderd",
+     "label": "Middel – ± 15–20 cm · Wit / onbeschilderd",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-een-gewenste-kleur",
+     "label": "Middel – ± 15–20 cm · Eén gewenste kleur",
+     "cents": 12995,
+     "firm": true
+    },
+    {
+     "key": "middel-15-20-cm-volledig-handgeschilderd",
+     "label": "Middel – ± 15–20 cm · Volledig handgeschilderd",
+     "cents": 23995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-wit-onbeschilderd",
+     "label": "Groot – ± 25–30 cm · Wit / onbeschilderd",
+     "cents": 13495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-een-gewenste-kleur",
+     "label": "Groot – ± 25–30 cm · Eén gewenste kleur",
+     "cents": 22495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-30-cm-volledig-handgeschilderd",
+     "label": "Groot – ± 25–30 cm · Volledig handgeschilderd",
+     "cents": 41495,
+     "firm": true
+    }
+   ],
+   "addons": [],
+   "pricing": "print"
   },
   {
    "id": "m3d_resin_bergreusje",

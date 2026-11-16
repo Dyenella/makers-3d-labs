@@ -55,7 +55,9 @@ Deno.serve(async (req) => {
   } else if (n.kind === "invoice") {
     subject = `Je factuur ${rec.number} staat klaar | Makers 3D Labs`;
     title = "Je factuur staat klaar";
-    paras = ["Je factuur staat voor je klaar in je klantomgeving. Je kunt hem daar als PDF downloaden."];
+    paras = rec.status === "paid"
+      ? ["Bedankt voor je betaling! Je factuur staat voor je klaar in je klantomgeving. Je kunt hem daar als PDF downloaden. Deze factuur is al voldaan."]
+      : ["Je factuur staat voor je klaar in je klantomgeving. Je kunt hem daar als PDF downloaden."];
     rows = [["Factuur", rec.number], ["Omschrijving", rec.title], ["Bedrag", money(rec.total_cents) + " incl. btw"]];
     if (rec.order_number) rows.push(["Bestelling", rec.order_number]);
     button = ["Bekijk mijn factuur", SITE + "/facturen.html"];

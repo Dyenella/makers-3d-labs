@@ -1,6 +1,7 @@
 // Makers 3D Labs — verwerkt betalingen uit Stripe.
 // Echtheid: het event wordt opnieuw bij Stripe opgehaald met de eigen sleutel.
 import { createClient } from "npm:@supabase/supabase-js@2";
+import { PDFDocument, StandardFonts, rgb } from "npm:pdf-lib@1.17.1";
 
 const KEY = Deno.env.get("STRIPE_SECRET_KEY")!;
 const SITE = "https://www.makers3dlabs.nl";
@@ -27,6 +28,138 @@ function staffHtml(title: string, rows: [string, string][]) {
 <tr><td style="padding:24px 28px;"><h1 style="margin:0 0 12px;font-size:21px;color:#102027;">${esc(title)}</h1>
 <table role="presentation" width="100%" style="border-collapse:collapse;font-size:14px;">${t}</table>
 <p style="font-size:13px;color:#64747a;margin-top:16px;">Bekijk en beheer de bestelling op <a href="${SITE}/beheer.html">${SITE}/beheer.html</a>. Klik op Beantwoorden om de klant te mailen.</p></td></tr></table></td></tr></table></body></html>`;
+}
+
+
+// ---------- Factuur (PDF) ----------
+type Line = { description: string; detail?: string; quantity: number; totalCents: number };
+const VAT = 0.21;
+const exVat = (c: number) => Math.round(c / (1 + VAT));
+const fmtDate = (d: Date) => new Intl.DateTimeFormat("nl-NL", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Amsterdam" }).format(d);
+
+async function invoicePdf(o: {
+  number: string; date: Date; settings: Record<string, string>; customer: { name: string; email: string; address: string };
+  lines: Line[]; totalCents: number; method: string; reference: string; orderNumber: string;
+}) {
+  const S = o.settings;
+  const pdf = await PDFDocument.create();
+  pdf.setTitle(`Factuur ${o.number}`); pdf.setAuthor(S.handelsnaam || "Makers 3D Labs");
+  const page = pdf.addPage([595.28, 841.89]);
+  const font = await pdf.embedFont(StandardFonts.Helvetica);
+  const bold = await pdf.embedFont(StandardFonts.HelveticaBold);
+  const safe = (t: unknown) => [...String(t ?? "")].map((ch) => { try { font.encodeText(ch); return ch; } catch { return ch === "\n" ? " " : ""; } }).join("");
+  const ink = rgb(0.06, 0.13, 0.15), grey = rgb(0.39, 0.45, 0.48), teal = rgb(0, 0.706, 0.741), dark = rgb(0.118, 0.161, 0.224), line = rgb(0.86, 0.9, 0.89);
+  const text = (t: unknown, x: number, y: number, size = 10, f = font, color = ink) => page.drawText(safe(t), { x, y, size, font: f, color });
+  const right = (t: unknown, xr: number, y: number, size = 10, f = font, color = ink) => { const s = safe(t); page.drawText(s, { x: xr - f.widthOfTextAtSize(s, size), y, size, font: f, color }); };
+  const wrap = (t: string, width: number, size: number, f = font) => {
+    const out: string[] = []; let cur = "";
+    for (const w of safe(t).split(/\s+/)) { const nxt = cur ? cur + " " + w : w; if (f.widthOfTextAtSize(nxt, size) > width && cur) { out.push(cur); cur = w; } else cur = nxt; }
+    if (cur) out.push(cur); return out;
+  };
+  const W = 595.28, L = 48, R = W - 48;
+
+  // Kop met logo
+  page.drawRectangle({ x: 0, y: 841.89 - 110, width: W, height: 110, color: dark });
+  page.drawRectangle({ x: 0, y: 841.89 - 114, width: W, height: 4, color: teal });
+  try {
+    const png = await fetch(SITE + "/email/logo.png").then((r) => r.ok ? r.arrayBuffer() : Promise.reject());
+    const img = await pdf.embedPng(png); const h = 72, w = img.width * h / img.height;
+    page.drawImage(img, { x: L - 10, y: 841.89 - 92, width: w, height: h });
+  } catch { text(S.handelsnaam || "Makers 3D Labs", L, 841.89 - 64, 22, bold, rgb(1, 1, 1)); }
+  right("FACTUUR", R, 841.89 - 52, 22, bold, rgb(1, 1, 1));
+  right(o.number, R, 841.89 - 72, 11, font, rgb(0.85, 0.95, 0.96));
+
+  // Afzender en klant
+  let y = 841.89 - 150;
+  text("Van", L, y, 9, bold, grey); text("Factuur aan", 320, y, 9, bold, grey);
+  y -= 15;
+  const seller = [S.handelsnaam ? `${S.handelsnaam} (${S.bedrijfsnaam})` : S.bedrijfsnaam, S.adres, S.postcode_plaats, S.land,
+    `KvK ${S.kvk}`, `Btw-id ${S.btw_id || "aangevraagd"}`, S.email, S.website, S.iban ? `IBAN ${S.iban}` : ""].filter(Boolean);
+  const addrLines = o.customer.address.split("\n").filter((v) => v && v !== o.customer.name);
+  const buyer = [o.customer.name, ...addrLines, o.customer.email].filter(Boolean);
+  for (let i = 0; i < Math.max(seller.length, buyer.length); i++) {
+    if (seller[i]) text(seller[i], L, y - i * 13, 9.5, i === 0 ? bold : font);
+    if (buyer[i]) text(buyer[i], 320, y - i * 13, 9.5, i === 0 ? bold : font);
+  }
+  y -= Math.max(seller.length, buyer.length) * 13 + 14;
+
+  // Factuurgegevens
+  page.drawRectangle({ x: L, y: y - 46, width: R - L, height: 52, color: rgb(0.93, 0.97, 0.97) });
+  const meta: [string, string][] = [["Factuurnummer", o.number], ["Factuurdatum", fmtDate(o.date)], ["Bestelling", o.orderNumber || "-"], ["Status", "Betaald"]];
+  meta.forEach(([k, v], i) => { const x = L + 12 + i * ((R - L - 24) / 4); text(k, x, y - 12, 8.5, font, grey); text(v, x, y - 28, 10, bold, i === 3 ? rgb(0.1, 0.55, 0.3) : ink); });
+  y -= 76;
+
+  // Regels
+  const cQty = 330, cPrice = 410, cVat = 455, cTot = R;
+  text("Omschrijving", L, y, 9, bold, grey); right("Aantal", cQty + 20, y, 9, bold, grey); right("Prijs excl.", cPrice + 30, y, 9, bold, grey);
+  right("Btw", cVat + 25, y, 9, bold, grey); right("Totaal excl.", cTot, y, 9, bold, grey);
+  y -= 8; page.drawLine({ start: { x: L, y }, end: { x: R, y }, thickness: 1, color: ink }); y -= 16;
+  let subtotal = 0;
+  for (const ln of o.lines) {
+    const ex = exVat(ln.totalCents); subtotal += ex;
+    const desc = wrap(ln.description, cQty - L - 40, 10, bold);
+    const det = ln.detail ? wrap(ln.detail, cQty - L - 40, 8.5) : [];
+    desc.forEach((d, i) => text(d, L, y - i * 13, 10, bold));
+    det.forEach((d, i) => text(d, L, y - desc.length * 13 - i * 11, 8.5, font, grey));
+    right(String(ln.quantity), cQty + 20, y); right(money(Math.round(ex / Math.max(1, ln.quantity))), cPrice + 30, y);
+    right("21%", cVat + 25, y); right(money(ex), cTot, y);
+    y -= desc.length * 13 + det.length * 11 + 8;
+    page.drawLine({ start: { x: L, y: y + 2 }, end: { x: R, y: y + 2 }, thickness: 0.5, color: line }); y -= 12;
+    if (y < 230) break; // veiligheidsgrens voor één pagina
+  }
+
+  // Totalen
+  const vat = o.totalCents - subtotal;
+  y -= 6;
+  const tot: [string, string, boolean][] = [["Subtotaal excl. btw", money(subtotal), false], ["Btw 21%", money(vat), false], ["Totaal incl. btw", money(o.totalCents), true]];
+  for (const [k, v, b] of tot) {
+    if (b) { page.drawRectangle({ x: 330, y: y - 8, width: R - 330, height: 26, color: dark }); text(k, 342, y, 11, bold, rgb(1, 1, 1)); right(v, R - 12, y, 12, bold, rgb(1, 1, 1)); }
+    else { text(k, 342, y, 10, font, grey); right(v, R - 12, y, 10); }
+    y -= b ? 34 : (k.startsWith("Btw") ? 26 : 18);
+  }
+  page.drawRectangle({ x: L, y: y - 30, width: R - L, height: 40, color: rgb(0.91, 0.97, 0.93) });
+  text(`Voldaan op ${fmtDate(o.date)} via ${o.method}.`, L + 12, y - 8, 10, bold, rgb(0.1, 0.45, 0.25));
+  text(`Betalingskenmerk: ${o.reference}`, L + 12, y - 22, 8.5, font, grey);
+
+  // Voet
+  const foot = [`${S.handelsnaam || ""} is een handelsnaam van ${S.bedrijfsnaam} · ${S.adres}, ${S.postcode_plaats} · KvK ${S.kvk} · Btw-id ${S.btw_id || "aangevraagd"}`,
+    `Vragen over deze factuur? Mail ${S.email} en vermeld het factuurnummer. Op alle bestellingen zijn onze voorwaarden van toepassing (${S.website}/informatie.html).`];
+  page.drawLine({ start: { x: L, y: 62 }, end: { x: R, y: 62 }, thickness: 0.5, color: line });
+  foot.forEach((t, i) => wrap(t, R - L, 7.5).forEach((ln, j) => text(ln, L, 48 - i * 20 - j * 9, 7.5, font, grey)));
+  return await pdf.save();
+}
+
+async function createInvoice(admin: any, session: any, o: { userId: string | null; reqId: string; name: string; email: string; address: string; lines: Line[]; orderNumber: string; title: string }) {
+  const { data: rows } = await admin.from("makers_settings").select("key,value");
+  const settings: Record<string, string> = Object.fromEntries((rows || []).map((r: any) => [r.key, r.value]));
+  const { data: number, error } = await admin.rpc("makers_next_invoice_number");
+  if (error || !number) throw new Error("Geen factuurnummer: " + (error?.message || ""));
+  await admin.from("checkout_requests").update({ invoice_number: number }).eq("id", o.reqId);
+  let method = "online betaling (Stripe)";
+  if (session.payment_intent) {
+    const pi = await stripeGet(`payment_intents/${session.payment_intent}?expand[]=latest_charge`);
+    const t = pi.body?.latest_charge?.payment_method_details?.type || (pi.body?.payment_method_types?.length === 1 ? pi.body.payment_method_types[0] : "");
+    method = ({ ideal: "iDEAL", bancontact: "Bancontact", card: "creditcard", paypal: "PayPal", klarna: "Klarna", sofort: "Sofort", eps: "EPS" } as Record<string, string>)[t] || method;
+  }
+  const bytes = await invoicePdf({ number, date: new Date(), settings,
+    customer: { name: o.name || o.email, email: o.email, address: o.address }, lines: o.lines, totalCents: session.amount_total, method,
+    reference: session.payment_intent || session.id, orderNumber: o.orderNumber });
+  if (o.userId) {
+    const path = `${o.userId}/${number}.pdf`;
+    const up = await admin.storage.from("customer-documents").upload(path, new Blob([bytes], { type: "application/pdf" }), { contentType: "application/pdf", upsert: true });
+    if (!up.error) await admin.from("customer_invoices").insert({ user_id: o.userId, number, title: o.title.slice(0, 200), status: "paid", total_cents: session.amount_total, file_path: path, order_number: o.orderNumber || null });
+  }
+  return { number, bytes };
+}
+
+async function sessionLines(session: any, fallbackName: string, detail: string): Promise<Line[]> {
+  const out: Line[] = [];
+  const li = await stripeGet(`checkout/sessions/${session.id}/line_items?limit=100`);
+  if (li.status === 200) for (const it of li.body.data || []) out.push({ description: it.description || fallbackName, detail, quantity: it.quantity || 1, totalCents: it.amount_total });
+  const shipping = session.shipping_cost?.amount_total || session.total_details?.amount_shipping || 0;
+  if (!out.length) out.push({ description: fallbackName, detail, quantity: 1, totalCents: session.amount_total - shipping });
+  if (shipping > 0) out.push({ description: "Verzendkosten", quantity: 1, totalCents: shipping });
+  return out;
 }
 
 Deno.serve(async (req) => {
@@ -69,10 +202,19 @@ Deno.serve(async (req) => {
       }).select("id").maybeSingle();
       if (order) await admin.from("checkout_requests").update({ order_id: order.id }).eq("id", reqId);
     }
+    // Bij een betaalde offerte maken we de factuur; een betaalde factuur bestaat al.
+    const docAtt: { filename: string; content: string }[] = [];
+    if (cr.kind === "quote" && doc) {
+      try {
+        const inv = await createInvoice(admin, session, { userId: doc.user_id, reqId, name, email, address: addr, orderNumber: doc.number, title: doc.title,
+          lines: await sessionLines(session, doc.title, "Volgens offerte " + doc.number) });
+        docAtt.push({ filename: inv.number + ".pdf", content: b64(inv.bytes.buffer as ArrayBuffer) });
+      } catch (err) { console.error("factuur", err); }
+    }
     await fetch("https://api.resend.com/emails", {
       method: "POST", headers: { Authorization: "Bearer " + Deno.env.get("RESEND_API_KEY"), "Content-Type": "application/json" },
       body: JSON.stringify({ from: FROM, to: [TO], reply_to: email || TO, subject: `Betaald: ${cr.kind === "invoice" ? "factuur" : "offerte"} ${doc?.number || ""} (${money(session.amount_total)})`,
-        html: staffHtml(`${cr.kind === "invoice" ? "Factuur" : "Offerte"} ${doc?.number || ""} is betaald`, [["Klant", `${name} <${email}>`], ["Omschrijving", doc?.title || ""], ["Bedrag", money(session.amount_total)]]) }),
+        html: staffHtml(`${cr.kind === "invoice" ? "Factuur" : "Offerte"} ${doc?.number || ""} is betaald`, [["Klant", `${name} <${email}>`], ["Omschrijving", doc?.title || ""], ["Bedrag", money(session.amount_total)]]), attachments: docAtt }),
     });
     return new Response("document paid");
   }
@@ -102,14 +244,23 @@ Deno.serve(async (req) => {
     await admin.from("checkout_requests").update({ user_id: userId, order_id: orderId }).eq("id", reqId);
   }
 
-  // Mail aan Makers 3D Labs met alle details en foto's.
+  // Factuur maken (PDF in de klantomgeving + bijlage voor Makers).
   const attachments: { filename: string; content: string }[] = [];
+  let invoiceNumber = "";
+  try {
+    const inv = await createInvoice(admin, session, { userId, reqId, name, email, address: addr, orderNumber: number, title: p.product?.name || "Bestelling",
+      lines: await sessionLines(session, p.product?.name || "Bestelling", options) });
+    invoiceNumber = inv.number;
+    attachments.push({ filename: inv.number + ".pdf", content: b64(inv.bytes.buffer as ArrayBuffer) });
+  } catch (err) { console.error("factuur", err); }
+
+  // Mail aan Makers 3D Labs met alle details en foto's.
   for (const path of cr.uploads || []) {
     const { data: blob } = await admin.storage.from("order-uploads").download(path);
     if (blob) attachments.push({ filename: path.split("/").pop()!, content: b64(await blob.arrayBuffer()) });
   }
   const rows: [string, string][] = [
-    ["Bestelnummer", number], ["Product", p.product?.name || ""], ["Uitvoering", options], ["Aantal", String(p.qty || 1)],
+    ["Bestelnummer", number], ["Factuur", invoiceNumber || "niet aangemaakt — controleer"], ["Product", p.product?.name || ""], ["Uitvoering", options], ["Aantal", String(p.qty || 1)],
     ["Betaald (incl. verzending)", money(session.amount_total)], ["Levering", p.delivery === "pickup" ? "Ophalen in Ridderkerk" : "Verzenden"],
     ["Klant", `${name} <${email}>`], ["Telefoon", phone], ["Adres", addr], ["Productpagina", p.product?.url || ""],
     ...((p.details || []) as [string, string][]).map(([k, v]) => [k, v] as [string, string]),
