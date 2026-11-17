@@ -1,3 +1,4 @@
+import os
 """Leest alle producten met vaste prijzen uit de site en schrijft assets/catalogus.json.
 
 Gebruik: python3 maak-catalogus.py
@@ -169,6 +170,10 @@ for f in sorted(glob.glob("*.html")):
         skipped.append(f)
 
 out = {"currency": "eur", "tax_behavior": "inclusive", "count": len(products), "products": products}
+# Verborgen testproduct van € 1 om het betaalproces te controleren (niet in de webshop zichtbaar).
+if os.path.exists("testbetaling.html"):
+    out["products"].append({"id": "m3d_testbetaling", "file": "testbetaling.html", "url": f"{SITE}/testbetaling.html", "name": "Testbetaling",
+                            "category": "Test", "image": "", "variants": [V("Testbetaling", 100)], "addons": []})
 json.dump(out, open("assets/catalogus.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(f"{len(products)} producten, {sum(len(p['variants']) + len(p['addons']) for p in products)} prijzen")
 print("overgeslagen (wel € in formulier, niet herkend):", skipped)

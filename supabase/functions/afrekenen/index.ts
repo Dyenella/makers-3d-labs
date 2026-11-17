@@ -12,6 +12,7 @@ const RATES = {
   klein: [{ carrier: "PostNL", name: "PostNL – brievenbuspakje", cents: 550 }, { carrier: "DHL", name: "DHL – brievenbuspakket", cents: 525 }],
   normaal: [{ carrier: "PostNL", name: "PostNL – pakket", cents: 895 }, { carrier: "DHL", name: "DHL – pakket", cents: 795 }],
   groot: [{ carrier: "PostNL", name: "PostNL – groot pakket (extra stevig verpakt)", cents: 1295 }, { carrier: "DHL", name: "DHL – groot pakket (extra stevig verpakt)", cents: 1295 }],
+  test: [{ carrier: "PostNL", name: "PostNL – testzending (gratis)", cents: 0 }, { carrier: "DHL", name: "DHL – testzending (gratis)", cents: 0 }],
 } as const;
 type ShipClass = keyof typeof RATES;
 // Artikelen die door de brievenbus passen (met maximaal aantal per brievenbuspakje).
@@ -21,6 +22,7 @@ const SMALL: Record<string, number> = {
 };
 function shipClass(product: any, variant: any, qty: number): ShipClass {
   const label = String(variant.label || "");
+  if (product.file === "testbetaling.html") return "test";
   if (product.file in SMALL && qty <= SMALL[product.file] && !/^(Middel|Groot)/.test(label)) return "klein";
   if (product.category === "Voetbalstadions") return "groot";
   if (product.category === "Lasergravure") return "normaal"; // vlakke artikelen
