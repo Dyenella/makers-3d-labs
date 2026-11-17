@@ -312,6 +312,7 @@ textarea {
     padding: 20px;
   }
 }
+.product-image .missing-image::before{content:attr(data-tekst)}
 </style>
 <link rel="stylesheet" href="assets/product-huisstijl.css?v=1"><link rel="stylesheet" href="assets/bovenmenu.css?v=2">
 <meta property="og:image" content="https://www.makers3dlabs.nl/anubis-egyptische-god-goud%20(1).webp">
@@ -339,9 +340,7 @@ textarea {
         alt="Anubis – Egyptische God antiekgouden buste"
         onerror="document.getElementById('product-image').classList.add('missing')"
       >
-      <div class="missing-image">
-        Productfoto nog niet gevonden. Controleer de bestandsnaam.
-      </div>
+      <div class="missing-image" data-tekst="Productfoto volgt binnenkort."></div>
     </div>
   </div>
 
