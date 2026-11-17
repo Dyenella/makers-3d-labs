@@ -17,7 +17,7 @@ grant select, insert, update on public.makers_settings to authenticated;
 insert into public.makers_settings(key, value) values
  ('bedrijfsnaam', 'Bruwin Solutions'),
  ('handelsnaam', 'Makers 3D Labs'),
- ('adres', 'Houtzaagmolen 102'),
+ ('adres', 'Houtzaagmolen 96'),
  ('postcode_plaats', '2986 GE Ridderkerk'),
  ('land', 'Nederland'),
  ('kvk', '42219037'),
