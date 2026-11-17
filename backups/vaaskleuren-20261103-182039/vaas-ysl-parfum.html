@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Libre parfumvaas | Makers 3D Labs</title>
-<meta name="description" content="Libre parfumvaas: kant-en-klaar afgewerkte 3D-vaas in klein, middel en groot. Kies formaat en gewenste kleur.">
+<title>Gouden lint parfumvaas | Makers 3D Labs</title>
+<meta name="description" content="Gouden lint parfumvaas: kant-en-klaar afgewerkte 3D-vaas in klein, middel en groot. Kies formaat en gewenste kleur.">
 <link rel="stylesheet" href="assets/shop.css"><link rel="stylesheet" href="assets/categorie-paginas.css">
 <style>
 .vase-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:38px;align-items:start;margin-top:24px}
@@ -32,10 +32,10 @@
 </style></head><body>
 <header class="category-header"><div class="head-inner"><a href="index.html" aria-label="Makers 3D Labs — Home"><img src="makers3dlabs-logo.webp" alt="Makers 3D Labs" width="1600" height="500"></a><nav class="category-nav" aria-label="Hoofdnavigatie"><a href="index.html">Home</a><a href="winkel.html">Webshop</a></nav></div></header>
 <main class="category-main"><a class="category-crumb" href="categorie-bloemenvazen.html">← Terug naar Bloemenvazen</a>
-<div class="vase-layout"><figure class="vase-image"><img src="vaas-ysl-parfum-voorbeeld.webp" alt="Libre parfumvaas — AI-voorbeeldontwerp met bloemen" width="1254" height="1254">
-<figcaption>AI-voorbeeldontwerp, YSL-geïnspireerd. Geen officieel merkproduct. Kant-en-klaar afgewerkte vaas; bloemen en waterdichte binnenvaas niet inbegrepen. Definitieve uitvoering en beschikbaarheid bevestigen we vooraf.</figcaption></figure>
-<section class="vase-info" aria-labelledby="vase-title"><span class="vase-kicker">PARFUMVAZEN · KANT-EN-KLAAR</span><h1 id="vase-title">Libre parfumvaas</h1>
-<p class="vase-intro">Een decoratieve 3D-geprinte vaas, YSL-geïnspireerd. Alleen kant-en-klaar afgewerkt verkrijgbaar. Kies klein, middel of groot en geef je gewenste kleuren door.</p>
+<div class="vase-layout"><figure class="vase-image"><img src="vaas-gouden-lint-parfum-voorbeeld.webp" alt="Gouden lint parfumvaas — AI-voorbeeldontwerp met bloemen" width="1254" height="1254">
+<figcaption>AI-voorbeeldontwerp, in de stijl van Yves Saint Laurent. Geen officieel merkproduct. Kant-en-klaar afgewerkte vaas; bloemen en waterdichte binnenvaas niet inbegrepen. Definitieve uitvoering en beschikbaarheid bevestigen we vooraf.</figcaption></figure>
+<section class="vase-info" aria-labelledby="vase-title"><span class="vase-kicker">PARFUMVAZEN · KANT-EN-KLAAR</span><h1 id="vase-title">Gouden lint parfumvaas</h1>
+<p class="vase-intro">Een decoratieve 3D-geprinte vaas, in de stijl van Yves Saint Laurent. Alleen kant-en-klaar afgewerkt verkrijgbaar. Kies klein, middel of groot en geef je gewenste kleuren door.</p>
 <form id="vase-form" class="vase-form">
 <fieldset><legend>1. Kies jouw formaat</legend><div class="vase-sizes">
 <label class="vase-choice"><input type="radio" name="size" value="15" checked required><span><b>Klein · 15 cm</b><br>€ 39,95</span></label>
@@ -69,7 +69,7 @@ vf.addEventListener('input',updateVase);vf.addEventListener('change',updateVase)
 vf.addEventListener('submit',event=>{
  event.preventDefault();const s=vaseSelection(),error=document.getElementById('vase-error');
  if(!Object.hasOwn(vp,s.size)||!s.color||!s.letters||!Number.isInteger(s.qty)||s.qty<1||s.qty>100){error.textContent='Kies een formaat, vul beide kleuren in en kies een aantal van 1 tot 100.';return;}
- const description=['Libre parfumvaas — YSL-geïnspireerd','Uitvoering: kant-en-klaar afgewerkt','Formaat: '+vn[s.size]+' — '+s.size+' cm totale hoogte','Kleur vaas: '+s.color,'Kleur details: '+s.letters,'Aantal: '+s.qty,'Prijs per stuk: '+veuro(s.price),'Producttotaal exclusief verzending: '+veuro(s.price*s.qty),'Zonder bloemen en zonder waterdichte binnenvaas.','Definitieve kleuren, uitvoering en levertijd graag bevestigen.'].join('\n');
+ const description=['Gouden lint parfumvaas — in de stijl van Yves Saint Laurent','Uitvoering: kant-en-klaar afgewerkt','Formaat: '+vn[s.size]+' — '+s.size+' cm totale hoogte','Kleur vaas: '+s.color,'Kleur details: '+s.letters,'Aantal: '+s.qty,'Prijs per stuk: '+veuro(s.price),'Producttotaal exclusief verzending: '+veuro(s.price*s.qty),'Zonder bloemen en zonder waterdichte binnenvaas.','Definitieve kleuren, uitvoering en levertijd graag bevestigen.'].join('\n');
  try{sessionStorage.setItem('makers-collectievaas-aanvraag',JSON.stringify({description,qty:s.qty}));}
  catch(e){error.textContent='Je browser kan de keuzes niet bewaren. Sta sessieopslag toe en probeer opnieuw.';return;}
  location.href='contact.html?product=Collectievaas#quoteForm';

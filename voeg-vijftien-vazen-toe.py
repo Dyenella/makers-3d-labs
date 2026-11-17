@@ -3,21 +3,21 @@ import re,json,html,datetime
 
 # Klein 15 cm / middel 20 cm / groot 25 cm totale hoogte, exclusief bloemen.
 MODELS=[
-('vaas-dior-tas','Cannage tasvaas','Dior-geïnspireerd','Tasvazen','Crème','Goud',4495,6495,8995),
-('vaas-chanel-tas','Quilt tasvaas','Chanel-geïnspireerd','Tasvazen','Zwart','Goud',4495,6495,8995),
-('vaas-louis-vuitton-tas','Monogram tasvaas','Louis Vuitton-geïnspireerd','Tasvazen','Bruin','Beige',4495,6495,8995),
-('vaas-gucci-tas','Bamboe tasvaas','Gucci-geïnspireerd','Tasvazen','Groen','Goud',4995,6995,9495),
-('vaas-prada-tas','Triangle tasvaas','Prada-geïnspireerd','Tasvazen','Roze','Goud',3995,5995,7995),
-('vaas-hermes-tas','Lock tasvaas','Hermès-geïnspireerd','Tasvazen','Oranje','Goud',4995,6995,9495),
-('vaas-fendi-tas','Baguette tasvaas','Fendi-geïnspireerd','Tasvazen','Lila','Goud',3995,5995,7995),
-('vaas-saint-laurent-tas','Chevron tasvaas','Saint Laurent-geïnspireerd','Tasvazen','Beige','Goud',4495,6495,8995),
-('vaas-jacquemus-tas','Mini-handle tasvaas','Jacquemus-geïnspireerd','Tasvazen','Terracotta','Goud',3495,4995,6995),
-('vaas-balenciaga-tas','Hourglass tasvaas','Balenciaga-geïnspireerd','Tasvazen','Zwart','Zilver',4495,6495,8995),
-('vaas-chanel-parfum','No. 5 parfumvaas','Chanel-geïnspireerd','Parfumvazen','Crème','Zwart',3495,4995,6995),
-('vaas-dior-parfum','Amfora parfumvaas','Dior-geïnspireerd','Parfumvazen','Goud','Goud',3995,5995,7995),
-('vaas-ysl-parfum','Libre parfumvaas','YSL-geïnspireerd','Parfumvazen','Crème','Goud',3995,5995,7995),
-('vaas-gucci-parfum','Bloom parfumvaas','Gucci-geïnspireerd','Parfumvazen','Roze','Zwart',3495,4995,6995),
-('vaas-prada-parfum','Triangle parfumvaas','Prada-geïnspireerd','Parfumvazen','Perzik','Zwart',3495,4995,6995),
+('vaas-ruitjes-tas','Ruitjes tasvaas','in de stijl van Dior','Tasvazen','Crème','Goud',4495,6495,8995),
+('vaas-quilt-tas','Quilt tasvaas','in de stijl van Chanel','Tasvazen','Zwart','Goud',4495,6495,8995),
+('vaas-bloemmotief-tas','Bloemmotief tasvaas','in de stijl van Louis Vuitton','Tasvazen','Bruin','Beige',4495,6495,8995),
+('vaas-bamboe-tas','Bamboe tasvaas','in de stijl van Gucci','Tasvazen','Groen','Goud',4995,6995,9495),
+('vaas-triangle-tas','Triangle tasvaas','in de stijl van Prada','Tasvazen','Roze','Goud',3995,5995,7995),
+('vaas-slotje-tas','Slotje tasvaas','in de stijl van Hermès','Tasvazen','Oranje','Goud',4995,6995,9495),
+('vaas-stokbrood-tas','Stokbrood tasvaas','in de stijl van Fendi','Tasvazen','Lila','Goud',3995,5995,7995),
+('vaas-chevron-tas','Chevron tasvaas','in de stijl van Saint Laurent','Tasvazen','Beige','Goud',4495,6495,8995),
+('vaas-minihandle-tas','Mini-handle tasvaas','in de stijl van Jacquemus','Tasvazen','Terracotta','Goud',3495,4995,6995),
+('vaas-zandloper-tas','Zandloper tasvaas','in de stijl van Balenciaga','Tasvazen','Zwart','Zilver',4495,6495,8995),
+('vaas-nummer-parfum','Nummer parfumvaas','in de stijl van Chanel','Parfumvazen','Crème','Zwart',3495,4995,6995),
+('vaas-amfora-parfum','Amfora parfumvaas','in de stijl van Dior','Parfumvazen','Goud','Goud',3995,5995,7995),
+('vaas-gouden-lint-parfum','Gouden lint parfumvaas','in de stijl van Yves Saint Laurent','Parfumvazen','Crème','Goud',3995,5995,7995),
+('vaas-roze-parfum','Roze parfumvaas','in de stijl van Gucci','Parfumvazen','Roze','Zwart',3495,4995,6995),
+('vaas-triangle-parfum','Triangle parfumvaas','in de stijl van Prada','Parfumvazen','Perzik','Zwart',3495,4995,6995),
 ]
 root=Path.cwd()
 required=['handtas-bloemenvaas.html','categorie-bloemenvazen.html','contact.html']+[m[0]+'-voorbeeld.webp' for m in MODELS]
@@ -26,7 +26,7 @@ if missing:raise SystemExit('Voer eerst git pull uit. Deze bestanden ontbreken:\
 template=(root/'handtas-bloemenvaas.html').read_text(encoding='utf-8')
 category=(root/'categorie-bloemenvazen.html').read_text(encoding='utf-8')
 contact=(root/'contact.html').read_text(encoding='utf-8')
-if 'id="vaas-dior-tas-product"' in category:raise SystemExit('De vijftien modellen zijn al toegevoegd; niets gewijzigd.')
+if 'id="vaas-ruitjes-tas-product"' in category:raise SystemExit('De vijftien modellen zijn al toegevoegd; niets gewijzigd.')
 if "vp={'15':4495,'20':6495,'25':8995}" not in template:raise SystemExit('Vaas-template is gewijzigd. Niets aangepast.')
 if '<div class="category-products" id="category-products">' not in category:raise SystemExit('Categorie niet herkend.')
 def euro(n):return '€ '+f'{n/100:.2f}'.replace('.',',')

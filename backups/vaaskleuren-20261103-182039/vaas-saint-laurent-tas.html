@@ -32,10 +32,10 @@
 </style></head><body>
 <header class="category-header"><div class="head-inner"><a href="index.html" aria-label="Makers 3D Labs — Home"><img src="makers3dlabs-logo.webp" alt="Makers 3D Labs" width="1600" height="500"></a><nav class="category-nav" aria-label="Hoofdnavigatie"><a href="index.html">Home</a><a href="winkel.html">Webshop</a></nav></div></header>
 <main class="category-main"><a class="category-crumb" href="categorie-bloemenvazen.html">← Terug naar Bloemenvazen</a>
-<div class="vase-layout"><figure class="vase-image"><img src="vaas-saint-laurent-tas-voorbeeld.webp" alt="Chevron tasvaas — AI-voorbeeldontwerp met bloemen" width="1254" height="1254">
-<figcaption>AI-voorbeeldontwerp, Saint Laurent-geïnspireerd. Geen officieel merkproduct. Kant-en-klaar afgewerkte vaas; bloemen en waterdichte binnenvaas niet inbegrepen. Definitieve uitvoering en beschikbaarheid bevestigen we vooraf.</figcaption></figure>
+<div class="vase-layout"><figure class="vase-image"><img src="vaas-chevron-tas-voorbeeld.webp" alt="Chevron tasvaas — AI-voorbeeldontwerp met bloemen" width="1254" height="1254">
+<figcaption>AI-voorbeeldontwerp, in de stijl van Saint Laurent. Geen officieel merkproduct. Kant-en-klaar afgewerkte vaas; bloemen en waterdichte binnenvaas niet inbegrepen. Definitieve uitvoering en beschikbaarheid bevestigen we vooraf.</figcaption></figure>
 <section class="vase-info" aria-labelledby="vase-title"><span class="vase-kicker">TASVAZEN · KANT-EN-KLAAR</span><h1 id="vase-title">Chevron tasvaas</h1>
-<p class="vase-intro">Een decoratieve 3D-geprinte vaas, Saint Laurent-geïnspireerd. Alleen kant-en-klaar afgewerkt verkrijgbaar. Kies klein, middel of groot en geef je gewenste kleuren door.</p>
+<p class="vase-intro">Een decoratieve 3D-geprinte vaas, in de stijl van Saint Laurent. Alleen kant-en-klaar afgewerkt verkrijgbaar. Kies klein, middel of groot en geef je gewenste kleuren door.</p>
 <form id="vase-form" class="vase-form">
 <fieldset><legend>1. Kies jouw formaat</legend><div class="vase-sizes">
 <label class="vase-choice"><input type="radio" name="size" value="15" checked required><span><b>Klein · 15 cm</b><br>€ 44,95</span></label>
@@ -69,7 +69,7 @@ vf.addEventListener('input',updateVase);vf.addEventListener('change',updateVase)
 vf.addEventListener('submit',event=>{
  event.preventDefault();const s=vaseSelection(),error=document.getElementById('vase-error');
  if(!Object.hasOwn(vp,s.size)||!s.color||!s.letters||!Number.isInteger(s.qty)||s.qty<1||s.qty>100){error.textContent='Kies een formaat, vul beide kleuren in en kies een aantal van 1 tot 100.';return;}
- const description=['Chevron tasvaas — Saint Laurent-geïnspireerd','Uitvoering: kant-en-klaar afgewerkt','Formaat: '+vn[s.size]+' — '+s.size+' cm totale hoogte','Kleur vaas: '+s.color,'Kleur details: '+s.letters,'Aantal: '+s.qty,'Prijs per stuk: '+veuro(s.price),'Producttotaal exclusief verzending: '+veuro(s.price*s.qty),'Zonder bloemen en zonder waterdichte binnenvaas.','Definitieve kleuren, uitvoering en levertijd graag bevestigen.'].join('\n');
+ const description=['Chevron tasvaas — in de stijl van Saint Laurent','Uitvoering: kant-en-klaar afgewerkt','Formaat: '+vn[s.size]+' — '+s.size+' cm totale hoogte','Kleur vaas: '+s.color,'Kleur details: '+s.letters,'Aantal: '+s.qty,'Prijs per stuk: '+veuro(s.price),'Producttotaal exclusief verzending: '+veuro(s.price*s.qty),'Zonder bloemen en zonder waterdichte binnenvaas.','Definitieve kleuren, uitvoering en levertijd graag bevestigen.'].join('\n');
  try{sessionStorage.setItem('makers-collectievaas-aanvraag',JSON.stringify({description,qty:s.qty}));}
  catch(e){error.textContent='Je browser kan de keuzes niet bewaren. Sta sessieopslag toe en probeer opnieuw.';return;}
  location.href='contact.html?product=Collectievaas#quoteForm';

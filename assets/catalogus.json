@@ -12019,12 +12019,70 @@
    "addons": []
   },
   {
-   "id": "m3d_vaas_balenciaga_tas",
-   "file": "vaas-balenciaga-tas.html",
-   "url": "https://www.makers3dlabs.nl/vaas-balenciaga-tas.html",
-   "name": "Hourglass tasvaas",
+   "id": "m3d_vaas_dior_parfum",
+   "file": "vaas-amfora-parfum.html",
+   "url": "https://www.makers3dlabs.nl/vaas-amfora-parfum.html",
+   "name": "Amfora parfumvaas",
    "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-balenciaga-tas-voorbeeld.webp",
+   "image": "https://www.makers3dlabs.nl/vaas-amfora-parfum-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_gucci_tas",
+   "file": "vaas-bamboe-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-bamboe-tas.html",
+   "name": "Bamboe tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-bamboe-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 9495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_louis_vuitton_tas",
+   "file": "vaas-bloemmotief-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-bloemmotief-tas.html",
+   "name": "Bloemmotief tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-bloemmotief-tas-voorbeeld.webp",
    "variants": [
     {
      "key": "klein-15-cm",
@@ -12106,41 +12164,12 @@
    "addons": []
   },
   {
-   "id": "m3d_vaas_chanel_parfum",
-   "file": "vaas-chanel-parfum.html",
-   "url": "https://www.makers3dlabs.nl/vaas-chanel-parfum.html",
-   "name": "No. 5 parfumvaas",
+   "id": "m3d_vaas_saint_laurent_tas",
+   "file": "vaas-chevron-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-chevron-tas.html",
+   "name": "Chevron tasvaas",
    "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-chanel-parfum-voorbeeld.webp",
-   "variants": [
-    {
-     "key": "klein-15-cm",
-     "label": "Klein – 15 cm",
-     "cents": 3495,
-     "firm": true
-    },
-    {
-     "key": "middel-20-cm",
-     "label": "Middel – 20 cm",
-     "cents": 4995,
-     "firm": true
-    },
-    {
-     "key": "groot-25-cm",
-     "label": "Groot – 25 cm",
-     "cents": 6995,
-     "firm": true
-    }
-   ],
-   "addons": []
-  },
-  {
-   "id": "m3d_vaas_chanel_tas",
-   "file": "vaas-chanel-tas.html",
-   "url": "https://www.makers3dlabs.nl/vaas-chanel-tas.html",
-   "name": "Quilt tasvaas",
-   "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-chanel-tas-voorbeeld.webp",
+   "image": "https://www.makers3dlabs.nl/vaas-chevron-tas-voorbeeld.webp",
    "variants": [
     {
      "key": "klein-15-cm",
@@ -12193,12 +12222,12 @@
    "addons": []
   },
   {
-   "id": "m3d_vaas_dior_parfum",
-   "file": "vaas-dior-parfum.html",
-   "url": "https://www.makers3dlabs.nl/vaas-dior-parfum.html",
-   "name": "Amfora parfumvaas",
+   "id": "m3d_vaas_ysl_parfum",
+   "file": "vaas-gouden-lint-parfum.html",
+   "url": "https://www.makers3dlabs.nl/vaas-gouden-lint-parfum.html",
+   "name": "Gouden lint parfumvaas",
    "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-dior-parfum-voorbeeld.webp",
+   "image": "https://www.makers3dlabs.nl/vaas-gouden-lint-parfum-voorbeeld.webp",
    "variants": [
     {
      "key": "klein-15-cm",
@@ -12216,122 +12245,6 @@
      "key": "groot-25-cm",
      "label": "Groot – 25 cm",
      "cents": 7995,
-     "firm": true
-    }
-   ],
-   "addons": []
-  },
-  {
-   "id": "m3d_vaas_dior_tas",
-   "file": "vaas-dior-tas.html",
-   "url": "https://www.makers3dlabs.nl/vaas-dior-tas.html",
-   "name": "Cannage tasvaas",
-   "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-dior-tas-voorbeeld.webp",
-   "variants": [
-    {
-     "key": "klein-15-cm",
-     "label": "Klein – 15 cm",
-     "cents": 4495,
-     "firm": true
-    },
-    {
-     "key": "middel-20-cm",
-     "label": "Middel – 20 cm",
-     "cents": 6495,
-     "firm": true
-    },
-    {
-     "key": "groot-25-cm",
-     "label": "Groot – 25 cm",
-     "cents": 8995,
-     "firm": true
-    }
-   ],
-   "addons": []
-  },
-  {
-   "id": "m3d_vaas_fendi_tas",
-   "file": "vaas-fendi-tas.html",
-   "url": "https://www.makers3dlabs.nl/vaas-fendi-tas.html",
-   "name": "Baguette tasvaas",
-   "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-fendi-tas-voorbeeld.webp",
-   "variants": [
-    {
-     "key": "klein-15-cm",
-     "label": "Klein – 15 cm",
-     "cents": 3995,
-     "firm": true
-    },
-    {
-     "key": "middel-20-cm",
-     "label": "Middel – 20 cm",
-     "cents": 5995,
-     "firm": true
-    },
-    {
-     "key": "groot-25-cm",
-     "label": "Groot – 25 cm",
-     "cents": 7995,
-     "firm": true
-    }
-   ],
-   "addons": []
-  },
-  {
-   "id": "m3d_vaas_gucci_parfum",
-   "file": "vaas-gucci-parfum.html",
-   "url": "https://www.makers3dlabs.nl/vaas-gucci-parfum.html",
-   "name": "Bloom parfumvaas",
-   "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-gucci-parfum-voorbeeld.webp",
-   "variants": [
-    {
-     "key": "klein-15-cm",
-     "label": "Klein – 15 cm",
-     "cents": 3495,
-     "firm": true
-    },
-    {
-     "key": "middel-20-cm",
-     "label": "Middel – 20 cm",
-     "cents": 4995,
-     "firm": true
-    },
-    {
-     "key": "groot-25-cm",
-     "label": "Groot – 25 cm",
-     "cents": 6995,
-     "firm": true
-    }
-   ],
-   "addons": []
-  },
-  {
-   "id": "m3d_vaas_gucci_tas",
-   "file": "vaas-gucci-tas.html",
-   "url": "https://www.makers3dlabs.nl/vaas-gucci-tas.html",
-   "name": "Bamboe tasvaas",
-   "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-gucci-tas-voorbeeld.webp",
-   "variants": [
-    {
-     "key": "klein-15-cm",
-     "label": "Klein – 15 cm",
-     "cents": 4995,
-     "firm": true
-    },
-    {
-     "key": "middel-20-cm",
-     "label": "Middel – 20 cm",
-     "cents": 6995,
-     "firm": true
-    },
-    {
-     "key": "groot-25-cm",
-     "label": "Groot – 25 cm",
-     "cents": 9495,
      "firm": true
     }
    ],
@@ -12396,64 +12309,6 @@
    "addons": []
   },
   {
-   "id": "m3d_vaas_hermes_tas",
-   "file": "vaas-hermes-tas.html",
-   "url": "https://www.makers3dlabs.nl/vaas-hermes-tas.html",
-   "name": "Lock tasvaas",
-   "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-hermes-tas-voorbeeld.webp",
-   "variants": [
-    {
-     "key": "klein-15-cm",
-     "label": "Klein – 15 cm",
-     "cents": 4995,
-     "firm": true
-    },
-    {
-     "key": "middel-20-cm",
-     "label": "Middel – 20 cm",
-     "cents": 6995,
-     "firm": true
-    },
-    {
-     "key": "groot-25-cm",
-     "label": "Groot – 25 cm",
-     "cents": 9495,
-     "firm": true
-    }
-   ],
-   "addons": []
-  },
-  {
-   "id": "m3d_vaas_jacquemus_tas",
-   "file": "vaas-jacquemus-tas.html",
-   "url": "https://www.makers3dlabs.nl/vaas-jacquemus-tas.html",
-   "name": "Mini-handle tasvaas",
-   "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-jacquemus-tas-voorbeeld.webp",
-   "variants": [
-    {
-     "key": "klein-15-cm",
-     "label": "Klein – 15 cm",
-     "cents": 3495,
-     "firm": true
-    },
-    {
-     "key": "middel-20-cm",
-     "label": "Middel – 20 cm",
-     "cents": 4995,
-     "firm": true
-    },
-    {
-     "key": "groot-25-cm",
-     "label": "Groot – 25 cm",
-     "cents": 6995,
-     "firm": true
-    }
-   ],
-   "addons": []
-  },
-  {
    "id": "m3d_vaas_koffertje",
    "file": "vaas-koffertje.html",
    "url": "https://www.makers3dlabs.nl/vaas-koffertje.html",
@@ -12483,41 +12338,70 @@
    "addons": []
   },
   {
-   "id": "m3d_vaas_louis_vuitton_tas",
-   "file": "vaas-louis-vuitton-tas.html",
-   "url": "https://www.makers3dlabs.nl/vaas-louis-vuitton-tas.html",
-   "name": "Monogram tasvaas",
-   "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-louis-vuitton-tas-voorbeeld.webp",
-   "variants": [
-    {
-     "key": "klein-15-cm",
-     "label": "Klein – 15 cm",
-     "cents": 4495,
-     "firm": true
-    },
-    {
-     "key": "middel-20-cm",
-     "label": "Middel – 20 cm",
-     "cents": 6495,
-     "firm": true
-    },
-    {
-     "key": "groot-25-cm",
-     "label": "Groot – 25 cm",
-     "cents": 8995,
-     "firm": true
-    }
-   ],
-   "addons": []
-  },
-  {
    "id": "m3d_vaas_makeuptasje",
    "file": "vaas-makeuptasje.html",
    "url": "https://www.makers3dlabs.nl/vaas-makeuptasje.html",
    "name": "Make-uptasje vaas",
    "category": "Bloemenvazen",
    "image": "https://www.makers3dlabs.nl/vaas-makeuptasje-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_jacquemus_tas",
+   "file": "vaas-minihandle-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-minihandle-tas.html",
+   "name": "Mini-handle tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-minihandle-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_chanel_parfum",
+   "file": "vaas-nummer-parfum.html",
+   "url": "https://www.makers3dlabs.nl/vaas-nummer-parfum.html",
+   "name": "Nummer parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-nummer-parfum-voorbeeld.webp",
    "variants": [
     {
      "key": "klein-15-cm",
@@ -12686,12 +12570,41 @@
    "addons": []
   },
   {
-   "id": "m3d_vaas_prada_parfum",
-   "file": "vaas-prada-parfum.html",
-   "url": "https://www.makers3dlabs.nl/vaas-prada-parfum.html",
-   "name": "Triangle parfumvaas",
+   "id": "m3d_vaas_chanel_tas",
+   "file": "vaas-quilt-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-quilt-tas.html",
+   "name": "Quilt tasvaas",
    "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-prada-parfum-voorbeeld.webp",
+   "image": "https://www.makers3dlabs.nl/vaas-quilt-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_gucci_parfum",
+   "file": "vaas-roze-parfum.html",
+   "url": "https://www.makers3dlabs.nl/vaas-roze-parfum.html",
+   "name": "Roze parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-roze-parfum-voorbeeld.webp",
    "variants": [
     {
      "key": "klein-15-cm",
@@ -12709,35 +12622,6 @@
      "key": "groot-25-cm",
      "label": "Groot – 25 cm",
      "cents": 6995,
-     "firm": true
-    }
-   ],
-   "addons": []
-  },
-  {
-   "id": "m3d_vaas_prada_tas",
-   "file": "vaas-prada-tas.html",
-   "url": "https://www.makers3dlabs.nl/vaas-prada-tas.html",
-   "name": "Triangle tasvaas",
-   "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-prada-tas-voorbeeld.webp",
-   "variants": [
-    {
-     "key": "klein-15-cm",
-     "label": "Klein – 15 cm",
-     "cents": 3995,
-     "firm": true
-    },
-    {
-     "key": "middel-20-cm",
-     "label": "Middel – 20 cm",
-     "cents": 5995,
-     "firm": true
-    },
-    {
-     "key": "groot-25-cm",
-     "label": "Groot – 25 cm",
-     "cents": 7995,
      "firm": true
     }
    ],
@@ -12773,12 +12657,12 @@
    "addons": []
   },
   {
-   "id": "m3d_vaas_saint_laurent_tas",
-   "file": "vaas-saint-laurent-tas.html",
-   "url": "https://www.makers3dlabs.nl/vaas-saint-laurent-tas.html",
-   "name": "Chevron tasvaas",
+   "id": "m3d_vaas_dior_tas",
+   "file": "vaas-ruitjes-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-ruitjes-tas.html",
+   "name": "Ruitjes tasvaas",
    "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-saint-laurent-tas-voorbeeld.webp",
+   "image": "https://www.makers3dlabs.nl/vaas-ruitjes-tas-voorbeeld.webp",
    "variants": [
     {
      "key": "klein-15-cm",
@@ -12831,12 +12715,99 @@
    "addons": []
   },
   {
-   "id": "m3d_vaas_ysl_parfum",
-   "file": "vaas-ysl-parfum.html",
-   "url": "https://www.makers3dlabs.nl/vaas-ysl-parfum.html",
-   "name": "Libre parfumvaas",
+   "id": "m3d_vaas_hermes_tas",
+   "file": "vaas-slotje-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-slotje-tas.html",
+   "name": "Slotje tasvaas",
    "category": "Bloemenvazen",
-   "image": "https://www.makers3dlabs.nl/vaas-ysl-parfum-voorbeeld.webp",
+   "image": "https://www.makers3dlabs.nl/vaas-slotje-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 9495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_fendi_tas",
+   "file": "vaas-stokbrood-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-stokbrood-tas.html",
+   "name": "Stokbrood tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-stokbrood-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3995,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 5995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 7995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_prada_parfum",
+   "file": "vaas-triangle-parfum.html",
+   "url": "https://www.makers3dlabs.nl/vaas-triangle-parfum.html",
+   "name": "Triangle parfumvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-triangle-parfum-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 3495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 4995,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 6995,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_prada_tas",
+   "file": "vaas-triangle-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-triangle-tas.html",
+   "name": "Triangle tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-triangle-tas-voorbeeld.webp",
    "variants": [
     {
      "key": "klein-15-cm",
@@ -12883,6 +12854,35 @@
      "key": "groot-25-cm",
      "label": "Groot – 25 cm",
      "cents": 9495,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_vaas_balenciaga_tas",
+   "file": "vaas-zandloper-tas.html",
+   "url": "https://www.makers3dlabs.nl/vaas-zandloper-tas.html",
+   "name": "Zandloper tasvaas",
+   "category": "Bloemenvazen",
+   "image": "https://www.makers3dlabs.nl/vaas-zandloper-tas-voorbeeld.webp",
+   "variants": [
+    {
+     "key": "klein-15-cm",
+     "label": "Klein – 15 cm",
+     "cents": 4495,
+     "firm": true
+    },
+    {
+     "key": "middel-20-cm",
+     "label": "Middel – 20 cm",
+     "cents": 6495,
+     "firm": true
+    },
+    {
+     "key": "groot-25-cm",
+     "label": "Groot – 25 cm",
+     "cents": 8995,
      "firm": true
     }
    ],

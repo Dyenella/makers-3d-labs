@@ -50,8 +50,19 @@ def title_of(s, f):
     return re.sub(r"\s*\|\s*", " – ", t)
 
 
+# Hernoemde pagina's houden hun oude Stripe-id (17-11-2026).
+ID_KEEP = {"vaas-bloemmotief-tas.html": "m3d_vaas_louis_vuitton_tas", "vaas-chevron-tas.html": "m3d_vaas_saint_laurent_tas",
+           "vaas-zandloper-tas.html": "m3d_vaas_balenciaga_tas", "vaas-minihandle-tas.html": "m3d_vaas_jacquemus_tas",
+           "vaas-nummer-parfum.html": "m3d_vaas_chanel_parfum", "vaas-quilt-tas.html": "m3d_vaas_chanel_tas",
+           "vaas-amfora-parfum.html": "m3d_vaas_dior_parfum", "vaas-ruitjes-tas.html": "m3d_vaas_dior_tas",
+           "vaas-roze-parfum.html": "m3d_vaas_gucci_parfum", "vaas-bamboe-tas.html": "m3d_vaas_gucci_tas",
+           "vaas-triangle-parfum.html": "m3d_vaas_prada_parfum", "vaas-triangle-tas.html": "m3d_vaas_prada_tas",
+           "vaas-slotje-tas.html": "m3d_vaas_hermes_tas", "vaas-stokbrood-tas.html": "m3d_vaas_fendi_tas",
+           "vaas-gouden-lint-parfum.html": "m3d_vaas_ysl_parfum"}
+
+
 def base(f, s, cat):
-    return {"id": "m3d_" + f[:-5].replace("-", "_")[:56], "file": f, "url": f"{SITE}/{f}",
+    return {"id": ID_KEEP.get(f) or "m3d_" + f[:-5].replace("-", "_")[:56], "file": f, "url": f"{SITE}/{f}",
             "name": title_of(s, f), "category": cat, "image": image_of(s, f), "variants": [], "addons": []}
 
 
