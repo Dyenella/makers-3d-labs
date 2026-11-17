@@ -12929,23 +12929,6 @@
      "firm": false
     }
    ]
-  },
-  {
-   "id": "m3d_testbetaling",
-   "file": "testbetaling.html",
-   "url": "https://www.makers3dlabs.nl/testbetaling.html",
-   "name": "Testbetaling",
-   "category": "Test",
-   "image": "",
-   "variants": [
-    {
-     "key": "testbetaling",
-     "label": "Testbetaling",
-     "cents": 100,
-     "firm": true
-    }
-   ],
-   "addons": []
   }
  ]
 }

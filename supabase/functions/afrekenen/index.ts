@@ -22,7 +22,6 @@ const SMALL: Record<string, number> = {
 };
 function shipClass(product: any, variant: any, qty: number): ShipClass {
   const label = String(variant.label || "");
-  if (product.file === "testbetaling.html") return "test";
   if (product.file in SMALL && qty <= SMALL[product.file] && !/^(Middel|Groot)/.test(label)) return "klein";
   if (product.category === "Voetbalstadions") return "groot";
   if (product.category === "Lasergravure") return "normaal"; // vlakke artikelen
@@ -156,7 +155,7 @@ Deno.serve(async (req) => {
     cancel_url: `${product.url}?betaling=geannuleerd`,
     metadata: { request_id: reqId, kind: "product", product: product.id },
     payment_intent_data: { metadata: { request_id: reqId }, statement_descriptor_suffix: "WEBSHOP" },
-    custom_text: { submit: { message: "Je bestelling wordt op maat gemaakt. Na betaling ontvang je een bevestiging per e-mail." } },
+    custom_text: { submit: { message: "Levertijd: binnen maximaal 30 dagen na bestelling. Met betalen ga je akkoord met onze algemene voorwaarden (makers3dlabs.nl/algemene-voorwaarden.html). Gepersonaliseerde producten (naam, tekst, logo, eigen ontwerp of eigen maat) worden speciaal voor jou gemaakt; daarvoor geldt geen herroepingsrecht. Zonder personalisatie heb je 14 dagen bedenktijd. Na betaling ontvang je een bevestiging per e-mail." } },
   });
   if (session.status >= 400) {
     console.error(session.body);

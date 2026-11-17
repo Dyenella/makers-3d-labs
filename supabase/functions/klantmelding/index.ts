@@ -46,6 +46,7 @@ Deno.serve(async (req) => {
   const rec = n.payload || {};
 
   let title: string, subject: string, paras: string[], rows: [string, string][], button: [string, string];
+  let attach = false;
   if (n.kind === "quote") {
     subject = `Je offerte ${rec.number} staat klaar | Makers 3D Labs`;
     title = "Je offerte staat klaar";
@@ -64,7 +65,11 @@ Deno.serve(async (req) => {
   } else if (n.kind === "order") {
     subject = `Bedankt voor je bestelling ${rec.number} | Makers 3D Labs`;
     title = "Je bestelling staat in je klantomgeving";
-    paras = ["Bedankt voor je bestelling! Je kunt de status en de details altijd volgen in je klantomgeving.", "Eerste keer inloggen? Kies op de inlogpagina \"Wachtwoord vergeten of nog geen wachtwoord ingesteld?\" en stel met je e-mailadres een wachtwoord in."];
+    paras = ["Bedankt voor je bestelling! Je kunt de status en de details altijd volgen in je klantomgeving.", "Eerste keer inloggen? Kies op de inlogpagina \"Wachtwoord vergeten of nog geen wachtwoord ingesteld?\" en stel met je e-mailadres een wachtwoord in.",
+      "Levertijd: binnen maximaal 30 dagen na je bestelling. Je ontvangt de track &amp; trace-code per e-mail zodra je pakket is verzonden.",
+      "Bedenktijd: producten zonder personalisatie kun je binnen 14 dagen na ontvangst zonder opgave van reden herroepen. Mail dit naar info@makers3dlabs.nl of gebruik het modelformulier (artikel 20 van de voorwaarden). Retouradres: Makers 3D Labs / Bruwin Solutions, Houtzaagmolen 96, 2986 GE Ridderkerk. Gepersonaliseerde producten (naam, tekst, logo, eigen ontwerp of eigen maat) worden speciaal voor jou gemaakt; daarvoor geldt geen herroepingsrecht.",
+      "Onze algemene voorwaarden, inclusief het modelformulier voor herroeping, zitten als PDF bij deze e-mail. Je vindt ze ook op " + SITE + "/algemene-voorwaarden.html"];
+    attach = true;
     rows = [["Bestelling", rec.number], ["Omschrijving", rec.title], ["Status", STATUS[rec.status] || "In behandeling"], ["Totaal", money(rec.total_cents) + " incl. btw"]];
     button = ["Bekijk mijn bestelling", SITE + "/bestellingen.html"];
   } else if (n.kind === "order_status") {
@@ -95,7 +100,8 @@ Deno.serve(async (req) => {
   const r = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: "Bearer " + Deno.env.get("RESEND_API_KEY"), "Content-Type": "application/json" },
-    body: JSON.stringify({ from: FROM, to: [email], reply_to: REPLY, subject, html: layout(title, paras, rows, button) }),
+    body: JSON.stringify({ from: FROM, to: [email], reply_to: REPLY, subject, html: layout(title, paras, rows, button),
+      ...(attach ? { attachments: [{ filename: "Algemene-voorwaarden-Makers-3D-Labs.pdf", path: SITE + "/assets/algemene-voorwaarden-makers-3d-labs.pdf" }] } : {}) }),
   });
   if (!r.ok) {
     const t = (await r.text()).slice(0, 500);

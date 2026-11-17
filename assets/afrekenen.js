@@ -85,6 +85,7 @@
       <p class="m3d-ship">Verzenden met <strong>PostNL</strong> of <strong>DHL</strong> — je kiest bij het afrekenen. Vanaf € 5,25, gratis vanaf € 400. <a href="informatie.html#verzending">Bekijk de tarieven</a></p>
       <button type="button" class="m3d-pay-btn">Direct afrekenen →</button>
       <span class="m3d-pm">iDEAL · Bancontact · creditcard — veilig betalen via Stripe</span>
+      <small class="m3d-legal-note"><strong>Levertijd:</strong> binnen maximaal 30 dagen na bestelling. <strong>Maatwerk:</strong> kies je personalisatie (naam, tekst, logo, eigen ontwerp of eigen maat), dan wordt het product speciaal voor jou gemaakt en geldt geen herroepingsrecht. Zonder personalisatie heb je 14 dagen bedenktijd. Met afrekenen ga je akkoord met de <a href="algemene-voorwaarden.html">algemene voorwaarden</a>.</small>
       <div class="m3d-msg" role="alert"></div>
       <small>Liever eerst overleggen? Gebruik dan de aanvraagknop: je ontvangt een prijsvoorstel en betaalt nog niets.</small>`;
     const submit = form.querySelector('button[type="submit"]');
