@@ -130,6 +130,7 @@ Deno.serve(async (req) => {
     variant: { label: variant.label, cents: variant.cents },
     addons: addons.map((a: any) => ({ label: a.label, cents: a.cents })),
     qty, delivery, ship, subtotal, details,
+    bron: ["facebook", "instagram", "google", "bing", "direct", "overig", "email", "tiktok", "pinterest"].includes(clean(fd.get("_bron"), 20)) ? clean(fd.get("_bron"), 20) : "onbekend",
   };
   const ins = await admin.from("checkout_requests").insert({ id: reqId, kind: "product", payload, uploads, amount_cents: subtotal });
   if (ins.error) return json({ error: "Er ging iets mis. Probeer het opnieuw." }, 500);

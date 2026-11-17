@@ -127,6 +127,7 @@
       fd.set('_addons', c.addons.join(','));
       fd.set('_qty', String(Math.min(100, Math.max(1, c.qty))));
       fd.set('_delivery', 'ship');
+      try { const b = JSON.parse(sessionStorage.getItem('m3d_bron') || 'null'); if (b && b.s) fd.set('_bron', String(b.s).slice(0, 20)); } catch (e) { /* negeren */ }
       for (const id of ['personalization', 'notes', 'personal-text', 'kt-names', 'kt-notes', 'kt-color', 'naam', 'tekst', 'datum']) {
         const el = document.getElementById(id); if (el && el.value && !el.name) fd.set(id, el.value);
       }
