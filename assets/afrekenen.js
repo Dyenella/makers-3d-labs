@@ -65,6 +65,8 @@
     if (!product) return;
     const form = document.querySelector('#laser-form, #resin-form, #vase-form, #kh-form, #mask-order, .np-form, #product-form');
     if (!form) return;
+    // Meta-pixel: productweergave (alleen verstuurd na cookietoestemming).
+    if (window.m3dTrack) window.m3dTrack('ViewContent', { content_ids: [page], content_type: 'product', content_name: product.name || page, currency: 'EUR' });
 
     const box = document.createElement('div');
     box.className = 'm3d-pay';
@@ -127,6 +129,11 @@
       for (const id of ['personalization', 'notes', 'personal-text', 'kt-names', 'kt-notes', 'kt-color', 'naam', 'tekst', 'datum']) {
         const el = document.getElementById(id); if (el && el.value && !el.name) fd.set(id, el.value);
       }
+      // Meta-pixel: start afrekenen; bedrag bewaren voor de Purchase-gebeurtenis op bedankt.html.
+      const m3dQty = Math.min(100, Math.max(1, c.qty));
+      const m3dData = { content_ids: [page], content_type: 'product', num_items: m3dQty, value: Math.round((variant.cents + c.addons.reduce((t, i) => t + (product.addons[i]?.cents || 0), 0)) * m3dQty) / 100, currency: 'EUR' };
+      try { sessionStorage.setItem('m3d_checkout', JSON.stringify(m3dData)); } catch (e) { /* negeren */ }
+      if (window.m3dTrack) window.m3dTrack('InitiateCheckout', m3dData);
       btn.disabled = true; btn.textContent = 'Even geduld…';
       try {
         const r = await fetch(FN, { method: 'POST', body: fd });
