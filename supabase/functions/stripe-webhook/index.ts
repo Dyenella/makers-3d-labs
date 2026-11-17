@@ -74,7 +74,7 @@ async function invoicePdf(o: {
   text("Van", L, y, 9, bold, grey); text("Factuur aan", 320, y, 9, bold, grey);
   y -= 15;
   const seller = [S.handelsnaam ? `${S.handelsnaam} (${S.bedrijfsnaam})` : S.bedrijfsnaam, S.adres, S.postcode_plaats, S.land,
-    `KvK ${S.kvk}`, `Btw-id ${S.btw_id || "aangevraagd"}`, S.email, S.website, S.iban ? `IBAN ${S.iban}` : ""].filter(Boolean);
+    `KvK ${S.kvk}`, `Btw-id ${S.btw_id || "NL005594435B45"}`, S.email, S.website, S.iban ? `IBAN ${S.iban}` : ""].filter(Boolean);
   const addrLines = o.customer.address.split("\n").filter((v) => v && v !== o.customer.name);
   const buyer = [o.customer.name, ...addrLines, o.customer.email].filter(Boolean);
   for (let i = 0; i < Math.max(seller.length, buyer.length); i++) {
@@ -122,7 +122,7 @@ async function invoicePdf(o: {
   text(`Betalingskenmerk: ${o.reference}`, L + 12, y - 22, 8.5, font, grey);
 
   // Voet
-  const foot = [`${S.handelsnaam || ""} is een handelsnaam van ${S.bedrijfsnaam} · ${S.adres}, ${S.postcode_plaats} · KvK ${S.kvk} · Btw-id ${S.btw_id || "aangevraagd"}`,
+  const foot = [`${S.handelsnaam || ""} is een handelsnaam van ${S.bedrijfsnaam} · ${S.adres}, ${S.postcode_plaats} · KvK ${S.kvk} · Btw-id ${S.btw_id || "NL005594435B45"}`,
     `Vragen over deze factuur? Mail ${S.email} en vermeld het factuurnummer. Op alle bestellingen zijn onze voorwaarden van toepassing (${S.website}/informatie.html).`];
   page.drawLine({ start: { x: L, y: 62 }, end: { x: R, y: 62 }, thickness: 0.5, color: line });
   foot.forEach((t, i) => wrap(t, R - L, 7.5).forEach((ln, j) => text(ln, L, 48 - i * 20 - j * 9, 7.5, font, grey)));

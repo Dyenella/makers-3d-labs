@@ -21,7 +21,7 @@ insert into public.makers_settings(key, value) values
  ('postcode_plaats', '2986 GE Ridderkerk'),
  ('land', 'Nederland'),
  ('kvk', '42219037'),
- ('btw_id', ''),               -- invullen zodra het btw-nummer binnen is
+ ('btw_id', 'NL005594435B45'),
  ('email', 'info@makers3dlabs.nl'),
  ('website', 'www.makers3dlabs.nl'),
  ('iban', '')                  -- optioneel, alleen ter informatie op de factuur
