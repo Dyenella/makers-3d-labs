@@ -64,7 +64,7 @@ Deno.serve(async (req) => {
   } else if (n.kind === "order") {
     subject = `Bedankt voor je bestelling ${rec.number} | Makers 3D Labs`;
     title = "Je bestelling staat in je klantomgeving";
-    paras = ["Bedankt voor je bestelling! Je kunt de status en de details altijd volgen in je klantomgeving."];
+    paras = ["Bedankt voor je bestelling! Je kunt de status en de details altijd volgen in je klantomgeving.", "Eerste keer inloggen? Kies op de inlogpagina \"Wachtwoord vergeten of nog geen wachtwoord ingesteld?\" en stel met je e-mailadres een wachtwoord in."];
     rows = [["Bestelling", rec.number], ["Omschrijving", rec.title], ["Status", STATUS[rec.status] || "In behandeling"], ["Totaal", money(rec.total_cents) + " incl. btw"]];
     button = ["Bekijk mijn bestelling", SITE + "/bestellingen.html"];
   } else if (n.kind === "order_status") {

@@ -46,23 +46,19 @@ async function load(){if(!state.client||!state.user)return;const revision=++stat
  if(error){list.replaceChildren();message('Je gegevens konden niet worden geladen. Gebruik Vernieuwen of neem contact op.');return;}
  state.records=data||[];render(state.records);
 }
-async function updateUser(user){clearPrivate();state.user=user;if(!user){loginState();return;}el('customer-login').hidden=true;el('customer-session').hidden=false;el('customer-content').hidden=false;el('customer-email').textContent=user.email||'Ingelogd';await load();}
+async function updateUser(user){clearPrivate();state.user=user;if(!user){loginState();return;}if(state.auth&&state.auth.isRecovery()){el('customer-login').hidden=false;message('Kies hieronder een nieuw wachtwoord om verder te gaan.');return;}el('customer-login').hidden=true;el('customer-session').hidden=false;el('customer-content').hidden=false;el('customer-email').textContent=user.email||'Ingelogd';await load();}
 async function start(){
  const config=window.MAKERS_CUSTOMER_CONFIG;
  if(!config?.url||!config?.publishableKey){message('De vernieuwde klantomgeving wordt ingericht. Inloggen en persoonlijke documenten zijn nog niet beschikbaar. Neem voor jouw bestelling, offerte of factuur contact met ons op.');el('customer-login-submit').disabled=true;if(view==='overview')el('customer-content').hidden=false;return;}
  try{const u=new URL(config.url);if(u.protocol!=='https:'||!u.hostname.endsWith('.supabase.co')||!config.publishableKey.startsWith('sb_publishable_'))throw Error('Invalid configuration');
   const {createClient}=await import('https://esm.sh/@supabase/supabase-js@2.81.1');
-  state.client=createClient(config.url,config.publishableKey,{auth:{persistSession:true,storage:window.sessionStorage,autoRefreshToken:true,detectSessionInUrl:true}});
+  state.client=createClient(config.url,config.publishableKey,{auth:{persistSession:true,storage:window.localStorage,autoRefreshToken:true,detectSessionInUrl:true}});
+  state.auth=window.M3DAuth?window.M3DAuth.mount(el('customer-login-form'),state.client,{redirect:location.origin+'/account.html',submitId:'customer-login-submit',onRecovery:()=>{el('customer-login').hidden=false;},onPasswordSet:async()=>{const {data}=await state.client.auth.getUser();await updateUser(data.user||null);}}):null;
   state.client.auth.onAuthStateChange((event,session)=>{setTimeout(()=>updateUser(session?.user||null).catch(()=>message('De klantomgeving kon niet worden geladen.')),0);});
   const {data,error}=await state.client.auth.getUser();if(error&&!data.user){loginState();}else await updateUser(data.user);
   el('customer-login-submit').disabled=false;
  }catch{clearPrivate();message('Inloggen is momenteel niet bereikbaar. Probeer later opnieuw of neem contact op.');el('customer-login-submit').disabled=true;}
 }
-el('customer-login-form').addEventListener('submit',async e=>{e.preventDefault();if(!state.client)return;const button=el('customer-login-submit');button.disabled=true;const email=el('customer-login-email').value.trim(),register=el('customer-register').checked;
- try{const {error}=await state.client.auth.signInWithOtp({email,options:{shouldCreateUser:register,emailRedirectTo:location.origin+'/account.html'}});if(error)throw error;el('customer-auth-message').textContent='Als dit e-mailadres kan worden gebruikt, ontvang je een inloglink. Controleer ook je spammap. Open de link in deze browser. Er kan een korte wachttijd gelden voor een nieuwe aanvraag.';}
- catch{el('customer-auth-message').textContent='De inloglink kon niet worden aangevraagd. Controleer je e-mailadres en probeer later opnieuw.';}
- finally{button.disabled=false;}
-});
 el('customer-signout').addEventListener('click',async()=>{clearPrivate();state.user=null;loginState();if(state.client){const {error}=await state.client.auth.signOut();if(error)message('Uitloggen kon niet worden bevestigd. Sluit dit tabblad en probeer het opnieuw.');}});
 el('customer-refresh')?.addEventListener('click',()=>load().catch(()=>message('Vernieuwen is niet gelukt.')));
 el('customer-profile')?.addEventListener('submit',async e=>{e.preventDefault();if(!state.client||!state.user)return;const button=e.target.querySelector('button');button.disabled=true;const payload={user_id:state.user.id};for(const [key,value]of new FormData(e.target))payload[key]=String(value).trim();try{const {error}=await state.client.from('customer_profiles').upsert(payload,{onConflict:'user_id'});if(error)throw error;message('Je gegevens zijn opgeslagen. Een adreswijziging past een al bevestigde bestelling niet automatisch aan.');}catch{message('Opslaan is niet gelukt. Probeer opnieuw.');}finally{button.disabled=false;}});

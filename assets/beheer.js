@@ -178,6 +178,7 @@
   async function showUser(user) {
     state.user = user;
     if (!user) { el('bh-app').hidden = true; el('bh-login').hidden = false; msg('Log in met je beheerdersaccount.'); return; }
+    if (state.auth && state.auth.isRecovery()) { el('bh-app').hidden = true; el('bh-login').hidden = false; msg('Kies een nieuw wachtwoord om verder te gaan.'); return; }
     const { data: ok } = await state.client.rpc('is_makers_admin');
     if (!ok) { el('bh-app').hidden = true; el('bh-login').hidden = true; msg('Dit account heeft geen beheerrechten.'); return; }
     el('bh-login').hidden = true; el('bh-app').hidden = false; msg('');
@@ -188,18 +189,13 @@
   async function start() {
     if (!config.url || !config.publishableKey) { msg('De klantomgeving is niet ingesteld.'); return; }
     const { createClient } = await import('https://esm.sh/@supabase/supabase-js@2.81.1');
-    state.client = createClient(config.url, config.publishableKey, { auth: { persistSession: true, storage: window.sessionStorage, autoRefreshToken: true, detectSessionInUrl: true } });
+    state.client = createClient(config.url, config.publishableKey, { auth: { persistSession: true, storage: window.localStorage, autoRefreshToken: true, detectSessionInUrl: true } });
+    state.auth = window.M3DAuth ? window.M3DAuth.mount(el('bh-login-form'), state.client, { redirect: location.origin + '/beheer.html', register: false, submitId: 'bh-login-submit', onRecovery: () => { el('bh-login').hidden = false; el('bh-app').hidden = true; }, onPasswordSet: async () => { const { data } = await state.client.auth.getUser(); state.user = null; showUser(data.user || null); } }) : null;
     state.client.auth.onAuthStateChange((_e, session) => { setTimeout(() => { if ((session?.user?.id || null) !== (state.user?.id || null)) showUser(session?.user || null); }, 0); });
     const { data } = await state.client.auth.getUser();
     await showUser(data.user || null);
   }
 
-  el('bh-login-form').addEventListener('submit', async (e) => {
-    e.preventDefault(); const b = el('bh-login-submit'); b.disabled = true;
-    const { error } = await state.client.auth.signInWithOtp({ email: el('bh-login-email').value.trim(), options: { shouldCreateUser: true, emailRedirectTo: location.origin + '/beheer.html' } });
-    el('bh-login-msg').textContent = error ? 'De inloglink kon niet worden verstuurd.' : 'Kijk in je mail en open de inloglink in deze browser.';
-    b.disabled = false;
-  });
   el('bh-signout').addEventListener('click', async () => { await state.client.auth.signOut(); state.user = null; showUser(null); });
   el('bh-search').addEventListener('input', renderCustomers);
   document.querySelectorAll('.bh-tabs button').forEach((b) => b.addEventListener('click', () => setTab(b.dataset.tab)));
