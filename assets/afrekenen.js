@@ -84,6 +84,7 @@
         .m3d-pay .m3d-pm{display:block;margin-top:6px;font-size:12px;opacity:.75}
       </style>
       <h3>Direct bestellen en betalen</h3>
+      <p class="m3d-ship" style="font-weight:700;color:#d8ad43">🎄 Kerstactie: 5% korting, automatisch verrekend bij het afrekenen (t/m 31 december).</p>
       <p class="m3d-ship">Verzenden met <strong>PostNL</strong> of <strong>DHL</strong> — je kiest bij het afrekenen. Vanaf € 5,25, gratis vanaf € 400. <a href="informatie.html#verzending">Bekijk de tarieven</a></p>
       <button type="button" class="m3d-pay-btn">Direct afrekenen →</button>
       <span class="m3d-pm">iDEAL · Bancontact · creditcard — veilig betalen via Stripe</span>
@@ -131,7 +132,7 @@
       }
       // Meta-pixel: start afrekenen; bedrag bewaren voor de Purchase-gebeurtenis op bedankt.html.
       const m3dQty = Math.min(100, Math.max(1, c.qty));
-      const m3dData = { content_ids: [page], content_type: 'product', num_items: m3dQty, value: Math.round((variant.cents + c.addons.reduce((t, i) => t + (product.addons[i]?.cents || 0), 0)) * m3dQty) / 100, currency: 'EUR' };
+      const m3dData = { content_ids: [page], content_type: 'product', num_items: m3dQty, value: Math.round((variant.cents + c.addons.reduce((t, i) => t + (product.addons[i]?.cents || 0), 0)) * m3dQty * (Date.now() < Date.parse('2027-01-01T00:00:00+01:00') ? 0.95 : 1)) / 100, currency: 'EUR' };
       try { sessionStorage.setItem('m3d_checkout', JSON.stringify(m3dData)); } catch (e) { /* negeren */ }
       if (window.m3dTrack) window.m3dTrack('InitiateCheckout', m3dData);
       btn.disabled = true; btn.textContent = 'Even geduld…';

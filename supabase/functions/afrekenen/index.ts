@@ -29,6 +29,8 @@ function shipClass(product: any, variant: any, qty: number): ShipClass {
   if (/^Groot/.test(label) || /\b(2[5-9]|[3-9]\d)\s?(–\s?\d+\s?)?cm\b/.test(label)) return "groot";
   return "normaal";
 }
+// Kerstkorting: 5% op alle online bestellingen t/m 31 december 2026 (Stripe-coupon, eenmalig per bestelling).
+const PROMO = { coupon: "KERST5-2026", percent: 5, name: "Kerstkorting 5%", until: Date.parse("2027-01-01T00:00:00+01:00") };
 const ORIGINS = [SITE, "https://makers3dlabs.nl"];
 const IMG = ["image/jpeg", "image/png", "image/webp"];
 
@@ -57,6 +59,19 @@ async function stripe(method: string, path: string, body?: Record<string, unknow
     body: body ? form(body) : undefined,
   });
   return { status: r.status, body: await r.json() };
+}
+// Zorgt dat de kerstcoupon in Stripe bestaat; geeft het coupon-ID terug, of null buiten de actieperiode/bij een fout.
+async function promoCoupon(): Promise<string | null> {
+  if (Date.now() >= PROMO.until) return null;
+  const got = await stripe("GET", `coupons/${PROMO.coupon}`);
+  if (got.status === 200) return got.body?.valid ? PROMO.coupon : null;
+  const made = await stripe("POST", "coupons", {
+    id: PROMO.coupon, name: PROMO.name, percent_off: PROMO.percent, duration: "once",
+    redeem_by: Math.floor(PROMO.until / 1000) - 1,
+  });
+  if (made.status === 200) return PROMO.coupon;
+  console.error("Kerstcoupon kon niet worden aangemaakt", made.body);
+  return null;
 }
 const clean = (s: unknown, n = 2000) => String(s ?? "").replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g, "").trim().slice(0, n);
 
@@ -142,8 +157,10 @@ Deno.serve(async (req) => {
     },
   }));
 
+  const coupon = await promoCoupon();
   const session = await stripe("POST", "checkout/sessions", {
     mode: "payment",
+    discounts: coupon ? [{ coupon }] : undefined,
     locale: "nl",
     line_items: lookups.map((k) => ({ price: (byKey.get(k) as any).id, quantity: qty })),
     shipping_options,
@@ -164,6 +181,6 @@ Deno.serve(async (req) => {
   // Koppeling verzendtarief → vervoerder bewaren (voor de bestelling en track & trace).
   const carriers: Record<string, string> = {};
   (session.body.shipping_options || []).forEach((o: any, i: number) => { if (o.shipping_rate) carriers[o.shipping_rate] = rates[i]?.carrier || ""; });
-  await admin.from("checkout_requests").update({ stripe_session: session.body.id, payload: { ...payload, carriers } }).eq("id", reqId);
+  await admin.from("checkout_requests").update({ stripe_session: session.body.id, payload: { ...payload, carriers, discount: coupon ? { coupon, percent: PROMO.percent } : null } }).eq("id", reqId);
   return json({ url: session.body.url });
 });
