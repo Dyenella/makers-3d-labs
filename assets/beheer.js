@@ -87,6 +87,8 @@
     if (r.file_path) card.append(node('p', 'PDF toegevoegd'));
     const map = r._kind === 'order' ? ORDER_STATUS : r._kind === 'quote' ? QUOTE_STATUS : INVOICE_STATUS;
     const table = { order: 'customer_orders', quote: 'customer_quotes', invoice: 'customer_invoices' }[r._kind];
+    const note = node('p', undefined, 'bh-note'); note.setAttribute('role', 'status'); note.style.cssText = 'margin:8px 0 0;font-weight:600;font-size:14px';
+    const say = (t, bad) => { msg(t); note.textContent = t; note.style.color = bad ? '#ff8a80' : '#7fd9a8'; };
     const sel = node('select'); sel.setAttribute('aria-label', 'Status ' + r.number);
     for (const [v, t] of Object.entries(map)) { const op = node('option', t); op.value = v; if (v === r.status) op.selected = true; sel.append(op); }
     if (!map[r.status]) { const op = node('option', r.status); op.value = r.status; op.selected = true; sel.prepend(op); }
@@ -94,7 +96,7 @@
       sel.disabled = true;
       const { error } = await state.client.from(table).update({ status: sel.value }).eq('id', r.id);
       sel.disabled = false;
-      msg(error ? 'Status wijzigen is niet gelukt.' : (r._kind === 'order' ? 'Status bijgewerkt. De klant krijgt een e-mail.' : 'Status bijgewerkt.'));
+      say(error ? 'Status wijzigen is niet gelukt.' : (r._kind === 'order' ? 'Status bijgewerkt. De klant krijgt een e-mail.' : 'Status bijgewerkt.'), !!error);
     });
     const lab = node('label', 'Status'); lab.style.marginTop = '6px';
     card.append(lab, sel);
@@ -103,7 +105,7 @@
       for (const [v, t] of Object.entries({ open: 'Openstaand', paid: 'Betaald' })) { const op = node('option', 'Betaling: ' + t); op.value = v; if (v === r.payment_status) op.selected = true; pay.append(op); }
       pay.addEventListener('change', async () => {
         const { error } = await state.client.from('customer_orders').update({ payment_status: pay.value }).eq('id', r.id);
-        msg(error ? 'Betaalstatus wijzigen is niet gelukt.' : 'Betaalstatus bijgewerkt.');
+        say(error ? 'Betaalstatus wijzigen is niet gelukt.' : 'Betaalstatus bijgewerkt.', !!error);
       });
       card.append(pay);
       const tt = node('div'); tt.style.cssText = 'display:flex;gap:6px;flex-wrap:wrap;margin-top:6px';
@@ -116,12 +118,13 @@
         save.disabled = true;
         const { error } = await state.client.from('customer_orders').update({ carrier: car.value || null, tracking_code: code.value.trim() || null, ship_postcode: pc.value.replace(/\s/g, '').toUpperCase() || null }).eq('id', r.id);
         save.disabled = false;
-        msg(error ? 'Opslaan is niet gelukt.' : 'Track & trace opgeslagen. Zet de status daarna op "Verzonden": de klant krijgt dan een mail met de volg-link.');
+        say(error ? 'Opslaan is niet gelukt.' : 'Track & trace opgeslagen. Zet de status nu op "Verzonden": de klant krijgt dan een mail met de volg-link.', !!error);
       });
       tt.append(car, code, pc, save);
       const tl = node('label', 'Verzending'); tl.style.marginTop = '6px';
       card.append(tl, tt);
     }
+    card.append(note);
     return card;
   }
 
