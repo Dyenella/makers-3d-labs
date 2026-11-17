@@ -60,19 +60,8 @@ async function stripe(method: string, path: string, body?: Record<string, unknow
   });
   return { status: r.status, body: await r.json() };
 }
-// Zorgt dat de kerstcoupon in Stripe bestaat; geeft het coupon-ID terug, of null buiten de actieperiode/bij een fout.
-async function promoCoupon(): Promise<string | null> {
-  if (Date.now() >= PROMO.until) return null;
-  const got = await stripe("GET", `coupons/${PROMO.coupon}`);
-  if (got.status === 200) return got.body?.valid ? PROMO.coupon : null;
-  const made = await stripe("POST", "coupons", {
-    id: PROMO.coupon, name: PROMO.name, percent_off: PROMO.percent, duration: "once",
-    redeem_by: Math.floor(PROMO.until / 1000) - 1,
-  });
-  if (made.status === 200) return PROMO.coupon;
-  console.error("Kerstcoupon kon niet worden aangemaakt", made.body);
-  return null;
-}
+// Kerstcoupon (aangemaakt in het Stripe-dashboard); null buiten de actieperiode.
+const promoCoupon = (): string | null => (Date.now() < PROMO.until ? PROMO.coupon : null);
 const clean = (s: unknown, n = 2000) => String(s ?? "").replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g, "").trim().slice(0, n);
 
 Deno.serve(async (req) => {
@@ -157,10 +146,10 @@ Deno.serve(async (req) => {
     },
   }));
 
-  const coupon = await promoCoupon();
-  const session = await stripe("POST", "checkout/sessions", {
+  let coupon = promoCoupon();
+  const sessionBody = (c: string | null) => ({
     mode: "payment",
-    discounts: coupon ? [{ coupon }] : undefined,
+    discounts: c ? [{ coupon: c }] : undefined,
     locale: "nl",
     line_items: lookups.map((k) => ({ price: (byKey.get(k) as any).id, quantity: qty })),
     shipping_options,
@@ -174,6 +163,12 @@ Deno.serve(async (req) => {
     payment_intent_data: { metadata: { request_id: reqId }, statement_descriptor_suffix: "WEBSHOP" },
     custom_text: { submit: { message: "Levertijd: binnen maximaal 30 dagen na bestelling. Met betalen ga je akkoord met onze algemene voorwaarden (makers3dlabs.nl/algemene-voorwaarden.html). Gepersonaliseerde producten (naam, tekst, logo, eigen ontwerp of eigen maat) worden speciaal voor jou gemaakt; daarvoor geldt geen herroepingsrecht. Zonder personalisatie heb je 14 dagen bedenktijd. Na betaling ontvang je een bevestiging per e-mail." } },
   });
+  let session = await stripe("POST", "checkout/sessions", sessionBody(coupon));
+  if (session.status >= 400 && coupon && /coupon|discount/i.test(JSON.stringify(session.body))) {
+    console.error("Kerstcoupon niet bruikbaar, afrekenen zonder korting", session.body);
+    coupon = null;
+    session = await stripe("POST", "checkout/sessions", sessionBody(null));
+  }
   if (session.status >= 400) {
     console.error(session.body);
     return json({ error: "Afrekenen kon niet worden gestart. Probeer het later opnieuw." }, 502);
