@@ -149,6 +149,81 @@
       "source": "/vaas-ysl-parfum",
       "destination": "/vaas-gouden-lint-parfum.html",
       "permanent": true
+    },
+    {
+      "source": "/vaas-dior-parfum-voorbeeld.webp",
+      "destination": "/vaas-amfora-parfum-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-gucci-tas-voorbeeld.webp",
+      "destination": "/vaas-bamboe-tas-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-louis-vuitton-tas-voorbeeld.webp",
+      "destination": "/vaas-bloemmotief-tas-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-saint-laurent-tas-voorbeeld.webp",
+      "destination": "/vaas-chevron-tas-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-ysl-parfum-voorbeeld.webp",
+      "destination": "/vaas-gouden-lint-parfum-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-jacquemus-tas-voorbeeld.webp",
+      "destination": "/vaas-minihandle-tas-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-chanel-parfum-voorbeeld.webp",
+      "destination": "/vaas-nummer-parfum-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-chanel-tas-voorbeeld.webp",
+      "destination": "/vaas-quilt-tas-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-gucci-parfum-voorbeeld.webp",
+      "destination": "/vaas-roze-parfum-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-dior-tas-voorbeeld.webp",
+      "destination": "/vaas-ruitjes-tas-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-hermes-tas-voorbeeld.webp",
+      "destination": "/vaas-slotje-tas-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-fendi-tas-voorbeeld.webp",
+      "destination": "/vaas-stokbrood-tas-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-prada-parfum-voorbeeld.webp",
+      "destination": "/vaas-triangle-parfum-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-prada-tas-voorbeeld.webp",
+      "destination": "/vaas-triangle-tas-voorbeeld.webp",
+      "permanent": true
+    },
+    {
+      "source": "/vaas-balenciaga-tas-voorbeeld.webp",
+      "destination": "/vaas-zandloper-tas-voorbeeld.webp",
+      "permanent": true
     }
   ]
 }
