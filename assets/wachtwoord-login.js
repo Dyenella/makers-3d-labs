@@ -86,7 +86,7 @@
           else say('Je account is aangemaakt en je bent ingelogd.');
         } else if (mode === 'forgot') {
           await client.auth.resetPasswordForEmail(email, { redirectTo: redirect });
-          render('login', 'Als er een account bestaat met dit e-mailadres, ontvang je binnen enkele minuten een link om je wachtwoord in te stellen. Kijk ook in je spam.');
+          render('login', 'Als er een account bestaat met dit e-mailadres, ontvang je binnen enkele minuten een link om je wachtwoord in te stellen. Kijk ook in je spam. Geen mail ontvangen? Dan is er waarschijnlijk nog geen account met dit adres: kies dan "Account aanmaken".');
         } else if (mode === 'newpass') {
           if (pass !== form.querySelector('#m3d-pass2').value) { say('De twee wachtwoorden zijn niet gelijk.', true); btn.disabled = false; return; }
           const { error } = await client.auth.updateUser({ password: pass });

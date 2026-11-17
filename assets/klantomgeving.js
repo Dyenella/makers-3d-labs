@@ -8,7 +8,8 @@ const date=value=>{const d=new Date(value);return Number.isNaN(d.getTime())?'—
 function node(tag,text,className){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(className)n.className=className;return n;}
 function message(text){el('customer-message').textContent=text;}
 function clearPrivate(){state.revision++;state.records=[];el('customer-records')?.replaceChildren();el('customer-content').hidden=true;el('customer-session').hidden=true;const f=el('customer-profile');if(f)f.reset();}
-function loginState(){clearPrivate();el('customer-login').hidden=false;if(view==='overview')el('customer-content').hidden=false;message('Log in om jouw persoonlijke gegevens, offertes, bestellingen en facturen te bekijken.');}
+function setOut(out){const m=document.querySelector('main.customer');if(!m)return;m.classList.toggle('is-out',out);const h=m.querySelector('h1');if(h){h.dataset.t=h.dataset.t||h.textContent;h.textContent=out?'Inloggen':h.dataset.t;}if(!document.getElementById('m3d-out-css')){const st=document.createElement('style');st.id='m3d-out-css';st.textContent='main.customer.is-out .customer-nav,main.customer.is-out>p,main.customer.is-out #customer-message,main.customer.is-out #customer-content{display:none!important}main.customer.is-out .customer-layout{display:block;max-width:560px}';document.head.append(st);}}
+function loginState(){clearPrivate();setOut(true);el('customer-login').hidden=false;el('customer-content').hidden=true;message('');}
 const statusNames={received:'Ontvangen',confirmed:'Bevestigd',in_production:'In productie',shipped:'Verzonden',completed:'Afgerond',cancelled:'Geannuleerd',open:'Openstaand',paid:'Betaald',sent:'Verstuurd',accepted:'Geaccepteerd',declined:'Afgewezen',expired:'Verlopen',draft:'In voorbereiding',issued:'Uitgegeven',credited:'Gecrediteerd'};
 async function download(record,button){
  if(!state.client||!state.user)return;
@@ -46,7 +47,7 @@ async function load(){if(!state.client||!state.user)return;const revision=++stat
  if(error){list.replaceChildren();message('Je gegevens konden niet worden geladen. Gebruik Vernieuwen of neem contact op.');return;}
  state.records=data||[];render(state.records);
 }
-async function updateUser(user){clearPrivate();state.user=user;if(!user){loginState();return;}if(state.auth&&state.auth.isRecovery()){el('customer-login').hidden=false;message('Kies hieronder een nieuw wachtwoord om verder te gaan.');return;}el('customer-login').hidden=true;el('customer-session').hidden=false;el('customer-content').hidden=false;el('customer-email').textContent=user.email||'Ingelogd';await load();}
+async function updateUser(user){clearPrivate();state.user=user;if(!user){loginState();return;}if(state.auth&&state.auth.isRecovery()){setOut(true);el('customer-login').hidden=false;return;}setOut(false);el('customer-login').hidden=true;el('customer-session').hidden=false;el('customer-content').hidden=false;el('customer-email').textContent=user.email||'Ingelogd';await load();}
 async function start(){
  const config=window.MAKERS_CUSTOMER_CONFIG;
  if(!config?.url||!config?.publishableKey){message('De vernieuwde klantomgeving wordt ingericht. Inloggen en persoonlijke documenten zijn nog niet beschikbaar. Neem voor jouw bestelling, offerte of factuur contact met ons op.');el('customer-login-submit').disabled=true;if(view==='overview')el('customer-content').hidden=false;return;}

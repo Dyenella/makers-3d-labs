@@ -190,7 +190,7 @@
     if (!config.url || !config.publishableKey) { msg('De klantomgeving is niet ingesteld.'); return; }
     const { createClient } = await import('https://esm.sh/@supabase/supabase-js@2.81.1');
     state.client = createClient(config.url, config.publishableKey, { auth: { persistSession: true, storage: window.localStorage, autoRefreshToken: true, detectSessionInUrl: true } });
-    state.auth = window.M3DAuth ? window.M3DAuth.mount(el('bh-login-form'), state.client, { redirect: location.origin + '/beheer.html', register: false, submitId: 'bh-login-submit', onRecovery: () => { el('bh-login').hidden = false; el('bh-app').hidden = true; }, onPasswordSet: async () => { const { data } = await state.client.auth.getUser(); state.user = null; showUser(data.user || null); } }) : null;
+    state.auth = window.M3DAuth ? window.M3DAuth.mount(el('bh-login-form'), state.client, { redirect: location.origin + '/beheer.html', register: true, submitId: 'bh-login-submit', onRecovery: () => { el('bh-login').hidden = false; el('bh-app').hidden = true; }, onPasswordSet: async () => { const { data } = await state.client.auth.getUser(); state.user = null; showUser(data.user || null); } }) : null;
     state.client.auth.onAuthStateChange((_e, session) => { setTimeout(() => { if ((session?.user?.id || null) !== (state.user?.id || null)) showUser(session?.user || null); }, 0); });
     const { data } = await state.client.auth.getUser();
     await showUser(data.user || null);
