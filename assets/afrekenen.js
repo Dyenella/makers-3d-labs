@@ -99,7 +99,7 @@
       </style>
       <h3>Direct bestellen en betalen</h3>
       <p class="m3d-ship" style="font-weight:700;color:#d8ad43">🎄 Kerstactie: 5% korting, automatisch verrekend bij het afrekenen (t/m 31 december).</p>
-      <p class="m3d-ship">Verzenden met <strong>PostNL</strong> of <strong>DHL</strong> — je kiest bij het afrekenen. Vanaf € 5,25, gratis vanaf € 400. <a href="informatie.html#verzending">Bekijk de tarieven</a></p>
+      <p class="m3d-ship">Verzenden met <strong>PostNL</strong>, met track &amp; trace. Brievenbuspakje € 4,95, pakket € 9,95, gratis vanaf € 400. <a href="informatie.html#verzending">Bekijk de tarieven</a></p>
       <label class="m3d-remind" style="display:flex;gap:8px;align-items:flex-start;font-weight:400;font-size:13.5px;line-height:1.45;margin:0 0 12px"><input type="checkbox" id="m3d-herinnering" style="margin-top:3px"> <span>Stuur mij één herinnering per e-mail als ik mijn bestelling niet afreken (je e-mailadres vul je in bij het afrekenen).</span></label>
       <label class="m3d-remind" style="display:flex;gap:8px;align-items:flex-start;font-weight:400;font-size:13.5px;line-height:1.45;margin:0 0 12px"><input type="checkbox" id="m3d-nieuwsbrief" style="margin-top:3px"> <span>Houd mij op de hoogte van nieuwe producten (hooguit één mail per week; je krijgt eerst een bevestigingsmail).</span></label>
       <button type="button" class="m3d-pay-btn">Direct afrekenen →</button>

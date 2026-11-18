@@ -7,16 +7,17 @@ const SITE = "https://www.makers3dlabs.nl";
 const CATALOG = SITE + "/assets/catalogus.json";
 const KEY = Deno.env.get("STRIPE_SECRET_KEY")!;
 const FREE_FROM = 40000; // gratis verzenden vanaf € 400
-// Verzendtarieven incl. btw (goedgekeurd 17-11-2026).
+// Verzendtarieven incl. btw (goedgekeurd 18-11-2026). Alleen PostNL zakelijk.
 const RATES = {
-  klein: [{ carrier: "PostNL", name: "PostNL – brievenbuspakje", cents: 550 }, { carrier: "DHL", name: "DHL – brievenbuspakket", cents: 525 }],
-  normaal: [{ carrier: "PostNL", name: "PostNL – pakket", cents: 895 }, { carrier: "DHL", name: "DHL – pakket", cents: 795 }],
-  groot: [{ carrier: "PostNL", name: "PostNL – groot pakket (extra stevig verpakt)", cents: 1295 }, { carrier: "DHL", name: "DHL – groot pakket (extra stevig verpakt)", cents: 1295 }],
-  test: [{ carrier: "PostNL", name: "PostNL – testzending (gratis)", cents: 0 }, { carrier: "DHL", name: "DHL – testzending (gratis)", cents: 0 }],
+  klein: [{ carrier: "PostNL", name: "PostNL – brievenbuspakje", cents: 495 }],
+  normaal: [{ carrier: "PostNL", name: "PostNL – pakket", cents: 995 }],
+  groot: [{ carrier: "PostNL", name: "PostNL – groot pakket (extra stevig verpakt)", cents: 1295 }],
+  test: [{ carrier: "PostNL", name: "PostNL – testzending (gratis)", cents: 0 }],
 } as const;
 type ShipClass = keyof typeof RATES;
 // Artikelen die door de brievenbus passen (met maximaal aantal per brievenbuspakje).
 const SMALL: Record<string, number> = {
+  "kersthangers.html": 6, "kersthangers-bedrijfslogo.html": 6,
   "persoonlijke-kersttafel.html": 12, "lasergravure-sleutelhangers.html": 4, "lasergravure-dierenpenning.html": 4,
   "lasergravure-leren-portemonnee.html": 1, "product-053-bladwijzer-bergen.html": 3, "kleine-cadeaus.html": 10,
 };

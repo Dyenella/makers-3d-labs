@@ -110,7 +110,7 @@
       card.append(pay);
       const tt = node('div'); tt.style.cssText = 'display:flex;gap:6px;flex-wrap:wrap;margin-top:6px';
       const car = node('select'); car.setAttribute('aria-label', 'Vervoerder ' + r.number);
-      for (const v of ['', 'PostNL', 'DHL']) { const op = node('option', v || 'Vervoerder…'); op.value = v; if (v === (r.carrier || '')) op.selected = true; car.append(op); }
+      for (const v of ['', 'PostNL'].concat(r.carrier === 'DHL' ? ['DHL'] : [])) { const op = node('option', v || 'Vervoerder…'); op.value = v; if (v === (r.carrier || '')) op.selected = true; car.append(op); }
       const code = node('input'); code.placeholder = 'Track & trace-code'; code.value = r.tracking_code || ''; code.maxLength = 60; code.style.flex = '1';
       const pc = node('input'); pc.placeholder = 'Postcode'; pc.value = r.ship_postcode || ''; pc.maxLength = 12; pc.style.width = '90px';
       const save = node('button', 'Opslaan'); save.type = 'button';
