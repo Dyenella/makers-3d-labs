@@ -1,7 +1,7 @@
 {
  "currency": "eur",
  "tax_behavior": "inclusive",
- "count": 292,
+ "count": 293,
  "products": [
   {
    "id": "m3d_anubis_antiekgouden_buste",
@@ -230,7 +230,7 @@
    "url": "https://www.makers3dlabs.nl/kersthangers-bedrijfslogo.html",
    "name": "Kersthangers met bedrijfslogo",
    "category": "Kerst",
-   "image": "https://www.makers3dlabs.nl/makers3dlabs-logo.webp",
+   "image": "https://www.makers3dlabs.nl/kersthangers-bedrijfslogo-kerstsfeer.webp",
    "variants": [
     {
      "key": "8-cm",
@@ -277,6 +277,41 @@
      "key": "12-cm",
      "label": "12 cm",
      "cents": 1395,
+     "firm": true
+    }
+   ],
+   "addons": []
+  },
+  {
+   "id": "m3d_kleine_cadeaus",
+   "file": "kleine-cadeaus.html",
+   "url": "https://www.makers3dlabs.nl/kleine-cadeaus.html",
+   "name": "Kleine cadeaus op maat",
+   "category": "Kerst",
+   "image": "https://www.makers3dlabs.nl/kleine-cadeaus-kerstsfeer.webp",
+   "variants": [
+    {
+     "key": "naamsleutelhanger",
+     "label": "Naamsleutelhanger",
+     "cents": 795,
+     "firm": true
+    },
+    {
+     "key": "rechthoekige-sleutelhanger",
+     "label": "Rechthoekige sleutelhanger",
+     "cents": 695,
+     "firm": true
+    },
+    {
+     "key": "cadeaulabel-houten-ster",
+     "label": "Cadeaulabel houten ster",
+     "cents": 495,
+     "firm": true
+    },
+    {
+     "key": "cadeaulabel-houten-rechthoek",
+     "label": "Cadeaulabel houten rechthoek",
+     "cents": 395,
      "firm": true
     }
    ],
@@ -3782,7 +3817,7 @@
    "url": "https://www.makers3dlabs.nl/product-026-logo-podium-abstract.html",
    "name": "Abstract logo podium",
    "category": "Zakelijk",
-   "image": "https://www.makers3dlabs.nl/makers3dlabs-logo.webp",
+   "image": "https://www.makers3dlabs.nl/zakelijk/026-logo-podium-abstract.webp",
    "variants": [
     {
      "key": "klein-10-12-cm-wit-onbeschilderd",

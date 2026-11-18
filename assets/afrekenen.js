@@ -35,6 +35,7 @@
       if (checked('clubcolors')) addons.push(3);
     }
     else if (form.id === 'vase-form') { v = ['15', '20', '25'].indexOf($('input[name="size"]:checked', form)?.value); qty = num('#vase-qty'); }
+    else if (page === 'kleine-cadeaus.html') { v = ['Naamsleutelhanger', 'Rechthoekige sleutelhanger', 'Stervormig cadeaulabel', 'Rechthoekig cadeaulabel'].indexOf($('input[name="model"]:checked', form)?.value); qty = num('#kg-qty'); }
     else if (form.id === 'kh-form' && $('input[name="size"]', form)) { v = ['8', '10', '12'].indexOf($('input[name="size"]:checked', form)?.value); qty = num('#kh-qty'); }
     else if (form.id === 'kh-form') {
       v = ['naamkaartje', 'servetring', 'combinatie'].indexOf($('input[name="model"]:checked', form)?.value);
@@ -140,6 +141,8 @@
         if (/email|naam|customer|telefoon|phone|akkoord|toestemming/i.test((el.name || '') + ' ' + (el.id || '')) || el.type === 'checkbox') continue;
         if (!el.checkValidity()) { el.reportValidity(); return; }
       }
+      const needFile = form.querySelector('input[type="file"][data-m3d-required]');
+      if (needFile && !needFile.files.length) { msg.textContent = 'Upload eerst je logo om direct af te rekenen.'; needFile.focus(); return; }
       const fd = new FormData(form);
       ['_subject', '_captcha', 'Prijsstatus', 'quote-price', 'quote-unit'].forEach((k) => fd.delete(k));
       fd.set('_product', page);

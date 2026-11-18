@@ -81,17 +81,23 @@ async function syncProduct(p: Product) {
 }
 
 Deno.serve(async (req) => {
-  // Alleen met service-role sleutel.
+  // Alleen met service-role sleutel, of met de interne sleutel uit de kluis (aanroep vanuit de database).
+  const body = await req.json().catch(() => ({}));
   const token = req.headers.get("apikey") || (req.headers.get("authorization") || "").replace(/^Bearer\s+/i, "");
   const probe = createClient(Deno.env.get("SUPABASE_URL")!, token, { auth: { persistSession: false } });
   const { error: authErr } = await probe.auth.admin.listUsers({ page: 1, perPage: 1 });
-  if (authErr) return new Response(JSON.stringify({ error: "forbidden" }), { status: 403 });
+  let allowed = !authErr;
+  if (!allowed && body?.key) {
+    const admin = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
+    const { data } = await admin.rpc("makers_nieuwsbrief_key_ok", { k: String(body.key) });
+    allowed = data === true;
+  }
+  if (!allowed) return new Response(JSON.stringify({ error: "forbidden" }), { status: 403 });
   if (!KEY) return new Response(JSON.stringify({ error: "STRIPE_SECRET_KEY ontbreekt" }), { status: 500 });
 
-  const body = await req.json().catch(() => ({}));
   const offset = Number(body?.offset || 0), limit = Math.min(Number(body?.limit || 40), 60);
   const catalog = await fetch(CATALOG, { cache: "no-store" }).then((r) => r.json());
-  const slice: Product[] = catalog.products.slice(offset, offset + limit);
+  const slice: Product[] = body?.only ? catalog.products.filter((p: Product) => p.id === body.only) : catalog.products.slice(offset, offset + limit);
 
   const results: unknown[] = [];
   const queue = [...slice];

@@ -43,7 +43,7 @@ def image_of(s, f):
 
 
 def title_of(s, f):
-    if f in ("kersthangers.html", "kersthangers-bedrijfslogo.html", "persoonlijke-kersttafel.html", "handtas-bloemenvaas.html"):
+    if f in ("kersthangers.html", "kersthangers-bedrijfslogo.html", "persoonlijke-kersttafel.html", "handtas-bloemenvaas.html", "kleine-cadeaus.html"):
         return clean(re.search(r"<title>([^<|]+)", s).group(1))
     m = re.search(r"<h1[^>]*>(.*?)</h1>", s, re.S)
     t = clean(m.group(1)) if m else f
@@ -130,6 +130,10 @@ for f in sorted(glob.glob("*.html")):
     elif "const prices={'8':895" in s:
         p = base(f, s, "Kerst")
         p["variants"] = [V("8 cm", 895), V("10 cm", 1095), V("12 cm", 1395)]
+    elif "const giftPrices={" in s:  # kleine cadeaus (prijzen 18-11-2026)
+        p = base(f, s, "Kerst")
+        p["variants"] = [V("Naamsleutelhanger", 795), V("Rechthoekige sleutelhanger", 695),
+                         V("Cadeaulabel houten ster", 495), V("Cadeaulabel houten rechthoek", 395)]
     elif "prices={naamkaartje:395" in s:
         p = base(f, s, "Kerst")
         p["variants"] = [V("Naamkaartje (per gast)", 395), V("Servetring met naam (per gast)", 495),
