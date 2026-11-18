@@ -18,7 +18,7 @@ type ShipClass = keyof typeof RATES;
 // Artikelen die door de brievenbus passen (met maximaal aantal per brievenbuspakje).
 const SMALL: Record<string, number> = {
   "persoonlijke-kersttafel.html": 12, "lasergravure-sleutelhangers.html": 4, "lasergravure-dierenpenning.html": 4,
-  "lasergravure-leren-portemonnee.html": 1, "product-053-bladwijzer-bergen.html": 3,
+  "lasergravure-leren-portemonnee.html": 1, "product-053-bladwijzer-bergen.html": 3, "kleine-cadeaus.html": 10,
 };
 function shipClass(product: any, variant: any, qty: number): ShipClass {
   const label = String(variant.label || "");
