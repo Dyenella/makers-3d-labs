@@ -29,6 +29,14 @@ function shipClass(product: any, variant: any, qty: number): ShipClass {
   if (/^Groot/.test(label) || /\b(2[5-9]|[3-9]\d)\s?(–\s?\d+\s?)?cm\b/.test(label)) return "groot";
   return "normaal";
 }
+// Levertijd: kleine artikelen binnen 3 werkdagen, grote handgemaakte stukken binnen 14 dagen (afhankelijk van beschikbaarheid).
+function isLarge(product: any, variant: any): boolean {
+  const label = String(variant.label || ""), c = product.category;
+  if (c === "Lasergravure") return false;
+  if (c === "Voetbalstadions" || c === "Resin") return true;
+  if (c === "Maskers") return !/^(Klein|Middel)/.test(label);
+  return /^Groot/.test(label) || /\b(2[5-9]|[3-9]\d)\s?(–\s?\d+\s?)?cm\b/.test(label);
+}
 // Kerstkorting: 5% op alle online bestellingen t/m 31 december 2026 (Stripe-coupon, eenmalig per bestelling).
 const PROMO = { coupon: "KERST5-2026", percent: 5, name: "Kerstkorting 5%", until: Date.parse("2027-01-01T00:00:00+01:00") };
 const ORIGINS = [SITE, "https://makers3dlabs.nl"];
@@ -168,7 +176,7 @@ Deno.serve(async (req) => {
     cancel_url: `${product.url}?betaling=geannuleerd`,
     metadata: { request_id: reqId, kind: "product", product: product.id, remind: remind ? "1" : "0", nieuwsbrief: nieuwsbrief ? "1" : "0" },
     payment_intent_data: { metadata: { request_id: reqId }, statement_descriptor_suffix: "WEBSHOP" },
-    custom_text: { submit: { message: "Levertijd: binnen maximaal 30 dagen na bestelling. Met betalen ga je akkoord met onze algemene voorwaarden (makers3dlabs.nl/algemene-voorwaarden.html). Gepersonaliseerde producten (naam, tekst, logo, eigen ontwerp of eigen maat) worden speciaal voor jou gemaakt; daarvoor geldt geen herroepingsrecht. Zonder personalisatie heb je 14 dagen bedenktijd. Na betaling ontvang je een bevestiging per e-mail." } },
+    custom_text: { submit: { message: (isLarge(product, variant) ? "Levertijd: binnen 14 dagen na bestelling, afhankelijk van beschikbaarheid." : "Levertijd: binnen 3 werkdagen na bestelling.") + " Met betalen ga je akkoord met onze algemene voorwaarden (makers3dlabs.nl/algemene-voorwaarden.html). Gepersonaliseerde producten (naam, tekst, logo, eigen ontwerp of eigen maat) worden speciaal voor jou gemaakt; daarvoor geldt geen herroepingsrecht. Zonder personalisatie heb je 14 dagen bedenktijd. Na betaling ontvang je een bevestiging per e-mail." } },
   });
   let session = await stripe("POST", "checkout/sessions", sessionBody(coupon));
   if (session.status >= 400 && /after_expiration|recovery|expires_at/i.test(JSON.stringify(session.body))) {

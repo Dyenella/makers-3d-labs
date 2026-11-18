@@ -7,6 +7,19 @@
   const $ = (sel, root = document) => root.querySelector(sel);
   const checked = (id) => !!document.getElementById(id)?.checked;
   const num = (sel, d = 1) => { const v = parseInt($(sel)?.value, 10); return Number.isInteger(v) ? v : d; };
+  // Levertijd: kleine artikelen binnen 3 werkdagen, grote handgemaakte stukken binnen 14 dagen (zelfde regel als op de server).
+  const isLarge = (p, v) => {
+    const lab = String(v?.label || ''), c = p.category;
+    if (c === 'Lasergravure') return false;
+    if (c === 'Voetbalstadions' || c === 'Resin') return true;
+    if (c === 'Maskers') return !/^(Klein|Middel)/.test(lab);
+    return /^Groot/.test(lab) || /\b(2[5-9]|[3-9]\d)\s?(–\s?\d+\s?)?cm\b/.test(lab);
+  };
+  const leadText = (p, v) => {
+    if (v) return isLarge(p, v) ? 'binnen 14 dagen na bestelling, afhankelijk van beschikbaarheid' : 'binnen 3 werkdagen na bestelling';
+    const s = new Set(p.variants.map((x) => isLarge(p, x)));
+    return s.size > 1 ? 'kleine formaten binnen 3 werkdagen, grote formaten binnen 14 dagen (afhankelijk van beschikbaarheid)' : leadText(p, p.variants[0]);
+  };
   const euro = (c) => new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR' }).format(c / 100);
 
   // Per paginasoort: welke uitvoering (index), welke extra's (indexen) en welk aantal.
@@ -90,13 +103,18 @@
       <label class="m3d-remind" style="display:flex;gap:8px;align-items:flex-start;font-weight:400;font-size:13.5px;line-height:1.45;margin:0 0 12px"><input type="checkbox" id="m3d-nieuwsbrief" style="margin-top:3px"> <span>Houd mij op de hoogte van nieuwe producten (hooguit één mail per week; je krijgt eerst een bevestigingsmail).</span></label>
       <button type="button" class="m3d-pay-btn">Direct afrekenen →</button>
       <span class="m3d-pm">iDEAL · Bancontact · creditcard — veilig betalen via Stripe</span>
-      <small class="m3d-legal-note"><strong>Levertijd:</strong> binnen maximaal 30 dagen na bestelling. <strong>Maatwerk:</strong> kies je personalisatie (naam, tekst, logo, eigen ontwerp of eigen maat), dan wordt het product speciaal voor jou gemaakt en geldt geen herroepingsrecht. Zonder personalisatie heb je 14 dagen bedenktijd. Met afrekenen ga je akkoord met de <a href="algemene-voorwaarden.html">algemene voorwaarden</a>.</small>
+      <small class="m3d-legal-note"><strong>Levertijd:</strong> <span class="m3d-lead"></span>. <strong>Maatwerk:</strong> kies je personalisatie (naam, tekst, logo, eigen ontwerp of eigen maat), dan wordt het product speciaal voor jou gemaakt en geldt geen herroepingsrecht. Zonder personalisatie heb je 14 dagen bedenktijd. Met afrekenen ga je akkoord met de <a href="algemene-voorwaarden.html">algemene voorwaarden</a>.</small>
       <div class="m3d-msg" role="alert"></div>
       <small>Liever eerst overleggen? Gebruik dan de aanvraagknop: je ontvangt een prijsvoorstel en betaalt nog niets.</small>`;
     const submit = form.querySelector('button[type="submit"]');
     (submit?.parentElement === form ? submit : form.lastElementChild)?.insertAdjacentElement('beforebegin', box);
     // Oude teksten "online betalen is nog niet actief" verbergen.
     form.querySelectorAll('p, div, small').forEach((n) => { if (/online betalen is nog niet (actief|beschikbaar)/i.test(n.textContent) && !n.querySelector('form, input, button')) n.hidden = true; });
+
+    // Levertijd onder de betaalknop, past zich aan aan het gekozen formaat.
+    const leadEl = box.querySelector('.m3d-lead');
+    const updLead = () => { const c = readChoice(form); leadEl.textContent = leadText(product, product.variants[c.v]); };
+    updLead(); form.addEventListener('change', updLead); form.addEventListener('input', updLead);
 
     // Live prijs op de productpagina's met formaat × uitvoering.
     const priceEl = document.querySelector('.np-price');

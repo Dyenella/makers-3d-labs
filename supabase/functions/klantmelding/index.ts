@@ -66,7 +66,7 @@ Deno.serve(async (req) => {
     subject = `Bedankt voor je bestelling ${rec.number} | Makers 3D Labs`;
     title = "Je bestelling staat in je klantomgeving";
     paras = ["Bedankt voor je bestelling! Je kunt de status en de details altijd volgen in je klantomgeving.", "Eerste keer inloggen? Kies op de inlogpagina \"Wachtwoord vergeten of nog geen wachtwoord ingesteld?\" en stel met je e-mailadres een wachtwoord in.",
-      "Levertijd: binnen maximaal 30 dagen na je bestelling. Je ontvangt de track &amp; trace-code per e-mail zodra je pakket is verzonden.",
+      "Levertijd: kleine artikelen binnen 3 werkdagen, grote handgemaakte stukken binnen 14 dagen na je bestelling, afhankelijk van beschikbaarheid. Je ontvangt de track &amp; trace-code per e-mail zodra je pakket is verzonden.",
       "Bedenktijd: producten zonder personalisatie kun je binnen 14 dagen na ontvangst zonder opgave van reden herroepen. Mail dit naar info@makers3dlabs.nl of gebruik het modelformulier (artikel 20 van de voorwaarden). Retouradres: Makers 3D Labs / Bruwin Solutions, Houtzaagmolen 96, 2986 GE Ridderkerk. Gepersonaliseerde producten (naam, tekst, logo, eigen ontwerp of eigen maat) worden speciaal voor jou gemaakt; daarvoor geldt geen herroepingsrecht.",
       "Onze algemene voorwaarden, inclusief het modelformulier voor herroeping, zitten als PDF bij deze e-mail. Je vindt ze ook op " + SITE + "/algemene-voorwaarden.html"];
     attach = true;
