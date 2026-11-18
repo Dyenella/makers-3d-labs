@@ -214,6 +214,17 @@ async function abandonedCheckout(session: any) {
   return new Response("reminder sent");
 }
 
+// Klant vinkte "houd mij op de hoogte van nieuwe producten" aan: aanmelding met bevestigingsmail.
+async function newsletterOptIn(session: any) {
+  const email = String(session?.customer_details?.email || "").toLowerCase();
+  if (session?.metadata?.nieuwsbrief !== "1" || !email) return;
+  try {
+    await fetch("https://dwirzzslswqjqnwthlyn.supabase.co/functions/v1/nieuwsbrief", {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email, source: "afrekenen" }),
+    });
+  } catch (err) { console.error("nieuwsbrief", err); }
+}
+
 Deno.serve(async (req) => {
   if (req.method !== "POST") return new Response("ok");
   const evt = await req.json().catch(() => null);
@@ -221,6 +232,7 @@ Deno.serve(async (req) => {
   const real = await stripeGet(`events/${encodeURIComponent(evt.id)}`);
   if (real.status !== 200) return new Response("unknown event", { status: 400 });
   const e = real.body;
+  if (["checkout.session.completed", "checkout.session.expired"].includes(e.type)) await newsletterOptIn(e.data.object);
   if (e.type === "checkout.session.expired") return await abandonedCheckout(e.data.object);
   if (!["checkout.session.completed", "checkout.session.async_payment_succeeded"].includes(e.type)) return new Response("ignored");
   const session = e.data.object;

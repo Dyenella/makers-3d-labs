@@ -150,6 +150,7 @@ Deno.serve(async (req) => {
   let coupon = promoCoupon();
   // Herinnering bij niet afrekenen: alleen als de klant dit op de productpagina heeft aangevinkt.
   let remind = clean(fd.get("_herinnering"), 5) === "1";
+  const nieuwsbrief = clean(fd.get("_nieuwsbrief"), 5) === "1";
   const sessionBody = (c: string | null) => ({
     mode: "payment",
     discounts: c ? [{ coupon: c }] : undefined,
@@ -165,7 +166,7 @@ Deno.serve(async (req) => {
     after_expiration: remind ? { recovery: { enabled: true } } : undefined,
     success_url: `${SITE}/bedankt.html?betaald=1`,
     cancel_url: `${product.url}?betaling=geannuleerd`,
-    metadata: { request_id: reqId, kind: "product", product: product.id, remind: remind ? "1" : "0" },
+    metadata: { request_id: reqId, kind: "product", product: product.id, remind: remind ? "1" : "0", nieuwsbrief: nieuwsbrief ? "1" : "0" },
     payment_intent_data: { metadata: { request_id: reqId }, statement_descriptor_suffix: "WEBSHOP" },
     custom_text: { submit: { message: "Levertijd: binnen maximaal 30 dagen na bestelling. Met betalen ga je akkoord met onze algemene voorwaarden (makers3dlabs.nl/algemene-voorwaarden.html). Gepersonaliseerde producten (naam, tekst, logo, eigen ontwerp of eigen maat) worden speciaal voor jou gemaakt; daarvoor geldt geen herroepingsrecht. Zonder personalisatie heb je 14 dagen bedenktijd. Na betaling ontvang je een bevestiging per e-mail." } },
   });
