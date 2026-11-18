@@ -84,9 +84,12 @@ Deno.serve(async (req) => {
   // Alleen met service-role sleutel, of met de interne sleutel uit de kluis (aanroep vanuit de database).
   const body = await req.json().catch(() => ({}));
   const token = req.headers.get("apikey") || (req.headers.get("authorization") || "").replace(/^Bearer\s+/i, "");
-  const probe = createClient(Deno.env.get("SUPABASE_URL")!, token, { auth: { persistSession: false } });
-  const { error: authErr } = await probe.auth.admin.listUsers({ page: 1, perPage: 1 });
-  let allowed = !authErr;
+  let allowed = false;
+  if (token) {
+    const probe = createClient(Deno.env.get("SUPABASE_URL")!, token, { auth: { persistSession: false } });
+    const { error: authErr } = await probe.auth.admin.listUsers({ page: 1, perPage: 1 });
+    allowed = !authErr;
+  }
   if (!allowed && body?.key) {
     const admin = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
     const { data } = await admin.rpc("makers_nieuwsbrief_key_ok", { k: String(body.key) });
