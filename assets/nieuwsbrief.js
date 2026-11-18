@@ -9,17 +9,27 @@
     if (document.getElementById('m3d-nb-css')) return;
     const s = document.createElement('style'); s.id = 'm3d-nb-css';
     s.textContent = `
-.m3d-nb{background:#1f2937;color:#fff;border-top:4px solid #00b4bd;padding:34px 18px;margin-top:40px;font-family:inherit}
-.m3d-nb-in{max-width:980px;margin:0 auto;display:flex;flex-wrap:wrap;gap:18px 32px;align-items:center;justify-content:space-between}
-.m3d-nb h2{margin:0 0 6px;font-size:22px;color:#fff}.m3d-nb p{margin:0;color:#cfe3e6;font-size:15px;line-height:1.5;max-width:460px}
-.m3d-nb form{display:flex;flex-wrap:wrap;gap:10px;flex:1 1 340px;max-width:460px}
-.m3d-nb input[type=email]{flex:1 1 220px;min-width:0;padding:13px 14px;border-radius:10px;border:1px solid #3b4a5a;background:#fff;color:#102027;font-size:15px}
-.m3d-nb button{padding:13px 20px;border:0;border-radius:10px;background:#00b4bd;color:#fff;font-weight:700;font-size:15px;cursor:pointer}
-.m3d-nb button:disabled{opacity:.6;cursor:default}
-.m3d-nb small{flex-basis:100%;color:#9fb3b8;font-size:12.5px;line-height:1.45}.m3d-nb small a{color:#cfe3e6}
-.m3d-nb .m3d-nb-msg{flex-basis:100%;font-size:14.5px;font-weight:700;color:#7ee7ec;min-height:1em}
-.m3d-nb .m3d-nb-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-.m3d-nb-toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:9999;background:#1f2937;color:#fff;border-left:5px solid #00b4bd;padding:14px 18px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.25);font-size:15px;max-width:92vw}`;
+html body .m3d-nb{box-sizing:border-box;width:100%;max-width:none;margin:40px 0 0!important;padding:40px 18px!important;background:#182431!important;color:#f5f7fa!important;border:0!important;border-top:3px solid #00afb8!important;font-family:inherit;text-align:left;text-indent:0;overflow:hidden}
+html body .m3d-nb *{box-sizing:border-box;text-indent:0;letter-spacing:normal;text-shadow:none}
+html body .m3d-nb .m3d-nb-in{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:20px 36px;align-items:center;justify-content:space-between;background:#243446;border:1px solid #ffffff20;border-radius:18px;padding:26px 24px}
+html body .m3d-nb .m3d-nb-txt{flex:1 1 320px;min-width:0}
+html body .m3d-nb .m3d-nb-kicker{display:block;margin:0 0 8px;color:#79d8dc;font-size:13px;font-weight:800;letter-spacing:.08em}
+html body .m3d-nb h2{margin:0 0 8px!important;padding:0!important;font-size:clamp(21px,3vw,26px)!important;line-height:1.25!important;color:#ffffff!important;border:0!important;background:none!important;text-transform:none}
+html body .m3d-nb p{margin:0!important;color:#c4d1dc!important;font-size:15px!important;line-height:1.55!important;max-width:480px}
+html body .m3d-nb form{display:flex;flex-wrap:wrap;gap:10px;flex:1 1 340px;max-width:470px;margin:0!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+html body .m3d-nb input[type=email]{flex:1 1 220px;min-width:0;width:auto;margin:0!important;padding:13px 14px!important;border-radius:12px!important;border:1px solid #3d5167!important;background:#1d2936!important;color:#f5f7fa!important;font-size:15px!important;box-shadow:none!important}
+html body .m3d-nb input[type=email]::placeholder{color:#8fa3b3}
+html body .m3d-nb input[type=email]:focus{outline:2px solid #79d8dc;outline-offset:1px;border-color:#79d8dc!important}
+html body .m3d-nb button{flex:0 0 auto;width:auto;margin:0!important;padding:13px 22px!important;border:0!important;border-radius:12px!important;background:#00afb8!important;color:#102832!important;font-weight:800!important;font-size:15px!important;cursor:pointer;box-shadow:none!important}
+html body .m3d-nb button:hover{background:#79d8dc!important}
+html body .m3d-nb button:disabled{opacity:.6;cursor:default}
+html body .m3d-nb small{flex-basis:100%;display:block;margin:0;color:#9fb3c2!important;font-size:12.5px!important;line-height:1.45!important}
+html body .m3d-nb small a{color:#79d8dc!important;text-decoration:underline}
+html body .m3d-nb .m3d-nb-msg{flex-basis:100%;font-size:14.5px;font-weight:700;color:#79d8dc;min-height:0}
+html body .m3d-nb .m3d-nb-msg:empty{display:none}
+html body .m3d-nb .m3d-nb-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media(max-width:560px){html body .m3d-nb button{flex:1 1 100%}}
+.m3d-nb-toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:9999;background:#182431;color:#f5f7fa;border:1px solid #ffffff20;border-left:5px solid #00afb8;padding:14px 18px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.3);font-size:15px;max-width:92vw}`;
     document.head.appendChild(s);
   }
 
@@ -32,8 +42,8 @@
 
   function block() {
     if (SKIP.includes(page) || document.querySelector('.m3d-nb')) return;
-    const sec = document.createElement('section'); sec.className = 'm3d-nb'; sec.setAttribute('aria-label', 'Nieuwe producten per e-mail');
-    sec.innerHTML = `<div class="m3d-nb-in"><div><h2>Blijf op de hoogte van nieuwe producten</h2><p>Eén keer per week een mail met wat er nieuw is in onze webshop. Alleen als er iets nieuws is, en je meldt je met één klik weer af.</p></div>
+    const sec = document.createElement('div'); sec.setAttribute('role', 'region'); sec.className = 'm3d-nb'; sec.setAttribute('aria-label', 'Nieuwe producten per e-mail');
+    sec.innerHTML = `<div class="m3d-nb-in"><div class="m3d-nb-txt"><span class="m3d-nb-kicker">NIEUW IN DE WEBSHOP</span><h2>Blijf op de hoogte van nieuwe producten</h2><p>Eén keer per week een mail met wat er nieuw is in onze webshop. Alleen als er iets nieuws is, en je meldt je met één klik weer af.</p></div>
 <form novalidate><input type="email" name="email" required autocomplete="email" placeholder="Je e-mailadres" aria-label="Je e-mailadres">
 <span class="m3d-nb-hp" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></span>
 <button type="submit">Aanmelden</button><span class="m3d-nb-msg" role="status" aria-live="polite"></span>

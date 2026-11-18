@@ -17,4 +17,4 @@ function init(){
  const current=location.pathname.split('/').pop()||'index.html';head.querySelectorAll('.mk-main-nav > a').forEach(a=>{if(a.getAttribute('href')===current)a.setAttribute('aria-current','page');});
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
-})();(()=>{if(document.getElementById('m3d-nb-js'))return;const s=document.createElement('script');s.id='m3d-nb-js';s.src='assets/nieuwsbrief.js?v=1';s.defer=true;document.head.appendChild(s);})();
+})();(()=>{if(document.getElementById('m3d-nb-js'))return;const s=document.createElement('script');s.id='m3d-nb-js';s.src='assets/nieuwsbrief.js?v=2';s.defer=true;document.head.appendChild(s);})();
