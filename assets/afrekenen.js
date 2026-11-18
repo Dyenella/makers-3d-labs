@@ -86,6 +86,7 @@
       <h3>Direct bestellen en betalen</h3>
       <p class="m3d-ship" style="font-weight:700;color:#d8ad43">🎄 Kerstactie: 5% korting, automatisch verrekend bij het afrekenen (t/m 31 december).</p>
       <p class="m3d-ship">Verzenden met <strong>PostNL</strong> of <strong>DHL</strong> — je kiest bij het afrekenen. Vanaf € 5,25, gratis vanaf € 400. <a href="informatie.html#verzending">Bekijk de tarieven</a></p>
+      <label class="m3d-remind" style="display:flex;gap:8px;align-items:flex-start;font-weight:400;font-size:13.5px;line-height:1.45;margin:0 0 12px"><input type="checkbox" id="m3d-herinnering" style="margin-top:3px"> <span>Stuur mij één herinnering per e-mail als ik mijn bestelling niet afreken (je e-mailadres vul je in bij het afrekenen).</span></label>
       <button type="button" class="m3d-pay-btn">Direct afrekenen →</button>
       <span class="m3d-pm">iDEAL · Bancontact · creditcard — veilig betalen via Stripe</span>
       <small class="m3d-legal-note"><strong>Levertijd:</strong> binnen maximaal 30 dagen na bestelling. <strong>Maatwerk:</strong> kies je personalisatie (naam, tekst, logo, eigen ontwerp of eigen maat), dan wordt het product speciaal voor jou gemaakt en geldt geen herroepingsrecht. Zonder personalisatie heb je 14 dagen bedenktijd. Met afrekenen ga je akkoord met de <a href="algemene-voorwaarden.html">algemene voorwaarden</a>.</small>
@@ -127,6 +128,7 @@
       fd.set('_addons', c.addons.join(','));
       fd.set('_qty', String(Math.min(100, Math.max(1, c.qty))));
       fd.set('_delivery', 'ship');
+      if (document.getElementById('m3d-herinnering')?.checked) fd.set('_herinnering', '1');
       try { const b = JSON.parse(sessionStorage.getItem('m3d_bron') || 'null'); if (b && b.s) fd.set('_bron', String(b.s).slice(0, 20)); } catch (e) { /* negeren */ }
       for (const id of ['personalization', 'notes', 'personal-text', 'kt-names', 'kt-notes', 'kt-color', 'naam', 'tekst', 'datum']) {
         const el = document.getElementById(id); if (el && el.value && !el.name) fd.set(id, el.value);

@@ -148,6 +148,8 @@ Deno.serve(async (req) => {
   }));
 
   let coupon = promoCoupon();
+  // Herinnering bij niet afrekenen: alleen als de klant dit op de productpagina heeft aangevinkt.
+  let remind = clean(fd.get("_herinnering"), 5) === "1";
   const sessionBody = (c: string | null) => ({
     mode: "payment",
     discounts: c ? [{ coupon: c }] : undefined,
@@ -158,13 +160,21 @@ Deno.serve(async (req) => {
     phone_number_collection: { enabled: true },
     billing_address_collection: "auto",
     customer_creation: "always",
+    // Herinnering "je hebt nog iets laten liggen": betaalscherm verloopt na ±24 uur, daarna één mail (stripe-webhook)
+    expires_at: remind ? Math.floor(Date.now() / 1000) + 23 * 3600 + 50 * 60 : undefined,
+    after_expiration: remind ? { recovery: { enabled: true } } : undefined,
     success_url: `${SITE}/bedankt.html?betaald=1`,
     cancel_url: `${product.url}?betaling=geannuleerd`,
-    metadata: { request_id: reqId, kind: "product", product: product.id },
+    metadata: { request_id: reqId, kind: "product", product: product.id, remind: remind ? "1" : "0" },
     payment_intent_data: { metadata: { request_id: reqId }, statement_descriptor_suffix: "WEBSHOP" },
     custom_text: { submit: { message: "Levertijd: binnen maximaal 30 dagen na bestelling. Met betalen ga je akkoord met onze algemene voorwaarden (makers3dlabs.nl/algemene-voorwaarden.html). Gepersonaliseerde producten (naam, tekst, logo, eigen ontwerp of eigen maat) worden speciaal voor jou gemaakt; daarvoor geldt geen herroepingsrecht. Zonder personalisatie heb je 14 dagen bedenktijd. Na betaling ontvang je een bevestiging per e-mail." } },
   });
   let session = await stripe("POST", "checkout/sessions", sessionBody(coupon));
+  if (session.status >= 400 && /after_expiration|recovery|expires_at/i.test(JSON.stringify(session.body))) {
+    console.error("Herinnering niet beschikbaar, afrekenen zonder", session.body);
+    remind = false;
+    session = await stripe("POST", "checkout/sessions", sessionBody(coupon));
+  }
   if (session.status >= 400 && coupon && /coupon|discount/i.test(JSON.stringify(session.body))) {
     console.error("Kerstcoupon niet bruikbaar, afrekenen zonder korting", session.body);
     coupon = null;

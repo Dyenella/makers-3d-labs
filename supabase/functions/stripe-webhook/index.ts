@@ -162,6 +162,58 @@ async function sessionLines(session: any, fallbackName: string, detail: string, 
   return out;
 }
 
+// ---------- Herinnering: betaalscherm verlopen zonder betaling ----------
+// Eén mail per afgebroken bestelling, alleen als de klant op de productpagina om een herinnering vroeg.
+function reminderHtml(name: string, product: { name: string; image?: string; url?: string } | null, amount: number, url: string) {
+  const img = product?.image ? `<tr><td align="center" style="padding:0 0 16px 0;"><img src="${esc("https://bruwin-social-ai.vercel.app/api/autopost?jpg=" + encodeURIComponent(product.image))}" width="240" alt="${esc(product.name)}" style="display:block;width:240px;max-width:100%;height:auto;border-radius:12px;border:1px solid #dce6e2;"></td></tr>` : "";
+  return `<!DOCTYPE html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Je hebt nog iets laten liggen</title></head>
+<body style="margin:0;padding:0;background:#eef2f5;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef2f5;"><tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border-radius:14px;overflow:hidden;border:1px solid #dce6e2;">
+<tr><td align="center" style="background:#1f2937;padding:22px 24px;line-height:0;"><a href="${SITE}/"><img src="${SITE}/email/logo.png" width="300" alt="Makers 3D Labs" style="display:block;width:300px;max-width:100%;height:auto;border:0;"></a></td></tr>
+<tr><td style="height:4px;background:#00b4bd;line-height:4px;font-size:0;">&nbsp;</td></tr>
+<tr><td style="padding:32px 36px 16px 36px;font-family:Arial,Helvetica,sans-serif;color:#102027;">
+<h1 style="margin:0 0 16px 0;font-size:24px;line-height:1.3;">Je hebt nog iets laten liggen 🛒</h1>
+<p style="margin:0 0 16px 0;font-size:16px;line-height:1.6;">Hoi${name ? " " + esc(name.split(" ")[0]) : ""},</p>
+<p style="margin:0 0 16px 0;font-size:16px;line-height:1.6;">Je was bezig met een bestelling bij Makers 3D Labs, maar hebt nog niet afgerekend. Geen zorgen: je bestelling staat nog voor je klaar.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${img}
+<tr><td align="center" style="padding:0 0 6px 0;font-size:17px;font-weight:bold;color:#102027;">${esc(product?.name || "Je bestelling")}</td></tr>
+${amount ? `<tr><td align="center" style="padding:0 0 18px 0;font-size:15px;color:#64747a;">${money(amount)}</td></tr>` : ""}</table>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:6px auto 20px auto;"><tr><td style="background:#00b4bd;border-radius:10px;"><a href="${esc(url)}" style="display:inline-block;padding:14px 28px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;color:#ffffff;text-decoration:none;">Bestelling afronden</a></td></tr></table>
+${Date.now() < Date.parse("2027-01-01T00:00:00+01:00") ? `<p style="margin:0 0 14px 0;font-size:15px;line-height:1.6;">🎄 De kerstkorting van 5% geldt nog tot en met 31 december. Alles wordt met de hand gemaakt in Ridderkerk, dus bestel op tijd voor de feestdagen.</p>` : ""}
+<p style="margin:0 0 14px 0;font-size:14px;line-height:1.6;color:#64747a;">Twijfel je nog of heb je een vraag over maat, kleur of personalisatie? Beantwoord gewoon deze e-mail, we helpen je graag.</p>
+<p style="margin:18px 0 0 0;font-size:16px;line-height:1.6;">Hartelijke groet,<br><strong>Team Makers 3D Labs</strong></p></td></tr>
+<tr><td style="padding:18px 36px;background:#eef2f5;border-top:1px solid #dce6e2;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.5;color:#64747a;">
+Je ontvangt deze eenmalige herinnering omdat je bij het bestellen aanvinkte dat je een herinnering wilde als je niet zou afrekenen. Liever geen e-mails meer? Beantwoord deze mail met "afmelden".<br>
+Makers 3D Labs · Ridderkerk · <a href="${SITE}/" style="color:#64747a;">www.makers3dlabs.nl</a></td></tr>
+</table></td></tr></table></body></html>`;
+}
+
+async function abandonedCheckout(session: any) {
+  if (session?.metadata?.kind !== "product") return new Response("ignored");
+  const reqId = session.metadata?.request_id;
+  const email = String(session.customer_details?.email || "").toLowerCase();
+  const url = session.after_expiration?.recovery?.url;
+  if (!reqId || !email || !url) return new Response("no email or recovery");
+  if (session.metadata?.remind !== "1") return new Response("no consent");
+  const admin = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
+  // Eén keer: alleen een nog openstaande aanvraag zonder eerdere herinnering.
+  const { data: claimed } = await admin.from("checkout_requests").update({ reminder_sent_at: new Date().toISOString() })
+    .eq("id", reqId).eq("status", "pending").is("reminder_sent_at", null).select("id");
+  if (!claimed?.length) return new Response("already reminded or paid");
+  let product: { name: string; image?: string; url?: string } | null = null;
+  try {
+    const cat = await fetch(SITE + "/assets/catalogus.json").then((r) => r.json());
+    product = (cat.products || []).find((x: any) => x.id === session.metadata?.product) || null;
+  } catch { /* zonder productfoto */ }
+  const r = await fetch("https://api.resend.com/emails", {
+    method: "POST", headers: { Authorization: "Bearer " + Deno.env.get("RESEND_API_KEY"), "Content-Type": "application/json" },
+    body: JSON.stringify({ from: FROM, to: [email], reply_to: TO, subject: "Je hebt nog iets laten liggen bij Makers 3D Labs 🛒",
+      html: reminderHtml(session.customer_details?.name || "", product, Number(session.amount_total || 0), url) }),
+  });
+  if (!r.ok) { console.error("herinnering", await r.text()); await admin.from("checkout_requests").update({ reminder_sent_at: null }).eq("id", reqId); return new Response("mail failed", { status: 502 }); }
+  return new Response("reminder sent");
+}
+
 Deno.serve(async (req) => {
   if (req.method !== "POST") return new Response("ok");
   const evt = await req.json().catch(() => null);
@@ -169,6 +221,7 @@ Deno.serve(async (req) => {
   const real = await stripeGet(`events/${encodeURIComponent(evt.id)}`);
   if (real.status !== 200) return new Response("unknown event", { status: 400 });
   const e = real.body;
+  if (e.type === "checkout.session.expired") return await abandonedCheckout(e.data.object);
   if (!["checkout.session.completed", "checkout.session.async_payment_succeeded"].includes(e.type)) return new Response("ignored");
   const session = e.data.object;
   if (session.payment_status !== "paid") return new Response("not paid yet");
