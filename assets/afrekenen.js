@@ -105,8 +105,7 @@
       <button type="button" class="m3d-pay-btn">Direct afrekenen →</button>
       <span class="m3d-pm">iDEAL · Bancontact · creditcard — veilig betalen via Stripe</span>
       <small class="m3d-legal-note"><strong>Levertijd:</strong> <span class="m3d-lead"></span>. <strong>Maatwerk:</strong> kies je personalisatie (naam, tekst, logo, eigen ontwerp of eigen maat), dan wordt het product speciaal voor jou gemaakt en geldt geen herroepingsrecht. Zonder personalisatie heb je 14 dagen bedenktijd. Met afrekenen ga je akkoord met de <a href="algemene-voorwaarden.html">algemene voorwaarden</a>.</small>
-      <div class="m3d-msg" role="alert"></div>
-      <small>Liever eerst overleggen? Gebruik dan de aanvraagknop: je ontvangt een prijsvoorstel en betaalt nog niets.</small>`;
+      <div class="m3d-msg" role="alert"></div>`;
     const submit = form.querySelector('button[type="submit"]');
     (submit?.parentElement === form ? submit : form.lastElementChild)?.insertAdjacentElement('beforebegin', box);
     // Oude teksten "online betalen is nog niet actief" verbergen.
@@ -129,6 +128,40 @@
     }
     const msg = box.querySelector('.m3d-msg');
     const btn = box.querySelector('.m3d-pay-btn');
+
+    // Direct afrekenen is de enige weg. De aanvraagknop, contactvelden en aanvraagteksten
+    // verschijnen alleen bij een keuze zonder vaste prijs (eigen maat, maatwerk-opties).
+    const reqBtns = [...form.querySelectorAll('button[type="submit"], input[type="submit"]')].filter((b) => !box.contains(b));
+    const REQ_TEXT = /je betaalt hier nog niet|aanvraagformulier|offerteformulier|dit is een aanvraag|je verstuurt een aanvraag|geen directe betaling|online betalen is nog niet|via de knop kun je een aanvraag|liever eerst overleggen|gewenste (lever)?datum is (nog )?geen/i;
+    const fieldWrap = (el) => {
+      const l = el.closest('label');
+      if (l && form.contains(l) && l.querySelectorAll('input, select, textarea').length === 1) return l;
+      const p = el.parentElement;
+      if (p && p !== form && p.querySelectorAll('input, select, textarea').length === 1) return p;
+      return el;
+    };
+    const reqOnly = new Set();
+    form.querySelectorAll('p, small, .notice, .hint').forEach((n) => { if (!box.contains(n) && !n.querySelector('input, select, textarea, button') && REQ_TEXT.test(n.textContent)) reqOnly.add(n); });
+    form.querySelectorAll('input, select, textarea').forEach((el) => {
+      const ac = (el.getAttribute('autocomplete') || '').toLowerCase();
+      const isContact = /^(name|email|tel)$/.test(ac) || (el.type === 'email' && !box.contains(el));
+      const isConsent = el.type === 'checkbox' && el.required && /toestemming|akkoord|consent/i.test((el.closest('label')?.textContent || '') + el.id + el.name);
+      const isDate = el.type === 'date';
+      if (!box.contains(el) && (isContact || isConsent || isDate)) {
+        reqOnly.add(fieldWrap(el));
+        if (el.id) form.querySelectorAll(`label[for="${CSS.escape(el.id)}"]`).forEach((l) => reqOnly.add(l));
+      }
+    });
+    const setMode = () => {
+      const c = readChoice(form), vr = product.variants[c.v];
+      const soft = !!c.block || (vr && !vr.firm) || c.addons.some((i) => !product.addons[i]?.firm);
+      reqBtns.forEach((b) => { b.hidden = !soft; });
+      reqOnly.forEach((n) => { n.hidden = !soft; });
+      btn.hidden = soft;
+      box.querySelector('.m3d-pm').hidden = soft;
+      msg.textContent = soft ? (c.block || 'Voor deze keuze maken we eerst een prijsvoorstel.') + ' Gebruik de aanvraagknop hieronder.' : '';
+    };
+    setMode(); form.addEventListener('change', setMode); form.addEventListener('input', setMode);
     btn.addEventListener('click', async () => {
       msg.textContent = '';
       const c = readChoice(form);
