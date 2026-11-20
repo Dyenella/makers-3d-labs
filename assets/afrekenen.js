@@ -99,6 +99,7 @@
       </style>
       <h3>Direct bestellen en betalen</h3>
       <p class="m3d-ship" style="font-weight:700;color:#d8ad43">🎄 Kerstactie: 5% korting, automatisch verrekend bij het afrekenen (t/m 31 december).</p>
+      <label class="m3d-code-wrap" style="display:block;font-weight:600;font-size:14px;margin:0 0 12px">Kortingscode <span style="font-weight:400;opacity:.8">(optioneel)</span><br><input type="text" id="m3d-code" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="40" placeholder="Bijv. ZAKELIJK10" style="margin-top:6px;width:100%;max-width:260px;padding:10px 12px;border-radius:8px;border:1px solid rgba(0,180,189,.6);font:600 15px/1.2 Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase"><span style="display:block;font-weight:400;font-size:12.5px;opacity:.8;margin-top:4px">Een kortingscode vervangt de kerstkorting en is niet te combineren met andere acties.</span></label>
       <p class="m3d-ship">Verzenden met <strong>PostNL</strong>, met track &amp; trace. Brievenbuspakje € 4,95, pakket € 9,95, gratis vanaf € 400. <a href="informatie.html#verzending">Bekijk de tarieven</a></p>
       <label class="m3d-remind" style="display:flex;gap:8px;align-items:flex-start;font-weight:400;font-size:13.5px;line-height:1.45;margin:0 0 12px"><input type="checkbox" id="m3d-herinnering" style="margin-top:3px"> <span>Stuur mij één herinnering per e-mail als ik mijn bestelling niet afreken (je e-mailadres vul je in bij het afrekenen).</span></label>
       <label class="m3d-remind" style="display:flex;gap:8px;align-items:flex-start;font-weight:400;font-size:13.5px;line-height:1.45;margin:0 0 12px"><input type="checkbox" id="m3d-nieuwsbrief" style="margin-top:3px"> <span>Houd mij op de hoogte van nieuwe producten (hooguit één mail per week; je krijgt eerst een bevestigingsmail).</span></label>
@@ -127,6 +128,8 @@
       form.addEventListener('change', upd); form.addEventListener('input', upd);
     }
     const msg = box.querySelector('.m3d-msg');
+    // Enter in het kortingscodeveld mag het aanvraagformulier niet versturen.
+    box.querySelector('#m3d-code')?.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); box.querySelector('.m3d-pay-btn')?.click(); } });
     const btn = box.querySelector('.m3d-pay-btn');
 
     // Direct afrekenen is de enige weg. De aanvraagknop, contactvelden en aanvraagteksten
@@ -185,13 +188,15 @@
       fd.set('_delivery', 'ship');
       if (document.getElementById('m3d-herinnering')?.checked) fd.set('_herinnering', '1');
       if (document.getElementById('m3d-nieuwsbrief')?.checked) fd.set('_nieuwsbrief', '1');
+      const m3dCode = (document.getElementById('m3d-code')?.value || '').trim().toUpperCase().replace(/\s+/g, '');
+      if (m3dCode) fd.set('_code', m3dCode.slice(0, 40));
       try { const b = JSON.parse(sessionStorage.getItem('m3d_bron') || 'null'); if (b && b.s) fd.set('_bron', String(b.s).slice(0, 20)); } catch (e) { /* negeren */ }
       for (const id of ['personalization', 'notes', 'personal-text', 'kt-names', 'kt-notes', 'kt-color', 'naam', 'tekst', 'datum']) {
         const el = document.getElementById(id); if (el && el.value && !el.name) fd.set(id, el.value);
       }
       // Meta-pixel: start afrekenen; bedrag bewaren voor de Purchase-gebeurtenis op bedankt.html.
       const m3dQty = Math.min(100, Math.max(1, c.qty));
-      const m3dData = { content_ids: [page], content_type: 'product', num_items: m3dQty, value: Math.round((variant.cents + c.addons.reduce((t, i) => t + (product.addons[i]?.cents || 0), 0)) * m3dQty * (Date.now() < Date.parse('2027-01-01T00:00:00+01:00') ? 0.95 : 1)) / 100, currency: 'EUR' };
+      const m3dData = { content_ids: [page], content_type: 'product', num_items: m3dQty, value: Math.round((variant.cents + c.addons.reduce((t, i) => t + (product.addons[i]?.cents || 0), 0)) * m3dQty * (m3dCode === 'ZAKELIJK10' ? 0.9 : Date.now() < Date.parse('2027-01-01T00:00:00+01:00') ? 0.95 : 1)) / 100, currency: 'EUR' };
       try { sessionStorage.setItem('m3d_checkout', JSON.stringify(m3dData)); } catch (e) { /* negeren */ }
       if (window.m3dTrack) window.m3dTrack('InitiateCheckout', m3dData);
       btn.disabled = true; btn.textContent = 'Even geduld…';
