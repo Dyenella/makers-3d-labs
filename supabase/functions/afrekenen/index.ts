@@ -40,6 +40,11 @@ function isLarge(product: any, variant: any): boolean {
 }
 // Kerstkorting: 5% op alle online bestellingen t/m 31 december 2026 (Stripe-coupon, eenmalig per bestelling).
 const PROMO = { coupon: "KERST5-2026", percent: 5, name: "Kerstkorting 5%", until: Date.parse("2027-01-01T00:00:00+01:00") };
+// Kortingscodes die de klant zelf invult (flyer/promomail). Niet te combineren met de kerstkorting:
+// een geldige code vervangt die. De Stripe-coupon wordt bij het eerste gebruik automatisch aangemaakt.
+const CODES: Record<string, { coupon: string; percent: number; name: string; until: number }> = {
+  ZAKELIJK10: { coupon: "ZAKELIJK10", percent: 10, name: "Zakelijk 10% (eerste zakelijke bestelling)", until: Date.parse("2027-04-01T00:00:00+02:00") },
+};
 const ORIGINS = [SITE, "https://makers3dlabs.nl"];
 const IMG = ["image/jpeg", "image/png", "image/webp"];
 
@@ -71,6 +76,14 @@ async function stripe(method: string, path: string, body?: Record<string, unknow
 }
 // Kerstcoupon (aangemaakt in het Stripe-dashboard); null buiten de actieperiode.
 const promoCoupon = (): string | null => (Date.now() < PROMO.until ? PROMO.coupon : null);
+// Zorgt dat de coupon van een kortingscode in Stripe bestaat; geeft false als dat niet lukt.
+async function ensureCoupon(c: { coupon: string; percent: number; name: string; until: number }): Promise<boolean> {
+  const got = await stripe("GET", `coupons/${encodeURIComponent(c.coupon)}`);
+  if (got.status < 400) return got.body?.valid !== false;
+  const made = await stripe("POST", "coupons", { id: c.coupon, percent_off: c.percent, duration: "once", name: c.name, redeem_by: Math.floor(c.until / 1000) });
+  if (made.status >= 400) console.error("Coupon aanmaken mislukt", made.body);
+  return made.status < 400;
+}
 const clean = (s: unknown, n = 2000) => String(s ?? "").replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g, "").trim().slice(0, n);
 
 Deno.serve(async (req) => {
@@ -107,6 +120,10 @@ Deno.serve(async (req) => {
   if (!Number.isInteger(qty) || qty < 1 || qty > 100) return json({ error: "Kies een aantal tussen 1 en 100." }, 400);
   const delivery = "ship";
   const ship = shipClass(product, variant, qty);
+  const codeIn = clean(fd.get("_code"), 40).toUpperCase().replace(/\s+/g, "");
+  const code = codeIn ? CODES[codeIn] : undefined;
+  if (codeIn && (!code || Date.now() >= code.until)) return json({ error: "Deze kortingscode is niet (meer) geldig." }, 400);
+  if (code && !(await ensureCoupon(code))) return json({ error: "De kortingscode kan nu niet worden verwerkt. Probeer het later opnieuw of bestel zonder code." }, 502);
 
   // Stripe-prijzen ophalen via lookup_key.
   const lookups = [`${product.id}__${variant.key}`, ...addons.map((a: any) => `${product.id}__addon__${a.key}`)].map((k) => k.slice(0, 200));
@@ -156,7 +173,8 @@ Deno.serve(async (req) => {
     },
   }));
 
-  let coupon = promoCoupon();
+  let coupon = code ? code.coupon : promoCoupon();
+  const percent = code ? code.percent : PROMO.percent;
   // Herinnering bij niet afrekenen: alleen als de klant dit op de productpagina heeft aangevinkt.
   let remind = clean(fd.get("_herinnering"), 5) === "1";
   const nieuwsbrief = clean(fd.get("_nieuwsbrief"), 5) === "1";
@@ -175,7 +193,7 @@ Deno.serve(async (req) => {
     after_expiration: remind ? { recovery: { enabled: true } } : undefined,
     success_url: `${SITE}/bedankt.html?betaald=1`,
     cancel_url: `${product.url}?betaling=geannuleerd`,
-    metadata: { request_id: reqId, kind: "product", product: product.id, remind: remind ? "1" : "0", nieuwsbrief: nieuwsbrief ? "1" : "0" },
+    metadata: { request_id: reqId, kind: "product", code: code ? codeIn : "", product: product.id, remind: remind ? "1" : "0", nieuwsbrief: nieuwsbrief ? "1" : "0" },
     payment_intent_data: { metadata: { request_id: reqId }, statement_descriptor_suffix: "WEBSHOP" },
     custom_text: { submit: { message: (isLarge(product, variant) ? "Levertijd: binnen 14 dagen na bestelling, afhankelijk van beschikbaarheid." : "Levertijd: binnen 3 werkdagen na bestelling.") + " Met betalen ga je akkoord met onze algemene voorwaarden (makers3dlabs.nl/algemene-voorwaarden.html). Gepersonaliseerde producten (naam, tekst, logo, eigen ontwerp of eigen maat) worden speciaal voor jou gemaakt; daarvoor geldt geen herroepingsrecht. Zonder personalisatie heb je 14 dagen bedenktijd. Na betaling ontvang je een bevestiging per e-mail." } },
   });
@@ -185,7 +203,7 @@ Deno.serve(async (req) => {
     remind = false;
     session = await stripe("POST", "checkout/sessions", sessionBody(coupon));
   }
-  if (session.status >= 400 && coupon && /coupon|discount/i.test(JSON.stringify(session.body))) {
+  if (session.status >= 400 && coupon && !code && /coupon|discount/i.test(JSON.stringify(session.body))) {
     console.error("Kerstcoupon niet bruikbaar, afrekenen zonder korting", session.body);
     coupon = null;
     session = await stripe("POST", "checkout/sessions", sessionBody(null));
@@ -197,6 +215,6 @@ Deno.serve(async (req) => {
   // Koppeling verzendtarief → vervoerder bewaren (voor de bestelling en track & trace).
   const carriers: Record<string, string> = {};
   (session.body.shipping_options || []).forEach((o: any, i: number) => { if (o.shipping_rate) carriers[o.shipping_rate] = rates[i]?.carrier || ""; });
-  await admin.from("checkout_requests").update({ stripe_session: session.body.id, payload: { ...payload, carriers, discount: coupon ? { coupon, percent: PROMO.percent } : null } }).eq("id", reqId);
+  await admin.from("checkout_requests").update({ stripe_session: session.body.id, payload: { ...payload, carriers, discount: coupon ? { coupon, percent, code: code ? codeIn : undefined } : null } }).eq("id", reqId);
   return json({ url: session.body.url });
 });
